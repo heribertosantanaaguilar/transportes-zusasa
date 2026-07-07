@@ -2717,3 +2717,271 @@ footer p {
     padding: 32px 24px !important;
   }
 }
+/* =========================================================
+   MAPA MANZANILLO + ESTADÍSTICAS PREMIUM
+   ========================================================= */
+
+/* MAPA ESTILIZADO */
+
+.manzanilloMap {
+  position: relative !important;
+  min-height: 500px !important;
+  background: linear-gradient(135deg, #ffffff, #eef2f7) !important;
+  border-radius: 32px !important;
+  overflow: hidden !important;
+  box-shadow: 0 36px 100px rgba(0, 0, 0, 0.34) !important;
+}
+
+.mapOcean {
+  position: absolute !important;
+  left: -12% !important;
+  top: -8% !important;
+  width: 58% !important;
+  height: 120% !important;
+  background:
+    radial-gradient(circle at 40% 30%, rgba(15, 45, 82, 0.18), transparent 28%),
+    linear-gradient(135deg, #0f2d52, #1d6f9f) !important;
+  border-radius: 0 55% 45% 0 !important;
+}
+
+.mapOcean::after {
+  content: "" !important;
+  position: absolute !important;
+  inset: 28px !important;
+  border: 2px dashed rgba(255, 255, 255, 0.22) !important;
+  border-radius: 0 55% 45% 0 !important;
+}
+
+.mapLand {
+  position: absolute !important;
+  right: 8% !important;
+  top: 12% !important;
+  width: 66% !important;
+  height: 76% !important;
+  background:
+    linear-gradient(135deg, rgba(245, 246, 247, 0.96), rgba(255, 255, 255, 0.96)) !important;
+  border: 3px dashed #d4dce6 !important;
+  border-radius: 34px 42px 30px 58px !important;
+}
+
+.mapRoute {
+  position: absolute !important;
+  display: block !important;
+  height: 5px !important;
+  background: linear-gradient(90deg, var(--orange), #ffb086) !important;
+  border-radius: 999px !important;
+  transform-origin: left center !important;
+  box-shadow: 0 8px 18px rgba(242, 101, 34, 0.25) !important;
+}
+
+.routeOne {
+  width: 62% !important;
+  left: 16% !important;
+  top: 42% !important;
+  transform: rotate(-9deg) !important;
+}
+
+.routeTwo {
+  width: 48% !important;
+  left: 28% !important;
+  top: 58% !important;
+  transform: rotate(12deg) !important;
+}
+
+.routeThree {
+  width: 34% !important;
+  left: 42% !important;
+  top: 30% !important;
+  transform: rotate(28deg) !important;
+}
+
+.portZone,
+.cityZone,
+.logisticsZone {
+  position: absolute !important;
+  background: white !important;
+  color: var(--navy) !important;
+  padding: 16px 18px !important;
+  border-radius: 18px !important;
+  box-shadow: 0 18px 42px rgba(10, 29, 54, 0.16) !important;
+  border-left: 5px solid var(--orange) !important;
+}
+
+.portZone {
+  left: 8% !important;
+  bottom: 16% !important;
+}
+
+.cityZone {
+  right: 8% !important;
+  top: 14% !important;
+}
+
+.logisticsZone {
+  right: 12% !important;
+  bottom: 18% !important;
+}
+
+.portZone strong,
+.cityZone strong,
+.logisticsZone strong {
+  display: block !important;
+  color: var(--navy) !important;
+  font-size: 16px !important;
+  margin-bottom: 4px !important;
+}
+
+.portZone span,
+.cityZone span,
+.logisticsZone span {
+  display: block !important;
+  color: var(--gray) !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+}
+
+.mapPin {
+  position: absolute !important;
+  left: 28% !important;
+  bottom: 24% !important;
+  background: white !important;
+  color: var(--navy) !important;
+  padding: 15px 22px !important;
+  border-radius: 999px !important;
+  font-weight: 900 !important;
+  box-shadow: 0 20px 45px rgba(10, 29, 54, 0.24) !important;
+  z-index: 5 !important;
+}
+
+.mapPin span {
+  display: inline-block !important;
+  width: 14px !important;
+  height: 14px !important;
+  background: var(--orange) !important;
+  border-radius: 50% !important;
+  margin-right: 10px !important;
+  box-shadow: 0 0 0 6px rgba(242, 101, 34, 0.18) !important;
+}
+
+/* ESTADÍSTICAS */
+
+.zusasaStatsFinal {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 24px !important;
+  padding: 80px 7% !important;
+  background: #ffffff !important;
+}
+
+.zusasaStatCard {
+  position: relative !important;
+  background:
+    linear-gradient(180deg, #ffffff 0%, #f5f6f7 100%) !important;
+  padding: 38px 28px !important;
+  border-radius: 26px !important;
+  text-align: center !important;
+  box-shadow: 0 24px 70px rgba(10, 29, 54, 0.11) !important;
+  border: 1px solid rgba(10, 29, 54, 0.06) !important;
+  overflow: hidden !important;
+}
+
+.zusasaStatCard::before {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 6px !important;
+  background: var(--orange) !important;
+}
+
+.zusasaStatCard::after {
+  content: "" !important;
+  position: absolute !important;
+  right: -38px !important;
+  bottom: -38px !important;
+  width: 110px !important;
+  height: 110px !important;
+  background: rgba(242, 101, 34, 0.08) !important;
+  border-radius: 50% !important;
+}
+
+.zusasaStatCard strong {
+  display: block !important;
+  color: var(--orange) !important;
+  font-size: clamp(42px, 4vw, 62px) !important;
+  line-height: 1 !important;
+  font-weight: 900 !important;
+  margin-bottom: 16px !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.zusasaStatCard h3 {
+  color: var(--navy) !important;
+  font-size: 22px !important;
+  margin: 0 0 8px !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.zusasaStatCard p {
+  color: var(--gray) !important;
+  font-size: 15px !important;
+  line-height: 1.55 !important;
+  margin: 0 !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+/* RESPONSIVE MAPA Y ESTADÍSTICAS */
+
+@media (max-width: 1100px) {
+  .zusasaStatsFinal {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .manzanilloMap {
+    min-height: 440px !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .zusasaStatsFinal {
+    grid-template-columns: 1fr !important;
+    padding: 70px 24px !important;
+  }
+
+  .manzanilloMap {
+    min-height: 390px !important;
+  }
+
+  .mapLand {
+    right: 5% !important;
+    width: 72% !important;
+  }
+
+  .mapPin {
+    left: 18% !important;
+    bottom: 20% !important;
+    font-size: 13px !important;
+  }
+
+  .portZone,
+  .cityZone,
+  .logisticsZone {
+    padding: 12px 14px !important;
+  }
+
+  .portZone strong,
+  .cityZone strong,
+  .logisticsZone strong {
+    font-size: 14px !important;
+  }
+
+  .portZone span,
+  .cityZone span,
+  .logisticsZone span {
+    font-size: 11px !important;
+  }
+}
