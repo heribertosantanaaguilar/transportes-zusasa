@@ -2003,3 +2003,148 @@ footer p {
     padding: 70px 24px;
   }
 }
+/* =========================================================
+   NOSOTROS - CORRECCIÓN DEFINITIVA
+   ========================================================= */
+
+.zusasaCompanyBlock {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 72px !important;
+  align-items: center !important;
+  padding: 110px 7% !important;
+  background: #ffffff !important;
+}
+
+.zusasaMiniTitle {
+  display: inline-block !important;
+  color: var(--orange) !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  margin-bottom: 18px !important;
+}
+
+.zusasaCompanyLeft h2 {
+  font-size: clamp(38px, 4.5vw, 64px) !important;
+  line-height: 1.03 !important;
+  color: var(--navy) !important;
+  margin: 0 0 28px !important;
+  letter-spacing: -1.5px !important;
+}
+
+.zusasaCompanyLeft > p {
+  color: var(--gray) !important;
+  font-size: 18px !important;
+  line-height: 1.8 !important;
+  margin: 0 0 18px !important;
+}
+
+.zusasaCompanyPoints {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 20px !important;
+  margin-top: 38px !important;
+}
+
+.zusasaCompanyPoints article {
+  background: #f5f6f7 !important;
+  padding: 26px !important;
+  border-radius: 22px !important;
+  border-left: 6px solid var(--orange) !important;
+  box-shadow: 0 20px 55px rgba(10, 29, 54, 0.09) !important;
+}
+
+.zusasaCompanyPoints strong {
+  display: block !important;
+  color: var(--orange) !important;
+  font-size: 20px !important;
+  font-weight: 900 !important;
+  margin-bottom: 14px !important;
+}
+
+.zusasaCompanyPoints h3 {
+  color: var(--navy) !important;
+  font-size: 20px !important;
+  margin: 0 0 10px !important;
+}
+
+.zusasaCompanyPoints p {
+  color: var(--gray) !important;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+  margin: 0 !important;
+}
+
+.zusasaCompanyRight {
+  position: relative !important;
+}
+
+.zusasaCompanyRight img {
+  width: 100% !important;
+  height: 580px !important;
+  object-fit: cover !important;
+  display: block !important;
+  border-radius: 32px !important;
+  box-shadow: 0 36px 100px rgba(10, 29, 54, 0.28) !important;
+}
+
+.zusasaFloatingCard {
+  position: absolute !important;
+  left: -34px !important;
+  bottom: 42px !important;
+  width: 340px !important;
+  background: var(--orange) !important;
+  color: white !important;
+  padding: 30px !important;
+  border-radius: 24px !important;
+  box-shadow: 0 28px 75px rgba(242, 101, 34, 0.36) !important;
+}
+
+.zusasaFloatingCard strong {
+  display: block !important;
+  color: white !important;
+  font-size: 30px !important;
+  line-height: 1.05 !important;
+  margin-bottom: 12px !important;
+}
+
+.zusasaFloatingCard span {
+  display: block !important;
+  color: white !important;
+  font-weight: 700 !important;
+  line-height: 1.5 !important;
+}
+
+@media (max-width: 1000px) {
+  .zusasaCompanyBlock {
+    grid-template-columns: 1fr !important;
+    padding: 80px 7% !important;
+  }
+
+  .zusasaFloatingCard {
+    left: 24px !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .zusasaCompanyBlock {
+    padding: 70px 24px !important;
+  }
+
+  .zusasaCompanyPoints {
+    grid-template-columns: 1fr !important;
+  }
+
+  .zusasaCompanyRight img {
+    height: 360px !important;
+  }
+
+  .zusasaFloatingCard {
+    position: relative !important;
+    left: auto !important;
+    bottom: auto !important;
+    width: auto !important;
+    margin: -42px 22px 0 !important;
+  }
+}
