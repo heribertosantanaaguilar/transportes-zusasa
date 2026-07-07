@@ -1,8 +1,9 @@
 export default function About() {
   return (
-    <section id="nosotros" className="aboutPremium">
-      <div className="aboutContent">
-        <span className="sectionTag">Nosotros</span>
+    <section id="nosotros" className="zusasaAbout">
+      <div className="zusasaAboutText">
+        <span>Nosotros</span>
+
         <h2>Conectamos operaciones. Cumplimos compromisos.</h2>
 
         <p>
@@ -17,19 +18,24 @@ export default function About() {
           Manzanillo.
         </p>
 
-        <div className="aboutList">
-          <span>✓ Operaciones portuarias</span>
-          <span>✓ Transporte local de contenedores</span>
-          <span>✓ Atención personalizada</span>
-          <span>✓ Respuesta inmediata</span>
+        <div className="zusasaAboutList">
+          <article>Operaciones portuarias</article>
+          <article>Transporte local de contenedores</article>
+          <article>Atención personalizada</article>
+          <article>Respuesta inmediata</article>
         </div>
       </div>
 
-      <div className="aboutPhoto">
+      <div className="zusasaAboutImage">
         <img
-          src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1200&q=80"
+          src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1400&q=85"
           alt="Transporte de carga con contenedores"
         />
+
+        <div className="zusasaAboutBadge">
+          <strong>Manzanillo</strong>
+          <span>Especialistas en operación local portuaria</span>
+        </div>
       </div>
     </section>
   );
