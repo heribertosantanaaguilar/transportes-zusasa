@@ -280,3 +280,137 @@ footer {
 .floatingWhatsApp:hover {
   transform: translateY(-2px);
 }
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.brandMark {
+  width: 54px;
+  height: 54px;
+  background: linear-gradient(135deg, #f26522, #0a1d36);
+  color: white;
+  display: grid;
+  place-items: center;
+  font-size: 34px;
+  font-weight: 900;
+  border-radius: 8px;
+  transform: skewX(-10deg);
+}
+
+.brand small {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #0a1d36;
+}
+
+.brand strong {
+  display: block;
+  font-size: 30px;
+  color: #0a1d36;
+  line-height: 1;
+}
+
+.navWhatsapp {
+  background: #0a1d36;
+  color: white;
+  padding: 14px 22px;
+  border-radius: 6px;
+  font-weight: 800;
+}
+
+.heroPremium {
+  position: relative;
+  min-height: 720px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 90px 7% 0;
+  color: white;
+  overflow: hidden;
+  background:
+    linear-gradient(90deg, rgba(6, 29, 56, .95), rgba(6, 29, 56, .7), rgba(6, 29, 56, .35)),
+    url("https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1800&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at right center, transparent, rgba(6,29,56,.9));
+}
+
+.heroInner {
+  position: relative;
+  z-index: 2;
+  max-width: 780px;
+}
+
+.heroBadge {
+  color: #f26522;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.heroPremium h1 {
+  font-size: clamp(42px, 6vw, 78px);
+  line-height: 1;
+  margin: 18px 0 24px;
+  max-width: 900px;
+}
+
+.heroPremium p {
+  font-size: 22px;
+  line-height: 1.5;
+  max-width: 760px;
+  margin-bottom: 34px;
+}
+
+.heroActions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.heroHighlights {
+  position: relative;
+  z-index: 2;
+  margin-top: 80px;
+  margin-left: -7%;
+  margin-right: -7%;
+  background: rgba(0, 35, 73, .95);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.heroHighlights div {
+  padding: 26px;
+  text-align: center;
+  font-weight: 800;
+  border-right: 1px solid rgba(255,255,255,.2);
+}
+
+@media (max-width: 900px) {
+  .heroPremium {
+    min-height: auto;
+    padding-top: 70px;
+  }
+
+  .heroPremium p {
+    font-size: 18px;
+  }
+
+  .heroHighlights {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .heroHighlights {
+    grid-template-columns: 1fr;
+  }
+}
