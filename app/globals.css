@@ -3716,3 +3716,20 @@ footer p {
     padding: 34px 24px !important;
   }
 }
+/* =========================================================
+   AJUSTES FOOTER Y ANCLAS DE CONTACTO
+   ========================================================= */
+
+.contactPerson {
+  scroll-margin-top: 140px !important;
+}
+
+.footerPremium a:hover {
+  color: var(--orange) !important;
+}
+
+.footerEmail {
+  margin-top: 24px !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 800 !important;
+}
