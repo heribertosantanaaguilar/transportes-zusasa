@@ -1,3 +1,4 @@
+import Trust from "../components/Trust";
 import Gallery from "../components/Gallery";
 import Quote from "../components/Quote";
 import Company from "../components/Company";
@@ -25,6 +26,7 @@ export default function Home() {
 <Services />
 <Sectors />
 <Value />
+<Trust />
 <Process />
 <Coverage />
 <Gallery />
