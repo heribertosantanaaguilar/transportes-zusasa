@@ -2,29 +2,34 @@ export default function Stats() {
   const stats = [
     {
       number: "100%",
-      text: "Compromiso con cada operación",
+      label: "Compromiso",
+      text: "En cada operación.",
     },
     {
       number: "24/7",
-      text: "Disponibilidad operativa",
+      label: "Disponibilidad",
+      text: "Atención operativa.",
     },
     {
       number: "GPS",
-      text: "Seguimiento en tiempo real",
+      label: "Seguimiento",
+      text: "Control en tiempo real.",
     },
     {
       number: "1",
-      text: "Puerto clave: Manzanillo",
+      label: "Puerto clave",
+      text: "Manzanillo, Colima.",
     },
   ];
 
   return (
-    <section className="statsPremium">
+    <section className="zusasaStatsFinal">
       {stats.map((stat) => (
-        <div key={stat.number}>
+        <article className="zusasaStatCard" key={stat.label}>
           <strong>{stat.number}</strong>
-          <span>{stat.text}</span>
-        </div>
+          <h3>{stat.label}</h3>
+          <p>{stat.text}</p>
+        </article>
       ))}
     </section>
   );
