@@ -1,4 +1,22 @@
- * {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --navy: #0a1d36;
+  --blue: #0f2d52;
+  --orange: #f26522;
+  --white: #ffffff;
+  --light: #f5f6f7;
+  --gray: #3b4a5a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+}
+* {
   box-sizing: border-box;
 }
 
