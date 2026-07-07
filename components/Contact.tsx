@@ -1,35 +1,59 @@
 export default function Contact() {
   return (
-    <section id="contacto" className="section contact">
+    <section id="contacto" className="contactPremium">
       <div>
-        <span className="label">Contacto</span>
-        <h2>Estamos listos para ser su socio logístico de confianza</h2>
+        <span className="sectionTag">Contacto</span>
+
+        <h2>Estamos listos para atender tu operación.</h2>
+
         <p>
-          Escríbanos para solicitar una cotización o coordinar una operación
-          local de carga en Manzanillo, Colima.
+          Escríbenos para solicitar una cotización o coordinar un movimiento
+          local de carga contenerizada en Manzanillo, Colima.
         </p>
 
-        <div className="buttons">
-          <a className="primary" href="https://wa.me/523148721897">
-            WhatsApp
+        <div className="contactActions">
+          <a className="mainCta" href="https://wa.me/523148721897">
+            Hablar por WhatsApp
           </a>
-          <a className="secondaryDark" href="mailto:transportes.zusasa@gmail.com">
+
+          <a className="darkOutlineCta" href="mailto:transportes.zusasa@gmail.com">
             Enviar correo
           </a>
         </div>
       </div>
 
       <div className="contactCard">
-        <p><strong>José Alberto Zúñiga Ramos</strong></p>
-        <p>Gerente General · 222 455 6651</p>
+        <h3>Datos de contacto</h3>
 
-        <p><strong>Sergio Sanmiguel Celis</strong></p>
-        <p>Dirección de Administración y Finanzas · 314 106 9165</p>
+        <p>
+          <strong>José Alberto Zúñiga Ramos</strong>
+          <br />
+          Gerente General · 222 455 6651
+        </p>
 
-        <p><strong>Heriberto Santana Aguilar</strong></p>
-        <p>Coordinación de Logística · 314 872 1897</p>
+        <p>
+          <strong>Sergio Sanmiguel Celis</strong>
+          <br />
+          Dirección de Administración y Finanzas · 314 106 9165
+        </p>
 
-        <p><strong>Correo:</strong> transportes.zusasa@gmail.com</p>
+        <p>
+          <strong>Heriberto Santana Aguilar</strong>
+          <br />
+          Coordinación de Logística · 314 872 1897
+        </p>
+
+        <p>
+          <strong>Correo:</strong>
+          <br />
+          transportes.zusasa@gmail.com
+        </p>
+
+        <p>
+          <strong>Ubicación:</strong>
+          <br />
+          Manzanillo, Colima, México
+        </p>
       </div>
     </section>
   );
