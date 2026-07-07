@@ -1,33 +1,39 @@
-export default function Hero() {
-  return (
-    <section id="inicio" className="heroPremium heroV2">
-      <div className="heroInner">
-        <span className="heroBadge">Puerto de Manzanillo · Transporte local de carga</span>
+.premiumNavbar {
+  backdrop-filter: blur(18px);
+}
 
-        <h1>Transportamos la confianza que mueve tu negocio.</h1>
+.premiumButton {
+  background: var(--orange);
+}
 
-        <p>
-          Soluciones especializadas en autotransporte local de carga para
-          operaciones de importación y exportación dentro de la zona portuaria
-          de Manzanillo.
-        </p>
+.heroV2 {
+  background:
+    linear-gradient(90deg, rgba(10,29,54,.94), rgba(10,29,54,.72), rgba(10,29,54,.35)),
+    url("https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=2000&q=85");
+  background-size: cover;
+  background-position: center;
+}
 
-        <div className="heroActions">
-          <a className="primary" href="mailto:transportes.zusasa@gmail.com">
-            Solicitar cotización
-          </a>
-          <a className="secondary" href="#servicios">
-            Conocer servicios
-          </a>
-        </div>
-      </div>
+.heroV2 h1 {
+  text-shadow: 0 8px 30px rgba(0,0,0,.35);
+}
 
-      <div className="heroHighlights">
-        <div>Respuesta inmediata</div>
-        <div>Operación 24/7</div>
-        <div>Seguimiento operativo</div>
-        <div>Especialistas en Manzanillo</div>
-      </div>
-    </section>
-  );
+.heroV2 .secondary {
+  background: rgba(255,255,255,.12);
+  backdrop-filter: blur(10px);
+}
+
+.primary,
+.secondary,
+.navWhatsapp,
+.floatingWhatsApp {
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
+
+.primary:hover,
+.secondary:hover,
+.navWhatsapp:hover,
+.floatingWhatsApp:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 34px rgba(0,0,0,.22);
 }
