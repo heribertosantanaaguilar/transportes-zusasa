@@ -3733,3 +3733,33 @@ footer p {
   color: rgba(255, 255, 255, 0.9) !important;
   font-weight: 800 !important;
 }
+/* =========================================================
+   LOGO OFICIAL ZUSASA
+   ========================================================= */
+
+.navbarLogoImage {
+  width: 66px !important;
+  height: 66px !important;
+  object-fit: contain !important;
+  display: block !important;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.22)) !important;
+}
+
+.footerLogoImage {
+  width: 64px !important;
+  height: 64px !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+
+@media (max-width: 650px) {
+  .navbarLogoImage {
+    width: 56px !important;
+    height: 56px !important;
+  }
+
+  .footerLogoImage {
+    width: 56px !important;
+    height: 56px !important;
+  }
+}
