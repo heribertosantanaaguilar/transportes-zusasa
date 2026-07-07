@@ -3,43 +3,47 @@ export default function Process() {
     {
       number: "01",
       title: "Recepción",
-      text: "Recibimos la solicitud y confirmamos los datos de la operación.",
+      text: "Recibimos la solicitud, revisamos la información y confirmamos los datos de la operación.",
     },
     {
       number: "02",
       title: "Asignación",
-      text: "Coordinamos unidad, operador y tiempos de atención.",
+      text: "Coordinamos unidad, operador, tiempos de atención y requerimientos del movimiento.",
     },
     {
       number: "03",
       title: "Traslado",
-      text: "Movemos la carga con seguimiento operativo y comunicación constante.",
+      text: "Realizamos el movimiento con seguimiento operativo y comunicación constante.",
     },
     {
       number: "04",
       title: "Confirmación",
-      text: "Validamos la entrega y cerramos la operación con el cliente.",
+      text: "Validamos la entrega, cerramos la operación y confirmamos el cumplimiento del servicio.",
     },
   ];
 
   return (
-    <section className="zusasaProcess">
-      <div className="zusasaProcessHeader">
-        <span className="zusasaProcessEyebrow">Proceso operativo</span>
+    <section className="zusasaFlowSection">
+      <div className="zusasaFlowHeader">
+        <span>Proceso operativo</span>
 
-        <h2>Orden, comunicación y seguimiento en cada movimiento.</h2>
+        <h2>Un proceso claro para mover tu carga con confianza.</h2>
 
-        <p className="zusasaProcessIntro">
+        <p>
           Nuestro proceso está diseñado para dar claridad, control y confianza
           desde la solicitud hasta la confirmación final.
         </p>
       </div>
 
-      <div className="zusasaProcessGrid">
+      <div className="zusasaFlowTrack">
         {steps.map((step) => (
-          <article className="zusasaProcessCard" key={step.title}>
-            <strong>{step.number}</strong>
+          <article className="zusasaFlowCard" key={step.title}>
+            <div className="zusasaFlowNumber">{step.number}</div>
+
+            <div className="zusasaFlowDot"></div>
+
             <h3>{step.title}</h3>
+
             <p>{step.text}</p>
           </article>
         ))}
