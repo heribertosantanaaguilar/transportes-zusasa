@@ -1,12 +1,11 @@
 export default function Hero() {
   return (
-    <section id="inicio" className="heroPremium heroPort">
-      <div className="heroInner heroPortInner">
-        <span className="heroEyebrow">Puerto de Manzanillo</span>
+    <section id="inicio" className="heroShowcase">
+      <div className="heroShowcaseContent">
+        <span className="heroLine">Puerto de Manzanillo</span>
 
         <h1>
-          Transportamos <span className="accent">la confianza</span> que mueve
-          tu negocio.
+          Transportamos <span>la confianza</span> que mueve tu negocio.
         </h1>
 
         <p>
@@ -15,36 +14,36 @@ export default function Hero() {
           de Manzanillo.
         </p>
 
-        <div className="heroActions">
-          <a className="primary" href="mailto:transportes.zusasa@gmail.com">
+        <div className="heroShowcaseActions">
+          <a className="mainCta" href="mailto:transportes.zusasa@gmail.com">
             Solicitar cotización
           </a>
 
-          <a className="secondary" href="#servicios">
-            Conocer servicios
+          <a className="ghostCta" href="#servicios">
+            Conocer servicios →
           </a>
         </div>
       </div>
 
-      <div className="heroHighlights heroPortHighlights">
+      <div className="heroShowcaseBar">
         <article>
           <strong>Respuesta inmediata</strong>
-          <span>Atención rápida y personalizada.</span>
+          <p>Atención rápida y personalizada.</p>
         </article>
 
         <article>
           <strong>Operación 24/7</strong>
-          <span>Disponibilidad para atender tu carga.</span>
+          <p>Disponibilidad total para tu carga.</p>
         </article>
 
         <article>
           <strong>Seguimiento operativo</strong>
-          <span>Comunicación constante en cada movimiento.</span>
+          <p>Comunicación constante en cada movimiento.</p>
         </article>
 
         <article>
           <strong>Especialistas en Manzanillo</strong>
-          <span>Conocimiento local que marca la diferencia.</span>
+          <p>Conocimiento local que marca la diferencia.</p>
         </article>
       </div>
     </section>
