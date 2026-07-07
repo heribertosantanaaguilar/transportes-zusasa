@@ -25,19 +25,19 @@ export default function Contact() {
       <div className="zusasaContactPanel">
         <h3>Datos de contacto</h3>
 
-        <div className="contactPerson">
+        <div id="gerencia-general" className="contactPerson">
           <strong>José Alberto Zúñiga Ramos</strong>
           <span>Gerente General</span>
           <a href="tel:2224556651">222 455 6651</a>
         </div>
 
-        <div className="contactPerson">
+        <div id="administracion-finanzas" className="contactPerson">
           <strong>Sergio Sanmiguel Celis</strong>
           <span>Dirección de Administración y Finanzas</span>
           <a href="tel:3141069165">314 106 9165</a>
         </div>
 
-        <div className="contactPerson">
+        <div id="coordinacion-logistica" className="contactPerson">
           <strong>Heriberto Santana Aguilar</strong>
           <span>Coordinación de Logística</span>
           <a href="tel:3148721897">314 872 1897</a>
