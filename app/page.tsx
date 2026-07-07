@@ -1,3 +1,4 @@
+import Sectors from "../components/Sectors";
 import WhatsAppButton from "../components/WhatsAppButton";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
@@ -16,6 +17,9 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
+<Services />
+<Sectors />
+<Value />
       <Value />
       <Process />
       <Stats />
