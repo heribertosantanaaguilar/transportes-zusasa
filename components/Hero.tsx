@@ -1,39 +1,52 @@
-.premiumNavbar {
-  backdrop-filter: blur(18px);
-}
+export default function Hero() {
+  return (
+    <section id="inicio" className="heroPremium heroPort">
+      <div className="heroInner heroPortInner">
+        <span className="heroEyebrow">Puerto de Manzanillo</span>
 
-.premiumButton {
-  background: var(--orange);
-}
+        <h1>
+          Transportamos <span className="accent">la confianza</span> que mueve
+          tu negocio.
+        </h1>
 
-.heroV2 {
-  background:
-    linear-gradient(90deg, rgba(10,29,54,.94), rgba(10,29,54,.72), rgba(10,29,54,.35)),
-    url("https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=2000&q=85");
-  background-size: cover;
-  background-position: center;
-}
+        <p>
+          Soluciones especializadas en autotransporte local de carga para
+          operaciones de importación y exportación dentro de la zona portuaria
+          de Manzanillo.
+        </p>
 
-.heroV2 h1 {
-  text-shadow: 0 8px 30px rgba(0,0,0,.35);
-}
+        <div className="heroActions">
+          <a className="primary" href="mailto:transportes.zusasa@gmail.com">
+            Solicitar cotización
+          </a>
 
-.heroV2 .secondary {
-  background: rgba(255,255,255,.12);
-  backdrop-filter: blur(10px);
-}
+          <a className="secondary" href="#servicios">
+            Conocer servicios
+          </a>
+        </div>
+      </div>
 
-.primary,
-.secondary,
-.navWhatsapp,
-.floatingWhatsApp {
-  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
-}
+      <div className="heroHighlights heroPortHighlights">
+        <article>
+          <strong>Respuesta inmediata</strong>
+          <span>Atención rápida y personalizada.</span>
+        </article>
 
-.primary:hover,
-.secondary:hover,
-.navWhatsapp:hover,
-.floatingWhatsApp:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 14px 34px rgba(0,0,0,.22);
+        <article>
+          <strong>Operación 24/7</strong>
+          <span>Disponibilidad para atender tu carga.</span>
+        </article>
+
+        <article>
+          <strong>Seguimiento operativo</strong>
+          <span>Comunicación constante en cada movimiento.</span>
+        </article>
+
+        <article>
+          <strong>Especialistas en Manzanillo</strong>
+          <span>Conocimiento local que marca la diferencia.</span>
+        </article>
+      </div>
+    </section>
+  );
 }
