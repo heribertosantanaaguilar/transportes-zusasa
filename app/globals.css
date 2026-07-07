@@ -2196,3 +2196,181 @@ footer p {
   padding-left: 24px !important;
   border-left: 5px solid var(--orange) !important;
 }
+/* =========================================================
+   PROCESO OPERATIVO - LÍNEA DE SEGUIMIENTO VISUAL
+   ========================================================= */
+
+.zusasaFlowSection {
+  padding: 110px 7% !important;
+  background: #f5f6f7 !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.zusasaFlowSection::before {
+  content: "" !important;
+  position: absolute !important;
+  top: -160px !important;
+  right: -160px !important;
+  width: 420px !important;
+  height: 420px !important;
+  background: rgba(242, 101, 34, 0.08) !important;
+  border-radius: 50% !important;
+}
+
+.zusasaFlowHeader {
+  max-width: 920px !important;
+  margin-bottom: 70px !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.zusasaFlowHeader span {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+  color: var(--orange) !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.2px !important;
+  font-size: 15px !important;
+  margin-bottom: 20px !important;
+}
+
+.zusasaFlowHeader span::before {
+  content: "" !important;
+  width: 44px !important;
+  height: 3px !important;
+  background: var(--orange) !important;
+}
+
+.zusasaFlowHeader h2 {
+  font-size: clamp(36px, 4.5vw, 62px) !important;
+  line-height: 1.04 !important;
+  color: var(--navy) !important;
+  margin: 0 0 24px !important;
+  letter-spacing: -1.4px !important;
+}
+
+.zusasaFlowHeader p {
+  max-width: 760px !important;
+  font-size: 19px !important;
+  line-height: 1.75 !important;
+  color: var(--gray) !important;
+  margin: 0 !important;
+  padding-left: 24px !important;
+  border-left: 5px solid var(--orange) !important;
+}
+
+.zusasaFlowTrack {
+  position: relative !important;
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 28px !important;
+  z-index: 2 !important;
+}
+
+.zusasaFlowTrack::before {
+  content: "" !important;
+  position: absolute !important;
+  top: 72px !important;
+  left: 8% !important;
+  right: 8% !important;
+  height: 4px !important;
+  background: linear-gradient(90deg, var(--orange), #ffb086) !important;
+  border-radius: 999px !important;
+  z-index: 0 !important;
+}
+
+.zusasaFlowCard {
+  position: relative !important;
+  background: #ffffff !important;
+  padding: 38px 28px 34px !important;
+  border-radius: 26px !important;
+  box-shadow: 0 26px 75px rgba(10, 29, 54, 0.12) !important;
+  border: 1px solid rgba(10, 29, 54, 0.06) !important;
+  z-index: 2 !important;
+  overflow: hidden !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+}
+
+.zusasaFlowCard:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 34px 95px rgba(10, 29, 54, 0.18) !important;
+}
+
+.zusasaFlowNumber {
+  font-size: 46px !important;
+  font-weight: 900 !important;
+  color: rgba(10, 29, 54, 0.08) !important;
+  line-height: 1 !important;
+  margin-bottom: 28px !important;
+}
+
+.zusasaFlowDot {
+  position: absolute !important;
+  top: 58px !important;
+  left: 28px !important;
+  width: 30px !important;
+  height: 30px !important;
+  background: var(--orange) !important;
+  border-radius: 50% !important;
+  border: 7px solid #ffffff !important;
+  box-shadow: 0 0 0 5px rgba(242, 101, 34, 0.18) !important;
+  z-index: 3 !important;
+}
+
+.zusasaFlowCard h3 {
+  color: var(--navy) !important;
+  font-size: 25px !important;
+  margin: 0 0 14px !important;
+  line-height: 1.15 !important;
+}
+
+.zusasaFlowCard p {
+  color: var(--gray) !important;
+  font-size: 16px !important;
+  line-height: 1.7 !important;
+  margin: 0 !important;
+}
+
+.zusasaFlowCard::after {
+  content: "" !important;
+  position: absolute !important;
+  right: -42px !important;
+  bottom: -42px !important;
+  width: 120px !important;
+  height: 120px !important;
+  background: rgba(242, 101, 34, 0.08) !important;
+  border-radius: 50% !important;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1100px) {
+  .zusasaFlowTrack {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .zusasaFlowTrack::before {
+    display: none !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .zusasaFlowSection {
+    padding: 75px 24px !important;
+  }
+
+  .zusasaFlowTrack {
+    grid-template-columns: 1fr !important;
+  }
+
+  .zusasaFlowHeader p {
+    font-size: 17px !important;
+  }
+
+  .zusasaFlowCard {
+    padding: 34px 24px !important;
+  }
+}
