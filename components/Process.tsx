@@ -1,17 +1,35 @@
 export default function Process() {
-  const steps = ["Recepción", "Asignación", "Traslado", "Confirmación"];
+  const steps = [
+    {
+      title: "Recepción",
+      text: "Recibimos la solicitud y confirmamos los datos de la operación.",
+    },
+    {
+      title: "Asignación",
+      text: "Coordinamos unidad, operador y tiempos de atención.",
+    },
+    {
+      title: "Traslado",
+      text: "Movemos la carga con seguimiento operativo y comunicación constante.",
+    },
+    {
+      title: "Confirmación",
+      text: "Validamos la entrega y cerramos la operación con el cliente.",
+    },
+  ];
 
   return (
-    <section className="section processSection">
-      <span className="label">Nuestro proceso</span>
-      <h2>Así gestionamos cada operación</h2>
+    <section className="processPremium">
+      <span className="sectionTag">Proceso operativo</span>
+      <h2>Orden, comunicación y seguimiento en cada movimiento.</h2>
 
-      <div className="process">
+      <div className="processTimeline">
         {steps.map((step, index) => (
-          <div key={step}>
+          <article className="processCard" key={step.title}>
             <strong>{index + 1}</strong>
-            <p>{step}</p>
-          </div>
+            <h3>{step.title}</h3>
+            <p>{step.text}</p>
+          </article>
         ))}
       </div>
     </section>
