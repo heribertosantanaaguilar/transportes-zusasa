@@ -3318,3 +3318,129 @@ footer p {
     margin-top: 60px !important;
   }
 }
+/* =========================================================
+   GALERÍA OPERATIVA - FOTOGRAFÍAS TEMPORALES
+   ========================================================= */
+
+.zusasaGallerySection {
+  padding: 110px 7% !important;
+  background: #ffffff !important;
+}
+
+.zusasaGalleryHeader {
+  max-width: 900px !important;
+  margin-bottom: 54px !important;
+}
+
+.zusasaGalleryHeader span {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+  color: var(--orange) !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.2px !important;
+  font-size: 15px !important;
+  margin-bottom: 20px !important;
+}
+
+.zusasaGalleryHeader span::before {
+  content: "" !important;
+  width: 44px !important;
+  height: 3px !important;
+  background: var(--orange) !important;
+}
+
+.zusasaGalleryHeader h2 {
+  font-size: clamp(36px, 4.5vw, 62px) !important;
+  line-height: 1.04 !important;
+  color: var(--navy) !important;
+  margin: 0 0 24px !important;
+  letter-spacing: -1.4px !important;
+}
+
+.zusasaGalleryHeader p {
+  max-width: 760px !important;
+  color: var(--gray) !important;
+  font-size: 18px !important;
+  line-height: 1.75 !important;
+  margin: 0 !important;
+}
+
+.zusasaGalleryGrid {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 30px !important;
+}
+
+.zusasaGalleryCard {
+  position: relative !important;
+  min-height: 520px !important;
+  border-radius: 32px !important;
+  overflow: hidden !important;
+  box-shadow: 0 30px 90px rgba(10, 29, 54, 0.18) !important;
+  background: var(--navy) !important;
+}
+
+.zusasaGalleryCard img {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 520px !important;
+  object-fit: cover !important;
+  display: block !important;
+  transition: transform 0.35s ease !important;
+}
+
+.zusasaGalleryCard:hover img {
+  transform: scale(1.05) !important;
+}
+
+.zusasaGalleryCard::after {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background: linear-gradient(
+    180deg,
+    rgba(5, 24, 46, 0.08) 0%,
+    rgba(5, 24, 46, 0.28) 45%,
+    rgba(5, 24, 46, 0.92) 100%
+  ) !important;
+}
+
+.zusasaGalleryCard div {
+  position: absolute !important;
+  left: 34px !important;
+  right: 34px !important;
+  bottom: 34px !important;
+  z-index: 2 !important;
+}
+
+.zusasaGalleryCard h3 {
+  color: #ffffff !important;
+  font-size: 30px !important;
+  margin: 0 0 10px !important;
+}
+
+.zusasaGalleryCard p {
+  color: rgba(255, 255, 255, 0.82) !important;
+  font-size: 16px !important;
+  line-height: 1.65 !important;
+  margin: 0 !important;
+}
+
+@media (max-width: 900px) {
+  .zusasaGalleryGrid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .zusasaGallerySection {
+    padding: 75px 24px !important;
+  }
+
+  .zusasaGalleryCard,
+  .zusasaGalleryCard img {
+    min-height: 380px !important;
+  }
+}
