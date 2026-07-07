@@ -12,7 +12,11 @@ export default function Value() {
     <section className="valuePremium">
       <div>
         <span className="sectionTag">¿Por qué elegirnos?</span>
-        <h2>No solo transportamos contenedores. Transportamos confianza.</h2>
+
+        <h2>
+          No solo transportamos contenedores. Transportamos confianza.
+        </h2>
+
         <p>
           Cada operación representa un compromiso. Por eso trabajamos con
           comunicación clara, respuesta inmediata y seguimiento puntual.
