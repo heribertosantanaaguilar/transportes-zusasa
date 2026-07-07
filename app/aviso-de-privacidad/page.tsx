@@ -85,7 +85,7 @@ export default function AvisoDePrivacidad() {
             Usted tiene derecho a acceder, rectificar, cancelar u oponerse al
             tratamiento de sus datos personales, conocidos como derechos ARCO.
             Estos derechos permiten conocer qué datos se tienen, solicitar su
-            corrección, pedir su eliminación u oponerse a ciertos usos. :contentReference[oaicite:1]{index=1}
+            corrección, pedir su eliminación u oponerse a ciertos usos.
           </p>
           <p>
             Para ejercerlos, puede enviar una solicitud al correo:
