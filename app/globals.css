@@ -3086,3 +3086,202 @@ footer p {
     grid-template-columns: 1fr !important;
   }
 }
+/* =========================================================
+   COTIZACIÓN / ATENCIÓN INMEDIATA
+   ========================================================= */
+
+.zusasaQuoteSection {
+  display: grid !important;
+  grid-template-columns: 1.05fr 0.95fr !important;
+  gap: 70px !important;
+  align-items: center !important;
+  padding: 110px 7% !important;
+  background:
+    radial-gradient(circle at top right, rgba(242, 101, 34, 0.18), transparent 34%),
+    linear-gradient(135deg, #05182e 0%, #0a1d36 52%, #0f2d52 100%) !important;
+  color: white !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.zusasaQuoteSection::before {
+  content: "" !important;
+  position: absolute !important;
+  left: -160px !important;
+  bottom: -160px !important;
+  width: 420px !important;
+  height: 420px !important;
+  border-radius: 50% !important;
+  background: rgba(255, 255, 255, 0.04) !important;
+}
+
+.zusasaQuoteContent {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.zusasaQuoteContent > span {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+  color: var(--orange) !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.2px !important;
+  font-size: 15px !important;
+  margin-bottom: 22px !important;
+}
+
+.zusasaQuoteContent > span::before {
+  content: "" !important;
+  width: 44px !important;
+  height: 3px !important;
+  background: var(--orange) !important;
+}
+
+.zusasaQuoteContent h2 {
+  font-size: clamp(38px, 4.8vw, 68px) !important;
+  line-height: 1.02 !important;
+  color: white !important;
+  margin: 0 0 26px !important;
+  letter-spacing: -1.5px !important;
+}
+
+.zusasaQuoteContent > p {
+  max-width: 760px !important;
+  color: rgba(255, 255, 255, 0.84) !important;
+  font-size: 19px !important;
+  line-height: 1.75 !important;
+  margin: 0 !important;
+}
+
+.zusasaQuoteHighlights {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 18px !important;
+  margin-top: 42px !important;
+}
+
+.zusasaQuoteHighlights article {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  backdrop-filter: blur(14px) !important;
+  padding: 24px !important;
+  border-radius: 20px !important;
+}
+
+.zusasaQuoteHighlights strong {
+  display: block !important;
+  color: var(--orange) !important;
+  font-size: 18px !important;
+  margin-bottom: 8px !important;
+}
+
+.zusasaQuoteHighlights p {
+  color: rgba(255, 255, 255, 0.78) !important;
+  line-height: 1.6 !important;
+  margin: 0 !important;
+  font-size: 14px !important;
+}
+
+.zusasaQuoteBox {
+  position: relative !important;
+  z-index: 2 !important;
+  background: white !important;
+  color: var(--navy) !important;
+  padding: 46px !important;
+  border-radius: 30px !important;
+  box-shadow: 0 34px 95px rgba(0, 0, 0, 0.32) !important;
+  border-top: 7px solid var(--orange) !important;
+}
+
+.zusasaQuoteBox h3 {
+  color: var(--navy) !important;
+  font-size: 34px !important;
+  line-height: 1.08 !important;
+  margin: 0 0 18px !important;
+}
+
+.zusasaQuoteBox > p {
+  color: var(--gray) !important;
+  font-size: 17px !important;
+  line-height: 1.7 !important;
+  margin: 0 0 30px !important;
+}
+
+.zusasaQuoteButtons {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 16px !important;
+}
+
+.quoteWhatsapp,
+.quoteEmail {
+  display: block !important;
+  text-align: center !important;
+  padding: 18px 26px !important;
+  border-radius: 9px !important;
+  font-weight: 900 !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+}
+
+.quoteWhatsapp {
+  background: var(--orange) !important;
+  color: white !important;
+  box-shadow: 0 20px 45px rgba(242, 101, 34, 0.3) !important;
+}
+
+.quoteEmail {
+  background: #f5f6f7 !important;
+  color: var(--navy) !important;
+  border: 2px solid rgba(10, 29, 54, 0.14) !important;
+}
+
+.quoteWhatsapp:hover,
+.quoteEmail:hover {
+  transform: translateY(-4px) !important;
+}
+
+.zusasaQuoteNote {
+  margin-top: 26px !important;
+  padding: 18px !important;
+  background: #f5f6f7 !important;
+  border-left: 5px solid var(--orange) !important;
+  border-radius: 14px !important;
+  color: var(--gray) !important;
+  line-height: 1.6 !important;
+}
+
+.zusasaQuoteNote strong {
+  color: var(--navy) !important;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1100px) {
+  .zusasaQuoteSection {
+    grid-template-columns: 1fr !important;
+  }
+
+  .zusasaQuoteHighlights {
+    grid-template-columns: 1fr 1fr 1fr !important;
+  }
+}
+
+@media (max-width: 750px) {
+  .zusasaQuoteSection {
+    padding: 78px 24px !important;
+  }
+
+  .zusasaQuoteHighlights {
+    grid-template-columns: 1fr !important;
+  }
+
+  .zusasaQuoteBox {
+    padding: 34px 24px !important;
+  }
+
+  .zusasaQuoteBox h3 {
+    font-size: 28px !important;
+  }
+}
