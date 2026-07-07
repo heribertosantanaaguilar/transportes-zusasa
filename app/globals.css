@@ -601,3 +601,160 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+.processPremium {
+  padding: 90px 7%;
+  background: #ffffff;
+}
+
+.processPremium h2,
+.coveragePremium h2 {
+  font-size: clamp(34px, 4vw, 54px);
+  color: #0a1d36;
+  line-height: 1.05;
+  max-width: 850px;
+  margin: 16px 0 42px;
+}
+
+.processTimeline {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.processCard {
+  background: #f5f6f7;
+  padding: 30px;
+  border-radius: 18px;
+  position: relative;
+  overflow: hidden;
+  border-top: 5px solid #f26522;
+}
+
+.processCard strong {
+  display: inline-grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  background: #0a1d36;
+  color: white;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.processCard h3 {
+  color: #0a1d36;
+  font-size: 24px;
+  margin: 24px 0 12px;
+}
+
+.processCard p {
+  color: #3b4a5a;
+  line-height: 1.7;
+}
+
+.coveragePremium {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 50px;
+  align-items: center;
+  padding: 90px 7%;
+  background: #061d38;
+  color: white;
+}
+
+.coveragePremium h2 {
+  color: white;
+}
+
+.coveragePremium p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: rgba(255,255,255,.85);
+}
+
+.mapCard {
+  background: white;
+  min-height: 420px;
+  border-radius: 24px;
+  padding: 40px;
+  position: relative;
+  box-shadow: 0 25px 70px rgba(0,0,0,.25);
+  overflow: hidden;
+}
+
+.mexicoMap {
+  position: absolute;
+  inset: 40px;
+  border: 3px dashed #d7dde5;
+  color: #e8edf3;
+  display: grid;
+  place-items: center;
+  font-size: 150px;
+  font-weight: 900;
+  letter-spacing: -8px;
+}
+
+.mapPoint {
+  position: absolute;
+  left: 28%;
+  bottom: 28%;
+  color: #0a1d36;
+  font-weight: 900;
+  background: white;
+  padding: 12px 16px;
+  border-radius: 999px;
+  box-shadow: 0 12px 30px rgba(0,0,0,.18);
+}
+
+.mapPoint span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #f26522;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.statsPremium {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: #f5f6f7;
+  padding: 55px 7%;
+  gap: 18px;
+}
+
+.statsPremium div {
+  background: white;
+  border-radius: 18px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0,0,0,.08);
+}
+
+.statsPremium strong {
+  display: block;
+  font-size: 48px;
+  color: #f26522;
+  margin-bottom: 10px;
+}
+
+.statsPremium span {
+  color: #0a1d36;
+  font-weight: 800;
+}
+
+@media (max-width: 900px) {
+  .processTimeline,
+  .coveragePremium,
+  .statsPremium {
+    grid-template-columns: 1fr;
+  }
+
+  .mapCard {
+    min-height: 320px;
+  }
+
+  .mexicoMap {
+    font-size: 100px;
+  }
+}
