@@ -1,17 +1,29 @@
 export default function Stats() {
   const stats = [
-    ["100%", "Compromiso con cada operación"],
-    ["24/7", "Disponibilidad operativa"],
-    ["GPS", "Seguimiento en tiempo real"],
-    ["1", "Puerto clave: Manzanillo"],
+    {
+      number: "100%",
+      text: "Compromiso con cada operación",
+    },
+    {
+      number: "24/7",
+      text: "Disponibilidad operativa",
+    },
+    {
+      number: "GPS",
+      text: "Seguimiento en tiempo real",
+    },
+    {
+      number: "1",
+      text: "Puerto clave: Manzanillo",
+    },
   ];
 
   return (
     <section className="statsPremium">
-      {stats.map(([number, text]) => (
-        <div key={number}>
-          <strong>{number}</strong>
-          <span>{text}</span>
+      {stats.map((stat) => (
+        <div key={stat.number}>
+          <strong>{stat.number}</strong>
+          <span>{stat.text}</span>
         </div>
       ))}
     </section>
