@@ -1046,7 +1046,330 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+.topNavbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 112px;
+  padding: 0 4%;
+  display: grid;
+  grid-template-columns: 280px 1fr 210px;
+  align-items: center;
+  z-index: 100;
+  background: rgba(5, 24, 46, 0.86);
+  backdrop-filter: blur(18px);
+}
 
+.zusasaLogo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: white;
+}
+
+.logoIcon {
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #f26522 0%, #f26522 45%, #ffffff 46%, #ffffff 54%, #0a1d36 55%);
+  color: white;
+  font-size: 42px;
+  font-weight: 900;
+  border-radius: 4px;
+  transform: skewX(-10deg);
+}
+
+.logoText small {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 3px;
+  color: white;
+  line-height: 1;
+}
+
+.logoText strong {
+  display: block;
+  font-size: 38px;
+  line-height: 1;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.topNavlinks {
+  display: flex;
+  justify-content: center;
+  gap: 46px;
+}
+
+.topNavlinks a {
+  color: white;
+  font-weight: 700;
+  font-size: 17px;
+  position: relative;
+}
+
+.topNavlinks a:first-child {
+  color: #f26522;
+}
+
+.topNavlinks a:first-child::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -18px;
+  width: 46px;
+  height: 3px;
+  background: #f26522;
+}
+
+.quoteButton {
+  justify-self: end;
+  background: #f26522;
+  color: white;
+  padding: 18px 28px;
+  border-radius: 6px;
+  font-weight: 800;
+  box-shadow: 0 18px 36px rgba(242, 101, 34, 0.28);
+}
+
+.heroShowcase {
+  position: relative;
+  min-height: 860px;
+  padding: 190px 4% 0;
+  color: white;
+  background:
+    linear-gradient(90deg, rgba(5, 24, 46, 0.96) 0%, rgba(5, 24, 46, 0.84) 34%, rgba(5, 24, 46, 0.38) 72%),
+    url("https://images.unsplash.com/photo-1494412685616-a5d310fbb07d?auto=format&fit=crop&w=2400&q=90");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.heroShowcaseContent {
+  max-width: 880px;
+  position: relative;
+  z-index: 2;
+}
+
+.heroLine {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  color: #f26522;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.heroLine::before {
+  content: "";
+  width: 42px;
+  height: 3px;
+  background: #f26522;
+}
+
+.heroShowcase h1 {
+  font-size: clamp(54px, 7vw, 96px);
+  line-height: 0.98;
+  margin: 0 0 26px;
+  color: white;
+  letter-spacing: -2px;
+  text-shadow: 0 16px 44px rgba(0, 0, 0, 0.35);
+}
+
+.heroShowcase h1 span {
+  color: #f26522;
+}
+
+.heroShowcase p {
+  max-width: 760px;
+  font-size: 22px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 36px;
+}
+
+.heroShowcaseActions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.mainCta,
+.ghostCta {
+  padding: 20px 30px;
+  border-radius: 7px;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.mainCta {
+  background: #f26522;
+  color: white;
+  box-shadow: 0 18px 40px rgba(242, 101, 34, 0.32);
+}
+
+.ghostCta {
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.78);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+}
+
+.heroShowcaseBar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: rgba(5, 24, 46, 0.95);
+  padding: 28px 4%;
+  gap: 30px;
+}
+
+.heroShowcaseBar article {
+  border-right: 1px solid rgba(255, 255, 255, 0.16);
+  padding-right: 26px;
+}
+
+.heroShowcaseBar article:last-child {
+  border-right: none;
+}
+
+.heroShowcaseBar strong {
+  display: block;
+  font-size: 19px;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.heroShowcaseBar p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.whatWeDoShowcase {
+  display: grid;
+  grid-template-columns: 0.9fr 1.7fr;
+  gap: 46px;
+  padding: 72px 4% 88px;
+  background: white;
+  align-items: center;
+}
+
+.whatWeDoText span {
+  display: block;
+  color: #f26522;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.whatWeDoText h2 {
+  font-size: clamp(30px, 3.6vw, 44px);
+  line-height: 1.12;
+  color: #0a1d36;
+  margin: 0;
+  max-width: 520px;
+}
+
+.whatWeDoCards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.whatWeDoCards article {
+  background: white;
+  border-radius: 18px;
+  padding: 34px 26px;
+  box-shadow: 0 22px 70px rgba(10, 29, 54, 0.1);
+  border: 1px solid rgba(10, 29, 54, 0.06);
+}
+
+.whatWeDoCards article div {
+  font-size: 42px;
+  color: #0a1d36;
+  margin-bottom: 24px;
+  font-weight: 900;
+}
+
+.whatWeDoCards h3 {
+  color: #0a1d36;
+  font-size: 21px;
+  line-height: 1.15;
+  margin: 0 0 14px;
+}
+
+.whatWeDoCards p {
+  color: #3b4a5a;
+  font-size: 15px;
+  line-height: 1.65;
+  margin: 0;
+}
+
+@media (max-width: 1100px) {
+  .topNavbar {
+    grid-template-columns: 1fr;
+    height: auto;
+    gap: 18px;
+    padding: 20px;
+    position: relative;
+  }
+
+  .topNavlinks {
+    flex-wrap: wrap;
+    gap: 22px;
+  }
+
+  .quoteButton {
+    justify-self: center;
+  }
+
+  .heroShowcase {
+    padding-top: 90px;
+    min-height: 780px;
+  }
+
+  .heroShowcaseBar,
+  .whatWeDoCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .whatWeDoShowcase {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .heroShowcase h1 {
+    font-size: 46px;
+  }
+
+  .heroShowcase p {
+    font-size: 18px;
+  }
+
+  .heroShowcaseBar,
+  .whatWeDoCards {
+    grid-template-columns: 1fr;
+  }
+
+  .heroShowcaseBar {
+    position: relative;
+    margin-left: -4%;
+    margin-right: -4%;
+    margin-top: 70px;
+  }
+}
 @media (max-width: 650px) {
   .whatWeDoGrid {
     grid-template-columns: 1fr;
