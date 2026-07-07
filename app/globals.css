@@ -2374,3 +2374,346 @@ footer p {
     padding: 34px 24px !important;
   }
 }
+/* =========================================================
+   COBERTURA Y CONTACTO - ESTILO FINAL PREMIUM
+   ========================================================= */
+
+/* COBERTURA */
+
+.zusasaCoverageFinal {
+  display: grid !important;
+  grid-template-columns: 0.95fr 1.05fr !important;
+  gap: 70px !important;
+  align-items: center !important;
+  padding: 110px 7% !important;
+  background:
+    radial-gradient(circle at top right, rgba(242, 101, 34, 0.16), transparent 34%),
+    linear-gradient(135deg, #05182e 0%, #0a1d36 48%, #0f2d52 100%) !important;
+  color: white !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.zusasaCoverageContent {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.zusasaCoverageContent span {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+  color: var(--orange) !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.2px !important;
+  font-size: 15px !important;
+  margin-bottom: 20px !important;
+}
+
+.zusasaCoverageContent span::before {
+  content: "" !important;
+  width: 44px !important;
+  height: 3px !important;
+  background: var(--orange) !important;
+}
+
+.zusasaCoverageContent h2 {
+  font-size: clamp(38px, 4.6vw, 64px) !important;
+  line-height: 1.03 !important;
+  color: white !important;
+  margin: 0 0 26px !important;
+  letter-spacing: -1.5px !important;
+}
+
+.zusasaCoverageContent > p {
+  color: rgba(255, 255, 255, 0.82) !important;
+  font-size: 18px !important;
+  line-height: 1.78 !important;
+  margin: 0 0 18px !important;
+}
+
+.zusasaCoverageCards {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 20px !important;
+  margin-top: 38px !important;
+}
+
+.zusasaCoverageCards article {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  backdrop-filter: blur(14px) !important;
+  padding: 26px !important;
+  border-radius: 22px !important;
+}
+
+.zusasaCoverageCards strong {
+  display: block !important;
+  color: var(--orange) !important;
+  font-size: 22px !important;
+  margin-bottom: 10px !important;
+}
+
+.zusasaCoverageCards p {
+  color: rgba(255, 255, 255, 0.78) !important;
+  line-height: 1.65 !important;
+  margin: 0 !important;
+}
+
+.zusasaCoverageVisual {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.zusasaCoverageMap {
+  position: relative !important;
+  min-height: 470px !important;
+  background:
+    linear-gradient(135deg, #ffffff, #eef2f7) !important;
+  border-radius: 32px !important;
+  overflow: hidden !important;
+  box-shadow: 0 36px 100px rgba(0, 0, 0, 0.34) !important;
+}
+
+.zusasaCoverageMap::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 38px !important;
+  border: 3px dashed #d5dce5 !important;
+  border-radius: 24px !important;
+}
+
+.mapLetters {
+  position: absolute !important;
+  inset: 0 !important;
+  display: grid !important;
+  place-items: center !important;
+  color: #dfe6ee !important;
+  font-size: 155px !important;
+  font-weight: 900 !important;
+  letter-spacing: -8px !important;
+}
+
+.coveragePoint {
+  position: absolute !important;
+  left: 24% !important;
+  bottom: 28% !important;
+  background: white !important;
+  color: var(--navy) !important;
+  padding: 15px 22px !important;
+  border-radius: 999px !important;
+  font-weight: 900 !important;
+  box-shadow: 0 20px 45px rgba(10, 29, 54, 0.24) !important;
+}
+
+.coveragePoint span {
+  display: inline-block !important;
+  width: 14px !important;
+  height: 14px !important;
+  background: var(--orange) !important;
+  border-radius: 50% !important;
+  margin-right: 10px !important;
+  box-shadow: 0 0 0 6px rgba(242, 101, 34, 0.18) !important;
+}
+
+.coverageBadge {
+  position: absolute !important;
+  right: -24px !important;
+  bottom: 34px !important;
+  max-width: 330px !important;
+  background: var(--orange) !important;
+  color: white !important;
+  padding: 28px !important;
+  border-radius: 24px !important;
+  box-shadow: 0 28px 75px rgba(242, 101, 34, 0.36) !important;
+}
+
+.coverageBadge strong {
+  display: block !important;
+  color: white !important;
+  font-size: 28px !important;
+  margin-bottom: 10px !important;
+}
+
+.coverageBadge p {
+  color: white !important;
+  line-height: 1.5 !important;
+  margin: 0 !important;
+}
+
+/* CONTACTO */
+
+.zusasaContactFinal {
+  display: grid !important;
+  grid-template-columns: 0.9fr 1.1fr !important;
+  gap: 70px !important;
+  align-items: center !important;
+  padding: 110px 7% !important;
+  background:
+    radial-gradient(circle at top left, rgba(242, 101, 34, 0.1), transparent 30%),
+    #f5f6f7 !important;
+}
+
+.zusasaContactContent span {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+  color: var(--orange) !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.2px !important;
+  font-size: 15px !important;
+  margin-bottom: 20px !important;
+}
+
+.zusasaContactContent span::before {
+  content: "" !important;
+  width: 44px !important;
+  height: 3px !important;
+  background: var(--orange) !important;
+}
+
+.zusasaContactContent h2 {
+  font-size: clamp(38px, 4.6vw, 64px) !important;
+  line-height: 1.03 !important;
+  color: var(--navy) !important;
+  margin: 0 0 26px !important;
+  letter-spacing: -1.5px !important;
+}
+
+.zusasaContactContent p {
+  max-width: 680px !important;
+  color: var(--gray) !important;
+  font-size: 18px !important;
+  line-height: 1.78 !important;
+  margin: 0 !important;
+}
+
+.zusasaContactActions {
+  display: flex !important;
+  gap: 18px !important;
+  flex-wrap: wrap !important;
+  margin-top: 36px !important;
+}
+
+.contactWhatsapp,
+.contactEmail {
+  display: inline-block !important;
+  padding: 18px 28px !important;
+  border-radius: 8px !important;
+  font-weight: 900 !important;
+}
+
+.contactWhatsapp {
+  background: var(--orange) !important;
+  color: white !important;
+  box-shadow: 0 20px 45px rgba(242, 101, 34, 0.3) !important;
+}
+
+.contactEmail {
+  background: white !important;
+  color: var(--navy) !important;
+  border: 2px solid var(--navy) !important;
+}
+
+.zusasaContactPanel {
+  background: white !important;
+  padding: 44px !important;
+  border-radius: 30px !important;
+  box-shadow: 0 32px 90px rgba(10, 29, 54, 0.14) !important;
+  border-top: 7px solid var(--orange) !important;
+}
+
+.zusasaContactPanel h3 {
+  color: var(--navy) !important;
+  font-size: 30px !important;
+  margin: 0 0 28px !important;
+}
+
+.contactPerson {
+  padding: 22px 0 !important;
+  border-bottom: 1px solid rgba(10, 29, 54, 0.1) !important;
+}
+
+.contactPerson strong {
+  display: block !important;
+  color: var(--navy) !important;
+  font-size: 18px !important;
+  margin-bottom: 6px !important;
+}
+
+.contactPerson span {
+  display: block !important;
+  color: var(--gray) !important;
+  margin-bottom: 8px !important;
+}
+
+.contactPerson a {
+  color: var(--orange) !important;
+  font-weight: 900 !important;
+}
+
+.contactInfoBox {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 18px !important;
+  margin-top: 28px !important;
+}
+
+.contactInfoBox p {
+  background: #f5f6f7 !important;
+  padding: 22px !important;
+  border-radius: 18px !important;
+  color: var(--gray) !important;
+  line-height: 1.6 !important;
+  margin: 0 !important;
+}
+
+.contactInfoBox strong {
+  color: var(--navy) !important;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+  .zusasaCoverageFinal,
+  .zusasaContactFinal {
+    grid-template-columns: 1fr !important;
+  }
+
+  .coverageBadge {
+    right: 24px !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .zusasaCoverageFinal,
+  .zusasaContactFinal {
+    padding: 75px 24px !important;
+  }
+
+  .zusasaCoverageCards,
+  .contactInfoBox {
+    grid-template-columns: 1fr !important;
+  }
+
+  .zusasaCoverageMap {
+    min-height: 360px !important;
+  }
+
+  .mapLetters {
+    font-size: 105px !important;
+  }
+
+  .coverageBadge {
+    position: relative !important;
+    right: auto !important;
+    bottom: auto !important;
+    margin: -42px 22px 0 !important;
+  }
+
+  .zusasaContactPanel {
+    padding: 32px 24px !important;
+  }
+}
