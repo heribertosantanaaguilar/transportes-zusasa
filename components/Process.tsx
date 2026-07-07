@@ -21,6 +21,7 @@ export default function Process() {
   return (
     <section className="processPremium">
       <span className="sectionTag">Proceso operativo</span>
+
       <h2>Orden, comunicación y seguimiento en cada movimiento.</h2>
 
       <div className="processTimeline">
