@@ -24,10 +24,12 @@ export default function Process() {
 
   return (
     <section className="zusasaProcess">
-      <div className="sectionHeader">
-        <span>Proceso operativo</span>
+      <div className="zusasaProcessHeader">
+        <span className="zusasaProcessEyebrow">Proceso operativo</span>
+
         <h2>Orden, comunicación y seguimiento en cada movimiento.</h2>
-        <p>
+
+        <p className="zusasaProcessIntro">
           Nuestro proceso está diseñado para dar claridad, control y confianza
           desde la solicitud hasta la confirmación final.
         </p>
