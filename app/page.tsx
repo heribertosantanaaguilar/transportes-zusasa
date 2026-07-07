@@ -1,3 +1,4 @@
+import Gallery from "../components/Gallery";
 import Quote from "../components/Quote";
 import Company from "../components/Company";
 import WhatWeDo from "../components/WhatWeDo";
@@ -26,6 +27,7 @@ export default function Home() {
 <Value />
 <Process />
 <Coverage />
+<Gallery />
 <Stats />
 <Quote />
 <Contact />
