@@ -1,8 +1,8 @@
 export default function Contact() {
   return (
-    <section id="contacto" className="contactPremium">
-      <div>
-        <span className="sectionTag">Contacto</span>
+    <section id="contacto" className="zusasaContactFinal">
+      <div className="zusasaContactContent">
+        <span>Contacto</span>
 
         <h2>Estamos listos para atender tu operación.</h2>
 
@@ -11,49 +11,51 @@ export default function Contact() {
           local de carga contenerizada en Manzanillo, Colima.
         </p>
 
-        <div className="contactActions">
-          <a className="mainCta" href="https://wa.me/523148721897">
+        <div className="zusasaContactActions">
+          <a className="contactWhatsapp" href="https://wa.me/523148721897">
             Hablar por WhatsApp
           </a>
 
-          <a className="darkOutlineCta" href="mailto:transportes.zusasa@gmail.com">
+          <a className="contactEmail" href="mailto:transportes.zusasa@gmail.com">
             Enviar correo
           </a>
         </div>
       </div>
 
-      <div className="contactCard">
+      <div className="zusasaContactPanel">
         <h3>Datos de contacto</h3>
 
-        <p>
+        <div className="contactPerson">
           <strong>José Alberto Zúñiga Ramos</strong>
-          <br />
-          Gerente General · 222 455 6651
-        </p>
+          <span>Gerente General</span>
+          <a href="tel:2224556651">222 455 6651</a>
+        </div>
 
-        <p>
+        <div className="contactPerson">
           <strong>Sergio Sanmiguel Celis</strong>
-          <br />
-          Dirección de Administración y Finanzas · 314 106 9165
-        </p>
+          <span>Dirección de Administración y Finanzas</span>
+          <a href="tel:3141069165">314 106 9165</a>
+        </div>
 
-        <p>
+        <div className="contactPerson">
           <strong>Heriberto Santana Aguilar</strong>
-          <br />
-          Coordinación de Logística · 314 872 1897
-        </p>
+          <span>Coordinación de Logística</span>
+          <a href="tel:3148721897">314 872 1897</a>
+        </div>
 
-        <p>
-          <strong>Correo:</strong>
-          <br />
-          transportes.zusasa@gmail.com
-        </p>
+        <div className="contactInfoBox">
+          <p>
+            <strong>Correo</strong>
+            <br />
+            transportes.zusasa@gmail.com
+          </p>
 
-        <p>
-          <strong>Ubicación:</strong>
-          <br />
-          Manzanillo, Colima, México
-        </p>
+          <p>
+            <strong>Ubicación</strong>
+            <br />
+            Manzanillo, Colima, México
+          </p>
+        </div>
       </div>
     </section>
   );
