@@ -6,25 +6,26 @@ export default function Services() {
     },
     {
       title: "Resguardo y almacenamiento",
-      text: "Recepción y resguardo de contenedores llenos y vacíos en patio con circuito cerrado y seguridad 24/7.",
+      text: "Recepción y resguardo de contenedores llenos y vacíos en patio con seguridad y control operativo.",
     },
     {
       title: "Seguimiento operativo",
-      text: "Monitoreo de cada movimiento mediante GPS en tiempo real y coordinación logística para optimizar tiempos de tránsito.",
+      text: "Monitoreo de cada movimiento mediante GPS en tiempo real y coordinación logística eficiente.",
     },
   ];
 
   return (
-    <section id="servicios" className="section services">
-      <span className="label">Nuestros servicios</span>
-      <h2>Soluciones logísticas locales</h2>
+    <section id="servicios" className="servicesPremium">
+      <span className="sectionTag">Nuestros servicios</span>
+      <h2>Soluciones logísticas para operación local en Manzanillo</h2>
 
-      <div className="cards">
-        {services.map((service) => (
-          <div className="card" key={service.title}>
+      <div className="serviceGrid">
+        {services.map((service, index) => (
+          <article className="serviceCard" key={service.title}>
+            <span className="serviceNumber">0{index + 1}</span>
             <h3>{service.title}</h3>
             <p>{service.text}</p>
-          </div>
+          </article>
         ))}
       </div>
     </section>
