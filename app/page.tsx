@@ -1,3 +1,4 @@
+import Company from "../components/Company";
 import WhatWeDo from "../components/WhatWeDo";
 import Coverage from "../components/Coverage";
 import Sectors from "../components/Sectors";
@@ -18,7 +19,7 @@ export default function Home() {
 <Navbar />
 <Hero />
 <WhatWeDo />
-<About />
+<Company />
 <Services />
 <Sectors />
 <Value />
