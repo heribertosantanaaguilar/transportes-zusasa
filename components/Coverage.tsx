@@ -30,10 +30,31 @@ export default function Coverage() {
       </div>
 
       <div className="zusasaCoverageVisual">
-        <div className="zusasaCoverageMap">
-          <span className="mapLetters">MX</span>
+        <div className="manzanilloMap">
+          <div className="mapOcean"></div>
 
-          <div className="coveragePoint">
+          <div className="mapLand">
+            <span className="mapRoute routeOne"></span>
+            <span className="mapRoute routeTwo"></span>
+            <span className="mapRoute routeThree"></span>
+
+            <div className="portZone">
+              <strong>Puerto</strong>
+              <span>Zona portuaria</span>
+            </div>
+
+            <div className="cityZone">
+              <strong>Manzanillo</strong>
+              <span>Colima</span>
+            </div>
+
+            <div className="logisticsZone">
+              <strong>Zona logística</strong>
+              <span>Operación local</span>
+            </div>
+          </div>
+
+          <div className="mapPin">
             <span></span>
             Manzanillo, Colima
           </div>
