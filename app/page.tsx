@@ -1,3 +1,4 @@
+import Coverage from "../components/Coverage";
 import Sectors from "../components/Sectors";
 import WhatsAppButton from "../components/WhatsAppButton";
 import Navbar from "../components/Navbar";
@@ -21,9 +22,10 @@ export default function Home() {
 <Sectors />
 <Value />
       <Value />
-      <Process />
-      <Stats />
-      <Contact />
+<Process />
+<Coverage />
+<Stats />
+<Contact />
       <Footer />
    <WhatsAppButton />
     </>
