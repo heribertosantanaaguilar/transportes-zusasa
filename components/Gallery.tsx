@@ -2,7 +2,7 @@ export default function Gallery() {
   const photos = [
     {
       title: "Operación portuaria",
-      text: "Movimiento de contenedores, buques y grúas en entorno portuario.",
+      text: "Movimiento de contenedores y orientación  logística.",
       image:
         "https://images.unsplash.com/photo-1494412685616-a5d310fbb07d?auto=format&fit=crop&w=1600&q=85",
     },
