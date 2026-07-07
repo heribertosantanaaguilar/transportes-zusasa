@@ -2,7 +2,12 @@ export default function Navbar() {
   return (
     <header className="topNavbar">
       <a href="#inicio" className="zusasaLogo">
-        <span className="logoIcon">Z</span>
+        <img
+          className="navbarLogoImage"
+          src="/images/logo-zusasa.png"
+          alt="Transportes ZUSASA"
+        />
+
         <span className="logoText">
           <small>TRANSPORTES</small>
           <strong>ZUSASA</strong>
