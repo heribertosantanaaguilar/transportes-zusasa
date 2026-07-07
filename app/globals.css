@@ -2148,4 +2148,51 @@ footer p {
     margin: -42px 22px 0 !important;
   }
 }
+/* =========================================================
+   AJUSTE PREMIUM - ENCABEZADO PROCESO OPERATIVO
+   ========================================================= */
 
+.zusasaProcessHeader {
+  max-width: 920px !important;
+  margin-bottom: 56px !important;
+  position: relative !important;
+}
+
+.zusasaProcessEyebrow {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+  color: var(--orange) !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.2px !important;
+  font-size: 15px !important;
+  margin-bottom: 20px !important;
+}
+
+.zusasaProcessEyebrow::before {
+  content: "" !important;
+  width: 44px !important;
+  height: 3px !important;
+  background: var(--orange) !important;
+  display: inline-block !important;
+}
+
+.zusasaProcessHeader h2 {
+  font-size: clamp(36px, 4.5vw, 62px) !important;
+  line-height: 1.04 !important;
+  color: var(--navy) !important;
+  margin: 0 0 24px !important;
+  letter-spacing: -1.4px !important;
+  max-width: 860px !important;
+}
+
+.zusasaProcessIntro {
+  max-width: 760px !important;
+  font-size: 19px !important;
+  line-height: 1.75 !important;
+  color: var(--gray) !important;
+  margin: 0 !important;
+  padding-left: 24px !important;
+  border-left: 5px solid var(--orange) !important;
+}
