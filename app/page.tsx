@@ -1,3 +1,4 @@
+import Quote from "../components/Quote";
 import Company from "../components/Company";
 import WhatWeDo from "../components/WhatWeDo";
 import Coverage from "../components/Coverage";
@@ -26,6 +27,7 @@ export default function Home() {
 <Process />
 <Coverage />
 <Stats />
+<Quote />
 <Contact />
       <Footer />
    <WhatsAppButton />
