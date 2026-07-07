@@ -9,23 +9,22 @@ export default function Value() {
   ];
 
   return (
-    <section className="valuePremium">
-      <div>
-        <span className="sectionTag">¿Por qué elegirnos?</span>
-
-        <h2>
-          No solo transportamos contenedores. Transportamos confianza.
-        </h2>
-
+    <section className="zusasaValue">
+      <div className="zusasaValueText">
+        <span>¿Por qué elegirnos?</span>
+        <h2>No solo transportamos contenedores. Transportamos confianza.</h2>
         <p>
           Cada operación representa un compromiso. Por eso trabajamos con
           comunicación clara, respuesta inmediata y seguimiento puntual.
         </p>
       </div>
 
-      <div className="valuePremiumGrid">
+      <div className="zusasaValueGrid">
         {values.map((value) => (
-          <div key={value}>✓ {value}</div>
+          <article key={value}>
+            <strong>✓</strong>
+            <p>{value}</p>
+          </article>
         ))}
       </div>
     </section>
