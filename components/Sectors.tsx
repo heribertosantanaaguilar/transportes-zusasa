@@ -9,8 +9,9 @@ export default function Sectors() {
   ];
 
   return (
-    <section className="sectorsPremium">
+    <section id="sectores" className="sectorsPremium">
       <span className="sectionTag">Sectores que atendemos</span>
+
       <h2>Entendemos tu operación. Hablamos tu idioma.</h2>
 
       <div className="sectorGrid">
