@@ -1,7 +1,7 @@
 export default function Coverage() {
   return (
-    <section className="zusasaCoverage">
-      <div className="zusasaCoverageText">
+    <section className="zusasaCoverageFinal">
+      <div className="zusasaCoverageContent">
         <span>Cobertura</span>
 
         <h2>Especialistas en operación local en Manzanillo.</h2>
@@ -12,29 +12,36 @@ export default function Coverage() {
         </p>
 
         <p>
-          Nuestro enfoque local nos permite responder con agilidad,
-          coordinación y conocimiento del entorno portuario.
+          Nuestro enfoque local nos permite responder con agilidad, coordinación
+          y conocimiento del entorno portuario.
         </p>
 
-        <div className="zusasaCoverageFacts">
+        <div className="zusasaCoverageCards">
           <article>
-            <strong>Local</strong>
-            <p>Operación enfocada en Manzanillo.</p>
+            <strong>Zona portuaria</strong>
+            <p>Operaciones locales vinculadas al Puerto de Manzanillo.</p>
           </article>
 
           <article>
-            <strong>Portuaria</strong>
-            <p>Experiencia en movimientos vinculados al puerto.</p>
+            <strong>Respuesta ágil</strong>
+            <p>Coordinación rápida para movimientos de carga contenerizada.</p>
           </article>
         </div>
       </div>
 
-      <div className="zusasaCoverageMap">
-        <div className="zusasaMapGraphic">MX</div>
+      <div className="zusasaCoverageVisual">
+        <div className="zusasaCoverageMap">
+          <span className="mapLetters">MX</span>
 
-        <div className="zusasaMapPoint">
-          <span></span>
-          Manzanillo, Colima
+          <div className="coveragePoint">
+            <span></span>
+            Manzanillo, Colima
+          </div>
+        </div>
+
+        <div className="coverageBadge">
+          <strong>1 puerto clave</strong>
+          <p>Manzanillo, punto estratégico para importación y exportación.</p>
         </div>
       </div>
     </section>
