@@ -17,11 +17,9 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
-      <Services />
 <Services />
 <Sectors />
 <Value />
-      <Value />
 <Process />
 <Coverage />
 <Stats />
