@@ -1,8 +1,8 @@
 export default function Coverage() {
   return (
-    <section className="coveragePremium">
-      <div>
-        <span className="sectionTag">Cobertura</span>
+    <section className="zusasaCoverage">
+      <div className="zusasaCoverageText">
+        <span>Cobertura</span>
 
         <h2>Especialistas en operación local en Manzanillo.</h2>
 
@@ -12,15 +12,27 @@ export default function Coverage() {
         </p>
 
         <p>
-          Nuestro enfoque local nos permite responder con agilidad, coordinación
-          y conocimiento del entorno portuario.
+          Nuestro enfoque local nos permite responder con agilidad,
+          coordinación y conocimiento del entorno portuario.
         </p>
+
+        <div className="zusasaCoverageFacts">
+          <article>
+            <strong>Local</strong>
+            <p>Operación enfocada en Manzanillo.</p>
+          </article>
+
+          <article>
+            <strong>Portuaria</strong>
+            <p>Experiencia en movimientos vinculados al puerto.</p>
+          </article>
+        </div>
       </div>
 
-      <div className="mapCard">
-        <div className="mexicoMap">MX</div>
+      <div className="zusasaCoverageMap">
+        <div className="zusasaMapGraphic">MX</div>
 
-        <div className="mapPoint">
+        <div className="zusasaMapPoint">
           <span></span>
           Manzanillo, Colima
         </div>
