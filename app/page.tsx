@@ -1,3 +1,4 @@
+import WhatWeDo from "../components/WhatWeDo";
 import Coverage from "../components/Coverage";
 import Sectors from "../components/Sectors";
 import WhatsAppButton from "../components/WhatsAppButton";
@@ -14,9 +15,10 @@ import Footer from "../components/Footer";
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <Hero />
-      <About />
+<Navbar />
+<Hero />
+<WhatWeDo />
+<About />
 <Services />
 <Sectors />
 <Value />
