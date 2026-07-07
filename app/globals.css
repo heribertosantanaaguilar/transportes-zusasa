@@ -2985,3 +2985,104 @@ footer p {
     font-size: 11px !important;
   }
 }
+/* =========================================================
+   COBERTURA CON IMAGEN TEMPORAL DEL PUERTO DE MANZANILLO
+   ========================================================= */
+
+.zusasaCoveragePhoto {
+  min-height: 720px !important;
+  background:
+    linear-gradient(90deg, rgba(5, 24, 46, 0.96) 0%, rgba(5, 24, 46, 0.82) 38%, rgba(5, 24, 46, 0.18) 100%),
+    url("https://www.eliteindustrial.mx/wp-content/uploads/2026/03/Puerto-de-Manzanillo-768x432.jpg") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 100px 7% !important;
+  color: white !important;
+}
+
+.zusasaCoverageOverlay {
+  width: 100% !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.zusasaCoveragePhotoText {
+  max-width: 720px !important;
+}
+
+.zusasaCoveragePhotoText span {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+  color: var(--orange) !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.2px !important;
+  font-size: 15px !important;
+  margin-bottom: 22px !important;
+}
+
+.zusasaCoveragePhotoText span::before {
+  content: "" !important;
+  width: 44px !important;
+  height: 3px !important;
+  background: var(--orange) !important;
+}
+
+.zusasaCoveragePhotoText h2 {
+  font-size: clamp(38px, 5vw, 68px) !important;
+  line-height: 1.02 !important;
+  color: white !important;
+  margin: 0 0 26px !important;
+  letter-spacing: -1.5px !important;
+}
+
+.zusasaCoveragePhotoText p {
+  color: rgba(255, 255, 255, 0.86) !important;
+  font-size: 19px !important;
+  line-height: 1.75 !important;
+  margin: 0 !important;
+}
+
+.zusasaCoveragePhotoCards {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 20px !important;
+  margin-top: 40px !important;
+  max-width: 760px !important;
+}
+
+.zusasaCoveragePhotoCards article {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  backdrop-filter: blur(14px) !important;
+  padding: 28px !important;
+  border-radius: 22px !important;
+}
+
+.zusasaCoveragePhotoCards strong {
+  display: block !important;
+  color: var(--orange) !important;
+  font-size: 22px !important;
+  margin-bottom: 10px !important;
+}
+
+.zusasaCoveragePhotoCards p {
+  color: rgba(255, 255, 255, 0.82) !important;
+  font-size: 16px !important;
+  line-height: 1.65 !important;
+}
+
+@media (max-width: 650px) {
+  .zusasaCoveragePhoto {
+    min-height: auto !important;
+    padding: 80px 24px !important;
+  }
+
+  .zusasaCoveragePhotoCards {
+    grid-template-columns: 1fr !important;
+  }
+}
