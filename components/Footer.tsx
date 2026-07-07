@@ -3,7 +3,12 @@ export default function Footer() {
     <footer className="footerPremium">
       <div>
         <div className="footerLogo">
-          <span className="logoIcon">Z</span>
+          <img
+            className="footerLogoImage"
+            src="/images/logo-zusasa.png"
+            alt="Transportes ZUSASA"
+          />
+
           <span>
             <small>TRANSPORTES</small>
             <strong>ZUSASA</strong>
