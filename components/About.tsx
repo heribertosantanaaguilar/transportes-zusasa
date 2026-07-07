@@ -1,35 +1,35 @@
 export default function About() {
   return (
-    <section id="nosotros" className="section about">
-      <div className="aboutText">
-        <span className="label">¿Quiénes somos?</span>
-
-        <h2>Especialistas en logística portuaria en Manzanillo</h2>
+    <section id="nosotros" className="aboutPremium">
+      <div className="aboutContent">
+        <span className="sectionTag">Nosotros</span>
+        <h2>Conectamos operaciones. Cumplimos compromisos.</h2>
 
         <p>
-          Transportes ZUSASA es una empresa mexicana especializada en el
-          autotransporte local de carga para operaciones de importación y
-          exportación dentro del Puerto de Manzanillo.
+          Transportes ZUSASA es una empresa mexicana ubicada en Manzanillo,
+          Colima, especializada en el autotransporte local de carga para
+          operaciones de importación y exportación.
         </p>
 
         <p>
           Brindamos soluciones logísticas seguras, eficientes y oportunas para
-          el traslado de carga contenerizada, contribuyendo al fortalecimiento
-          de la cadena de suministro de nuestros clientes.
+          el traslado de carga contenerizada desde y hacia el Puerto de
+          Manzanillo.
         </p>
 
-        <ul>
-          <li>✔ Transporte local de contenedores</li>
-          <li>✔ Operaciones portuarias</li>
-          <li>✔ Zona logística de Manzanillo</li>
-          <li>✔ Atención personalizada</li>
-        </ul>
+        <div className="aboutList">
+          <span>✓ Operaciones portuarias</span>
+          <span>✓ Transporte local de contenedores</span>
+          <span>✓ Atención personalizada</span>
+          <span>✓ Respuesta inmediata</span>
+        </div>
       </div>
 
-      <div className="aboutImage">
-        <div className="placeholder">
-          Fotografía del Puerto de Manzanillo
-        </div>
+      <div className="aboutPhoto">
+        <img
+          src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1200&q=80"
+          alt="Transporte de carga con contenedores"
+        />
       </div>
     </section>
   );
