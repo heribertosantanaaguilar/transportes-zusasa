@@ -3285,3 +3285,36 @@ footer p {
     font-size: 28px !important;
   }
 }
+/* =========================================================
+   CORRECCIÓN DE ENCIMAMIENTO EN HERO
+   ========================================================= */
+
+.heroShowcase {
+  padding-bottom: 190px !important;
+}
+
+.heroShowcaseContent {
+  position: relative !important;
+  z-index: 5 !important;
+}
+
+.heroShowcaseActions {
+  position: relative !important;
+  z-index: 6 !important;
+  margin-bottom: 40px !important;
+}
+
+.heroShowcaseBar {
+  z-index: 3 !important;
+}
+
+@media (max-width: 650px) {
+  .heroShowcase {
+    padding-bottom: 0 !important;
+  }
+
+  .heroShowcaseBar {
+    position: relative !important;
+    margin-top: 60px !important;
+  }
+}
