@@ -27,11 +27,14 @@ export default function Footer() {
       </div>
 
       <div>
-        <h3>Contacto</h3>
-        <p>222 455 6651</p>
-        <p>314 106 9165</p>
-        <p>314 872 1897</p>
-        <p>transportes.zusasa@gmail.com</p>
+        <h3>Áreas de contacto</h3>
+        <a href="#gerencia-general">Gerencia General</a>
+        <a href="#administracion-finanzas">
+          Dirección de Administración y Finanzas
+        </a>
+        <a href="#coordinacion-logistica">Coordinación de Logística</a>
+
+        <p className="footerEmail">transportes.zusasa@gmail.com</p>
         <p>Manzanillo, Colima, México</p>
       </div>
     </footer>
