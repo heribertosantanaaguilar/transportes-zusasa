@@ -23,6 +23,7 @@ export default function Footer() {
         <a href="#servicios">Servicios</a>
         <a href="#sectores">Sectores</a>
         <a href="#contacto">Contacto</a>
+        <a href="/aviso-de-privacidad">Aviso de privacidad</a>
       </div>
 
       <div>
