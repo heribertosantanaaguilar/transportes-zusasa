@@ -1,14 +1,10 @@
 export default function Hero() {
   return (
-    <section id="inicio" className="heroPremium">
-      <div className="heroOverlay" />
-
+    <section id="inicio" className="heroPremium heroV2">
       <div className="heroInner">
-        <span className="heroBadge">Puerto de Manzanillo, Colima</span>
+        <span className="heroBadge">Puerto de Manzanillo · Transporte local de carga</span>
 
-        <h1>
-          El aliado logístico que mantiene en movimiento su operación.
-        </h1>
+        <h1>Transportamos la confianza que mueve tu negocio.</h1>
 
         <p>
           Soluciones especializadas en autotransporte local de carga para
@@ -20,18 +16,17 @@ export default function Hero() {
           <a className="primary" href="mailto:transportes.zusasa@gmail.com">
             Solicitar cotización
           </a>
-
-          <a className="secondary" href="https://wa.me/523148721897">
-            Hablar por WhatsApp
+          <a className="secondary" href="#servicios">
+            Conocer servicios
           </a>
         </div>
       </div>
 
       <div className="heroHighlights">
         <div>Respuesta inmediata</div>
-        <div>Atención personalizada</div>
-        <div>Operación confiable</div>
-        <div>Puerto de Manzanillo</div>
+        <div>Operación 24/7</div>
+        <div>Seguimiento operativo</div>
+        <div>Especialistas en Manzanillo</div>
       </div>
     </section>
   );
