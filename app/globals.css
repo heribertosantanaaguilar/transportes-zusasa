@@ -3763,3 +3763,50 @@ footer p {
     height: 56px !important;
   }
 }
+/* =========================================================
+   MEJORA DE VISIBILIDAD DEL LOGO EN NAVBAR Y FOOTER
+   ========================================================= */
+
+.zusasaLogo {
+  display: flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+}
+
+.navbarLogoImage {
+  width: 72px !important;
+  height: 72px !important;
+  object-fit: contain !important;
+  display: block !important;
+  background: #ffffff !important;
+  padding: 8px !important;
+  border-radius: 18px !important;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28) !important;
+}
+
+.footerLogo {
+  display: flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+}
+
+.footerLogoImage {
+  width: 72px !important;
+  height: 72px !important;
+  object-fit: contain !important;
+  display: block !important;
+  background: #ffffff !important;
+  padding: 8px !important;
+  border-radius: 18px !important;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.26) !important;
+}
+
+@media (max-width: 650px) {
+  .navbarLogoImage,
+  .footerLogoImage {
+    width: 62px !important;
+    height: 62px !important;
+    padding: 7px !important;
+    border-radius: 16px !important;
+  }
+}
