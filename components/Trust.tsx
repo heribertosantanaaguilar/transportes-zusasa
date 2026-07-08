@@ -2,23 +2,23 @@ export default function Trust() {
   const items = [
     {
       number: "01",
-      title: "Atención directa",
-      text: "Comunicación cercana con el equipo responsable de coordinar tu operación.",
+      title: "Seriedad en cada servicio",
+      text: "Asumimos cada movimiento con responsabilidad, cuidando los tiempos, la coordinación y los compromisos acordados con el cliente.",
     },
     {
       number: "02",
       title: "Comunicación honesta",
-      text: "Información clara sobre tiempos, disponibilidad y seguimiento del servicio.",
+      text: "Compartimos información clara y realista sobre disponibilidad, tiempos de atención, avances y cualquier situación operativa relevante.",
     },
     {
       number: "03",
-      title: "Seguimiento puntual",
-      text: "Acompañamiento operativo durante cada etapa del movimiento de carga.",
+      title: "Seguimiento operativo",
+      text: "Acompañamos cada etapa del movimiento para mantener al cliente informado desde la solicitud hasta la confirmación final.",
     },
     {
       number: "04",
-      title: "Disponibilidad operativa",
-      text: "Respuesta rápida para atender movimientos locales en Manzanillo.",
+      title: "Atención directa",
+      text: "Brindamos trato cercano y respuesta ágil para resolver dudas, coordinar servicios y dar continuidad a cada operación.",
     },
   ];
 
@@ -27,12 +27,12 @@ export default function Trust() {
       <div className="zusasaTrustHeader">
         <span>Confianza operativa</span>
 
-        <h2>Seriedad, claridad y seguimiento en cada movimiento.</h2>
+        <h2>Información clara, trato directo y compromiso real.</h2>
 
         <p>
-          En Transportes ZUSASA entendemos que cada operación requiere
-          comunicación precisa, respuesta oportuna y compromiso real. Por eso
-          trabajamos con atención directa y procesos enfocados en cumplir.
+          En Transportes ZUSASA sabemos que una operación logística necesita
+          certeza. Por eso trabajamos con comunicación honesta, seguimiento
+          puntual y seriedad en cada movimiento de carga contenerizada.
         </p>
       </div>
 
