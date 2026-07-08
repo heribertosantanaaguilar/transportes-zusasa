@@ -3810,3 +3810,34 @@ footer p {
     border-radius: 16px !important;
   }
 }
+/* =========================================================
+   LOGO MÁS GRANDE DENTRO DE LA PLACA BLANCA
+   ========================================================= */
+
+.navbarLogoImage {
+  width: 96px !important;
+  height: 96px !important;
+  padding: 4px !important;
+  border-radius: 20px !important;
+}
+
+.footerLogoImage {
+  width: 96px !important;
+  height: 96px !important;
+  padding: 4px !important;
+  border-radius: 20px !important;
+}
+
+.topNavbar {
+  grid-template-columns: 360px 1fr 210px !important;
+}
+
+@media (max-width: 650px) {
+  .navbarLogoImage,
+  .footerLogoImage {
+    width: 78px !important;
+    height: 78px !important;
+    padding: 4px !important;
+    border-radius: 18px !important;
+  }
+}
