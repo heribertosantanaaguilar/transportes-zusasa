@@ -2,18 +2,18 @@ export default function Services() {
   const services = [
     {
       number: "01",
-      title: "Movimiento de contenedores",
-      text: "Traslado de contenedores de importación y exportación, incluyendo movimientos entre terminales portuarias.",
+      title: "Movimiento local de contenedores",
+      text: "Coordinamos traslados de carga contenerizada dentro de la zona portuaria y logística de Manzanillo, atendiendo operaciones de importación, exportación y movimientos locales.",
     },
     {
       number: "02",
-      title: "Resguardo y almacenamiento",
-      text: "Recepción y resguardo de contenedores llenos y vacíos en patio con seguridad y control operativo.",
+      title: "Resguardo y apoyo operativo",
+      text: "Apoyamos en la coordinación de resguardo, almacenamiento y manejo operativo de contenedores llenos o vacíos, de acuerdo con las necesidades de cada cliente.",
     },
     {
       number: "03",
-      title: "Seguimiento operativo",
-      text: "Monitoreo de cada movimiento mediante GPS en tiempo real y coordinación logística eficiente.",
+      title: "Seguimiento y comunicación constante",
+      text: "Mantenemos comunicación directa durante cada etapa del servicio para brindar claridad sobre tiempos, avances y confirmación del movimiento.",
     },
   ];
 
@@ -21,10 +21,13 @@ export default function Services() {
     <section id="servicios" className="zusasaServices">
       <div className="sectionHeader">
         <span>Servicios</span>
-        <h2>Soluciones logísticas locales para operaciones portuarias.</h2>
+
+        <h2>Soluciones locales para mover tu carga con confianza.</h2>
+
         <p>
-          Atendemos movimientos de carga contenerizada con enfoque en seguridad,
-          respuesta rápida y comunicación constante.
+          Atendemos operaciones de carga contenerizada con enfoque en
+          coordinación, seguridad, respuesta rápida y cumplimiento operativo en
+          Manzanillo.
         </p>
       </div>
 
