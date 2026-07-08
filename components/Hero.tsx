@@ -17,7 +17,7 @@ export default function Hero() {
         <div className="heroShowcaseActions">
           <a
             className="mainCta"
-            href="https://wa.me/523148721897?text=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20para%20un%20movimiento%20local%20de%20carga%20en%20Manzanillo."
+            href="https://wa.me/522224556651?text=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20para%20un%20movimiento%20local%20de%20carga%20en%20Manzanillo."
             target="_blank"
             rel="noopener noreferrer"
           >
