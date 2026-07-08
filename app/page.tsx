@@ -1,3 +1,4 @@
+import FAQ from "../components/FAQ";
 import Trust from "../components/Trust";
 import Gallery from "../components/Gallery";
 import Quote from "../components/Quote";
@@ -30,9 +31,10 @@ export default function Home() {
 <Process />
 <Coverage />
 <Gallery />
-<Stats />
 <Quote />
+<FAQ />
 <Contact />
+<Stats />
       <Footer />
    <WhatsAppButton />
     </>
