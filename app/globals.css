@@ -4166,3 +4166,173 @@ footer p {
     padding: 20px !important;
   }
 }
+/* =========================================================
+   LO QUE HACEMOS - VERSIÓN CON IMAGEN OPERATIVA
+   ========================================================= */
+
+.zusasaWhatWeDoFinal {
+  display: grid !important;
+  grid-template-columns: 1.05fr 0.95fr !important;
+  gap: 64px !important;
+  align-items: center !important;
+  padding: 100px 7% !important;
+  background: #ffffff !important;
+}
+
+.zusasaWhatWeDoContent > span {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+  color: var(--orange) !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.2px !important;
+  font-size: 15px !important;
+  margin-bottom: 20px !important;
+}
+
+.zusasaWhatWeDoContent > span::before {
+  content: "" !important;
+  width: 44px !important;
+  height: 3px !important;
+  background: var(--orange) !important;
+}
+
+.zusasaWhatWeDoContent h2 {
+  font-size: clamp(36px, 4.4vw, 62px) !important;
+  line-height: 1.04 !important;
+  color: var(--navy) !important;
+  margin: 0 0 24px !important;
+  letter-spacing: -1.4px !important;
+}
+
+.zusasaWhatWeDoContent > p {
+  max-width: 760px !important;
+  color: var(--gray) !important;
+  font-size: 18px !important;
+  line-height: 1.75 !important;
+  margin: 0 0 42px !important;
+  padding-left: 24px !important;
+  border-left: 5px solid var(--orange) !important;
+}
+
+.zusasaWhatWeDoCards {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 22px !important;
+}
+
+.zusasaWhatWeDoCards article {
+  background: #f5f6f7 !important;
+  padding: 28px !important;
+  border-radius: 22px !important;
+  box-shadow: 0 20px 55px rgba(10, 29, 54, 0.09) !important;
+  border: 1px solid rgba(10, 29, 54, 0.06) !important;
+  border-bottom: 5px solid var(--orange) !important;
+}
+
+.zusasaWhatWeDoCards article div {
+  color: var(--orange) !important;
+  font-size: 38px !important;
+  font-weight: 900 !important;
+  margin-bottom: 18px !important;
+}
+
+.zusasaWhatWeDoCards h3 {
+  color: var(--navy) !important;
+  font-size: 21px !important;
+  line-height: 1.15 !important;
+  margin: 0 0 12px !important;
+}
+
+.zusasaWhatWeDoCards p {
+  color: var(--gray) !important;
+  font-size: 15px !important;
+  line-height: 1.65 !important;
+  margin: 0 !important;
+}
+
+.zusasaWhatWeDoImage {
+  position: relative !important;
+  border-radius: 32px !important;
+  overflow: hidden !important;
+  box-shadow: 0 34px 95px rgba(10, 29, 54, 0.22) !important;
+  background: var(--navy) !important;
+}
+
+.zusasaWhatWeDoImage img {
+  width: 100% !important;
+  height: 640px !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+.zusasaWhatWeDoImage::after {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background: linear-gradient(
+    180deg,
+    rgba(5, 24, 46, 0.04) 0%,
+    rgba(5, 24, 46, 0.18) 44%,
+    rgba(5, 24, 46, 0.82) 100%
+  ) !important;
+}
+
+.zusasaWhatWeDoBadge {
+  position: absolute !important;
+  left: 30px !important;
+  right: 30px !important;
+  bottom: 30px !important;
+  z-index: 2 !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  backdrop-filter: blur(14px) !important;
+  padding: 26px !important;
+  border-radius: 22px !important;
+}
+
+.zusasaWhatWeDoBadge strong {
+  display: block !important;
+  color: var(--orange) !important;
+  font-size: 24px !important;
+  margin-bottom: 8px !important;
+}
+
+.zusasaWhatWeDoBadge span {
+  display: block !important;
+  color: white !important;
+  font-weight: 700 !important;
+  line-height: 1.5 !important;
+}
+
+@media (max-width: 1100px) {
+  .zusasaWhatWeDoFinal {
+    grid-template-columns: 1fr !important;
+  }
+
+  .zusasaWhatWeDoImage img {
+    height: 460px !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .zusasaWhatWeDoFinal {
+    padding: 75px 24px !important;
+  }
+
+  .zusasaWhatWeDoCards {
+    grid-template-columns: 1fr !important;
+  }
+
+  .zusasaWhatWeDoImage img {
+    height: 340px !important;
+  }
+
+  .zusasaWhatWeDoBadge {
+    left: 18px !important;
+    right: 18px !important;
+    bottom: 18px !important;
+    padding: 20px !important;
+  }
+}
