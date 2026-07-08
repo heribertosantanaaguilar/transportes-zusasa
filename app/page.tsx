@@ -1,41 +1,41 @@
-import PortVision from "../components/PortVision";
-import FAQ from "../components/FAQ";
-import Trust from "../components/Trust";
-import Gallery from "../components/Gallery";
-import Quote from "../components/Quote";
-import Company from "../components/Company";
-import WhatWeDo from "../components/WhatWeDo";
-import Coverage from "../components/Coverage";
-import Sectors from "../components/Sectors";
-import WhatsAppButton from "../components/WhatsAppButton";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
-import About from "../components/About";
+import WhatWeDo from "../components/WhatWeDo";
+import Company from "../components/Company";
 import Services from "../components/Services";
+import Sectors from "../components/Sectors";
 import Value from "../components/Value";
+import Trust from "../components/Trust";
 import Process from "../components/Process";
+import Coverage from "../components/Coverage";
+import Gallery from "../components/Gallery";
 import Stats from "../components/Stats";
+import Quote from "../components/Quote";
+import FAQ from "../components/FAQ";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import WhatsAppButton from "../components/WhatsAppButton";
 
 export default function Home() {
   return (
     <>
-<Navbar />
-<Hero />
-<WhatWeDo />
-<Company />
-<Services />
-<Sectors />
-<Value />
-<Trust />
-<Process />
-<Coverage />
-<Gallery />
-<PortVision />
-<Stats />
+      <Navbar />
+      <Hero />
+      <WhatWeDo />
+      <Company />
+      <Services />
+      <Sectors />
+      <Value />
+      <Trust />
+      <Process />
+      <Coverage />
+      <Gallery />
+      <Stats />
+      <Quote />
+      <FAQ />
+      <Contact />
       <Footer />
-   <WhatsAppButton />
+      <WhatsAppButton />
     </>
   );
 }
