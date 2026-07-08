@@ -33,10 +33,10 @@ export default function Coverage() {
 />
           />
 
-          <div className="truckPhotoBadge">
-            <strong>Transporte local</strong>
-            <span>Carga contenerizada en entorno portuario.</span>
-          </div>
+        <div className="truckPhotoBadge">
+  <strong>Patio de maniobras</strong>
+  <span>Movimiento local de contenedores con enfoque operativo.</span>
+</div>
         </div>
       </div>
     </section>
