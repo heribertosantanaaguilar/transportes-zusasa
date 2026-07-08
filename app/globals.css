@@ -3841,3 +3841,34 @@ footer p {
     border-radius: 18px !important;
   }
 }
+/* =========================================================
+   AJUSTE FINO: LOGO MÁS GRANDE SIN AGRANDAR LA PLACA
+   ========================================================= */
+
+.navbarLogoImage {
+  width: 96px !important;
+  height: 96px !important;
+  padding: 0 !important;
+  object-fit: cover !important;
+  background: #ffffff !important;
+  border-radius: 20px !important;
+}
+
+.footerLogoImage {
+  width: 96px !important;
+  height: 96px !important;
+  padding: 0 !important;
+  object-fit: cover !important;
+  background: #ffffff !important;
+  border-radius: 20px !important;
+}
+
+@media (max-width: 650px) {
+  .navbarLogoImage,
+  .footerLogoImage {
+    width: 78px !important;
+    height: 78px !important;
+    padding: 0 !important;
+    object-fit: cover !important;
+  }
+}
