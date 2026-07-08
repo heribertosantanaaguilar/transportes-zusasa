@@ -5,22 +5,29 @@ export default function Coverage() {
         <div className="zusasaCoveragePhotoText">
           <span>Cobertura</span>
 
-          <h2>Especialistas en operación local en Manzanillo.</h2>
+          <h2>Especialistas en transporte local dentro de Manzanillo.</h2>
 
           <p>
-            Atendemos movimientos de carga contenerizada dentro de la zona
-            portuaria y logística de Manzanillo, Colima.
+            Concentramos nuestra operación en la zona portuaria y logística de
+            Manzanillo, Colima, para ofrecer atención cercana, respuesta ágil y
+            coordinación eficiente en movimientos locales de carga contenerizada.
           </p>
 
           <div className="zusasaCoveragePhotoCards">
             <article>
-              <strong>Zona portuaria</strong>
-              <p>Operaciones locales vinculadas al Puerto de Manzanillo.</p>
+              <strong>Zona portuaria de Manzanillo</strong>
+              <p>
+                Atendemos operaciones vinculadas al movimiento local de
+                contenedores para importación y exportación.
+              </p>
             </article>
 
             <article>
-              <strong>Respuesta ágil</strong>
-              <p>Coordinación rápida para movimientos de carga contenerizada.</p>
+              <strong>Operación local especializada</strong>
+              <p>
+                Nuestro enfoque en Manzanillo nos permite responder con mayor
+                claridad, disponibilidad y conocimiento operativo.
+              </p>
             </article>
           </div>
         </div>
@@ -32,7 +39,7 @@ export default function Coverage() {
           />
 
           <div className="truckPhotoBadge">
-            <strong>Patio de maniobras</strong>
+            <strong>Manzanillo, Colima</strong>
             <span>Movimiento local de contenedores con enfoque operativo.</span>
           </div>
         </div>
