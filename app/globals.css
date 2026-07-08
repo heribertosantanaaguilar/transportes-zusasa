@@ -4336,3 +4336,30 @@ footer p {
     padding: 20px !important;
   }
 }
+/* =========================================================
+   ¿POR QUÉ ELEGIRNOS? - TEXTOS COMERCIALES
+   ========================================================= */
+
+.zusasaValueGrid article {
+  align-items: flex-start !important;
+  gap: 18px !important;
+}
+
+.zusasaValueGrid article div {
+  display: block !important;
+}
+
+.zusasaValueGrid article h3 {
+  margin: 0 0 8px !important;
+  color: var(--navy) !important;
+  font-size: 20px !important;
+  line-height: 1.2 !important;
+  font-weight: 900 !important;
+}
+
+.zusasaValueGrid article p {
+  margin: 0 !important;
+  color: var(--gray) !important;
+  font-size: 15px !important;
+  line-height: 1.65 !important;
+}
