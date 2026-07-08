@@ -24,6 +24,18 @@ export default function Coverage() {
             </article>
           </div>
         </div>
+
+        <div className="zusasaCoverageTruckPhoto">
+          <img
+            src="https://images.unsplash.com/photo-1580674285054-bed31e145f59?auto=format&fit=crop&w=1400&q=90"
+            alt="Camión con contenedor en patio portuario"
+          />
+
+          <div className="truckPhotoBadge">
+            <strong>Transporte local</strong>
+            <span>Carga contenerizada en entorno portuario.</span>
+          </div>
+        </div>
       </div>
     </section>
   );
