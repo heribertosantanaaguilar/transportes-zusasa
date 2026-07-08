@@ -3872,3 +3872,112 @@ footer p {
     object-fit: cover !important;
   }
 }
+/* =========================================================
+   PREGUNTAS FRECUENTES
+   ========================================================= */
+
+.zusasaFAQSection {
+  padding: 110px 7% !important;
+  background:
+    radial-gradient(circle at top left, rgba(242, 101, 34, 0.1), transparent 30%),
+    #ffffff !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.zusasaFAQHeader {
+  max-width: 920px !important;
+  margin-bottom: 58px !important;
+}
+
+.zusasaFAQHeader span {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+  color: var(--orange) !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.2px !important;
+  font-size: 15px !important;
+  margin-bottom: 20px !important;
+}
+
+.zusasaFAQHeader span::before {
+  content: "" !important;
+  width: 44px !important;
+  height: 3px !important;
+  background: var(--orange) !important;
+}
+
+.zusasaFAQHeader h2 {
+  font-size: clamp(38px, 4.6vw, 64px) !important;
+  line-height: 1.03 !important;
+  color: var(--navy) !important;
+  margin: 0 0 24px !important;
+  letter-spacing: -1.5px !important;
+}
+
+.zusasaFAQHeader p {
+  max-width: 780px !important;
+  color: var(--gray) !important;
+  font-size: 18px !important;
+  line-height: 1.78 !important;
+  margin: 0 !important;
+  padding-left: 24px !important;
+  border-left: 5px solid var(--orange) !important;
+}
+
+.zusasaFAQGrid {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 24px !important;
+}
+
+.zusasaFAQCard {
+  background: #f5f6f7 !important;
+  padding: 34px !important;
+  border-radius: 24px !important;
+  box-shadow: 0 22px 65px rgba(10, 29, 54, 0.09) !important;
+  border: 1px solid rgba(10, 29, 54, 0.06) !important;
+  border-left: 6px solid var(--orange) !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+}
+
+.zusasaFAQCard:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 30px 85px rgba(10, 29, 54, 0.15) !important;
+}
+
+.zusasaFAQCard h3 {
+  color: var(--navy) !important;
+  font-size: 22px !important;
+  line-height: 1.25 !important;
+  margin: 0 0 14px !important;
+}
+
+.zusasaFAQCard p {
+  color: var(--gray) !important;
+  font-size: 16px !important;
+  line-height: 1.7 !important;
+  margin: 0 !important;
+}
+
+@media (max-width: 850px) {
+  .zusasaFAQGrid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .zusasaFAQSection {
+    padding: 75px 24px !important;
+  }
+
+  .zusasaFAQCard {
+    padding: 28px 22px !important;
+  }
+
+  .zusasaFAQHeader p {
+    font-size: 17px !important;
+  }
+}
