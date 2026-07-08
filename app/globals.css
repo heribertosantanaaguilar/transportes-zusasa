@@ -3981,3 +3981,84 @@ footer p {
     font-size: 17px !important;
   }
 }
+/* =========================================================
+   VISIÓN PORTUARIA
+   ========================================================= */
+
+.zusasaPortVision {
+  min-height: 560px !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 100px 7% !important;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 24, 46, 0.96) 0%,
+      rgba(5, 24, 46, 0.78) 42%,
+      rgba(5, 24, 46, 0.22) 100%
+    ),
+    url("https://images.unsplash.com/photo-1494412685616-a5d310fbb07d?auto=format&fit=crop&w=2400&q=90") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  color: white !important;
+  position: relative !important;
+}
+
+.zusasaPortVisionContent {
+  max-width: 760px !important;
+}
+
+.zusasaPortVisionContent span {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+  color: var(--orange) !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.2px !important;
+  font-size: 15px !important;
+  margin-bottom: 20px !important;
+}
+
+.zusasaPortVisionContent span::before {
+  content: "" !important;
+  width: 44px !important;
+  height: 3px !important;
+  background: var(--orange) !important;
+}
+
+.zusasaPortVisionContent h2 {
+  font-size: clamp(38px, 4.8vw, 68px) !important;
+  line-height: 1.02 !important;
+  color: white !important;
+  margin: 0 0 26px !important;
+  letter-spacing: -1.5px !important;
+}
+
+.zusasaPortVisionContent p {
+  color: rgba(255, 255, 255, 0.86) !important;
+  font-size: 19px !important;
+  line-height: 1.75 !important;
+  margin: 0 0 34px !important;
+}
+
+.zusasaPortVisionContent a {
+  display: inline-block !important;
+  background: var(--orange) !important;
+  color: white !important;
+  padding: 18px 30px !important;
+  border-radius: 8px !important;
+  font-weight: 900 !important;
+  box-shadow: 0 20px 45px rgba(242, 101, 34, 0.3) !important;
+}
+
+@media (max-width: 650px) {
+  .zusasaPortVision {
+    min-height: auto !important;
+    padding: 80px 24px !important;
+  }
+
+  .zusasaPortVisionContent p {
+    font-size: 17px !important;
+  }
+}
