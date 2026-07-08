@@ -2,23 +2,23 @@ export default function WhatWeDo() {
   const items = [
     {
       icon: "▤",
-      title: "Transporte local",
-      text: "Movimientos dentro de la zona portuaria y alrededores.",
+      title: "Transporte local especializado",
+      text: "Coordinamos movimientos dentro de la zona portuaria y logística de Manzanillo.",
     },
     {
       icon: "▥",
       title: "Carga contenerizada",
-      text: "Manejo seguro y eficiente de contenedores.",
+      text: "Atendemos operaciones con contenedores para importación, exportación y movimientos locales.",
     },
     {
       icon: "✓",
-      title: "Seguridad en cada operación",
-      text: "Unidades en óptimas condiciones y operadores comprometidos.",
+      title: "Operación segura",
+      text: "Cuidamos cada traslado con comunicación clara, responsabilidad y seguimiento puntual.",
     },
     {
       icon: "◷",
-      title: "Cumplimiento de tiempos",
-      text: "Entregas puntuales y compromisos cumplidos.",
+      title: "Respuesta ágil",
+      text: "Revisamos disponibilidad y tiempos para ayudarte a resolver tu operación con rapidez.",
     },
   ];
 
@@ -28,12 +28,14 @@ export default function WhatWeDo() {
         <span>Lo que hacemos</span>
 
         <h2>
-          Transporte local de carga contenerizada con eficiencia y seguridad.
+          Movemos tu carga contenerizada con coordinación, seguridad y respuesta
+          inmediata.
         </h2>
 
         <p>
-          Apoyamos operaciones portuarias con soluciones confiables, atención
-          personalizada y respuesta inmediata en Manzanillo.
+          En Transportes ZUSASA apoyamos a agencias aduanales, operadores
+          logísticos, transportistas, importadores y exportadores que necesitan
+          un aliado confiable para sus movimientos locales en Manzanillo.
         </p>
 
         <div className="zusasaWhatWeDoCards">
@@ -55,7 +57,7 @@ export default function WhatWeDo() {
 
         <div className="zusasaWhatWeDoBadge">
           <strong>Movimiento local</strong>
-          <span>Carga contenerizada con enfoque operativo.</span>
+          <span>Soluciones para carga contenerizada en Manzanillo.</span>
         </div>
       </div>
     </section>
