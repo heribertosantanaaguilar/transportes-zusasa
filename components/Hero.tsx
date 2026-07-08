@@ -9,13 +9,18 @@ export default function Hero() {
         </h1>
 
         <p>
-          Soluciones especializadas en autotransporte local de carga para
-          operaciones de importación y exportación dentro de la zona portuaria
-          de Manzanillo.
+          Coordinamos movimientos locales de carga contenerizada para agencias
+          aduanales, operadores logísticos, importadores y exportadores que
+          necesitan seguridad, comunicación clara y cumplimiento en Manzanillo.
         </p>
 
         <div className="heroShowcaseActions">
-          <a className="mainCta" href="mailto:transportes.zusasa@gmail.com">
+          <a
+            className="mainCta"
+            href="https://wa.me/523148721897?text=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20para%20un%20movimiento%20local%20de%20carga%20en%20Manzanillo."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Solicitar cotización
           </a>
 
@@ -27,23 +32,23 @@ export default function Hero() {
 
       <div className="heroShowcaseBar">
         <article>
-          <strong>Respuesta inmediata</strong>
-          <p>Atención rápida y personalizada.</p>
+          <strong>Atención directa</strong>
+          <p>Comunicación clara desde la solicitud hasta el cierre del servicio.</p>
         </article>
 
         <article>
-          <strong>Operación 24/7</strong>
-          <p>Disponibilidad total para tu carga.</p>
+          <strong>Respuesta inmediata</strong>
+          <p>Revisamos disponibilidad y condiciones para atender tu operación.</p>
         </article>
 
         <article>
           <strong>Seguimiento operativo</strong>
-          <p>Comunicación constante en cada movimiento.</p>
+          <p>Te mantenemos informado durante cada etapa del movimiento.</p>
         </article>
 
         <article>
           <strong>Especialistas en Manzanillo</strong>
-          <p>Conocimiento local que marca la diferencia.</p>
+          <p>Conocimiento local de la zona portuaria y logística.</p>
         </article>
       </div>
     </section>
