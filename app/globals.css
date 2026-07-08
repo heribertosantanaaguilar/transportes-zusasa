@@ -4078,3 +4078,91 @@ footer p {
   background-size: cover !important;
   background-position: center right !important;
 }
+/* =========================================================
+   COBERTURA - FOTO DE CAMIÓN CON CONTENEDOR
+   ========================================================= */
+
+.zusasaCoverageOverlay {
+  display: grid !important;
+  grid-template-columns: 0.95fr 1.05fr !important;
+  gap: 64px !important;
+  align-items: center !important;
+  width: 100% !important;
+}
+
+.zusasaCoverageTruckPhoto {
+  position: relative !important;
+  border-radius: 32px !important;
+  overflow: hidden !important;
+  box-shadow: 0 36px 100px rgba(0, 0, 0, 0.34) !important;
+  border: 1px solid rgba(255, 255, 255, 0.16) !important;
+}
+
+.zusasaCoverageTruckPhoto img {
+  width: 100% !important;
+  height: 520px !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+.zusasaCoverageTruckPhoto::after {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background: linear-gradient(
+    180deg,
+    rgba(5, 24, 46, 0.04) 0%,
+    rgba(5, 24, 46, 0.18) 45%,
+    rgba(5, 24, 46, 0.72) 100%
+  ) !important;
+}
+
+.truckPhotoBadge {
+  position: absolute !important;
+  left: 28px !important;
+  right: 28px !important;
+  bottom: 28px !important;
+  z-index: 2 !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  backdrop-filter: blur(14px) !important;
+  padding: 24px !important;
+  border-radius: 22px !important;
+}
+
+.truckPhotoBadge strong {
+  display: block !important;
+  color: var(--orange) !important;
+  font-size: 24px !important;
+  margin-bottom: 8px !important;
+}
+
+.truckPhotoBadge span {
+  display: block !important;
+  color: white !important;
+  font-weight: 700 !important;
+  line-height: 1.5 !important;
+}
+
+@media (max-width: 1000px) {
+  .zusasaCoverageOverlay {
+    grid-template-columns: 1fr !important;
+  }
+
+  .zusasaCoverageTruckPhoto img {
+    height: 420px !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .zusasaCoverageTruckPhoto img {
+    height: 340px !important;
+  }
+
+  .truckPhotoBadge {
+    left: 18px !important;
+    right: 18px !important;
+    bottom: 18px !important;
+    padding: 20px !important;
+  }
+}
