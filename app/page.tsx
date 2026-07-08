@@ -1,3 +1,4 @@
+import PortVision from "../components/PortVision";
 import FAQ from "../components/FAQ";
 import Trust from "../components/Trust";
 import Gallery from "../components/Gallery";
@@ -31,9 +32,7 @@ export default function Home() {
 <Process />
 <Coverage />
 <Gallery />
-<Quote />
-<FAQ />
-<Contact />
+<PortVision />
 <Stats />
       <Footer />
    <WhatsAppButton />
