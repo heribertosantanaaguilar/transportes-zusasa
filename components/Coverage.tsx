@@ -27,8 +27,10 @@ export default function Coverage() {
 
         <div className="zusasaCoverageTruckPhoto">
           <img
-            src="https://images.unsplash.com/photo-1580674285054-bed31e145f59?auto=format&fit=crop&w=1400&q=90"
-            alt="Camión con contenedor en patio portuario"
+           <img
+  src="https://images.openai.com/static-rsc-4/SL761uhbzhRhBOLqg3Bl9NlX-2Q-8g2RqaNp2DOE6ied_yeYUpno95PxAr9RGahS3SwOKEuNylU9GY7Ag7Xnz1hlMkVwR_J5rpfeP5x1Fp4WQ4v9C8KY9AM63YYmhPLd3GTZNp3lZfSc48RNFT-e3Nfksn84v0nSDQT1uV3GDBs?purpose=inline"
+  alt="Camión con contenedor en patio de maniobras"
+/>
           />
 
           <div className="truckPhotoBadge">
