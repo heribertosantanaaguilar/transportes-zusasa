@@ -4,44 +4,52 @@ export default function Quote() {
       <div className="zusasaQuoteContent">
         <span>Cotización inmediata</span>
 
-        <h2>¿Necesitas mover carga local en Manzanillo?</h2>
+        <h2>Solicita una cotización para tu movimiento local en Manzanillo.</h2>
 
         <p>
-          Solicita una cotización y recibe atención directa para coordinar tu
-          operación de carga contenerizada dentro de la zona portuaria y
-          logística de Manzanillo.
+          Cuéntanos qué tipo de contenedor necesitas mover, el origen, el
+          destino y la fecha estimada del servicio. Nuestro equipo revisará la
+          información y te dará una respuesta clara para coordinar tu operación.
         </p>
 
         <div className="zusasaQuoteHighlights">
           <article>
-            <strong>Respuesta rápida</strong>
-            <p>Atención directa para revisar tu operación.</p>
+            <strong>Atención directa</strong>
+            <p>Te orientamos desde el primer contacto.</p>
           </article>
 
           <article>
-            <strong>Comunicación clara</strong>
-            <p>Información honesta sobre tiempos y disponibilidad.</p>
+            <strong>Respuesta ágil</strong>
+            <p>Revisamos disponibilidad y condiciones operativas.</p>
           </article>
 
           <article>
-            <strong>Seguimiento operativo</strong>
-            <p>Coordinación durante cada movimiento.</p>
+            <strong>Información clara</strong>
+            <p>Te indicamos tiempos, alcance y datos necesarios.</p>
           </article>
         </div>
       </div>
 
       <div className="zusasaQuoteBox">
-        <h3>Solicita tu cotización</h3>
+        <h3>Datos recomendados para cotizar</h3>
 
         <p>
-          Comparte los datos de tu movimiento y nuestro equipo te dará atención
-          personalizada.
+          Para brindarte una mejor atención, comparte la información básica de
+          tu operación.
         </p>
+
+        <ul className="zusasaQuoteList">
+          <li>Tipo de contenedor</li>
+          <li>Origen del movimiento</li>
+          <li>Destino del movimiento</li>
+          <li>Fecha estimada del servicio</li>
+          <li>Datos o requerimientos especiales</li>
+        </ul>
 
         <div className="zusasaQuoteButtons">
           <a
             className="quoteWhatsapp"
-            href="https://wa.me/523148721897?text=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20para%20un%20movimiento%20local%20de%20carga%20en%20Manzanillo."
+            href="https://wa.me/523148721897?text=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20para%20un%20movimiento%20local%20de%20carga%20en%20Manzanillo.%0A%0ADatos%20del%20servicio%3A%0A-%20Tipo%20de%20contenedor%3A%0A-%20Origen%3A%0A-%20Destino%3A%0A-%20Fecha%20estimada%3A%0A-%20Comentarios%3A"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -57,8 +65,8 @@ export default function Quote() {
         </div>
 
         <div className="zusasaQuoteNote">
-          <strong>Tip:</strong> Ten a la mano origen, destino, tipo de
-          contenedor y fecha estimada del movimiento.
+          <strong>Respuesta personalizada:</strong> revisamos cada solicitud de
+          acuerdo con las condiciones reales de la operación.
         </div>
       </div>
     </section>
