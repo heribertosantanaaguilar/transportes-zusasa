@@ -5517,3 +5517,130 @@ footer p {
     min-height: auto !important;
   }
 }
+/* =========================================================
+   AJUSTE FINAL MÓVIL - HERO Y BARRA SUPERIOR
+   ========================================================= */
+
+@media (max-width: 650px) {
+  .topNavbar {
+    min-height: auto !important;
+    height: auto !important;
+    padding: 18px 22px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .zusasaLogo {
+    display: flex !important;
+    align-items: center !important;
+    gap: 14px !important;
+  }
+
+  .navbarLogoImage {
+    width: 78px !important;
+    height: 78px !important;
+    border-radius: 18px !important;
+    padding: 0 !important;
+  }
+
+  .logoText small {
+    font-size: 13px !important;
+    letter-spacing: 5px !important;
+  }
+
+  .logoText strong {
+    font-size: 38px !important;
+    line-height: 1 !important;
+  }
+
+  .topNavlinks,
+  .quoteButton {
+    display: none !important;
+  }
+
+  .heroShowcase {
+    min-height: auto !important;
+    padding: 62px 24px 46px !important;
+    background:
+      linear-gradient(
+        180deg,
+        rgba(5, 24, 46, 0.88) 0%,
+        rgba(5, 24, 46, 0.72) 42%,
+        rgba(5, 24, 46, 0.92) 100%
+      ),
+      url("https://images.unsplash.com/photo-1494412685616-a5d310fbb07d?auto=format&fit=crop&w=1600&q=90") !important;
+    background-size: cover !important;
+    background-position: center center !important;
+  }
+
+  .heroShowcaseContent {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .heroLine {
+    font-size: 13px !important;
+    letter-spacing: 1px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .heroLine::before {
+    width: 42px !important;
+  }
+
+  .heroShowcaseContent h1 {
+    font-size: 45px !important;
+    line-height: 1.03 !important;
+    letter-spacing: -1.5px !important;
+    max-width: 100% !important;
+    margin-bottom: 22px !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+  }
+
+  .heroShowcaseContent p {
+    font-size: 17px !important;
+    line-height: 1.55 !important;
+    max-width: 100% !important;
+    margin-bottom: 26px !important;
+  }
+
+  .heroShowcaseActions {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 14px !important;
+    width: 100% !important;
+    margin-bottom: 34px !important;
+  }
+
+  .mainCta,
+  .ghostCta {
+    width: 100% !important;
+    min-height: 54px !important;
+    justify-content: center !important;
+    font-size: 15px !important;
+    padding: 0 20px !important;
+  }
+
+  .heroShowcaseBar {
+    position: relative !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+    margin-top: 24px !important;
+    padding: 26px 24px !important;
+    border-radius: 24px !important;
+  }
+
+  .heroShowcaseBar article {
+    padding: 0 0 18px !important;
+    border-right: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14) !important;
+  }
+
+  .heroShowcaseBar article:last-child {
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
+  }
+}
