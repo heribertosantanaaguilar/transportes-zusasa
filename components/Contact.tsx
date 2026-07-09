@@ -4,24 +4,29 @@ export default function Contact() {
       <div className="zusasaContactContent">
         <span>Contacto</span>
 
-        <h2>Estamos listos para atender tu operación.</h2>
+        <h2>Solicita tu cotización y coordinemos tu operación.</h2>
 
         <p>
-          Escríbenos para solicitar una cotización o coordinar un movimiento
-          local de carga contenerizada en Manzanillo, Colima.
+          Cuéntanos qué tipo de contenedor necesitas mover, el origen, el
+          destino y la fecha estimada del servicio. En Transportes ZUSASA te
+          brindaremos atención directa para revisar tu operación y darte una
+          respuesta clara.
         </p>
 
         <div className="zusasaContactActions">
           <a
             className="contactWhatsapp"
-            href="https://wa.me/522224556651?text=Hola%2C%20quiero%20solicitar%20informaci%C3%B3n%20sobre%20un%20servicio%20de%20transporte%20local%20de%20carga%20en%20Manzanillo."
+            href="https://wa.me/522224556651?text=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20para%20un%20movimiento%20local%20de%20carga%20en%20Manzanillo.%0A%0ADatos%20del%20servicio%3A%0A-%20Tipo%20de%20contenedor%3A%0A-%20Origen%3A%0A-%20Destino%3A%0A-%20Fecha%20estimada%3A%0A-%20Comentarios%3A"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Hablar por WhatsApp
+            Cotizar por WhatsApp
           </a>
 
-          <a className="contactEmail" href="mailto:transportes.zusasa@gmail.com">
+          <a
+            className="contactEmail"
+            href="mailto:transportes.zusasa@gmail.com?subject=Solicitud%20de%20cotizaci%C3%B3n%20-%20Transporte%20local%20Manzanillo&body=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20para%20un%20movimiento%20local%20de%20carga%20en%20Manzanillo.%0A%0ADatos%20del%20servicio%3A%0A-%20Tipo%20de%20contenedor%3A%0A-%20Origen%3A%0A-%20Destino%3A%0A-%20Fecha%20estimada%3A%0A-%20Comentarios%3A"
+          >
             Enviar correo
           </a>
         </div>
@@ -52,7 +57,9 @@ export default function Contact() {
           <p>
             <strong>Correo</strong>
             <br />
-            transportes.zusasa@gmail.com
+            <a href="mailto:transportes.zusasa@gmail.com">
+              transportes.zusasa@gmail.com
+            </a>
           </p>
 
           <p>
