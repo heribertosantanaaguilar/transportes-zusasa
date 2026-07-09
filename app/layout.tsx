@@ -72,10 +72,10 @@ export const metadata = {
     images: ["/images/logo-zusasa.png"],
   },
 
- icons: {
-  icon: "/images/logo-zusasa.png",
-  shortcut: "/images/logo-zusasa.png",
-  apple: "/images/logo-zusasa.png",
+icons: {
+  icon: "/images/favicon-zusasa.png",
+  shortcut: "/images/favicon-zusasa.png",
+  apple: "/images/favicon-zusasa.png",
 },
 
   category: "transportation",
