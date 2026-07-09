@@ -1,34 +1,44 @@
 export default function FAQ() {
   const questions = [
     {
-      question: "¿Qué tipo de carga transporta Transportes ZUSASA?",
+      question: "¿Qué tipo de servicio ofrece Transportes ZUSASA?",
       answer:
-        "Nos especializamos en transporte local de carga contenerizada para operaciones vinculadas al Puerto de Manzanillo.",
+        "Ofrecemos transporte local de carga contenerizada en Manzanillo, Colima, principalmente para operaciones vinculadas al Puerto de Manzanillo, importación, exportación y movimientos locales.",
     },
     {
-      question: "¿Trabajan fuera de Manzanillo?",
+      question: "¿En qué zona trabajan actualmente?",
       answer:
-        "Actualmente nuestro enfoque principal es la operación local dentro de la zona portuaria y logística de Manzanillo, Colima.",
+        "Nuestra operación está enfocada en Manzanillo, especialmente en la zona portuaria y logística. Este enfoque local nos permite brindar atención cercana, coordinación ágil y conocimiento operativo de la zona.",
+    },
+    {
+      question: "¿Qué información necesito enviar para solicitar una cotización?",
+      answer:
+        "Para cotizar con mayor precisión, recomendamos compartir el tipo de contenedor, origen, destino, fecha estimada del servicio y cualquier requerimiento especial relacionado con la operación.",
     },
     {
       question: "¿Atienden operaciones urgentes?",
       answer:
-        "Sí. Brindamos atención rápida para revisar disponibilidad, tiempos y condiciones del movimiento solicitado.",
+        "Sí. Revisamos cada solicitud de acuerdo con la disponibilidad, tiempos y condiciones reales de la operación. Nuestro objetivo es responder con claridad y apoyar al cliente cuando necesita resolver un movimiento local.",
     },
     {
-      question: "¿Cómo puedo solicitar una cotización?",
+      question: "¿Dan seguimiento durante el movimiento de la carga?",
       answer:
-        "Puedes solicitarla por WhatsApp o correo electrónico. Te recomendamos compartir origen, destino, tipo de contenedor, fecha estimada y cualquier detalle importante de la operación.",
+        "Sí. Mantenemos comunicación directa durante el servicio para informar avances, coordinar detalles operativos y confirmar el cierre del movimiento.",
     },
     {
-      question: "¿Dan seguimiento durante el movimiento?",
+      question: "¿Trabajan con agencias aduanales y operadores logísticos?",
       answer:
-        "Sí. Trabajamos con seguimiento operativo y comunicación constante para mantener informado al cliente durante el servicio.",
+        "Sí. Atendemos agencias aduanales, operadores logísticos, transportistas, importadores, exportadores, empresas industriales y comercios que requieren soluciones locales de transporte en Manzanillo.",
+    },
+    {
+      question: "¿Pueden apoyar con resguardo o maniobras de contenedores?",
+      answer:
+        "Podemos apoyar en la coordinación de resguardo, almacenamiento y manejo operativo de contenedores llenos o vacíos, según las necesidades del cliente y las condiciones disponibles para cada servicio.",
     },
     {
       question: "¿Qué diferencia a Transportes ZUSASA?",
       answer:
-        "Nuestra atención directa, comunicación honesta, conocimiento local de Manzanillo y compromiso con cada operación.",
+        "Nos diferencia la atención directa, la comunicación honesta, el conocimiento local de Manzanillo y el compromiso de brindar seguimiento claro durante cada operación.",
     },
   ];
 
@@ -37,12 +47,12 @@ export default function FAQ() {
       <div className="zusasaFAQHeader">
         <span>Preguntas frecuentes</span>
 
-        <h2>Resolvemos tus dudas antes de iniciar la operación.</h2>
+        <h2>Resolvemos tus dudas antes de coordinar tu operación.</h2>
 
         <p>
-          Estas son algunas preguntas comunes de agencias aduanales, operadores
-          logísticos, transportistas e importadores que buscan soluciones locales
-          de transporte en Manzanillo.
+          Sabemos que cada movimiento de carga requiere claridad. Por eso
+          respondemos las dudas más comunes para que puedas solicitar tu
+          cotización con mayor confianza.
         </p>
       </div>
 
