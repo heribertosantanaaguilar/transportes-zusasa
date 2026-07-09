@@ -4725,3 +4725,30 @@ footer p {
     scroll-margin-top: 150px !important;
   }
 }
+/* =========================================================
+   NAVBAR - SECCIÓN ACTIVA
+   ========================================================= */
+
+.topNavlinks a {
+  position: relative !important;
+  transition: color 0.25s ease !important;
+}
+
+.topNavlinks a.activeNavLink {
+  color: var(--orange) !important;
+}
+
+.topNavlinks a.activeNavLink::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: -8px !important;
+  height: 3px !important;
+  background: var(--orange) !important;
+  border-radius: 999px !important;
+}
+
+.topNavlinks a:hover {
+  color: var(--orange) !important;
+}
