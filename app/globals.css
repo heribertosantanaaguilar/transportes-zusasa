@@ -4391,3 +4391,32 @@ footer p {
   color: var(--orange) !important;
   font-weight: 900 !important;
 }
+/* =========================================================
+   FOOTER - AJUSTES FINALES COMERCIALES
+   ========================================================= */
+
+.footerSlogan {
+  margin-top: 18px !important;
+  color: var(--orange) !important;
+  font-weight: 900 !important;
+  font-size: 18px !important;
+  line-height: 1.4 !important;
+}
+
+.footerPremium strong {
+  color: white !important;
+}
+
+.footerPremium .footerEmail a {
+  color: rgba(255, 255, 255, 0.9) !important;
+  text-decoration: none !important;
+  font-weight: 800 !important;
+}
+
+.footerPremium .footerEmail a:hover {
+  color: var(--orange) !important;
+}
+
+.footerPremium a {
+  cursor: pointer !important;
+}
