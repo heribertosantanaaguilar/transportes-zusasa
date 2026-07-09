@@ -5356,3 +5356,61 @@ footer p {
     object-position: center bottom !important;
   }
 }
+/* =========================================================
+   NOSOTROS - 4 CUADROS EN UNA SOLA FILA
+   ========================================================= */
+
+.zusasaCompanyPoints {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 18px !important;
+  margin-top: 42px !important;
+}
+
+.zusasaCompanyPoints article {
+  padding: 24px 20px !important;
+  min-height: 220px !important;
+}
+
+.zusasaCompanyPoints article h3 {
+  font-size: 18px !important;
+  line-height: 1.2 !important;
+}
+
+.zusasaCompanyPoints article p {
+  font-size: 14px !important;
+  line-height: 1.55 !important;
+}
+
+/* En tablet se mantienen en una sola fila */
+@media (max-width: 1100px) {
+  .zusasaCompanyPoints {
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 14px !important;
+  }
+
+  .zusasaCompanyPoints article {
+    padding: 22px 16px !important;
+    min-height: 210px !important;
+  }
+
+  .zusasaCompanyPoints article h3 {
+    font-size: 16px !important;
+  }
+
+  .zusasaCompanyPoints article p {
+    font-size: 13px !important;
+  }
+}
+
+/* En celular sí conviene bajarlos a 1 columna para que no se aprieten */
+@media (max-width: 650px) {
+  .zusasaCompanyPoints {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+  }
+
+  .zusasaCompanyPoints article {
+    min-height: auto !important;
+  }
+}
