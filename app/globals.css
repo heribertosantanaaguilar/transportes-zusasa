@@ -5414,3 +5414,106 @@ footer p {
     min-height: auto !important;
   }
 }
+/* =========================================================
+   NOSOTROS - TEXTO E IMAGEN ARRIBA / 4 CUADROS EN UNA FILA
+   ========================================================= */
+
+.zusasaCompanyBlock {
+  display: block !important;
+  padding-top: 65px !important;
+}
+
+.zusasaCompanyTop {
+  display: grid !important;
+  grid-template-columns: 1fr 0.95fr !important;
+  gap: 56px !important;
+  align-items: start !important;
+}
+
+.zusasaCompanyRight {
+  margin-top: 18px !important;
+}
+
+.zusasaCompanyRight img {
+  height: 460px !important;
+  object-fit: cover !important;
+  object-position: center bottom !important;
+}
+
+.zusasaCompanyPoints {
+  width: 100% !important;
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 20px !important;
+  margin-top: 50px !important;
+}
+
+.zusasaCompanyPoints article {
+  min-height: 210px !important;
+  padding: 26px 22px !important;
+}
+
+.zusasaCompanyPoints article h3 {
+  font-size: 18px !important;
+  line-height: 1.2 !important;
+}
+
+.zusasaCompanyPoints article p {
+  font-size: 14px !important;
+  line-height: 1.55 !important;
+}
+
+/* Tablet */
+@media (max-width: 1100px) {
+  .zusasaCompanyTop {
+    grid-template-columns: 1fr 0.9fr !important;
+    gap: 38px !important;
+  }
+
+  .zusasaCompanyRight {
+    margin-top: 12px !important;
+  }
+
+  .zusasaCompanyRight img {
+    height: 390px !important;
+  }
+
+  .zusasaCompanyPoints {
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 14px !important;
+    margin-top: 38px !important;
+  }
+
+  .zusasaCompanyPoints article {
+    min-height: 200px !important;
+    padding: 22px 16px !important;
+  }
+
+  .zusasaCompanyPoints article h3 {
+    font-size: 16px !important;
+  }
+
+  .zusasaCompanyPoints article p {
+    font-size: 13px !important;
+  }
+}
+
+/* Celular */
+@media (max-width: 650px) {
+  .zusasaCompanyTop {
+    grid-template-columns: 1fr !important;
+  }
+
+  .zusasaCompanyRight img {
+    height: 340px !important;
+  }
+
+  .zusasaCompanyPoints {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+  }
+
+  .zusasaCompanyPoints article {
+    min-height: auto !important;
+  }
+}
