@@ -4420,3 +4420,289 @@ footer p {
 .footerPremium a {
   cursor: pointer !important;
 }
+/* =========================================================
+   PÁGINA DE COTIZACIÓN
+   ========================================================= */
+
+.quotePage {
+  min-height: 100vh !important;
+  background: #f5f6f7 !important;
+  color: var(--navy) !important;
+}
+
+.quotePageHero {
+  min-height: 640px !important;
+  padding: 48px 7% 110px !important;
+  color: white !important;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 24, 46, 0.97) 0%,
+      rgba(5, 24, 46, 0.84) 44%,
+      rgba(5, 24, 46, 0.32) 100%
+    ),
+    url("https://images.unsplash.com/photo-1494412685616-a5d310fbb07d?auto=format&fit=crop&w=2400&q=90") !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.quotePageBack {
+  display: inline-flex !important;
+  color: white !important;
+  text-decoration: none !important;
+  font-weight: 900 !important;
+  background: rgba(255, 255, 255, 0.12) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  padding: 12px 18px !important;
+  border-radius: 999px !important;
+  margin-bottom: 90px !important;
+}
+
+.quotePageHeroContent {
+  max-width: 860px !important;
+}
+
+.quotePageHeroContent > span,
+.quotePageInfo > span {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+  color: var(--orange) !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.2px !important;
+  font-size: 15px !important;
+  margin-bottom: 20px !important;
+}
+
+.quotePageHeroContent > span::before,
+.quotePageInfo > span::before {
+  content: "" !important;
+  width: 44px !important;
+  height: 3px !important;
+  background: var(--orange) !important;
+}
+
+.quotePageHeroContent h1 {
+  font-size: clamp(42px, 6vw, 78px) !important;
+  line-height: 1.02 !important;
+  letter-spacing: -2px !important;
+  margin: 0 0 28px !important;
+  max-width: 900px !important;
+}
+
+.quotePageHeroContent p {
+  font-size: 20px !important;
+  line-height: 1.75 !important;
+  color: rgba(255, 255, 255, 0.88) !important;
+  max-width: 780px !important;
+  margin: 0 0 38px !important;
+}
+
+.quotePageActions {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 18px !important;
+}
+
+.quotePageWhatsapp,
+.quotePageEmail {
+  display: inline-flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  min-height: 56px !important;
+  padding: 0 28px !important;
+  border-radius: 999px !important;
+  text-decoration: none !important;
+  font-weight: 900 !important;
+}
+
+.quotePageWhatsapp {
+  background: var(--orange) !important;
+  color: white !important;
+  box-shadow: 0 18px 45px rgba(242, 101, 34, 0.34) !important;
+}
+
+.quotePageEmail {
+  background: white !important;
+  color: var(--navy) !important;
+}
+
+.quotePageBody {
+  display: grid !important;
+  grid-template-columns: 1.15fr 0.85fr !important;
+  gap: 54px !important;
+  align-items: start !important;
+  padding: 100px 7% !important;
+}
+
+.quotePageInfo h2 {
+  font-size: clamp(34px, 4vw, 58px) !important;
+  line-height: 1.05 !important;
+  letter-spacing: -1.4px !important;
+  margin: 0 0 22px !important;
+  color: var(--navy) !important;
+}
+
+.quotePageInfo > p {
+  max-width: 760px !important;
+  color: var(--gray) !important;
+  font-size: 18px !important;
+  line-height: 1.75 !important;
+  margin: 0 0 42px !important;
+  padding-left: 24px !important;
+  border-left: 5px solid var(--orange) !important;
+}
+
+.quotePageGrid {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 22px !important;
+}
+
+.quotePageGrid article {
+  background: white !important;
+  padding: 30px !important;
+  border-radius: 24px !important;
+  box-shadow: 0 20px 55px rgba(10, 29, 54, 0.09) !important;
+  border: 1px solid rgba(10, 29, 54, 0.07) !important;
+  border-bottom: 5px solid var(--orange) !important;
+}
+
+.quotePageGrid article strong {
+  color: var(--orange) !important;
+  font-size: 22px !important;
+  font-weight: 900 !important;
+}
+
+.quotePageGrid article h3 {
+  color: var(--navy) !important;
+  font-size: 22px !important;
+  margin: 18px 0 12px !important;
+}
+
+.quotePageGrid article p {
+  color: var(--gray) !important;
+  line-height: 1.65 !important;
+  margin: 0 !important;
+}
+
+.quotePagePanel {
+  position: sticky !important;
+  top: 120px !important;
+  background: var(--navy) !important;
+  color: white !important;
+  padding: 42px !important;
+  border-radius: 32px !important;
+  box-shadow: 0 34px 90px rgba(10, 29, 54, 0.22) !important;
+  border-top: 7px solid var(--orange) !important;
+}
+
+.quotePagePanel h2 {
+  font-size: 32px !important;
+  line-height: 1.15 !important;
+  margin: 0 0 28px !important;
+}
+
+.quotePageContactPerson {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  padding: 24px !important;
+  border-radius: 22px !important;
+  margin-bottom: 24px !important;
+}
+
+.quotePageContactPerson strong {
+  display: block !important;
+  font-size: 22px !important;
+  margin-bottom: 8px !important;
+}
+
+.quotePageContactPerson span {
+  display: block !important;
+  color: var(--orange) !important;
+  font-weight: 900 !important;
+  margin-bottom: 14px !important;
+}
+
+.quotePageContactPerson a,
+.quotePageContactBox a {
+  color: white !important;
+  font-weight: 900 !important;
+  text-decoration: none !important;
+}
+
+.quotePageContactBox {
+  display: grid !important;
+  gap: 18px !important;
+  margin-bottom: 26px !important;
+}
+
+.quotePageContactBox p {
+  color: rgba(255, 255, 255, 0.84) !important;
+  line-height: 1.6 !important;
+  margin: 0 !important;
+}
+
+.quotePageContactBox strong {
+  color: white !important;
+}
+
+.quotePageNote {
+  background: rgba(242, 101, 34, 0.16) !important;
+  border: 1px solid rgba(242, 101, 34, 0.32) !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  padding: 22px !important;
+  border-radius: 20px !important;
+  line-height: 1.65 !important;
+}
+
+.quotePageNote strong {
+  color: var(--orange) !important;
+}
+
+@media (max-width: 1000px) {
+  .quotePageBody {
+    grid-template-columns: 1fr !important;
+  }
+
+  .quotePagePanel {
+    position: relative !important;
+    top: auto !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .quotePageHero {
+    padding: 34px 24px 80px !important;
+  }
+
+  .quotePageBack {
+    margin-bottom: 70px !important;
+  }
+
+  .quotePageHeroContent p {
+    font-size: 17px !important;
+  }
+
+  .quotePageActions {
+    flex-direction: column !important;
+  }
+
+  .quotePageWhatsapp,
+  .quotePageEmail {
+    width: 100% !important;
+  }
+
+  .quotePageBody {
+    padding: 75px 24px !important;
+  }
+
+  .quotePageGrid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .quotePagePanel {
+    padding: 30px !important;
+  }
+}
