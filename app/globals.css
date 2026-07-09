@@ -4706,3 +4706,22 @@ footer p {
     padding: 30px !important;
   }
 }
+/* =========================================================
+   AJUSTE DE ANCLA - SECCIÓN NOSOTROS
+   ========================================================= */
+
+#nosotros {
+  scroll-margin-top: 140px !important;
+}
+
+@media (max-width: 1100px) {
+  #nosotros {
+    scroll-margin-top: 170px !important;
+  }
+}
+
+@media (max-width: 650px) {
+  #nosotros {
+    scroll-margin-top: 150px !important;
+  }
+}
