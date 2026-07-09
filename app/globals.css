@@ -5134,3 +5134,56 @@ footer p {
     line-height: 1.42 !important;
   }
 }
+/* =========================================================
+   AJUSTE DEFINITIVO HERO TABLET - MOSTRAR BOTONES
+   ========================================================= */
+
+@media (max-width: 1400px) {
+  .heroShowcase {
+    min-height: 620px !important;
+    padding-top: 38px !important;
+    padding-bottom: 55px !important;
+  }
+
+  .heroShowcaseContent {
+    max-width: 760px !important;
+  }
+
+  .heroLine {
+    font-size: 14px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .heroShowcaseContent h1 {
+    font-size: 58px !important;
+    line-height: 0.95 !important;
+    letter-spacing: -2px !important;
+    max-width: 760px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .heroShowcaseContent p {
+    font-size: 17px !important;
+    line-height: 1.38 !important;
+    max-width: 690px !important;
+    margin-bottom: 18px !important;
+  }
+
+  .heroShowcaseActions {
+    display: flex !important;
+    gap: 14px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .mainCta,
+  .ghostCta {
+    min-height: 48px !important;
+    padding: 0 22px !important;
+    font-size: 14px !important;
+  }
+
+  .heroShowcaseBar {
+    margin-top: 28px !important;
+  }
+}
