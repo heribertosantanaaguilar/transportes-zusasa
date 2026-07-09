@@ -4792,3 +4792,34 @@ footer p {
 .topNavlinks a:hover {
   color: var(--orange) !important;
 }
+/* =========================================================
+   AJUSTE DE ANCLAS - SECCIONES CON NAVBAR FIJO
+   ========================================================= */
+
+#inicio,
+#nosotros,
+#servicios,
+#sectores,
+#contacto {
+  scroll-margin-top: 150px !important;
+}
+
+@media (max-width: 1100px) {
+  #inicio,
+  #nosotros,
+  #servicios,
+  #sectores,
+  #contacto {
+    scroll-margin-top: 190px !important;
+  }
+}
+
+@media (max-width: 650px) {
+  #inicio,
+  #nosotros,
+  #servicios,
+  #sectores,
+  #contacto {
+    scroll-margin-top: 160px !important;
+  }
+}
