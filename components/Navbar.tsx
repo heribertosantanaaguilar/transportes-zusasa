@@ -15,7 +15,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const updateActiveSection = () => {
-      const scrollPosition = window.scrollY + 220;
+      const scrollPosition = window.scrollY + 180;
 
       let current = "inicio";
 
@@ -34,14 +34,6 @@ export default function Navbar() {
 
     window.addEventListener("scroll", updateActiveSection);
 
-    window.addEventListener("hashchange", () => {
-      const hash = window.location.hash.replace("#", "");
-
-      if (hash) {
-        setActiveSection(hash);
-      }
-    });
-
     return () => {
       window.removeEventListener("scroll", updateActiveSection);
     };
@@ -49,11 +41,24 @@ export default function Navbar() {
 
   const handleClick = (sectionId: string) => {
     setActiveSection(sectionId);
+
+    if (sectionId === "inicio") {
+      setTimeout(() => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }, 10);
+    }
   };
 
   return (
     <header className="topNavbar">
-      <a href="/#inicio" className="zusasaLogo" onClick={() => handleClick("inicio")}>
+      <a
+        href="/#inicio"
+        className="zusasaLogo"
+        onClick={() => handleClick("inicio")}
+      >
         <img
           className="navbarLogoImage"
           src="/images/logo-zusasa.png"
