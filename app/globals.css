@@ -4752,3 +4752,43 @@ footer p {
 .topNavlinks a:hover {
   color: var(--orange) !important;
 }
+/* =========================================================
+   NAVBAR - SOLO UNA SECCIÓN ACTIVA EN ANARANJADO
+   ========================================================= */
+
+.topNavlinks a,
+.topNavlinks a:visited,
+.topNavlinks a:first-child,
+.topNavlinks a:first-child:visited {
+  color: #ffffff !important;
+  position: relative !important;
+  text-decoration: none !important;
+  transition: color 0.25s ease !important;
+}
+
+.topNavlinks a::after,
+.topNavlinks a:first-child::after {
+  content: none !important;
+  display: none !important;
+}
+
+.topNavlinks a.activeNavLink,
+.topNavlinks a.activeNavLink:visited {
+  color: var(--orange) !important;
+}
+
+.topNavlinks a.activeNavLink::after {
+  content: "" !important;
+  display: block !important;
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: -12px !important;
+  height: 3px !important;
+  background: var(--orange) !important;
+  border-radius: 999px !important;
+}
+
+.topNavlinks a:hover {
+  color: var(--orange) !important;
+}
