@@ -16,8 +16,12 @@ export default function Footer() {
         </div>
 
         <p>
-          Soluciones especializadas en autotransporte local de carga en el
-          Puerto de Manzanillo.
+          Transporte local de carga contenerizada para operaciones portuarias,
+          logísticas, de importación y exportación en Manzanillo, Colima.
+        </p>
+
+        <p className="footerSlogan">
+          Transportamos la confianza que mueve tu negocio.
         </p>
       </div>
 
@@ -33,14 +37,26 @@ export default function Footer() {
 
       <div>
         <h3>Áreas de contacto</h3>
+
         <a href="#gerencia-general">Gerencia General</a>
         <a href="#administracion-finanzas">
           Dirección de Administración y Finanzas
         </a>
         <a href="#coordinacion-logistica">Coordinación de Logística</a>
 
-        <p className="footerEmail">transportes.zusasa@gmail.com</p>
-        <p>Manzanillo, Colima, México</p>
+        <p className="footerEmail">
+          <strong>Correo:</strong>
+          <br />
+          <a href="mailto:transportes.zusasa@gmail.com">
+            transportes.zusasa@gmail.com
+          </a>
+        </p>
+
+        <p>
+          <strong>Ubicación:</strong>
+          <br />
+          Manzanillo, Colima, México
+        </p>
       </div>
     </footer>
   );
