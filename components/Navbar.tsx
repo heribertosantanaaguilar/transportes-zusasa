@@ -53,40 +53,59 @@ export default function Navbar() {
   };
 
   return (
-    <header className="topNavbar">
-      <a
-        href="/#inicio"
-        className="zusasaLogo"
-        onClick={() => handleClick("inicio")}
-      >
-        <img
-          className="navbarLogoImage"
-          src="/images/logo-zusasa.png"
-          alt="Transportes ZUSASA"
-        />
+    <>
+      <header className="topNavbar">
+        <a
+          href="/#inicio"
+          className="zusasaLogo"
+          onClick={() => handleClick("inicio")}
+        >
+          <img
+            className="navbarLogoImage"
+            src="/images/logo-zusasa.png"
+            alt="Transportes ZUSASA"
+          />
 
-        <span className="logoText">
-          <small>TRANSPORTES</small>
-          <strong>ZUSASA</strong>
-        </span>
-      </a>
+          <span className="logoText">
+            <small>TRANSPORTES</small>
+            <strong>ZUSASA</strong>
+          </span>
+        </a>
 
-      <nav className="topNavlinks">
+        <nav className="topNavlinks">
+          {navItems.map((item) => (
+            <a
+              key={item.id}
+              href={item.href}
+              onClick={() => handleClick(item.id)}
+              className={activeSection === item.id ? "activeNavLink" : ""}
+            >
+              {item.label}
+            </a>
+          ))}
+        </nav>
+
+        <a className="quoteButton" href="/cotizacion">
+          Cotizar ahora
+        </a>
+      </header>
+
+      <nav className="mobileSectionNav">
         {navItems.map((item) => (
           <a
             key={item.id}
             href={item.href}
             onClick={() => handleClick(item.id)}
-            className={activeSection === item.id ? "activeNavLink" : ""}
+            className={activeSection === item.id ? "activeMobileNavLink" : ""}
           >
             {item.label}
           </a>
         ))}
-      </nav>
 
-      <a className="quoteButton" href="/cotizacion">
-        Cotizar ahora
-      </a>
-    </header>
+        <a className="mobileQuoteLink" href="/cotizacion">
+          Cotizar
+        </a>
+      </nav>
+    </>
   );
 }
