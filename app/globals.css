@@ -4945,3 +4945,56 @@ footer p {
     scroll-margin-top: 0 !important;
   }
 }
+/* =========================================================
+   AJUSTE FINAL DE ESPACIOS AL NAVEGAR ENTRE SECCIONES
+   ========================================================= */
+
+/* Menos espacio vacío al llegar por los enlaces del menú */
+#nosotros,
+#servicios,
+#sectores,
+#contacto {
+  scroll-margin-top: 70px !important;
+}
+
+/* Reducir espacio superior interno en secciones principales */
+.zusasaCompanyBlock,
+.zusasaServices,
+.zusasaSectors,
+.zusasaContactFinal {
+  padding-top: 65px !important;
+}
+
+/* Ajuste especial para tablet */
+@media (max-width: 1100px) {
+  #nosotros,
+  #servicios,
+  #sectores,
+  #contacto {
+    scroll-margin-top: 75px !important;
+  }
+
+  .zusasaCompanyBlock,
+  .zusasaServices,
+  .zusasaSectors,
+  .zusasaContactFinal {
+    padding-top: 60px !important;
+  }
+}
+
+/* Ajuste para celular */
+@media (max-width: 650px) {
+  #nosotros,
+  #servicios,
+  #sectores,
+  #contacto {
+    scroll-margin-top: 65px !important;
+  }
+
+  .zusasaCompanyBlock,
+  .zusasaServices,
+  .zusasaSectors,
+  .zusasaContactFinal {
+    padding-top: 55px !important;
+  }
+}
