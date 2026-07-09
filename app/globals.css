@@ -4823,3 +4823,45 @@ footer p {
     scroll-margin-top: 160px !important;
   }
 }
+/* =========================================================
+   AJUSTE FINO DE ANCLAS - NAVBAR FIJO
+   ========================================================= */
+
+/* Menos espacio vacío antes de cada sección */
+#nosotros,
+#servicios,
+#sectores,
+#contacto {
+  scroll-margin-top: 105px !important;
+}
+
+/* Inicio necesita un ajuste distinto para mostrar mejor las 4 columnas */
+#inicio {
+  scroll-margin-top: 0 !important;
+}
+
+@media (max-width: 1100px) {
+  #nosotros,
+  #servicios,
+  #sectores,
+  #contacto {
+    scroll-margin-top: 125px !important;
+  }
+
+  #inicio {
+    scroll-margin-top: 0 !important;
+  }
+}
+
+@media (max-width: 650px) {
+  #nosotros,
+  #servicios,
+  #sectores,
+  #contacto {
+    scroll-margin-top: 105px !important;
+  }
+
+  #inicio {
+    scroll-margin-top: 0 !important;
+  }
+}
