@@ -2,42 +2,58 @@
 
 import { useEffect, useState } from "react";
 
+const navItems = [
+  { id: "inicio", label: "Inicio", href: "/#inicio" },
+  { id: "nosotros", label: "Nosotros", href: "/#nosotros" },
+  { id: "servicios", label: "Servicios", href: "/#servicios" },
+  { id: "sectores", label: "Sectores", href: "/#sectores" },
+  { id: "contacto", label: "Contacto", href: "/#contacto" },
+];
+
 export default function Navbar() {
   const [activeSection, setActiveSection] = useState("inicio");
 
   useEffect(() => {
-    const sections = ["inicio", "nosotros", "servicios", "sectores", "contacto"];
+    const updateActiveSection = () => {
+      const scrollPosition = window.scrollY + 220;
 
-    const handleScroll = () => {
-      let currentSection = "inicio";
+      let current = "inicio";
 
-      sections.forEach((sectionId) => {
-        const section = document.getElementById(sectionId);
+      navItems.forEach((item) => {
+        const section = document.getElementById(item.id);
 
-        if (section) {
-          const sectionTop = section.offsetTop - 180;
-
-          if (window.scrollY >= sectionTop) {
-            currentSection = sectionId;
-          }
+        if (section && section.offsetTop <= scrollPosition) {
+          current = item.id;
         }
       });
 
-      setActiveSection(currentSection);
+      setActiveSection(current);
     };
 
-    handleScroll();
+    updateActiveSection();
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", updateActiveSection);
+
+    window.addEventListener("hashchange", () => {
+      const hash = window.location.hash.replace("#", "");
+
+      if (hash) {
+        setActiveSection(hash);
+      }
+    });
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", updateActiveSection);
     };
   }, []);
 
+  const handleClick = (sectionId: string) => {
+    setActiveSection(sectionId);
+  };
+
   return (
     <header className="topNavbar">
-      <a href="/#inicio" className="zusasaLogo">
+      <a href="/#inicio" className="zusasaLogo" onClick={() => handleClick("inicio")}>
         <img
           className="navbarLogoImage"
           src="/images/logo-zusasa.png"
@@ -51,40 +67,16 @@ export default function Navbar() {
       </a>
 
       <nav className="topNavlinks">
-        <a
-          href="/#inicio"
-          className={activeSection === "inicio" ? "activeNavLink" : ""}
-        >
-          Inicio
-        </a>
-
-        <a
-          href="/#nosotros"
-          className={activeSection === "nosotros" ? "activeNavLink" : ""}
-        >
-          Nosotros
-        </a>
-
-        <a
-          href="/#servicios"
-          className={activeSection === "servicios" ? "activeNavLink" : ""}
-        >
-          Servicios
-        </a>
-
-        <a
-          href="/#sectores"
-          className={activeSection === "sectores" ? "activeNavLink" : ""}
-        >
-          Sectores
-        </a>
-
-        <a
-          href="/#contacto"
-          className={activeSection === "contacto" ? "activeNavLink" : ""}
-        >
-          Contacto
-        </a>
+        {navItems.map((item) => (
+          <a
+            key={item.id}
+            href={item.href}
+            onClick={() => handleClick(item.id)}
+            className={activeSection === item.id ? "activeNavLink" : ""}
+          >
+            {item.label}
+          </a>
+        ))}
       </nav>
 
       <a className="quoteButton" href="/cotizacion">
