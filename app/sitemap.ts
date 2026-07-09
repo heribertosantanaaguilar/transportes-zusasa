@@ -9,6 +9,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
+      url: "https://transporteszusasa.com/cotizacion",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
       url: "https://transporteszusasa.com/aviso-de-privacidad",
       lastModified: new Date(),
       changeFrequency: "yearly",
