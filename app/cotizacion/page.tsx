@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Solicitar cotización | Transportes ZUSASA",
   description:
-    "Solicita una cotización para transporte local de contenedores en Manzanillo, Colima. Atención para carga contenerizada, movimientos locales, importación y exportación.",
+    "Solicita una cotización para transporte local de contenedores en Manzanillo, Colima. Atención para carga contenerizada, movimientos locales, resguardo en patio de maniobras, importación y exportación.",
 };
 
 export default function CotizacionPage() {
@@ -26,7 +26,7 @@ export default function CotizacionPage() {
           <div className="quotePageActions">
             <a
               className="quotePageWhatsapp"
-              href="https://wa.me/522224556651?text=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20para%20un%20movimiento%20local%20de%20carga%20en%20Manzanillo.%0A%0ADatos%20del%20servicio%3A%0A-%20Empresa%3A%0A-%20Nombre%20de%20contacto%3A%0A-%20Tel%C3%A9fono%3A%0A-%20Tipo%20de%20contenedor%3A%0A-%20Origen%3A%0A-%20Destino%3A%0A-%20Fecha%20estimada%3A%0A-%20Comentarios%3A"
+              href="https://wa.me/522224556651?text=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20para%20un%20movimiento%20local%20de%20carga%20en%20Manzanillo.%0A%0ADatos%20del%20servicio%3A%0A-%20Empresa%3A%0A-%20Nombre%20de%20contacto%3A%0A-%20Tel%C3%A9fono%3A%0A-%20Tipo%20de%20contenedor%3A%0A-%20Origen%3A%0A-%20Destino%3A%0A-%20Fecha%20estimada%3A%0A-%20Requiere%20resguardo%20en%20patio%3A%0A-%20Comentarios%3A"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -35,7 +35,7 @@ export default function CotizacionPage() {
 
             <a
               className="quotePageEmail"
-              href="mailto:transportes.zusasa@gmail.com?subject=Solicitud%20de%20cotizaci%C3%B3n%20-%20Transporte%20local%20Manzanillo&body=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20para%20un%20movimiento%20local%20de%20carga%20en%20Manzanillo.%0A%0ADatos%20del%20servicio%3A%0A-%20Empresa%3A%0A-%20Nombre%20de%20contacto%3A%0A-%20Tel%C3%A9fono%3A%0A-%20Tipo%20de%20contenedor%3A%0A-%20Origen%3A%0A-%20Destino%3A%0A-%20Fecha%20estimada%3A%0A-%20Comentarios%3A"
+              href="mailto:transportes.zusasa@gmail.com?subject=Solicitud%20de%20cotizaci%C3%B3n%20-%20Transporte%20local%20Manzanillo&body=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20para%20un%20movimiento%20local%20de%20carga%20en%20Manzanillo.%0A%0ADatos%20del%20servicio%3A%0A-%20Empresa%3A%0A-%20Nombre%20de%20contacto%3A%0A-%20Tel%C3%A9fono%3A%0A-%20Tipo%20de%20contenedor%3A%0A-%20Origen%3A%0A-%20Destino%3A%0A-%20Fecha%20estimada%3A%0A-%20Requiere%20resguardo%20en%20patio%3A%0A-%20Comentarios%3A"
             >
               Enviar por correo
             </a>
@@ -93,19 +93,19 @@ export default function CotizacionPage() {
 
             <article>
               <strong>05</strong>
-              <h3>Detalles operativos</h3>
+              <h3>Resguardo en patio</h3>
               <p>
-                Agrega horarios, documentación, maniobras, resguardo o
-                condiciones especiales del servicio.
+                Indica si necesitas resguardo temporal del contenedor en patio
+                de maniobras, así como el tiempo estimado requerido.
               </p>
             </article>
 
             <article>
               <strong>06</strong>
-              <h3>Confirmación</h3>
+              <h3>Detalles operativos</h3>
               <p>
-                Revisaremos la información para responderte con claridad y dar
-                seguimiento a la cotización.
+                Agrega horarios, documentación, maniobras, condiciones
+                especiales o cualquier dato importante del servicio.
               </p>
             </article>
           </div>
@@ -131,10 +131,18 @@ export default function CotizacionPage() {
               </article>
 
               <article>
+                <h3>Resguardo en patio de maniobras</h3>
+                <p>
+                  Resguardo temporal de contenedores llenos o vacíos, sujeto a
+                  disponibilidad y condiciones operativas del patio.
+                </p>
+              </article>
+
+              <article>
                 <h3>Apoyo operativo</h3>
                 <p>
                   Coordinación, seguimiento y comunicación durante el movimiento
-                  local de la carga.
+                  local o resguardo de la carga.
                 </p>
               </article>
             </div>
@@ -146,7 +154,7 @@ export default function CotizacionPage() {
 
           <p className="quotePagePanelIntro">
             Para una atención más rápida, envía tu solicitud por WhatsApp con
-            los datos básicos de tu movimiento.
+            los datos básicos de tu movimiento o resguardo.
           </p>
 
           <div className="quotePageContactPerson">
@@ -157,7 +165,7 @@ export default function CotizacionPage() {
 
           <div className="quotePagePanelActions">
             <a
-              href="https://wa.me/522224556651?text=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20para%20un%20movimiento%20local%20de%20carga%20en%20Manzanillo.%0A%0ADatos%20del%20servicio%3A%0A-%20Empresa%3A%0A-%20Nombre%20de%20contacto%3A%0A-%20Tel%C3%A9fono%3A%0A-%20Tipo%20de%20contenedor%3A%0A-%20Origen%3A%0A-%20Destino%3A%0A-%20Fecha%20estimada%3A%0A-%20Comentarios%3A"
+              href="https://wa.me/522224556651?text=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20para%20un%20movimiento%20local%20de%20carga%20en%20Manzanillo.%0A%0ADatos%20del%20servicio%3A%0A-%20Empresa%3A%0A-%20Nombre%20de%20contacto%3A%0A-%20Tel%C3%A9fono%3A%0A-%20Tipo%20de%20contenedor%3A%0A-%20Origen%3A%0A-%20Destino%3A%0A-%20Fecha%20estimada%3A%0A-%20Requiere%20resguardo%20en%20patio%3A%0A-%20Comentarios%3A"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -185,14 +193,14 @@ export default function CotizacionPage() {
             <p>
               <strong>Enfoque de servicio</strong>
               <br />
-              Transporte local de carga contenerizada.
+              Transporte local, movimiento y resguardo de carga contenerizada.
             </p>
           </div>
 
           <div className="quotePageNote">
             <strong>Nota:</strong> Cada cotización se revisa de acuerdo con la
-            disponibilidad, ruta, condiciones y requerimientos reales de la
-            operación.
+            disponibilidad, ruta, condiciones, tiempo de resguardo y
+            requerimientos reales de la operación.
           </div>
         </aside>
       </section>
