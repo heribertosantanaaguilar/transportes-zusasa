@@ -5712,3 +5712,111 @@ footer p {
     scroll-margin-top: 0 !important;
   }
 }
+/* =========================================================
+   PÁGINA COTIZACIÓN - MEJORAS COMERCIALES
+   ========================================================= */
+
+.quotePageServices {
+  margin-top: 54px !important;
+  background: #ffffff !important;
+  padding: 36px !important;
+  border-radius: 30px !important;
+  box-shadow: 0 22px 60px rgba(10, 29, 54, 0.08) !important;
+  border: 1px solid rgba(10, 29, 54, 0.07) !important;
+}
+
+.quotePageServices > span {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  color: var(--orange) !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  font-size: 14px !important;
+  margin-bottom: 24px !important;
+}
+
+.quotePageServices > span::before {
+  content: "" !important;
+  width: 38px !important;
+  height: 3px !important;
+  background: var(--orange) !important;
+}
+
+.quotePageServicesGrid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 20px !important;
+}
+
+.quotePageServicesGrid article {
+  background: #f5f6f7 !important;
+  padding: 26px !important;
+  border-radius: 22px !important;
+  border-left: 5px solid var(--orange) !important;
+}
+
+.quotePageServicesGrid h3 {
+  color: var(--navy) !important;
+  font-size: 20px !important;
+  line-height: 1.2 !important;
+  margin: 0 0 12px !important;
+}
+
+.quotePageServicesGrid p {
+  color: var(--gray) !important;
+  line-height: 1.65 !important;
+  margin: 0 !important;
+  font-size: 15px !important;
+}
+
+.quotePagePanelIntro {
+  color: rgba(255, 255, 255, 0.82) !important;
+  line-height: 1.65 !important;
+  margin: -12px 0 26px !important;
+}
+
+.quotePagePanelActions {
+  display: grid !important;
+  gap: 12px !important;
+  margin-bottom: 28px !important;
+}
+
+.quotePagePanelActions a {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  min-height: 52px !important;
+  border-radius: 999px !important;
+  text-decoration: none !important;
+  font-weight: 900 !important;
+}
+
+.quotePagePanelActions a:first-child {
+  background: var(--orange) !important;
+  color: white !important;
+  box-shadow: 0 18px 45px rgba(242, 101, 34, 0.28) !important;
+}
+
+.quotePagePanelActions a:last-child {
+  background: white !important;
+  color: var(--navy) !important;
+}
+
+@media (max-width: 1000px) {
+  .quotePageServicesGrid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .quotePageServices {
+    padding: 26px !important;
+    margin-top: 42px !important;
+  }
+
+  .quotePageServicesGrid article {
+    padding: 22px !important;
+  }
+}
