@@ -11,9 +11,14 @@ export default function FAQ() {
         "Nuestra operación está enfocada en Manzanillo, especialmente en la zona portuaria y logística. Este enfoque local nos permite brindar atención cercana, coordinación ágil y conocimiento operativo de la zona.",
     },
     {
+      question: "¿Ofrecen resguardo en patio de maniobras?",
+      answer:
+        "Sí. Podemos apoyar con el resguardo temporal de contenedores llenos o vacíos en patio de maniobras, sujeto a disponibilidad, condiciones operativas y requerimientos específicos de cada servicio.",
+    },
+    {
       question: "¿Qué información necesito enviar para solicitar una cotización?",
       answer:
-        "Para cotizar con mayor precisión, recomendamos compartir el tipo de contenedor, origen, destino, fecha estimada del servicio y cualquier requerimiento especial relacionado con la operación.",
+        "Para cotizar con mayor precisión, recomendamos compartir el tipo de contenedor, origen, destino, fecha estimada del servicio, si requiere resguardo en patio de maniobras y cualquier requerimiento especial relacionado con la operación.",
     },
     {
       question: "¿Atienden operaciones urgentes?",
