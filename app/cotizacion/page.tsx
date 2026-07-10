@@ -18,9 +18,10 @@ export default function CotizacionPage() {
           <h1>Cotiza tu movimiento de contenedores en Manzanillo.</h1>
 
           <p>
-            Envíanos los datos básicos de tu operación y revisaremos
-            disponibilidad, condiciones y tiempos para darte una respuesta clara
-            y personalizada.
+            Envíanos los datos básicos de tu operación: tipo de contenedor,
+            origen, destino, fecha estimada y si requieres resguardo en patio de
+            maniobras. Revisaremos disponibilidad, condiciones y tiempos para
+            darte una respuesta clara y personalizada.
           </p>
 
           <div className="quotePageActions">
