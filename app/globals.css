@@ -5981,3 +5981,325 @@ footer p {
 
 .seoPrimaryButton,
 .seoWhatsappButton {
+/* =========================================================
+   PÁGINA SEO - RESGUARDO DE CONTENEDORES
+   ========================================================= */
+
+.seoServicePage {
+  min-height: 100vh !important;
+  background: #f5f6f7 !important;
+  color: var(--navy) !important;
+}
+
+.seoServiceHero {
+  min-height: 620px !important;
+  padding: 48px 7% 110px !important;
+  color: white !important;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 24, 46, 0.97) 0%,
+      rgba(5, 24, 46, 0.84) 44%,
+      rgba(5, 24, 46, 0.34) 100%
+    ),
+    url("https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=2400&q=90") !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.seoServiceBack {
+  display: inline-flex !important;
+  color: white !important;
+  text-decoration: none !important;
+  font-weight: 900 !important;
+  background: rgba(255, 255, 255, 0.12) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  padding: 12px 18px !important;
+  border-radius: 999px !important;
+  margin-bottom: 90px !important;
+}
+
+.seoServiceHeroContent {
+  max-width: 880px !important;
+}
+
+.seoServiceHeroContent > span,
+.seoServiceMain > span {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+  color: var(--orange) !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.2px !important;
+  font-size: 15px !important;
+  margin-bottom: 20px !important;
+}
+
+.seoServiceHeroContent > span::before,
+.seoServiceMain > span::before {
+  content: "" !important;
+  width: 44px !important;
+  height: 3px !important;
+  background: var(--orange) !important;
+}
+
+.seoServiceHeroContent h1 {
+  font-size: clamp(42px, 6vw, 76px) !important;
+  line-height: 1.02 !important;
+  letter-spacing: -2px !important;
+  margin: 0 0 28px !important;
+}
+
+.seoServiceHeroContent p {
+  font-size: 20px !important;
+  line-height: 1.75 !important;
+  color: rgba(255, 255, 255, 0.88) !important;
+  max-width: 780px !important;
+  margin: 0 0 38px !important;
+}
+
+.seoServiceActions {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 18px !important;
+}
+
+.seoPrimaryButton,
+.seoSecondaryButton,
+.seoWhatsappButton,
+.seoEmailButton {
+  display: inline-flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  min-height: 56px !important;
+  padding: 0 28px !important;
+  border-radius: 999px !important;
+  text-decoration: none !important;
+  font-weight: 900 !important;
+}
+
+.seoPrimaryButton,
+.seoWhatsappButton {
+  background: var(--orange) !important;
+  color: white !important;
+  box-shadow: 0 18px 45px rgba(242, 101, 34, 0.34) !important;
+}
+
+.seoSecondaryButton,
+.seoEmailButton {
+  background: white !important;
+  color: var(--navy) !important;
+}
+
+.seoServiceBody {
+  display: grid !important;
+  grid-template-columns: 1.15fr 0.85fr !important;
+  gap: 54px !important;
+  align-items: start !important;
+  padding: 100px 7% !important;
+}
+
+.seoServiceMain h2 {
+  font-size: clamp(34px, 4vw, 56px) !important;
+  line-height: 1.06 !important;
+  letter-spacing: -1.4px !important;
+  margin: 0 0 22px !important;
+  color: var(--navy) !important;
+}
+
+.seoServiceMain > p {
+  max-width: 820px !important;
+  color: var(--gray) !important;
+  font-size: 18px !important;
+  line-height: 1.75 !important;
+  margin: 0 0 42px !important;
+  padding-left: 24px !important;
+  border-left: 5px solid var(--orange) !important;
+}
+
+.seoServiceCards {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 22px !important;
+  margin-bottom: 46px !important;
+}
+
+.seoServiceCards article {
+  background: white !important;
+  padding: 30px !important;
+  border-radius: 24px !important;
+  box-shadow: 0 20px 55px rgba(10, 29, 54, 0.09) !important;
+  border: 1px solid rgba(10, 29, 54, 0.07) !important;
+  border-bottom: 5px solid var(--orange) !important;
+}
+
+.seoServiceCards article strong {
+  color: var(--orange) !important;
+  font-size: 22px !important;
+  font-weight: 900 !important;
+}
+
+.seoServiceCards article h3 {
+  color: var(--navy) !important;
+  font-size: 22px !important;
+  margin: 18px 0 12px !important;
+}
+
+.seoServiceCards article p {
+  color: var(--gray) !important;
+  line-height: 1.65 !important;
+  margin: 0 !important;
+}
+
+.seoServiceInfoBlock {
+  background: white !important;
+  padding: 38px !important;
+  border-radius: 30px !important;
+  box-shadow: 0 20px 55px rgba(10, 29, 54, 0.08) !important;
+}
+
+.seoServiceInfoBlock h2 {
+  font-size: 32px !important;
+  margin-bottom: 24px !important;
+}
+
+.seoServiceInfoBlock ul {
+  margin: 0 !important;
+  padding-left: 22px !important;
+  color: var(--gray) !important;
+  line-height: 1.8 !important;
+  font-weight: 700 !important;
+}
+
+.seoServiceInfoBlock li {
+  margin-bottom: 10px !important;
+}
+
+.seoServicePanel {
+  position: sticky !important;
+  top: 120px !important;
+  background: var(--navy) !important;
+  color: white !important;
+  padding: 42px !important;
+  border-radius: 32px !important;
+  box-shadow: 0 34px 90px rgba(10, 29, 54, 0.22) !important;
+  border-top: 7px solid var(--orange) !important;
+}
+
+.seoServicePanel h2 {
+  font-size: 32px !important;
+  line-height: 1.15 !important;
+  margin: 0 0 18px !important;
+}
+
+.seoServicePanel > p {
+  color: rgba(255, 255, 255, 0.82) !important;
+  line-height: 1.65 !important;
+  margin: 0 0 26px !important;
+}
+
+.seoContactPerson {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  padding: 24px !important;
+  border-radius: 22px !important;
+  margin-bottom: 20px !important;
+}
+
+.seoContactPerson strong {
+  display: block !important;
+  font-size: 22px !important;
+  margin-bottom: 8px !important;
+}
+
+.seoContactPerson span {
+  display: block !important;
+  color: var(--orange) !important;
+  font-weight: 900 !important;
+  margin-bottom: 14px !important;
+}
+
+.seoContactPerson a {
+  color: white !important;
+  font-weight: 900 !important;
+  text-decoration: none !important;
+}
+
+.seoWhatsappButton,
+.seoEmailButton {
+  width: 100% !important;
+  margin-bottom: 12px !important;
+}
+
+.seoServiceNote {
+  margin-top: 18px !important;
+  background: rgba(242, 101, 34, 0.16) !important;
+  border: 1px solid rgba(242, 101, 34, 0.32) !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  padding: 22px !important;
+  border-radius: 20px !important;
+  line-height: 1.65 !important;
+}
+
+.seoServiceNote strong {
+  color: var(--orange) !important;
+}
+
+@media (max-width: 1000px) {
+  .seoServiceBody {
+    grid-template-columns: 1fr !important;
+  }
+
+  .seoServicePanel {
+    position: relative !important;
+    top: auto !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .seoServiceHero {
+    min-height: auto !important;
+    padding: 34px 24px 80px !important;
+    background-position: center center !important;
+  }
+
+  .seoServiceBack {
+    margin-bottom: 70px !important;
+  }
+
+  .seoServiceHeroContent h1 {
+    font-size: 42px !important;
+    line-height: 1.05 !important;
+  }
+
+  .seoServiceHeroContent p {
+    font-size: 17px !important;
+    line-height: 1.55 !important;
+  }
+
+  .seoServiceActions {
+    flex-direction: column !important;
+  }
+
+  .seoPrimaryButton,
+  .seoSecondaryButton {
+    width: 100% !important;
+  }
+
+  .seoServiceBody {
+    padding: 75px 24px !important;
+  }
+
+  .seoServiceCards {
+    grid-template-columns: 1fr !important;
+  }
+
+  .seoServiceInfoBlock {
+    padding: 28px !important;
+  }
+
+  .seoServicePanel {
+    padding: 30px !important;
+  }
+}
