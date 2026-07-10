@@ -8,7 +8,7 @@ export default function Services() {
     {
       number: "02",
       title: "Resguardo en patio de maniobras",
-      text: "Apoyamos con el resguardo temporal de contenedores llenos o vacíos en patio de maniobras, de acuerdo con la disponibilidad, condiciones operativas y necesidades de cada cliente.",
+      text: "Apoyamos con el resguardo temporal de contenedores llenos o vacíos en patio de maniobras, sujeto a disponibilidad, condiciones operativas y necesidades de cada cliente.",
     },
     {
       number: "03",
@@ -30,9 +30,9 @@ export default function Services() {
         <h2>Soluciones locales para mover y resguardar tu carga con confianza.</h2>
 
         <p>
-          Atendemos operaciones de carga contenerizada con enfoque en
-          coordinación, seguridad, respuesta rápida, resguardo operativo y
-          cumplimiento en Manzanillo.
+          Atendemos operaciones de carga contenerizada en Manzanillo con enfoque
+          en coordinación, seguridad, respuesta ágil, resguardo operativo y
+          seguimiento constante.
         </p>
       </div>
 
