@@ -1,10 +1,10 @@
 export default function FAQ() {
   const questions = [
-    {
-      question: "¿Qué tipo de servicio ofrece Transportes ZUSASA?",
-      answer:
-        "Ofrecemos transporte local de carga contenerizada en Manzanillo, Colima, principalmente para operaciones vinculadas al Puerto de Manzanillo, importación, exportación y movimientos locales.",
-    },
+   {
+  question: "¿Qué servicios ofrece Transportes ZUSASA?",
+  answer:
+    "Ofrecemos transporte local de carga contenerizada en Manzanillo, Colima, movimiento local de contenedores, resguardo temporal en patio de maniobras y apoyo operativo para operaciones vinculadas al Puerto de Manzanillo, importación y exportación.",
+},
     {
       question: "¿En qué zona trabajan actualmente?",
       answer:
