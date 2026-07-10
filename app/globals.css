@@ -7604,3 +7604,41 @@ footer p {
     margin-top: 24px !important;
   }
 }
+/* =========================================================
+   SERVICIOS - BOTONES BURBUJA NARANJA DEFINITIVOS
+   ========================================================= */
+
+.zusasaServices .zusasaServicesGrid .zusasaServiceCard a.serviceCardLink,
+.zusasaServices .zusasaServicesGrid .zusasaServiceCard a.serviceCardLink:visited {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: fit-content !important;
+  min-height: 52px !important;
+  margin-top: 30px !important;
+  padding: 0 28px !important;
+  border-radius: 999px !important;
+  background: #f26522 !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-weight: 900 !important;
+  font-size: 15px !important;
+  line-height: 1 !important;
+  box-shadow: 0 18px 42px rgba(242, 101, 34, 0.34) !important;
+  border: 2px solid #f26522 !important;
+}
+
+.zusasaServices .zusasaServicesGrid .zusasaServiceCard a.serviceCardLink:hover {
+  background: #ff7433 !important;
+  border-color: #ff7433 !important;
+  color: #ffffff !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 24px 55px rgba(242, 101, 34, 0.45) !important;
+}
+
+@media (max-width: 650px) {
+  .zusasaServices .zusasaServicesGrid .zusasaServiceCard a.serviceCardLink {
+    width: 100% !important;
+    min-height: 54px !important;
+  }
+}
