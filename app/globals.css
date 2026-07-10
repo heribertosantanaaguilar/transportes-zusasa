@@ -6957,3 +6957,25 @@ footer p {
     padding: 30px !important;
   }
 }
+/* =========================================================
+   SERVICIOS - BOTÓN EN TARJETAS
+   ========================================================= */
+
+.serviceCardLink {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-top: 24px !important;
+  min-height: 46px !important;
+  padding: 0 20px !important;
+  border-radius: 999px !important;
+  background: var(--orange) !important;
+  color: white !important;
+  text-decoration: none !important;
+  font-weight: 900 !important;
+  box-shadow: 0 14px 34px rgba(242, 101, 34, 0.24) !important;
+}
+
+.serviceCardLink:hover {
+  transform: translateY(-2px) !important;
+}
