@@ -16,8 +16,8 @@ export default function Footer() {
         </div>
 
         <p>
-          Transporte local de carga contenerizada para operaciones portuarias,
-          logísticas, de importación y exportación en Manzanillo, Colima.
+          Transporte local, movimiento y resguardo de carga contenerizada para
+          operaciones portuarias en Manzanillo, Colima.
         </p>
 
         <p className="footerSlogan">
@@ -27,12 +27,24 @@ export default function Footer() {
 
       <div>
         <h3>Navegación</h3>
+
         <a href="/#inicio">Inicio</a>
         <a href="/#nosotros">Nosotros</a>
         <a href="/#servicios">Servicios</a>
+        <a href="/#por-que-elegir">Por qué elegirnos</a>
         <a href="/#sectores">Sectores</a>
         <a href="/#contacto">Contacto</a>
+
         <a href="/cotizacion">Solicitar cotización</a>
+
+        <a href="/transporte-de-contenedores-manzanillo">
+          Transporte de contenedores
+        </a>
+
+        <a href="/resguardo-de-contenedores-manzanillo">
+          Resguardo de contenedores
+        </a>
+
         <a href="/aviso-de-privacidad">Aviso de privacidad</a>
       </div>
 
@@ -40,9 +52,11 @@ export default function Footer() {
         <h3>Áreas de contacto</h3>
 
         <a href="/#gerencia-general">Gerencia General</a>
+
         <a href="/#administracion-finanzas">
           Dirección de Administración y Finanzas
         </a>
+
         <a href="/#coordinacion-logistica">Coordinación de Logística</a>
 
         <p className="footerEmail">
