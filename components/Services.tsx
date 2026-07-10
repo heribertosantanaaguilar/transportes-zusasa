@@ -4,8 +4,8 @@ export default function Services() {
       number: "01",
       title: "Movimiento local de contenedores",
       text: "Coordinamos traslados de carga contenerizada dentro de la zona portuaria y logística de Manzanillo, atendiendo operaciones de importación, exportación y movimientos locales.",
-      link: "/cotizacion",
-      button: "Solicitar cotización",
+      link: "/transporte-de-contenedores-manzanillo",
+      button: "Conocer servicio",
     },
     {
       number: "02",
@@ -48,7 +48,9 @@ export default function Services() {
         {services.map((service) => (
           <article className="zusasaServiceCard" key={service.title}>
             <strong>{service.number}</strong>
+
             <h3>{service.title}</h3>
+
             <p>{service.text}</p>
 
             <a className="serviceCardLink" href={service.link}>
