@@ -7199,3 +7199,365 @@ footer p {
     grid-template-columns: 1fr !important;
   }
 }
+/* =========================================================
+   PÁGINA RESGUARDO - ESTILO CORPORATIVO INDEPENDIENTE
+   ========================================================= */
+
+.zusasaResguardoPage {
+  min-height: 100vh !important;
+  background: #f5f6f7 !important;
+  color: #0a1d36 !important;
+  overflow-x: hidden !important;
+}
+
+.zusasaResguardoHero {
+  min-height: 720px !important;
+  padding: 56px 7% 120px !important;
+  color: white !important;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 24, 46, 0.98) 0%,
+      rgba(5, 24, 46, 0.84) 44%,
+      rgba(5, 24, 46, 0.28) 100%
+    ),
+    url("https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=2400&q=90") !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.zusasaResguardoBack {
+  display: inline-flex !important;
+  color: white !important;
+  text-decoration: none !important;
+  font-weight: 900 !important;
+  background: rgba(255, 255, 255, 0.12) !important;
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  padding: 13px 20px !important;
+  border-radius: 999px !important;
+  margin-bottom: 110px !important;
+}
+
+.zusasaResguardoHeroContent {
+  max-width: 900px !important;
+}
+
+.zusasaResguardoHeroContent > span,
+.zusasaResguardoMain > span {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+  color: #f26522 !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.2px !important;
+  font-size: 15px !important;
+  margin-bottom: 22px !important;
+}
+
+.zusasaResguardoHeroContent > span::before,
+.zusasaResguardoMain > span::before {
+  content: "" !important;
+  width: 48px !important;
+  height: 4px !important;
+  background: #f26522 !important;
+  border-radius: 999px !important;
+}
+
+.zusasaResguardoHeroContent h1 {
+  max-width: 920px !important;
+  font-size: clamp(44px, 6vw, 78px) !important;
+  line-height: 1.02 !important;
+  letter-spacing: -2px !important;
+  margin: 0 0 28px !important;
+  color: white !important;
+}
+
+.zusasaResguardoHeroContent p {
+  max-width: 780px !important;
+  font-size: 20px !important;
+  line-height: 1.75 !important;
+  color: rgba(255, 255, 255, 0.88) !important;
+  margin: 0 0 38px !important;
+}
+
+.zusasaResguardoActions {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 18px !important;
+}
+
+.zusasaResguardoPrimary,
+.zusasaResguardoSecondary {
+  min-height: 58px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 30px !important;
+  border-radius: 999px !important;
+  font-weight: 900 !important;
+  text-decoration: none !important;
+}
+
+.zusasaResguardoPrimary {
+  background: #f26522 !important;
+  color: white !important;
+  box-shadow: 0 20px 50px rgba(242, 101, 34, 0.38) !important;
+}
+
+.zusasaResguardoSecondary {
+  background: white !important;
+  color: #0a1d36 !important;
+}
+
+.zusasaResguardoBody {
+  display: grid !important;
+  grid-template-columns: 1.15fr 0.85fr !important;
+  gap: 56px !important;
+  align-items: start !important;
+  padding: 100px 7% !important;
+  background: #f5f6f7 !important;
+}
+
+.zusasaResguardoMain h2 {
+  max-width: 850px !important;
+  font-size: clamp(34px, 4vw, 58px) !important;
+  line-height: 1.06 !important;
+  letter-spacing: -1.4px !important;
+  margin: 0 0 24px !important;
+  color: #0a1d36 !important;
+}
+
+.zusasaResguardoMain > p {
+  max-width: 850px !important;
+  color: #3b4a5a !important;
+  font-size: 18px !important;
+  line-height: 1.75 !important;
+  margin: 0 0 46px !important;
+  padding-left: 26px !important;
+  border-left: 6px solid #f26522 !important;
+}
+
+.zusasaResguardoCards {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 24px !important;
+  margin-bottom: 50px !important;
+}
+
+.zusasaResguardoCards article {
+  background: white !important;
+  padding: 34px 30px !important;
+  border-radius: 28px !important;
+  border: 1px solid rgba(10, 29, 54, 0.08) !important;
+  border-bottom: 6px solid #f26522 !important;
+  box-shadow: 0 24px 65px rgba(10, 29, 54, 0.1) !important;
+}
+
+.zusasaResguardoCards article strong {
+  display: block !important;
+  color: #f26522 !important;
+  font-size: 24px !important;
+  font-weight: 900 !important;
+  margin-bottom: 18px !important;
+}
+
+.zusasaResguardoCards article h3 {
+  color: #0a1d36 !important;
+  font-size: 23px !important;
+  line-height: 1.18 !important;
+  margin: 0 0 14px !important;
+}
+
+.zusasaResguardoCards article p {
+  color: #3b4a5a !important;
+  font-size: 16px !important;
+  line-height: 1.65 !important;
+  margin: 0 !important;
+}
+
+.zusasaResguardoInfo {
+  background: white !important;
+  padding: 42px !important;
+  border-radius: 32px !important;
+  box-shadow: 0 24px 65px rgba(10, 29, 54, 0.09) !important;
+  border: 1px solid rgba(10, 29, 54, 0.07) !important;
+}
+
+.zusasaResguardoInfo h2 {
+  color: #0a1d36 !important;
+  font-size: 34px !important;
+  line-height: 1.12 !important;
+  margin: 0 0 26px !important;
+}
+
+.zusasaResguardoInfo ul {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: grid !important;
+  gap: 14px !important;
+}
+
+.zusasaResguardoInfo li {
+  position: relative !important;
+  padding-left: 34px !important;
+  color: #3b4a5a !important;
+  font-weight: 700 !important;
+  line-height: 1.6 !important;
+}
+
+.zusasaResguardoInfo li::before {
+  content: "✓" !important;
+  position: absolute !important;
+  left: 0 !important;
+  color: #f26522 !important;
+  font-weight: 900 !important;
+}
+
+.zusasaResguardoPanel {
+  position: sticky !important;
+  top: 120px !important;
+  background: #0a1d36 !important;
+  color: white !important;
+  padding: 44px !important;
+  border-radius: 34px !important;
+  border-top: 8px solid #f26522 !important;
+  box-shadow: 0 34px 95px rgba(10, 29, 54, 0.25) !important;
+}
+
+.zusasaResguardoPanel h2 {
+  font-size: 34px !important;
+  line-height: 1.12 !important;
+  margin: 0 0 20px !important;
+  color: white !important;
+}
+
+.zusasaResguardoPanel > p {
+  color: rgba(255, 255, 255, 0.84) !important;
+  line-height: 1.65 !important;
+  margin: 0 0 28px !important;
+}
+
+.zusasaResguardoPerson {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  padding: 26px !important;
+  border-radius: 24px !important;
+  margin-bottom: 22px !important;
+}
+
+.zusasaResguardoPerson strong {
+  display: block !important;
+  font-size: 23px !important;
+  color: white !important;
+  margin-bottom: 8px !important;
+}
+
+.zusasaResguardoPerson span {
+  display: block !important;
+  color: #f26522 !important;
+  font-weight: 900 !important;
+  margin-bottom: 14px !important;
+}
+
+.zusasaResguardoPerson a {
+  color: white !important;
+  font-weight: 900 !important;
+  text-decoration: none !important;
+}
+
+.zusasaResguardoWhatsapp,
+.zusasaResguardoEmail {
+  width: 100% !important;
+  min-height: 56px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 999px !important;
+  text-decoration: none !important;
+  font-weight: 900 !important;
+  margin-bottom: 14px !important;
+}
+
+.zusasaResguardoWhatsapp {
+  background: #f26522 !important;
+  color: white !important;
+}
+
+.zusasaResguardoEmail {
+  background: white !important;
+  color: #0a1d36 !important;
+}
+
+.zusasaResguardoNote {
+  margin-top: 22px !important;
+  background: rgba(242, 101, 34, 0.16) !important;
+  border: 1px solid rgba(242, 101, 34, 0.34) !important;
+  color: rgba(255, 255, 255, 0.92) !important;
+  padding: 22px !important;
+  border-radius: 20px !important;
+  line-height: 1.65 !important;
+}
+
+.zusasaResguardoNote strong {
+  color: #f26522 !important;
+}
+
+@media (max-width: 1000px) {
+  .zusasaResguardoBody {
+    grid-template-columns: 1fr !important;
+    padding: 80px 6% !important;
+  }
+
+  .zusasaResguardoPanel {
+    position: relative !important;
+    top: auto !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .zusasaResguardoHero {
+    min-height: auto !important;
+    padding: 34px 24px 80px !important;
+  }
+
+  .zusasaResguardoBack {
+    margin-bottom: 70px !important;
+  }
+
+  .zusasaResguardoHeroContent h1 {
+    font-size: 42px !important;
+    line-height: 1.05 !important;
+  }
+
+  .zusasaResguardoHeroContent p {
+    font-size: 17px !important;
+    line-height: 1.55 !important;
+  }
+
+  .zusasaResguardoActions {
+    flex-direction: column !important;
+  }
+
+  .zusasaResguardoPrimary,
+  .zusasaResguardoSecondary {
+    width: 100% !important;
+  }
+
+  .zusasaResguardoBody {
+    padding: 70px 24px !important;
+  }
+
+  .zusasaResguardoCards {
+    grid-template-columns: 1fr !important;
+  }
+
+  .zusasaResguardoInfo {
+    padding: 28px !important;
+  }
+
+  .zusasaResguardoPanel {
+    padding: 30px !important;
+  }
+}
