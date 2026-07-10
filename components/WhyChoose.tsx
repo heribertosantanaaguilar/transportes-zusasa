@@ -29,7 +29,7 @@ export default function WhyChoose() {
   ];
 
   return (
-    <section className={styles.section}>
+   <section id="por-que-elegir" className={styles.section}>
       <div className={styles.header}>
         <span>Por qué elegir ZUSASA</span>
 
