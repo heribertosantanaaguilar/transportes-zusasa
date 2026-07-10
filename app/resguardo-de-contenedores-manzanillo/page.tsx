@@ -1,27 +1,20 @@
+import styles from "./resguardo.module.css";
+
 export const metadata = {
   title: "Resguardo de contenedores en Manzanillo | Transportes ZUSASA",
   description:
     "Servicio de resguardo temporal de contenedores en patio de maniobras en Manzanillo, Colima. Apoyo operativo para carga contenerizada, importación, exportación y movimientos locales.",
-  keywords: [
-    "resguardo de contenedores en Manzanillo",
-    "patio de maniobras Manzanillo",
-    "resguardo en patio de maniobras",
-    "resguardo temporal de contenedores",
-    "movimiento de contenedores Manzanillo",
-    "transporte de contenedores en Manzanillo",
-    "Transportes ZUSASA",
-  ],
 };
 
 export default function ResguardoContenedoresPage() {
   return (
-    <main className="zusasaResguardoPage">
-      <section className="zusasaResguardoHero">
-        <a className="zusasaResguardoBack" href="/">
+    <main className={styles.page}>
+      <section className={styles.hero}>
+        <a className={styles.back} href="/">
           ← Volver al inicio
         </a>
 
-        <div className="zusasaResguardoHeroContent">
+        <div className={styles.heroContent}>
           <span>Resguardo en patio de maniobras</span>
 
           <h1>Resguardo de contenedores en Manzanillo.</h1>
@@ -32,9 +25,9 @@ export default function ResguardoContenedoresPage() {
             operativas y requerimientos de cada servicio.
           </p>
 
-          <div className="zusasaResguardoActions">
+          <div className={styles.actions}>
             <a
-              className="zusasaResguardoPrimary"
+              className={styles.primaryButton}
               href="https://wa.me/522224556651?text=Hola%2C%20quiero%20solicitar%20informaci%C3%B3n%20sobre%20resguardo%20de%20contenedores%20en%20patio%20de%20maniobras%20en%20Manzanillo.%0A%0ADatos%20del%20servicio%3A%0A-%20Empresa%3A%0A-%20Nombre%20de%20contacto%3A%0A-%20Tel%C3%A9fono%3A%0A-%20Tipo%20de%20contenedor%3A%0A-%20Contenedor%20lleno%20o%20vac%C3%ADo%3A%0A-%20Tiempo%20estimado%20de%20resguardo%3A%0A-%20Fecha%20estimada%3A%0A-%20Comentarios%3A"
               target="_blank"
               rel="noopener noreferrer"
@@ -42,15 +35,15 @@ export default function ResguardoContenedoresPage() {
               Solicitar información
             </a>
 
-            <a className="zusasaResguardoSecondary" href="/cotizacion">
+            <a className={styles.secondaryButton} href="/cotizacion">
               Ir a cotización
             </a>
           </div>
         </div>
       </section>
 
-      <section className="zusasaResguardoBody">
-        <div className="zusasaResguardoMain">
+      <section className={styles.body}>
+        <div className={styles.mainContent}>
           <span>Servicio especializado</span>
 
           <h2>Apoyo operativo para el resguardo temporal de contenedores.</h2>
@@ -63,7 +56,7 @@ export default function ResguardoContenedoresPage() {
             la zona de Manzanillo.
           </p>
 
-          <div className="zusasaResguardoCards">
+          <div className={styles.cards}>
             <article>
               <strong>01</strong>
               <h3>Contenedores llenos o vacíos</h3>
@@ -101,7 +94,7 @@ export default function ResguardoContenedoresPage() {
             </article>
           </div>
 
-          <div className="zusasaResguardoInfo">
+          <div className={styles.infoBlock}>
             <h2>¿Qué información necesitamos para revisar el resguardo?</h2>
 
             <ul>
@@ -115,7 +108,7 @@ export default function ResguardoContenedoresPage() {
           </div>
         </div>
 
-        <aside className="zusasaResguardoPanel">
+        <aside className={styles.panel}>
           <h2>Solicita disponibilidad</h2>
 
           <p>
@@ -123,14 +116,14 @@ export default function ResguardoContenedoresPage() {
             apoyar con el resguardo temporal del contenedor.
           </p>
 
-          <div className="zusasaResguardoPerson">
+          <div className={styles.person}>
             <strong>José Alberto Zúñiga Ramos</strong>
             <span>Gerente General</span>
             <a href="tel:2224556651">222 455 6651</a>
           </div>
 
           <a
-            className="zusasaResguardoWhatsapp"
+            className={styles.whatsappButton}
             href="https://wa.me/522224556651?text=Hola%2C%20quiero%20solicitar%20informaci%C3%B3n%20sobre%20resguardo%20de%20contenedores%20en%20patio%20de%20maniobras%20en%20Manzanillo.%0A%0ADatos%20del%20servicio%3A%0A-%20Empresa%3A%0A-%20Nombre%20de%20contacto%3A%0A-%20Tel%C3%A9fono%3A%0A-%20Tipo%20de%20contenedor%3A%0A-%20Contenedor%20lleno%20o%20vac%C3%ADo%3A%0A-%20Tiempo%20estimado%20de%20resguardo%3A%0A-%20Fecha%20estimada%3A%0A-%20Comentarios%3A"
             target="_blank"
             rel="noopener noreferrer"
@@ -139,13 +132,13 @@ export default function ResguardoContenedoresPage() {
           </a>
 
           <a
-            className="zusasaResguardoEmail"
-            href="mailto:transportes.zusasa@gmail.com?subject=Consulta%20sobre%20resguardo%20de%20contenedores%20en%20Manzanillo&body=Hola%2C%20quiero%20solicitar%20informaci%C3%B3n%20sobre%20resguardo%20de%20contenedores%20en%20patio%20de%20maniobras%20en%20Manzanillo.%0A%0ADatos%20del%20servicio%3A%0A-%20Empresa%3A%0A-%20Nombre%20de%20contacto%3A%0A-%20Tel%C3%A9fono%3A%0A-%20Tipo%20de%20contenedor%3A%0A-%20Contenedor%20lleno%20o%20vac%C3%ADo%3A%0A-%20Tiempo%20estimado%20de%20resguardo%3A%0A-%20Fecha%20estimada%3A%0A-%20Comentarios%3A"
+            className={styles.emailButton}
+            href="mailto:transportes.zusasa@gmail.com?subject=Consulta%20sobre%20resguardo%20de%20contenedores%20en%20Manzanillo"
           >
             Enviar correo
           </a>
 
-          <div className="zusasaResguardoNote">
+          <div className={styles.note}>
             <strong>Nota:</strong> El resguardo está sujeto a disponibilidad,
             condiciones operativas del patio y características del servicio.
           </div>
