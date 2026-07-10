@@ -7561,3 +7561,47 @@ footer p {
     padding: 30px !important;
   }
 }
+  /* =========================================================
+   BOTONES DE SERVICIOS - ESTILO BURBUJA NARANJA
+   ========================================================= */
+
+.serviceCardLink {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: fit-content !important;
+  min-height: 52px !important;
+  margin-top: 28px !important;
+  padding: 0 26px !important;
+  border-radius: 999px !important;
+  background: #f26522 !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-weight: 900 !important;
+  font-size: 15px !important;
+  letter-spacing: 0.2px !important;
+  box-shadow: 0 18px 42px rgba(242, 101, 34, 0.34) !important;
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    background 0.22s ease !important;
+}
+
+.serviceCardLink:hover {
+  transform: translateY(-3px) !important;
+  background: #ff7433 !important;
+  box-shadow: 0 24px 55px rgba(242, 101, 34, 0.45) !important;
+}
+
+.serviceCardLink:active {
+  transform: translateY(0) !important;
+}
+
+@media (max-width: 650px) {
+  .serviceCardLink {
+    width: 100% !important;
+    min-height: 54px !important;
+    margin-top: 24px !important;
+  }
+}
+d
