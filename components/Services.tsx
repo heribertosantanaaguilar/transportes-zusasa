@@ -7,39 +7,8 @@ export default function Services() {
     },
     {
       number: "02",
-      title: "Resguardo y apoyo operativo",
-      text: "Apoyamos en la coordinación de resguardo, almacenamiento y manejo operativo de contenedores llenos o vacíos, de acuerdo con las necesidades de cada cliente.",
+      title: "Resguardo en patio de maniobras",
+      text: "Apoyamos con el resguardo temporal de contenedores llenos o vacíos en patio de maniobras, de acuerdo con la disponibilidad, condiciones operativas y necesidades de cada cliente.",
     },
     {
-      number: "03",
-      title: "Seguimiento y comunicación constante",
-      text: "Mantenemos comunicación directa durante cada etapa del servicio para brindar claridad sobre tiempos, avances y confirmación del movimiento.",
-    },
-  ];
-
-  return (
-    <section id="servicios" className="zusasaServices">
-      <div className="sectionHeader">
-        <span>Servicios</span>
-
-        <h2>Soluciones locales para mover tu carga con confianza.</h2>
-
-        <p>
-          Atendemos operaciones de carga contenerizada con enfoque en
-          coordinación, seguridad, respuesta rápida y cumplimiento operativo en
-          Manzanillo.
-        </p>
-      </div>
-
-      <div className="zusasaServicesGrid">
-        {services.map((service) => (
-          <article className="zusasaServiceCard" key={service.title}>
-            <strong>{service.number}</strong>
-            <h3>{service.title}</h3>
-            <p>{service.text}</p>
-          </article>
-        ))}
-      </div>
-    </section>
-  );
-}
+     
