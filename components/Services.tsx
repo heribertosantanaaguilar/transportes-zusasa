@@ -30,6 +30,25 @@ export default function Services() {
     },
   ];
 
+  const bubbleButtonStyle = {
+    display: "inline-flex",
+    alignItems: "center",
+    justifyContent: "center",
+    width: "fit-content",
+    minHeight: "52px",
+    marginTop: "30px",
+    padding: "0 28px",
+    borderRadius: "999px",
+    background: "#F26522",
+    color: "#FFFFFF",
+    textDecoration: "none",
+    fontWeight: 900,
+    fontSize: "15px",
+    lineHeight: 1,
+    boxShadow: "0 18px 42px rgba(242, 101, 34, 0.34)",
+    border: "2px solid #F26522",
+  };
+
   return (
     <section id="servicios" className="zusasaServices">
       <div className="sectionHeader">
@@ -53,7 +72,11 @@ export default function Services() {
 
             <p>{service.text}</p>
 
-            <a className="serviceCardLink" href={service.link}>
+            <a
+              className="serviceCardLink"
+              href={service.link}
+              style={bubbleButtonStyle}
+            >
               {service.button} →
             </a>
           </article>
