@@ -5820,3 +5820,22 @@ footer p {
     padding: 22px !important;
   }
 }
+/* =========================================================
+   AJUSTE COTIZACIÓN - 4 SERVICIOS COTIZABLES
+   ========================================================= */
+
+.quotePageServicesGrid {
+  grid-template-columns: repeat(4, 1fr) !important;
+}
+
+@media (max-width: 1100px) {
+  .quotePageServicesGrid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .quotePageServicesGrid {
+    grid-template-columns: 1fr !important;
+  }
+}
