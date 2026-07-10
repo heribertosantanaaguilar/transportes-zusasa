@@ -46,7 +46,9 @@ export default function WhyChoose() {
         {reasons.map((reason, index) => (
           <article className={styles.card} key={reason.title}>
             <strong>{String(index + 1).padStart(2, "0")}</strong>
+
             <h3>{reason.title}</h3>
+
             <p>{reason.text}</p>
           </article>
         ))}
@@ -55,6 +57,7 @@ export default function WhyChoose() {
       <div className={styles.callout}>
         <div>
           <span>Servicio local en Manzanillo</span>
+
           <h3>
             Transporte y resguardo de carga contenerizada para operaciones
             portuarias.
