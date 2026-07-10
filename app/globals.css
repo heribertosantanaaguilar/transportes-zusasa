@@ -6303,3 +6303,390 @@ footer p {
     padding: 30px !important;
   }
 }
+/* =========================================================
+   RESGUARDO DE CONTENEDORES - ESTILO CORPORATIVO FINAL
+   ========================================================= */
+
+.seoServicePage {
+  width: 100% !important;
+  min-height: 100vh !important;
+  background: #f5f6f7 !important;
+  color: #0a1d36 !important;
+  overflow-x: hidden !important;
+}
+
+/* HERO SUPERIOR */
+
+.seoServiceHero {
+  min-height: 720px !important;
+  padding: 56px 7% 120px !important;
+  color: #ffffff !important;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 24, 46, 0.98) 0%,
+      rgba(5, 24, 46, 0.84) 44%,
+      rgba(5, 24, 46, 0.28) 100%
+    ),
+    url("https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=2400&q=90") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+}
+
+.seoServiceBack {
+  width: fit-content !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-weight: 900 !important;
+  background: rgba(255, 255, 255, 0.12) !important;
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  padding: 13px 20px !important;
+  border-radius: 999px !important;
+  margin-bottom: 110px !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+.seoServiceHeroContent {
+  max-width: 900px !important;
+}
+
+.seoServiceHeroContent > span,
+.seoServiceMain > span {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+  color: #f26522 !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.2px !important;
+  font-size: 15px !important;
+  margin-bottom: 22px !important;
+}
+
+.seoServiceHeroContent > span::before,
+.seoServiceMain > span::before {
+  content: "" !important;
+  width: 48px !important;
+  height: 4px !important;
+  background: #f26522 !important;
+  border-radius: 999px !important;
+}
+
+.seoServiceHeroContent h1 {
+  max-width: 920px !important;
+  font-size: clamp(44px, 6vw, 78px) !important;
+  line-height: 1.02 !important;
+  letter-spacing: -2px !important;
+  margin: 0 0 28px !important;
+  color: #ffffff !important;
+}
+
+.seoServiceHeroContent p {
+  max-width: 780px !important;
+  font-size: 20px !important;
+  line-height: 1.75 !important;
+  color: rgba(255, 255, 255, 0.88) !important;
+  margin: 0 0 38px !important;
+}
+
+.seoServiceActions {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 18px !important;
+}
+
+.seoPrimaryButton,
+.seoSecondaryButton {
+  min-height: 58px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 30px !important;
+  border-radius: 999px !important;
+  font-weight: 900 !important;
+  text-decoration: none !important;
+}
+
+.seoPrimaryButton {
+  background: #f26522 !important;
+  color: #ffffff !important;
+  box-shadow: 0 20px 50px rgba(242, 101, 34, 0.38) !important;
+}
+
+.seoSecondaryButton {
+  background: #ffffff !important;
+  color: #0a1d36 !important;
+}
+
+/* CUERPO */
+
+.seoServiceBody {
+  display: grid !important;
+  grid-template-columns: 1.15fr 0.85fr !important;
+  gap: 56px !important;
+  align-items: start !important;
+  padding: 100px 7% !important;
+  background: #f5f6f7 !important;
+}
+
+.seoServiceMain h2 {
+  max-width: 850px !important;
+  font-size: clamp(34px, 4vw, 58px) !important;
+  line-height: 1.06 !important;
+  letter-spacing: -1.4px !important;
+  margin: 0 0 24px !important;
+  color: #0a1d36 !important;
+}
+
+.seoServiceMain > p {
+  max-width: 850px !important;
+  color: #3b4a5a !important;
+  font-size: 18px !important;
+  line-height: 1.75 !important;
+  margin: 0 0 46px !important;
+  padding-left: 26px !important;
+  border-left: 6px solid #f26522 !important;
+}
+
+/* TARJETAS */
+
+.seoServiceCards {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 24px !important;
+  margin-bottom: 50px !important;
+}
+
+.seoServiceCards article {
+  background: #ffffff !important;
+  padding: 34px 30px !important;
+  border-radius: 28px !important;
+  border: 1px solid rgba(10, 29, 54, 0.08) !important;
+  border-bottom: 6px solid #f26522 !important;
+  box-shadow: 0 24px 65px rgba(10, 29, 54, 0.1) !important;
+}
+
+.seoServiceCards article strong {
+  display: block !important;
+  color: #f26522 !important;
+  font-size: 24px !important;
+  font-weight: 900 !important;
+  margin-bottom: 18px !important;
+}
+
+.seoServiceCards article h3 {
+  color: #0a1d36 !important;
+  font-size: 23px !important;
+  line-height: 1.18 !important;
+  margin: 0 0 14px !important;
+}
+
+.seoServiceCards article p {
+  color: #3b4a5a !important;
+  font-size: 16px !important;
+  line-height: 1.65 !important;
+  margin: 0 !important;
+}
+
+/* BLOQUE DE INFORMACIÓN */
+
+.seoServiceInfoBlock {
+  background: #ffffff !important;
+  padding: 42px !important;
+  border-radius: 32px !important;
+  box-shadow: 0 24px 65px rgba(10, 29, 54, 0.09) !important;
+  border: 1px solid rgba(10, 29, 54, 0.07) !important;
+}
+
+.seoServiceInfoBlock h2 {
+  color: #0a1d36 !important;
+  font-size: 34px !important;
+  line-height: 1.12 !important;
+  margin: 0 0 26px !important;
+}
+
+.seoServiceInfoBlock ul {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: grid !important;
+  gap: 14px !important;
+}
+
+.seoServiceInfoBlock li {
+  position: relative !important;
+  padding-left: 34px !important;
+  color: #3b4a5a !important;
+  font-weight: 700 !important;
+  line-height: 1.6 !important;
+}
+
+.seoServiceInfoBlock li::before {
+  content: "✓" !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  color: #f26522 !important;
+  font-weight: 900 !important;
+}
+
+/* PANEL LATERAL */
+
+.seoServicePanel {
+  position: sticky !important;
+  top: 120px !important;
+  background: #0a1d36 !important;
+  color: #ffffff !important;
+  padding: 44px !important;
+  border-radius: 34px !important;
+  border-top: 8px solid #f26522 !important;
+  box-shadow: 0 34px 95px rgba(10, 29, 54, 0.25) !important;
+}
+
+.seoServicePanel h2 {
+  font-size: 34px !important;
+  line-height: 1.12 !important;
+  margin: 0 0 20px !important;
+  color: #ffffff !important;
+}
+
+.seoServicePanel > p {
+  color: rgba(255, 255, 255, 0.84) !important;
+  line-height: 1.65 !important;
+  margin: 0 0 28px !important;
+}
+
+.seoContactPerson {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  padding: 26px !important;
+  border-radius: 24px !important;
+  margin-bottom: 22px !important;
+}
+
+.seoContactPerson strong {
+  display: block !important;
+  font-size: 23px !important;
+  color: #ffffff !important;
+  margin-bottom: 8px !important;
+}
+
+.seoContactPerson span {
+  display: block !important;
+  color: #f26522 !important;
+  font-weight: 900 !important;
+  margin-bottom: 14px !important;
+}
+
+.seoContactPerson a {
+  color: #ffffff !important;
+  font-weight: 900 !important;
+  text-decoration: none !important;
+}
+
+.seoWhatsappButton,
+.seoEmailButton {
+  width: 100% !important;
+  min-height: 56px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 999px !important;
+  text-decoration: none !important;
+  font-weight: 900 !important;
+  margin-bottom: 14px !important;
+}
+
+.seoWhatsappButton {
+  background: #f26522 !important;
+  color: #ffffff !important;
+  box-shadow: 0 18px 45px rgba(242, 101, 34, 0.28) !important;
+}
+
+.seoEmailButton {
+  background: #ffffff !important;
+  color: #0a1d36 !important;
+}
+
+.seoServiceNote {
+  margin-top: 22px !important;
+  background: rgba(242, 101, 34, 0.16) !important;
+  border: 1px solid rgba(242, 101, 34, 0.34) !important;
+  color: rgba(255, 255, 255, 0.92) !important;
+  padding: 22px !important;
+  border-radius: 20px !important;
+  line-height: 1.65 !important;
+}
+
+.seoServiceNote strong {
+  color: #f26522 !important;
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+  .seoServiceBody {
+    grid-template-columns: 1fr !important;
+  }
+
+  .seoServicePanel {
+    position: relative !important;
+    top: auto !important;
+  }
+}
+
+/* MÓVIL */
+
+@media (max-width: 650px) {
+  .seoServiceHero {
+    min-height: auto !important;
+    padding: 34px 24px 80px !important;
+    background-position: center center !important;
+  }
+
+  .seoServiceBack {
+    margin-bottom: 70px !important;
+  }
+
+  .seoServiceHeroContent h1 {
+    font-size: 42px !important;
+    line-height: 1.05 !important;
+    letter-spacing: -1.2px !important;
+  }
+
+  .seoServiceHeroContent p {
+    font-size: 17px !important;
+    line-height: 1.55 !important;
+  }
+
+  .seoServiceActions {
+    flex-direction: column !important;
+  }
+
+  .seoPrimaryButton,
+  .seoSecondaryButton {
+    width: 100% !important;
+  }
+
+  .seoServiceBody {
+    padding: 75px 24px !important;
+  }
+
+  .seoServiceCards {
+    grid-template-columns: 1fr !important;
+  }
+
+  .seoServiceInfoBlock {
+    padding: 28px !important;
+  }
+
+  .seoServicePanel {
+    padding: 30px !important;
+  }
+}
