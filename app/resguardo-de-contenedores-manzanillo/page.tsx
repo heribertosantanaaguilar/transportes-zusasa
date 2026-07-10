@@ -64,16 +64,16 @@ export default function ResguardoContenedoresPage() {
           </p>
 
           <div className="seoServiceCards">
-            <article>
+            <article className="seoServiceCard">
               <strong>01</strong>
               <h3>Contenedores llenos o vacíos</h3>
               <p>
-                Apoyamos con resguardo temporal de contenedores de acuerdo con
-                las condiciones operativas disponibles.
+                Apoyamos con resguardo temporal de contenedores llenos o vacíos
+                de acuerdo con las condiciones operativas disponibles.
               </p>
             </article>
 
-            <article>
+            <article className="seoServiceCard">
               <strong>02</strong>
               <h3>Patio de maniobras</h3>
               <p>
@@ -82,7 +82,7 @@ export default function ResguardoContenedoresPage() {
               </p>
             </article>
 
-            <article>
+            <article className="seoServiceCard">
               <strong>03</strong>
               <h3>Operación local en Manzanillo</h3>
               <p>
@@ -91,7 +91,7 @@ export default function ResguardoContenedoresPage() {
               </p>
             </article>
 
-            <article>
+            <article className="seoServiceCard">
               <strong>04</strong>
               <h3>Seguimiento operativo</h3>
               <p>
