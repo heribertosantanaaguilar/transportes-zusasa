@@ -15,13 +15,13 @@ export const metadata = {
 
 export default function ResguardoContenedoresPage() {
   return (
-    <main className="seoServicePage">
-      <section className="seoServiceHero">
-        <a className="seoServiceBack" href="/">
+    <main className="zusasaResguardoPage">
+      <section className="zusasaResguardoHero">
+        <a className="zusasaResguardoBack" href="/">
           ← Volver al inicio
         </a>
 
-        <div className="seoServiceHeroContent">
+        <div className="zusasaResguardoHeroContent">
           <span>Resguardo en patio de maniobras</span>
 
           <h1>Resguardo de contenedores en Manzanillo.</h1>
@@ -32,9 +32,9 @@ export default function ResguardoContenedoresPage() {
             operativas y requerimientos de cada servicio.
           </p>
 
-          <div className="seoServiceActions">
+          <div className="zusasaResguardoActions">
             <a
-              className="seoPrimaryButton"
+              className="zusasaResguardoPrimary"
               href="https://wa.me/522224556651?text=Hola%2C%20quiero%20solicitar%20informaci%C3%B3n%20sobre%20resguardo%20de%20contenedores%20en%20patio%20de%20maniobras%20en%20Manzanillo.%0A%0ADatos%20del%20servicio%3A%0A-%20Empresa%3A%0A-%20Nombre%20de%20contacto%3A%0A-%20Tel%C3%A9fono%3A%0A-%20Tipo%20de%20contenedor%3A%0A-%20Contenedor%20lleno%20o%20vac%C3%ADo%3A%0A-%20Tiempo%20estimado%20de%20resguardo%3A%0A-%20Fecha%20estimada%3A%0A-%20Comentarios%3A"
               target="_blank"
               rel="noopener noreferrer"
@@ -42,15 +42,15 @@ export default function ResguardoContenedoresPage() {
               Solicitar información
             </a>
 
-            <a className="seoSecondaryButton" href="/cotizacion">
+            <a className="zusasaResguardoSecondary" href="/cotizacion">
               Ir a cotización
             </a>
           </div>
         </div>
       </section>
 
-      <section className="seoServiceBody">
-        <div className="seoServiceMain">
+      <section className="zusasaResguardoBody">
+        <div className="zusasaResguardoMain">
           <span>Servicio especializado</span>
 
           <h2>Apoyo operativo para el resguardo temporal de contenedores.</h2>
@@ -63,8 +63,8 @@ export default function ResguardoContenedoresPage() {
             la zona de Manzanillo.
           </p>
 
-          <div className="seoServiceCards">
-            <article className="seoServiceCard">
+          <div className="zusasaResguardoCards">
+            <article>
               <strong>01</strong>
               <h3>Contenedores llenos o vacíos</h3>
               <p>
@@ -73,7 +73,7 @@ export default function ResguardoContenedoresPage() {
               </p>
             </article>
 
-            <article className="seoServiceCard">
+            <article>
               <strong>02</strong>
               <h3>Patio de maniobras</h3>
               <p>
@@ -82,7 +82,7 @@ export default function ResguardoContenedoresPage() {
               </p>
             </article>
 
-            <article className="seoServiceCard">
+            <article>
               <strong>03</strong>
               <h3>Operación local en Manzanillo</h3>
               <p>
@@ -91,7 +91,7 @@ export default function ResguardoContenedoresPage() {
               </p>
             </article>
 
-            <article className="seoServiceCard">
+            <article>
               <strong>04</strong>
               <h3>Seguimiento operativo</h3>
               <p>
@@ -101,7 +101,7 @@ export default function ResguardoContenedoresPage() {
             </article>
           </div>
 
-          <div className="seoServiceInfoBlock">
+          <div className="zusasaResguardoInfo">
             <h2>¿Qué información necesitamos para revisar el resguardo?</h2>
 
             <ul>
@@ -115,7 +115,7 @@ export default function ResguardoContenedoresPage() {
           </div>
         </div>
 
-        <aside className="seoServicePanel">
+        <aside className="zusasaResguardoPanel">
           <h2>Solicita disponibilidad</h2>
 
           <p>
@@ -123,14 +123,14 @@ export default function ResguardoContenedoresPage() {
             apoyar con el resguardo temporal del contenedor.
           </p>
 
-          <div className="seoContactPerson">
+          <div className="zusasaResguardoPerson">
             <strong>José Alberto Zúñiga Ramos</strong>
             <span>Gerente General</span>
             <a href="tel:2224556651">222 455 6651</a>
           </div>
 
           <a
-            className="seoWhatsappButton"
+            className="zusasaResguardoWhatsapp"
             href="https://wa.me/522224556651?text=Hola%2C%20quiero%20solicitar%20informaci%C3%B3n%20sobre%20resguardo%20de%20contenedores%20en%20patio%20de%20maniobras%20en%20Manzanillo.%0A%0ADatos%20del%20servicio%3A%0A-%20Empresa%3A%0A-%20Nombre%20de%20contacto%3A%0A-%20Tel%C3%A9fono%3A%0A-%20Tipo%20de%20contenedor%3A%0A-%20Contenedor%20lleno%20o%20vac%C3%ADo%3A%0A-%20Tiempo%20estimado%20de%20resguardo%3A%0A-%20Fecha%20estimada%3A%0A-%20Comentarios%3A"
             target="_blank"
             rel="noopener noreferrer"
@@ -139,13 +139,13 @@ export default function ResguardoContenedoresPage() {
           </a>
 
           <a
-            className="seoEmailButton"
+            className="zusasaResguardoEmail"
             href="mailto:transportes.zusasa@gmail.com?subject=Consulta%20sobre%20resguardo%20de%20contenedores%20en%20Manzanillo&body=Hola%2C%20quiero%20solicitar%20informaci%C3%B3n%20sobre%20resguardo%20de%20contenedores%20en%20patio%20de%20maniobras%20en%20Manzanillo.%0A%0ADatos%20del%20servicio%3A%0A-%20Empresa%3A%0A-%20Nombre%20de%20contacto%3A%0A-%20Tel%C3%A9fono%3A%0A-%20Tipo%20de%20contenedor%3A%0A-%20Contenedor%20lleno%20o%20vac%C3%ADo%3A%0A-%20Tiempo%20estimado%20de%20resguardo%3A%0A-%20Fecha%20estimada%3A%0A-%20Comentarios%3A"
           >
             Enviar correo
           </a>
 
-          <div className="seoServiceNote">
+          <div className="zusasaResguardoNote">
             <strong>Nota:</strong> El resguardo está sujeto a disponibilidad,
             condiciones operativas del patio y características del servicio.
           </div>
