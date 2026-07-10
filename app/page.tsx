@@ -1,3 +1,4 @@
+import WhyChoose from "../components/WhyChoose";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import WhatWeDo from "../components/WhatWeDo";
@@ -20,22 +21,23 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <WhatWeDo />
-      <Company />
-      <Services />
-      <Sectors />
-      <Value />
-      <Trust />
-      <Process />
-      <Coverage />
-      <Gallery />
-      <Stats />
-      <Quote />
-      <FAQ />
-      <Contact />
-      <Footer />
-      <WhatsAppButton />
+<Hero />
+<WhatWeDo />
+<Company />
+<Services />
+<WhyChoose />
+<Sectors />
+<Value />
+<Trust />
+<Process />
+<Coverage />
+<Gallery />
+<Stats />
+<Quote />
+<FAQ />
+<Contact />
+<Footer />
+<WhatsAppButton />
     </>
   );
 }
