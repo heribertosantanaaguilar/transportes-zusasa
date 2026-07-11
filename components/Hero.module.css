@@ -137,13 +137,14 @@
     background:
       linear-gradient(
         180deg,
-        rgba(5, 24, 46, 0.96) 0%,
-        rgba(5, 24, 46, 0.86) 52%,
-        rgba(5, 24, 46, 0.74) 100%
+        rgba(5, 24, 46, 0.86) 0%,
+        rgba(5, 24, 46, 0.74) 52%,
+        rgba(5, 24, 46, 0.7) 100%
       ),
       url("/images/hero-zusasa-camion.png");
     background-size: cover;
     background-position: center right;
+    background-repeat: no-repeat;
   }
 
   .infoBar {
@@ -161,13 +162,14 @@
     background:
       linear-gradient(
         180deg,
-        rgba(5, 24, 46, 0.96) 0%,
-        rgba(5, 24, 46, 0.9) 54%,
-        rgba(5, 24, 46, 0.78) 100%
+        rgba(5, 24, 46, 0.78) 0%,
+        rgba(5, 24, 46, 0.64) 46%,
+        rgba(5, 24, 46, 0.72) 100%
       ),
       url("/images/hero-zusasa-camion.png");
     background-size: cover;
-    background-position: center right;
+    background-position: 68% center;
+    background-repeat: no-repeat;
   }
 
   .content h1 {
