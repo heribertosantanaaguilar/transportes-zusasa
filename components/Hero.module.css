@@ -158,18 +158,40 @@
 
 @media (max-width: 650px) {
   .hero {
-    padding: 62px 24px 46px;
+    min-height: auto;
+    padding: 62px 24px 310px;
     background:
       linear-gradient(
         180deg,
-        rgba(5, 24, 46, 0.72) 0%,
-        rgba(5, 24, 46, 0.56) 45%,
-        rgba(5, 24, 46, 0.7) 100%
+        rgba(5, 24, 46, 0.92) 0%,
+        rgba(5, 24, 46, 0.84) 45%,
+        rgba(5, 24, 46, 0.72) 100%
       ),
-      url("/images/hero-zusasa-camion.png");
-    background-size: cover;
-    background-position: 100% center;
+      linear-gradient(180deg, #0a1d36 0%, #0f2d52 100%);
+    background-size: cover, cover;
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+  }
+
+  .hero::after {
+    content: "";
+    position: absolute;
+    left: -24px;
+    right: -24px;
+    bottom: 20px;
+    height: 300px;
+    background-image: url("/images/hero-zusasa-camion.png");
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    opacity: 0.95;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .content {
+    position: relative;
+    z-index: 2;
   }
 
   .content h1 {
