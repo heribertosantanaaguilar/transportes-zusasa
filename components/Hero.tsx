@@ -1,8 +1,10 @@
+import styles from "./Hero.module.css";
+
 export default function Hero() {
   return (
-    <section id="inicio" className="heroShowcase">
-      <div className="heroShowcaseContent">
-        <span className="heroLine">Puerto de Manzanillo</span>
+    <section id="inicio" className={styles.hero}>
+      <div className={styles.content}>
+        <span className={styles.line}>Puerto de Manzanillo</span>
 
         <h1>
           Transportamos <span>la confianza</span> que mueve tu negocio.
@@ -14,18 +16,18 @@ export default function Hero() {
           necesitan seguridad, comunicación clara y cumplimiento en Manzanillo.
         </p>
 
-        <div className="heroShowcaseActions">
-         <a className="mainCta" href="/cotizacion">
-  Solicitar cotización
-</a>
+        <div className={styles.actions}>
+          <a className={styles.mainCta} href="/cotizacion">
+            Solicitar cotización
+          </a>
 
-          <a className="ghostCta" href="#servicios">
+          <a className={styles.ghostCta} href="/#servicios">
             Conocer servicios →
           </a>
         </div>
       </div>
 
-      <div className="heroShowcaseBar">
+      <div className={styles.infoBar}>
         <article>
           <strong>Atención directa</strong>
           <p>Comunicación clara desde la solicitud hasta el cierre del servicio.</p>
