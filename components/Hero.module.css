@@ -162,14 +162,24 @@
     background:
       linear-gradient(
         180deg,
-        rgba(5, 24, 46, 0.78) 0%,
-        rgba(5, 24, 46, 0.64) 46%,
-        rgba(5, 24, 46, 0.72) 100%
+        rgba(5, 24, 46, 0.82) 0%,
+        rgba(5, 24, 46, 0.66) 46%,
+        rgba(5, 24, 46, 0.78) 100%
       ),
-      url("/images/hero-zusasa-camion.png");
-    background-size: cover;
-    background-position: 68% center;
-    background-repeat: no-repeat;
+      url("/images/hero-zusasa-camion.png"),
+      linear-gradient(180deg, #0a1d36 0%, #0f2d52 100%);
+    background-size:
+      cover,
+      180% auto,
+      cover;
+    background-position:
+      center,
+      62% bottom,
+      center;
+    background-repeat:
+      no-repeat,
+      no-repeat,
+      no-repeat;
   }
 
   .content h1 {
