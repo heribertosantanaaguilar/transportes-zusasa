@@ -13,12 +13,13 @@
     linear-gradient(
       90deg,
       rgba(5, 24, 46, 0.98) 0%,
-      rgba(5, 24, 46, 0.84) 44%,
-      rgba(5, 24, 46, 0.28) 100%
+      rgba(5, 24, 46, 0.88) 42%,
+      rgba(5, 24, 46, 0.48) 68%,
+      rgba(5, 24, 46, 0.16) 100%
     ),
-    url("https://images.unsplash.com/photo-1494412685616-a5d310fbb07d?auto=format&fit=crop&w=2400&q=90");
+    url("/images/transporte-contenedores-zusasa.png");
   background-size: cover;
-  background-position: center;
+  background-position: center center;
 }
 
 .back {
@@ -302,6 +303,16 @@
   .hero {
     min-height: auto;
     padding: 34px 24px 80px;
+    background:
+      linear-gradient(
+        180deg,
+        rgba(5, 24, 46, 0.96) 0%,
+        rgba(5, 24, 46, 0.86) 52%,
+        rgba(5, 24, 46, 0.76) 100%
+      ),
+      url("/images/transporte-contenedores-zusasa.png");
+    background-size: cover;
+    background-position: center right;
   }
 
   .back {
