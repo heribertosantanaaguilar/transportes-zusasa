@@ -8082,3 +8082,92 @@ body .heroShowcaseBar {
     width: 100% !important;
   }
 }
+/* =========================================================
+   HERO PRINCIPAL - IMAGEN CAMIÓN ZUSASA DEFINITIVA
+   ========================================================= */
+
+body .heroShowcase {
+  min-height: 780px !important;
+  padding: 90px 7% 0 !important;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 24, 46, 0.98) 0%,
+      rgba(5, 24, 46, 0.9) 38%,
+      rgba(5, 24, 46, 0.58) 62%,
+      rgba(5, 24, 46, 0.2) 100%
+    ),
+    url("/images/hero-zusasa-camion.png") !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  color: #ffffff !important;
+  position: relative !important;
+}
+
+body .heroShowcaseContent {
+  max-width: 760px !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+body .heroShowcaseContent h1 {
+  font-size: clamp(52px, 6vw, 86px) !important;
+  line-height: 1.02 !important;
+  letter-spacing: -2px !important;
+  max-width: 760px !important;
+}
+
+body .heroShowcaseContent p {
+  max-width: 700px !important;
+  font-size: 20px !important;
+  line-height: 1.65 !important;
+}
+
+body .heroShowcaseBar {
+  position: relative !important;
+  z-index: 3 !important;
+  margin-top: 78px !important;
+}
+
+@media (max-width: 900px) {
+  body .heroShowcase {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(5, 24, 46, 0.96) 0%,
+        rgba(5, 24, 46, 0.88) 48%,
+        rgba(5, 24, 46, 0.7) 100%
+      ),
+      url("/images/hero-zusasa-camion.png") !important;
+    background-size: cover !important;
+    background-position: center right !important;
+    background-repeat: no-repeat !important;
+  }
+}
+
+@media (max-width: 650px) {
+  body .heroShowcase {
+    min-height: auto !important;
+    padding: 62px 24px 46px !important;
+    background:
+      linear-gradient(
+        180deg,
+        rgba(5, 24, 46, 0.96) 0%,
+        rgba(5, 24, 46, 0.86) 50%,
+        rgba(5, 24, 46, 0.78) 100%
+      ),
+      url("/images/hero-zusasa-camion.png") !important;
+    background-size: cover !important;
+    background-position: center right !important;
+    background-repeat: no-repeat !important;
+  }
+
+  body .heroShowcaseContent h1 {
+    font-size: 45px !important;
+  }
+
+  body .heroShowcaseContent p {
+    font-size: 17px !important;
+  }
+}
