@@ -6,6 +6,8 @@ export default function Hero() {
       <div className={styles.content}>
         <span className={styles.line}>Puerto de Manzanillo</span>
 
+        <div className={styles.mobileTruckImage} aria-hidden="true" />
+
         <h1>
           Transportamos <span>la confianza</span> que mueve tu negocio.
         </h1>
