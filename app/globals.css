@@ -7995,3 +7995,90 @@ body .heroShowcaseBar {
     font-size: 17px !important;
   }
 }
+/* =========================================================
+   COTIZACIÓN - OPCIONES DE SERVICIO
+   ========================================================= */
+
+.quoteServiceOptions {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 24px !important;
+  margin: 46px 0 56px !important;
+}
+
+.quoteServiceOptions article {
+  background: #ffffff !important;
+  padding: 34px 30px !important;
+  border-radius: 28px !important;
+  border: 1px solid rgba(10, 29, 54, 0.08) !important;
+  border-bottom: 6px solid #f26522 !important;
+  box-shadow: 0 24px 65px rgba(10, 29, 54, 0.1) !important;
+}
+
+.quoteServiceOptions article strong {
+  display: block !important;
+  color: #f26522 !important;
+  font-size: 24px !important;
+  font-weight: 900 !important;
+  margin-bottom: 18px !important;
+}
+
+.quoteServiceOptions article h3 {
+  color: #0a1d36 !important;
+  font-size: 24px !important;
+  line-height: 1.18 !important;
+  margin: 0 0 14px !important;
+}
+
+.quoteServiceOptions article p {
+  color: #3b4a5a !important;
+  font-size: 16px !important;
+  line-height: 1.65 !important;
+  margin: 0 0 24px !important;
+}
+
+.quoteServiceActions {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 12px !important;
+  margin-top: 24px !important;
+}
+
+.quoteServiceActions a {
+  min-height: 48px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 22px !important;
+  border-radius: 999px !important;
+  text-decoration: none !important;
+  font-weight: 900 !important;
+  font-size: 14px !important;
+}
+
+.quoteServiceActions a:first-child {
+  background: #f26522 !important;
+  color: #ffffff !important;
+  box-shadow: 0 16px 38px rgba(242, 101, 34, 0.28) !important;
+}
+
+.quoteServiceActions a:last-child {
+  background: #0a1d36 !important;
+  color: #ffffff !important;
+}
+
+@media (max-width: 900px) {
+  .quoteServiceOptions {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .quoteServiceActions {
+    flex-direction: column !important;
+  }
+
+  .quoteServiceActions a {
+    width: 100% !important;
+  }
+}
