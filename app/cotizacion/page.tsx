@@ -5,6 +5,18 @@ export const metadata = {
 };
 
 export default function CotizacionPage() {
+  const whatsappGeneral =
+    "https://wa.me/522224556651?text=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20con%20Transportes%20ZUSASA.%0A%0ADatos%20del%20servicio%3A%0A-%20Empresa%3A%0A-%20Nombre%20de%20contacto%3A%0A-%20Tel%C3%A9fono%3A%0A-%20Tipo%20de%20servicio%3A%0A-%20Tipo%20de%20contenedor%3A%0A-%20Origen%3A%0A-%20Destino%3A%0A-%20Fecha%20estimada%3A%0A-%20Comentarios%3A";
+
+  const whatsappTransporte =
+    "https://wa.me/522224556651?text=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20para%20transporte%20local%20de%20contenedores%20en%20Manzanillo.%0A%0ADatos%20del%20servicio%3A%0A-%20Empresa%3A%0A-%20Nombre%20de%20contacto%3A%0A-%20Tel%C3%A9fono%3A%0A-%20Tipo%20de%20contenedor%3A%0A-%20Origen%3A%0A-%20Destino%3A%0A-%20Fecha%20estimada%3A%0A-%20Comentarios%3A";
+
+  const whatsappResguardo =
+    "https://wa.me/522224556651?text=Hola%2C%20quiero%20solicitar%20informaci%C3%B3n%20sobre%20resguardo%20de%20contenedores%20en%20patio%20de%20maniobras%20en%20Manzanillo.%0A%0ADatos%20del%20servicio%3A%0A-%20Empresa%3A%0A-%20Nombre%20de%20contacto%3A%0A-%20Tel%C3%A9fono%3A%0A-%20Tipo%20de%20contenedor%3A%0A-%20Contenedor%20lleno%20o%20vac%C3%ADo%3A%0A-%20Tiempo%20estimado%20de%20resguardo%3A%0A-%20Fecha%20estimada%3A%0A-%20Comentarios%3A";
+
+  const whatsappApoyo =
+    "https://wa.me/522224556651?text=Hola%2C%20quiero%20solicitar%20apoyo%20operativo%20para%20contenedores%20en%20Manzanillo.%0A%0ADatos%20del%20servicio%3A%0A-%20Empresa%3A%0A-%20Nombre%20de%20contacto%3A%0A-%20Tel%C3%A9fono%3A%0A-%20Tipo%20de%20apoyo%20requerido%3A%0A-%20Tipo%20de%20contenedor%3A%0A-%20Fecha%20estimada%3A%0A-%20Comentarios%3A";
+
   return (
     <main className="quotePage">
       <section className="quotePageHero">
@@ -15,19 +27,18 @@ export default function CotizacionPage() {
         <div className="quotePageHeroContent">
           <span>Cotización de transporte local</span>
 
-          <h1>Cotiza tu movimiento de contenedores en Manzanillo.</h1>
+          <h1>Cotiza tu operación de contenedores en Manzanillo.</h1>
 
           <p>
-            Envíanos los datos básicos de tu operación: tipo de contenedor,
-            origen, destino, fecha estimada y si requieres resguardo en patio de
-            maniobras. Revisaremos disponibilidad, condiciones y tiempos para
+            Elige el servicio que necesitas y envíanos los datos básicos de tu
+            operación. Revisaremos disponibilidad, condiciones y tiempos para
             darte una respuesta clara y personalizada.
           </p>
 
           <div className="quotePageActions">
             <a
               className="quotePageWhatsapp"
-              href="https://wa.me/522224556651?text=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20para%20un%20movimiento%20local%20de%20carga%20en%20Manzanillo.%0A%0ADatos%20del%20servicio%3A%0A-%20Empresa%3A%0A-%20Nombre%20de%20contacto%3A%0A-%20Tel%C3%A9fono%3A%0A-%20Tipo%20de%20contenedor%3A%0A-%20Origen%3A%0A-%20Destino%3A%0A-%20Fecha%20estimada%3A%0A-%20Requiere%20resguardo%20en%20patio%3A%0A-%20Comentarios%3A"
+              href={whatsappGeneral}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -36,7 +47,7 @@ export default function CotizacionPage() {
 
             <a
               className="quotePageEmail"
-              href="mailto:transportes.zusasa@gmail.com?subject=Solicitud%20de%20cotizaci%C3%B3n%20-%20Transporte%20local%20Manzanillo&body=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20para%20un%20movimiento%20local%20de%20carga%20en%20Manzanillo.%0A%0ADatos%20del%20servicio%3A%0A-%20Empresa%3A%0A-%20Nombre%20de%20contacto%3A%0A-%20Tel%C3%A9fono%3A%0A-%20Tipo%20de%20contenedor%3A%0A-%20Origen%3A%0A-%20Destino%3A%0A-%20Fecha%20estimada%3A%0A-%20Requiere%20resguardo%20en%20patio%3A%0A-%20Comentarios%3A"
+              href="mailto:transportes.zusasa@gmail.com?subject=Solicitud%20de%20cotizaci%C3%B3n%20-%20Transportes%20ZUSASA&body=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20con%20Transportes%20ZUSASA.%0A%0ADatos%20del%20servicio%3A%0A-%20Empresa%3A%0A-%20Nombre%20de%20contacto%3A%0A-%20Tel%C3%A9fono%3A%0A-%20Tipo%20de%20servicio%3A%0A-%20Tipo%20de%20contenedor%3A%0A-%20Origen%3A%0A-%20Destino%3A%0A-%20Fecha%20estimada%3A%0A-%20Comentarios%3A"
             >
               Enviar por correo
             </a>
@@ -46,14 +57,104 @@ export default function CotizacionPage() {
 
       <section className="quotePageBody">
         <div className="quotePageInfo">
-          <span>Datos para cotizar</span>
+          <span>Elige el servicio</span>
 
-          <h2>Comparte la información necesaria para revisar tu servicio.</h2>
+          <h2>¿Qué necesitas cotizar?</h2>
 
           <p>
-            Mientras más completa sea la información, más rápido podremos
-            analizar la operación y darte una respuesta adecuada.
+            Selecciona la opción más cercana a tu operación. Si tienes dudas,
+            puedes enviarnos tu solicitud general y te orientamos directamente.
           </p>
+
+          <div className="quoteServiceOptions">
+            <article>
+              <strong>01</strong>
+              <h3>Movimiento local de contenedores</h3>
+              <p>
+                Cotiza traslados locales de carga contenerizada dentro de la
+                zona portuaria y logística de Manzanillo.
+              </p>
+
+              <div className="quoteServiceActions">
+                <a
+                  href={whatsappTransporte}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Cotizar transporte
+                </a>
+
+                <a href="/transporte-de-contenedores-manzanillo">
+                  Ver servicio
+                </a>
+              </div>
+            </article>
+
+            <article>
+              <strong>02</strong>
+              <h3>Resguardo en patio de maniobras</h3>
+              <p>
+                Consulta disponibilidad para resguardo temporal de contenedores
+                llenos o vacíos en patio de maniobras.
+              </p>
+
+              <div className="quoteServiceActions">
+                <a
+                  href={whatsappResguardo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Consultar resguardo
+                </a>
+
+                <a href="/resguardo-de-contenedores-manzanillo">
+                  Ver servicio
+                </a>
+              </div>
+            </article>
+
+            <article>
+              <strong>03</strong>
+              <h3>Apoyo operativo para contenedores</h3>
+              <p>
+                Solicita apoyo en coordinación, maniobras, movimientos locales o
+                manejo operativo de contenedores.
+              </p>
+
+              <div className="quoteServiceActions">
+                <a
+                  href={whatsappApoyo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Solicitar apoyo
+                </a>
+
+                <a href="/#contacto">Contacto</a>
+              </div>
+            </article>
+
+            <article>
+              <strong>04</strong>
+              <h3>Seguimiento y comunicación operativa</h3>
+              <p>
+                Comparte tu necesidad logística y revisamos cómo apoyarte con
+                seguimiento claro durante la operación.
+              </p>
+
+              <div className="quoteServiceActions">
+                <a
+                  href={whatsappGeneral}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Hablar con ZUSASA
+                </a>
+
+                <a href="/#por-que-elegir">Por qué elegirnos</a>
+              </div>
+            </article>
+          </div>
 
           <div className="quotePageGrid">
             <article>
@@ -110,44 +211,6 @@ export default function CotizacionPage() {
               </p>
             </article>
           </div>
-
-          <div className="quotePageServices">
-            <span>¿Qué puedes cotizar?</span>
-
-            <div className="quotePageServicesGrid">
-              <article>
-                <h3>Movimiento local de contenedores</h3>
-                <p>
-                  Traslados locales vinculados a operaciones portuarias,
-                  importación y exportación.
-                </p>
-              </article>
-
-              <article>
-                <h3>Carga contenerizada</h3>
-                <p>
-                  Atención para contenedores llenos o vacíos, de acuerdo con las
-                  necesidades de cada operación.
-                </p>
-              </article>
-
-              <article>
-                <h3>Resguardo en patio de maniobras</h3>
-                <p>
-                  Resguardo temporal de contenedores llenos o vacíos, sujeto a
-                  disponibilidad y condiciones operativas del patio.
-                </p>
-              </article>
-
-              <article>
-                <h3>Apoyo operativo</h3>
-                <p>
-                  Coordinación, seguimiento y comunicación durante el movimiento
-                  local o resguardo de la carga.
-                </p>
-              </article>
-            </div>
-          </div>
         </div>
 
         <aside className="quotePagePanel">
@@ -155,7 +218,7 @@ export default function CotizacionPage() {
 
           <p className="quotePagePanelIntro">
             Para una atención más rápida, envía tu solicitud por WhatsApp con
-            los datos básicos de tu movimiento o resguardo.
+            los datos básicos de tu movimiento, resguardo o apoyo operativo.
           </p>
 
           <div className="quotePageContactPerson">
@@ -166,7 +229,7 @@ export default function CotizacionPage() {
 
           <div className="quotePagePanelActions">
             <a
-              href="https://wa.me/522224556651?text=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20para%20un%20movimiento%20local%20de%20carga%20en%20Manzanillo.%0A%0ADatos%20del%20servicio%3A%0A-%20Empresa%3A%0A-%20Nombre%20de%20contacto%3A%0A-%20Tel%C3%A9fono%3A%0A-%20Tipo%20de%20contenedor%3A%0A-%20Origen%3A%0A-%20Destino%3A%0A-%20Fecha%20estimada%3A%0A-%20Requiere%20resguardo%20en%20patio%3A%0A-%20Comentarios%3A"
+              href={whatsappGeneral}
               target="_blank"
               rel="noopener noreferrer"
             >
