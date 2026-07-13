@@ -158,17 +158,17 @@
   .mobileTruckImage {
     display: block;
     width: 100%;
-    height: 230px;
-    margin: 0 0 -150px;
+    height: 360px;
+    margin: 0 0 -330px;
     border-radius: 26px;
     background:
       linear-gradient(
         180deg,
-        rgba(5, 24, 46, 0.08) 0%,
-        rgba(5, 24, 46, 0.18) 100%
+        rgba(5, 24, 46, 0.16) 0%,
+        rgba(5, 24, 46, 0.34) 100%
       ),
       url("/images/hero-zusasa-camion.png");
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     box-shadow: 0 24px 60px rgba(0, 0, 0, 0.22);
@@ -180,9 +180,9 @@
     font-size: 43px;
     line-height: 1.04;
     letter-spacing: -1.5px;
-    margin: 0 0 42px;
-    padding-top: 34px;
-    text-shadow: 0 5px 24px rgba(0, 0, 0, 0.72);
+    margin: 0 0 118px;
+    padding-top: 42px;
+    text-shadow: 0 5px 24px rgba(0, 0, 0, 0.78);
   }
 
   .content p {
@@ -220,5 +220,7 @@
 
   .infoBar article:last-child {
     border-bottom: none;
+  }
+}
   }
 }
