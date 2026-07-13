@@ -1,3 +1,5 @@
+import styles from "./cotizacion.module.css";
+
 export const metadata = {
   title: "Solicitar cotización | Transportes ZUSASA",
   description:
@@ -18,13 +20,13 @@ export default function CotizacionPage() {
     "https://wa.me/522224556651?text=Hola%2C%20quiero%20solicitar%20apoyo%20operativo%20para%20contenedores%20en%20Manzanillo.%0A%0ADatos%20del%20servicio%3A%0A-%20Empresa%3A%0A-%20Nombre%20de%20contacto%3A%0A-%20Tel%C3%A9fono%3A%0A-%20Tipo%20de%20apoyo%20requerido%3A%0A-%20Tipo%20de%20contenedor%3A%0A-%20Fecha%20estimada%3A%0A-%20Comentarios%3A";
 
   return (
-    <main className="quotePage">
-      <section className="quotePageHero">
-        <a className="quotePageBack" href="/">
+    <main className={styles.page}>
+      <section className={styles.hero}>
+        <a className={styles.back} href="/">
           ← Volver al inicio
         </a>
 
-        <div className="quotePageHeroContent">
+        <div className={styles.heroContent}>
           <span>Cotización de transporte local</span>
 
           <h1>Cotiza tu operación de contenedores en Manzanillo.</h1>
@@ -35,38 +37,30 @@ export default function CotizacionPage() {
             darte una respuesta clara y personalizada.
           </p>
 
-          <div className="quotePageActions">
-            <a
-              className="quotePageWhatsapp"
-              href={whatsappGeneral}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <div className={styles.heroActions}>
+            <a href={whatsappGeneral} target="_blank" rel="noopener noreferrer">
               Solicitar por WhatsApp
             </a>
 
-            <a
-              className="quotePageEmail"
-              href="mailto:transportes.zusasa@gmail.com?subject=Solicitud%20de%20cotizaci%C3%B3n%20-%20Transportes%20ZUSASA&body=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20con%20Transportes%20ZUSASA.%0A%0ADatos%20del%20servicio%3A%0A-%20Empresa%3A%0A-%20Nombre%20de%20contacto%3A%0A-%20Tel%C3%A9fono%3A%0A-%20Tipo%20de%20servicio%3A%0A-%20Tipo%20de%20contenedor%3A%0A-%20Origen%3A%0A-%20Destino%3A%0A-%20Fecha%20estimada%3A%0A-%20Comentarios%3A"
-            >
+            <a href="mailto:transportes.zusasa@gmail.com?subject=Solicitud%20de%20cotizaci%C3%B3n%20-%20Transportes%20ZUSASA">
               Enviar por correo
             </a>
           </div>
         </div>
       </section>
 
-      <section className="quotePageBody">
-        <div className="quotePageInfo">
+      <section className={styles.body}>
+        <div className={styles.main}>
           <span>Elige el servicio</span>
 
           <h2>¿Qué necesitas cotizar?</h2>
 
-          <p>
+          <p className={styles.intro}>
             Selecciona la opción más cercana a tu operación. Si tienes dudas,
             puedes enviarnos tu solicitud general y te orientamos directamente.
           </p>
 
-          <div className="quoteServiceOptions">
+          <div className={styles.serviceOptions}>
             <article>
               <strong>01</strong>
               <h3>Movimiento local de contenedores</h3>
@@ -75,7 +69,7 @@ export default function CotizacionPage() {
                 zona portuaria y logística de Manzanillo.
               </p>
 
-              <div className="quoteServiceActions">
+              <div className={styles.optionActions}>
                 <a
                   href={whatsappTransporte}
                   target="_blank"
@@ -98,7 +92,7 @@ export default function CotizacionPage() {
                 llenos o vacíos en patio de maniobras.
               </p>
 
-              <div className="quoteServiceActions">
+              <div className={styles.optionActions}>
                 <a
                   href={whatsappResguardo}
                   target="_blank"
@@ -121,7 +115,7 @@ export default function CotizacionPage() {
                 manejo operativo de contenedores.
               </p>
 
-              <div className="quoteServiceActions">
+              <div className={styles.optionActions}>
                 <a
                   href={whatsappApoyo}
                   target="_blank"
@@ -142,7 +136,7 @@ export default function CotizacionPage() {
                 seguimiento claro durante la operación.
               </p>
 
-              <div className="quoteServiceActions">
+              <div className={styles.optionActions}>
                 <a
                   href={whatsappGeneral}
                   target="_blank"
@@ -156,90 +150,72 @@ export default function CotizacionPage() {
             </article>
           </div>
 
-          <div className="quotePageGrid">
-            <article>
-              <strong>01</strong>
-              <h3>Datos de contacto</h3>
-              <p>
-                Empresa, nombre de contacto, teléfono y correo electrónico para
-                dar seguimiento a tu solicitud.
-              </p>
-            </article>
+          <div className={styles.dataBlock}>
+            <h2>Datos que necesitamos para cotizar</h2>
 
-            <article>
-              <strong>02</strong>
-              <h3>Tipo de contenedor</h3>
-              <p>
-                Indica si es contenedor lleno, vacío, 20 pies, 40 pies u otro
-                requerimiento específico.
-              </p>
-            </article>
+            <div className={styles.dataGrid}>
+              <article>
+                <strong>01</strong>
+                <h3>Datos de contacto</h3>
+                <p>Empresa, nombre de contacto, teléfono y correo.</p>
+              </article>
 
-            <article>
-              <strong>03</strong>
-              <h3>Origen y destino</h3>
-              <p>
-                Comparte el punto de inicio y el punto final del movimiento
-                dentro de la zona de Manzanillo.
-              </p>
-            </article>
+              <article>
+                <strong>02</strong>
+                <h3>Tipo de contenedor</h3>
+                <p>Indica si es lleno, vacío, 20 pies, 40 pies u otro.</p>
+              </article>
 
-            <article>
-              <strong>04</strong>
-              <h3>Fecha estimada</h3>
-              <p>
-                Indica el día aproximado en que necesitas realizar el servicio o
-                la ventana de atención requerida.
-              </p>
-            </article>
+              <article>
+                <strong>03</strong>
+                <h3>Origen y destino</h3>
+                <p>Comparte el punto de inicio y el punto final del movimiento.</p>
+              </article>
 
-            <article>
-              <strong>05</strong>
-              <h3>Resguardo en patio</h3>
-              <p>
-                Indica si necesitas resguardo temporal del contenedor en patio
-                de maniobras, así como el tiempo estimado requerido.
-              </p>
-            </article>
+              <article>
+                <strong>04</strong>
+                <h3>Fecha estimada</h3>
+                <p>Indica la fecha o ventana aproximada del servicio.</p>
+              </article>
 
-            <article>
-              <strong>06</strong>
-              <h3>Detalles operativos</h3>
-              <p>
-                Agrega horarios, documentación, maniobras, condiciones
-                especiales o cualquier dato importante del servicio.
-              </p>
-            </article>
+              <article>
+                <strong>05</strong>
+                <h3>Resguardo en patio</h3>
+                <p>Indica si necesitas resguardo y por cuánto tiempo.</p>
+              </article>
+
+              <article>
+                <strong>06</strong>
+                <h3>Detalles operativos</h3>
+                <p>Agrega horarios, maniobras o condiciones especiales.</p>
+              </article>
+            </div>
           </div>
         </div>
 
-        <aside className="quotePagePanel">
+        <aside className={styles.panel}>
           <h2>Contacto para cotizaciones</h2>
 
-          <p className="quotePagePanelIntro">
+          <p>
             Para una atención más rápida, envía tu solicitud por WhatsApp con
             los datos básicos de tu movimiento, resguardo o apoyo operativo.
           </p>
 
-          <div className="quotePageContactPerson">
+          <div className={styles.person}>
             <strong>José Alberto Zúñiga Ramos</strong>
             <span>Gerente General</span>
             <a href="tel:2224556651">222 455 6651</a>
           </div>
 
-          <div className="quotePagePanelActions">
-            <a
-              href={whatsappGeneral}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <div className={styles.panelActions}>
+            <a href={whatsappGeneral} target="_blank" rel="noopener noreferrer">
               Abrir WhatsApp
             </a>
 
             <a href="mailto:transportes.zusasa@gmail.com">Enviar correo</a>
           </div>
 
-          <div className="quotePageContactBox">
+          <div className={styles.contactBox}>
             <p>
               <strong>Correo</strong>
               <br />
@@ -261,7 +237,7 @@ export default function CotizacionPage() {
             </p>
           </div>
 
-          <div className="quotePageNote">
+          <div className={styles.note}>
             <strong>Nota:</strong> Cada cotización se revisa de acuerdo con la
             disponibilidad, ruta, condiciones, tiempo de resguardo y
             requerimientos reales de la operación.
