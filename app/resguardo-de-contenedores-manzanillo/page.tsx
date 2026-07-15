@@ -144,7 +144,33 @@ export default function ResguardoContenedoresPage() {
                 </div>
               </article>
             </div>
-          </section>
+   <section className={styles.videoSection}>
+  <div className={styles.videoText}>
+    <span>Video del patio</span>
+
+    <h2>Conoce nuestro patio de maniobras.</h2>
+
+    <p>
+      Mira una muestra del espacio operativo que puede apoyar tus necesidades
+      de resguardo temporal, maniobras y coordinación local de contenedores en
+      Manzanillo.
+    </p>
+  </div>
+
+  <div className={styles.videoFrame}>
+    <video
+      controls
+      preload="metadata"
+      poster="/images/patio_maniobras_zusasa_poster.jpg"
+    >
+      <source
+        src="/images/patio_maniobras_zusasa_15s_web.mp4"
+        type="video/mp4"
+      />
+      Tu navegador no puede reproducir este video.
+    </video>
+  </div>
+</section>       </section>
 
           <div className={styles.infoBlock}>
             <h2>¿Qué información necesitamos para revisar el resguardo?</h2>
