@@ -7,6 +7,9 @@ export const metadata = {
 };
 
 export default function ResguardoContenedoresPage() {
+  const whatsappResguardo =
+    "https://wa.me/522224556651?text=Hola%2C%20quiero%20solicitar%20informaci%C3%B3n%20sobre%20resguardo%20de%20contenedores%20en%20patio%20de%20maniobras%20en%20Manzanillo.%0A%0ADatos%20del%20servicio%3A%0A-%20Empresa%3A%0A-%20Nombre%20de%20contacto%3A%0A-%20Tel%C3%A9fono%3A%0A-%20Tipo%20de%20contenedor%3A%0A-%20Contenedor%20lleno%20o%20vac%C3%ADo%3A%0A-%20Tiempo%20estimado%20de%20resguardo%3A%0A-%20Fecha%20estimada%3A%0A-%20Comentarios%3A";
+
   return (
     <main className={styles.page}>
       <section className={styles.hero}>
@@ -28,7 +31,7 @@ export default function ResguardoContenedoresPage() {
           <div className={styles.actions}>
             <a
               className={styles.primaryButton}
-              href="https://wa.me/522224556651?text=Hola%2C%20quiero%20solicitar%20informaci%C3%B3n%20sobre%20resguardo%20de%20contenedores%20en%20patio%20de%20maniobras%20en%20Manzanillo.%0A%0ADatos%20del%20servicio%3A%0A-%20Empresa%3A%0A-%20Nombre%20de%20contacto%3A%0A-%20Tel%C3%A9fono%3A%0A-%20Tipo%20de%20contenedor%3A%0A-%20Contenedor%20lleno%20o%20vac%C3%ADo%3A%0A-%20Tiempo%20estimado%20de%20resguardo%3A%0A-%20Fecha%20estimada%3A%0A-%20Comentarios%3A"
+              href={whatsappResguardo}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -94,6 +97,55 @@ export default function ResguardoContenedoresPage() {
             </article>
           </div>
 
+          <section className={styles.gallerySection}>
+            <div className={styles.galleryHeader}>
+              <span>Fotos reales</span>
+
+              <h2>Patio de maniobras para apoyo operativo en Manzanillo.</h2>
+
+              <p>
+                Estas imágenes muestran espacios reales de patio de maniobras
+                que fortalecen nuestra capacidad de apoyo para operaciones
+                locales de carga contenerizada.
+              </p>
+            </div>
+
+            <div className={styles.galleryGrid}>
+              <article>
+                <img
+                  src="/images/patio-maniobras-zusasa-1.jpg"
+                  alt="Patio de maniobras para contenedores en Manzanillo"
+                />
+                <div>
+                  <strong>Patio de maniobras</strong>
+                  <p>Espacio operativo para apoyo logístico local.</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="/images/patio-maniobras-zusasa-2.jpg"
+                  alt="Área de resguardo y maniobras de contenedores"
+                />
+                <div>
+                  <strong>Resguardo temporal</strong>
+                  <p>Apoyo para contenedores llenos o vacíos.</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="/images/patio-maniobras-zusasa-3.jpg"
+                  alt="Patio para maniobras logísticas en Manzanillo"
+                />
+                <div>
+                  <strong>Operación local</strong>
+                  <p>Coordinación para movimientos en Manzanillo.</p>
+                </div>
+              </article>
+            </div>
+          </section>
+
           <div className={styles.infoBlock}>
             <h2>¿Qué información necesitamos para revisar el resguardo?</h2>
 
@@ -124,7 +176,7 @@ export default function ResguardoContenedoresPage() {
 
           <a
             className={styles.whatsappButton}
-            href="https://wa.me/522224556651?text=Hola%2C%20quiero%20solicitar%20informaci%C3%B3n%20sobre%20resguardo%20de%20contenedores%20en%20patio%20de%20maniobras%20en%20Manzanillo.%0A%0ADatos%20del%20servicio%3A%0A-%20Empresa%3A%0A-%20Nombre%20de%20contacto%3A%0A-%20Tel%C3%A9fono%3A%0A-%20Tipo%20de%20contenedor%3A%0A-%20Contenedor%20lleno%20o%20vac%C3%ADo%3A%0A-%20Tiempo%20estimado%20de%20resguardo%3A%0A-%20Fecha%20estimada%3A%0A-%20Comentarios%3A"
+            href={whatsappResguardo}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -133,7 +185,7 @@ export default function ResguardoContenedoresPage() {
 
           <a
             className={styles.emailButton}
-            href="mailto:transportes.zusasa@gmail.com?subject=Consulta%20sobre%20resguardo%20de%20contenedores%20en%20Manzanillo"
+            href="mailto:transportes.zusasa@gmail.com?subject=Consulta%20sobre%20resguardo%20de%20contenedores%20en%20Manzanillo&body=Hola%2C%20quiero%20solicitar%20informaci%C3%B3n%20sobre%20resguardo%20de%20contenedores%20en%20patio%20de%20maniobras%20en%20Manzanillo."
           >
             Enviar correo
           </a>
