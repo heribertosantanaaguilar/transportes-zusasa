@@ -8283,3 +8283,21 @@ body .heroShowcaseBar {
     font-size: 16px !important;
   }
 }
+/* =========================================================
+   CONTACTO - REDUCIR ESPACIO ENTRE CORREO Y DATOS
+   ========================================================= */
+
+.contactInfoBox .contactInfoItem:first-child {
+  min-height: auto !important;
+  padding-top: 24px !important;
+  padding-bottom: 24px !important;
+  margin-bottom: 0 !important;
+}
+
+.contactInfoBox {
+  row-gap: 26px !important;
+}
+
+.contactInfoItem {
+  min-height: auto !important;
+}
