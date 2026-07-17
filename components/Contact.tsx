@@ -45,7 +45,17 @@ export default function Contact() {
     fontSize: "19px",
     lineHeight: 1.45,
     textDecoration: "none",
-    wordBreak: "break-word" as const,
+  };
+
+  const emailTextStyle = {
+    display: "block",
+    color: "#3b4a5a",
+    fontSize: "20px",
+    lineHeight: 1.45,
+    textDecoration: "none",
+    whiteSpace: "nowrap" as const,
+    wordBreak: "normal" as const,
+    overflowWrap: "normal" as const,
   };
 
   return (
@@ -103,7 +113,14 @@ export default function Contact() {
         </div>
 
         <div className="contactInfoBox">
-          <div className="contactInfoItem" style={itemStyle}>
+          <div
+            className="contactInfoItem"
+            style={{
+              ...itemStyle,
+              gridColumn: "1 / -1",
+              minHeight: "120px",
+            }}
+          >
             <div className="contactInfoIcon" style={iconStyle}>
               ✉
             </div>
@@ -113,7 +130,7 @@ export default function Contact() {
 
               <a
                 href="mailto:transportes.zusasa@gmail.com"
-                style={textStyle}
+                style={emailTextStyle}
               >
                 transportes.zusasa@gmail.com
               </a>
