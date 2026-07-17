@@ -8263,3 +8263,23 @@ body .heroShowcaseBar {
 .contactInfoItem span {
   word-break: break-word !important;
 }
+/* =========================================================
+   CONTACTO - CORREO EN UNA SOLA LÍNEA
+   ========================================================= */
+
+.contactInfoBox .contactInfoItem:first-child {
+  grid-column: 1 / -1 !important;
+}
+
+.contactInfoBox .contactInfoItem:first-child a {
+  white-space: nowrap !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+  font-size: 19px !important;
+}
+
+@media (max-width: 650px) {
+  .contactInfoBox .contactInfoItem:first-child a {
+    font-size: 16px !important;
+  }
+}
