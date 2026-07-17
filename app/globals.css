@@ -8222,3 +8222,44 @@ body .heroShowcaseBar {
     min-height: auto !important;
   }
 }
+/* =========================================================
+   CORRECCIÓN TAMAÑO LOGO LINKEDIN EN CONTACTO
+   ========================================================= */
+
+.contactLinkedinIcon {
+  width: 44px !important;
+  height: 44px !important;
+  min-width: 44px !important;
+  max-width: 44px !important;
+  max-height: 44px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+  border-radius: 10px !important;
+  flex: 0 0 44px !important;
+}
+
+.contactLinkedinIcon img {
+  width: 44px !important;
+  height: 44px !important;
+  max-width: 44px !important;
+  max-height: 44px !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+
+.contactInfoItem {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 16px !important;
+}
+
+.contactInfoItem > div:last-child {
+  min-width: 0 !important;
+}
+
+.contactInfoItem a,
+.contactInfoItem span {
+  word-break: break-word !important;
+}
