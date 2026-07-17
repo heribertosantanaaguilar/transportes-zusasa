@@ -8128,3 +8128,97 @@ body .heroShowcaseBar {
 .contactInfoBox p a:hover {
   color: #f26522 !important;
 }
+/* =========================================================
+   CONTACTO - ICONOS PROFESIONALES
+   ========================================================= */
+
+.contactInfoBox {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 22px !important;
+}
+
+.contactInfoItem {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 16px !important;
+  background: #f5f6f7 !important;
+  padding: 26px !important;
+  border-radius: 24px !important;
+  min-height: 150px !important;
+}
+
+.contactInfoItem > div:last-child {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+}
+
+.contactInfoItem strong {
+  display: block !important;
+  color: #0a1d36 !important;
+  font-size: 22px !important;
+  font-weight: 900 !important;
+  line-height: 1.15 !important;
+}
+
+.contactInfoItem a,
+.contactInfoItem span {
+  color: #3b4a5a !important;
+  text-decoration: none !important;
+  font-size: 19px !important;
+  line-height: 1.45 !important;
+}
+
+.contactInfoItem a:hover {
+  color: #f26522 !important;
+}
+
+.contactInfoIcon {
+  width: 44px !important;
+  height: 44px !important;
+  min-width: 44px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 999px !important;
+  background: #f26522 !important;
+  color: #ffffff !important;
+  font-size: 20px !important;
+  font-weight: 900 !important;
+  box-shadow: 0 14px 30px rgba(242, 101, 34, 0.28) !important;
+}
+
+.contactLinkedinIcon {
+  width: 44px !important;
+  height: 44px !important;
+  min-width: 44px !important;
+  border-radius: 10px !important;
+  overflow: hidden !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: transparent !important;
+  box-shadow: 0 14px 30px rgba(0, 119, 181, 0.22) !important;
+}
+
+.contactLinkedinIcon img {
+  width: 44px !important;
+  height: 44px !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+
+.contactLinkedinItem {
+  grid-column: span 1 !important;
+}
+
+@media (max-width: 850px) {
+  .contactInfoBox {
+    grid-template-columns: 1fr !important;
+  }
+
+  .contactInfoItem {
+    min-height: auto !important;
+  }
+}
