@@ -2,6 +2,52 @@ export default function Contact() {
   const whatsappMessage =
     "https://wa.me/522224556651?text=Hola%2C%20quiero%20solicitar%20informaci%C3%B3n%20y%2Fo%20cotizaci%C3%B3n%20con%20Transportes%20ZUSASA%20para%20un%20servicio%20en%20Manzanillo.%0A%0AServicio%20que%20necesito%3A%0A-%20Movimiento%20local%20de%20contenedores%3A%0A-%20Resguardo%20en%20patio%20de%20maniobras%3A%0A-%20Apoyo%20operativo%20para%20contenedores%3A%0A-%20Seguimiento%20de%20operaci%C3%B3n%3A%0A-%20Otro%3A%0A%0ADatos%20del%20servicio%3A%0A-%20Empresa%3A%0A-%20Nombre%20de%20contacto%3A%0A-%20Tel%C3%A9fono%3A%0A-%20Tipo%20de%20contenedor%3A%0A-%20Origen%3A%0A-%20Destino%3A%0A-%20Fecha%20estimada%3A%0A-%20Comentarios%3A";
 
+  const iconStyle = {
+    width: "44px",
+    height: "44px",
+    minWidth: "44px",
+    maxWidth: "44px",
+    borderRadius: "999px",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    background: "#f26522",
+    color: "#ffffff",
+    fontSize: "20px",
+    fontWeight: 900,
+    flex: "0 0 44px",
+  };
+
+  const itemStyle = {
+    display: "flex",
+    alignItems: "flex-start",
+    gap: "18px",
+  };
+
+  const textBoxStyle = {
+    display: "flex",
+    flexDirection: "column" as const,
+    gap: "10px",
+    minWidth: 0,
+  };
+
+  const titleStyle = {
+    display: "block",
+    color: "#0a1d36",
+    fontSize: "22px",
+    fontWeight: 900,
+    lineHeight: 1.15,
+  };
+
+  const textStyle = {
+    display: "block",
+    color: "#3b4a5a",
+    fontSize: "19px",
+    lineHeight: 1.45,
+    textDecoration: "none",
+    wordBreak: "break-word" as const,
+  };
+
   return (
     <section id="contacto" className="zusasaContactFinal">
       <div className="zusasaContactContent">
@@ -57,84 +103,36 @@ export default function Contact() {
         </div>
 
         <div className="contactInfoBox">
-          <div
-            className="contactInfoItem"
-            style={{
-              display: "flex",
-              alignItems: "flex-start",
-              gap: "16px",
-            }}
-          >
-            <div
-              className="contactInfoIcon"
-              style={{
-                width: "44px",
-                height: "44px",
-                minWidth: "44px",
-                maxWidth: "44px",
-                borderRadius: "999px",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                background: "#f26522",
-                color: "#ffffff",
-                fontSize: "20px",
-                fontWeight: 900,
-              }}
-            >
+          <div className="contactInfoItem" style={itemStyle}>
+            <div className="contactInfoIcon" style={iconStyle}>
               ✉
             </div>
 
-            <div>
-              <strong>Correo</strong>
-              <a href="mailto:transportes.zusasa@gmail.com">
+            <div style={textBoxStyle}>
+              <strong style={titleStyle}>Correo</strong>
+
+              <a
+                href="mailto:transportes.zusasa@gmail.com"
+                style={textStyle}
+              >
                 transportes.zusasa@gmail.com
               </a>
             </div>
           </div>
 
-          <div
-            className="contactInfoItem"
-            style={{
-              display: "flex",
-              alignItems: "flex-start",
-              gap: "16px",
-            }}
-          >
-            <div
-              className="contactInfoIcon"
-              style={{
-                width: "44px",
-                height: "44px",
-                minWidth: "44px",
-                maxWidth: "44px",
-                borderRadius: "999px",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                background: "#f26522",
-                color: "#ffffff",
-                fontSize: "20px",
-                fontWeight: 900,
-              }}
-            >
+          <div className="contactInfoItem" style={itemStyle}>
+            <div className="contactInfoIcon" style={iconStyle}>
               📍
             </div>
 
-            <div>
-              <strong>Ubicación</strong>
-              <span>Manzanillo, Colima, México</span>
+            <div style={textBoxStyle}>
+              <strong style={titleStyle}>Ubicación</strong>
+
+              <span style={textStyle}>Manzanillo, Colima, México</span>
             </div>
           </div>
 
-          <div
-            className="contactInfoItem"
-            style={{
-              display: "flex",
-              alignItems: "flex-start",
-              gap: "16px",
-            }}
-          >
+          <div className="contactInfoItem" style={itemStyle}>
             <div
               style={{
                 width: "44px",
@@ -167,14 +165,16 @@ export default function Contact() {
               />
             </div>
 
-            <div>
-              <strong>LinkedIn</strong>
+            <div style={textBoxStyle}>
+              <strong style={titleStyle}>LinkedIn</strong>
+
               <a
                 href="https://www.linkedin.com/company/transportes-zusasa/"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={textStyle}
               >
-                Transportes ZUSASA en LinkedIn
+                Transportes ZUSASA
               </a>
             </div>
           </div>
