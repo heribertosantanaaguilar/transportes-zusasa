@@ -30,13 +30,20 @@ export default function Services() {
     },
   ];
 
+  const cardLayoutStyle = {
+    display: "flex",
+    flexDirection: "column" as const,
+    height: "100%",
+    minHeight: "620px",
+  };
+
   const bubbleButtonStyle = {
     display: "inline-flex",
     alignItems: "center",
     justifyContent: "center",
     width: "fit-content",
     minHeight: "52px",
-    marginTop: "30px",
+    marginTop: "auto",
     padding: "0 28px",
     borderRadius: "999px",
     background: "#F26522",
@@ -44,7 +51,7 @@ export default function Services() {
     textDecoration: "none",
     fontWeight: 900,
     fontSize: "15px",
-    lineHeight: 1,
+    lineHeight: 1.1,
     boxShadow: "0 18px 42px rgba(242, 101, 34, 0.34)",
     border: "2px solid #F26522",
   };
@@ -65,7 +72,11 @@ export default function Services() {
 
       <div className="zusasaServicesGrid">
         {services.map((service) => (
-          <article className="zusasaServiceCard" key={service.title}>
+          <article
+            className="zusasaServiceCard"
+            key={service.title}
+            style={cardLayoutStyle}
+          >
             <strong>{service.number}</strong>
 
             <h3>{service.title}</h3>
