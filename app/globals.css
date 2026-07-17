@@ -8082,3 +8082,49 @@ body .heroShowcaseBar {
     width: 100% !important;
   }
 }
+/* =========================================================
+   CONTACTO - ICONOS EN DATOS DE CONTACTO
+   ========================================================= */
+
+.contactInfoHeading {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  margin-bottom: 10px !important;
+}
+
+.contactInfoIcon {
+  width: 38px !important;
+  height: 38px !important;
+  min-width: 38px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 999px !important;
+  background: #f26522 !important;
+  color: #ffffff !important;
+  font-size: 18px !important;
+  font-weight: 900 !important;
+  box-shadow: 0 12px 26px rgba(242, 101, 34, 0.28) !important;
+}
+
+.linkedinIcon {
+  font-family: Arial, sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 900 !important;
+}
+
+.contactInfoBox p {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+}
+
+.contactInfoBox p a {
+  color: #0a1d36 !important;
+  text-decoration: none !important;
+}
+
+.contactInfoBox p a:hover {
+  color: #f26522 !important;
+}
