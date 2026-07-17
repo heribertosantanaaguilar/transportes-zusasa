@@ -25,7 +25,7 @@ export default function Contact() {
 
           <a
             className="contactEmail"
-            href="mailto:transportes.zusasa@gmail.com?subject=Solicitud%20de%20cotizaci%C3%B3n%20-%20Transporte%20local%20Manzanillo&body=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20con%20Transportes%20ZUSASA.%0A%0ADatos%20del%20servicio%3A%0A-%20Empresa%3A%0A-%20Nombre%20de%20contacto%3A%0A-%20Tel%C3%A9fono%3A%0A-%20Tipo%20de%20servicio%3A%0A-%20Tipo%20de%20contenedor%3A%0A-%20Origen%3A%0A-%20Destino%3A%0A-%20Fecha%20estimada%3A%0A-%20Comentarios%3A"
+            href="mailto:transportes.zusasa@gmail.com?subject=Solicitud%20de%20cotizaci%C3%B3n%20-%20Transportes%20ZUSASA&body=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20con%20Transportes%20ZUSASA.%0A%0ADatos%20del%20servicio%3A%0A-%20Empresa%3A%0A-%20Nombre%20de%20contacto%3A%0A-%20Tel%C3%A9fono%3A%0A-%20Tipo%20de%20servicio%3A%0A-%20Tipo%20de%20contenedor%3A%0A-%20Origen%3A%0A-%20Destino%3A%0A-%20Fecha%20estimada%3A%0A-%20Comentarios%3A"
           >
             Enviar correo
           </a>
@@ -54,40 +54,45 @@ export default function Contact() {
         </div>
 
         <div className="contactInfoBox">
-          <p>
-            <span className="contactInfoHeading">
-              <span className="contactInfoIcon">✉</span>
+          <div className="contactInfoItem">
+            <div className="contactInfoIcon">✉</div>
+
+            <div>
               <strong>Correo</strong>
-            </span>
+              <a href="mailto:transportes.zusasa@gmail.com">
+                transportes.zusasa@gmail.com
+              </a>
+            </div>
+          </div>
 
-            <a href="mailto:transportes.zusasa@gmail.com">
-              transportes.zusasa@gmail.com
-            </a>
-          </p>
+          <div className="contactInfoItem">
+            <div className="contactInfoIcon">📍</div>
 
-          <p>
-            <span className="contactInfoHeading">
-              <span className="contactInfoIcon">📍</span>
+            <div>
               <strong>Ubicación</strong>
-            </span>
+              <span>Manzanillo, Colima, México</span>
+            </div>
+          </div>
 
-            Manzanillo, Colima, México
-          </p>
+          <div className="contactInfoItem contactLinkedinItem">
+            <div className="contactLinkedinIcon">
+              <img
+                src="/images/logo-linkedin.png.webp"
+                alt="LinkedIn"
+              />
+            </div>
 
-          <p>
-            <span className="contactInfoHeading">
-              <span className="contactInfoIcon linkedinIcon">in</span>
+            <div>
               <strong>LinkedIn</strong>
-            </span>
-
-            <a
-              href="https://www.linkedin.com/company/transportes-zusasa/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Transportes ZUSASA en LinkedIn
-            </a>
-          </p>
+              <a
+                href="https://www.linkedin.com/company/transportes-zusasa/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Transportes ZUSASA en LinkedIn
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
