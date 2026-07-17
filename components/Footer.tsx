@@ -34,17 +34,13 @@ export default function Footer() {
         <a href="/#por-que-elegir">Por qué elegirnos</a>
         <a href="/#sectores">Sectores</a>
         <a href="/#contacto">Contacto</a>
-
         <a href="/cotizacion">Solicitar cotización</a>
-
         <a href="/transporte-de-contenedores-manzanillo">
           Transporte de contenedores
         </a>
-
         <a href="/resguardo-de-contenedores-manzanillo">
           Resguardo de contenedores
         </a>
-
         <a href="/aviso-de-privacidad">Aviso de privacidad</a>
       </div>
 
@@ -71,6 +67,18 @@ export default function Footer() {
           <strong>Ubicación:</strong>
           <br />
           Manzanillo, Colima, México
+        </p>
+
+        <p>
+          <strong>LinkedIn:</strong>
+          <br />
+          <a
+            href="https://www.linkedin.com/company/transportes-zusasa/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Transportes ZUSASA en LinkedIn
+          </a>
         </p>
       </div>
     </footer>
