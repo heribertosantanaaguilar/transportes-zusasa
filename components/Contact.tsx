@@ -55,22 +55,31 @@ export default function Contact() {
 
         <div className="contactInfoBox">
           <p>
-            <strong>Correo</strong>
-            <br />
+            <span className="contactInfoHeading">
+              <span className="contactInfoIcon">✉</span>
+              <strong>Correo</strong>
+            </span>
+
             <a href="mailto:transportes.zusasa@gmail.com">
               transportes.zusasa@gmail.com
             </a>
           </p>
 
           <p>
-            <strong>Ubicación</strong>
-            <br />
+            <span className="contactInfoHeading">
+              <span className="contactInfoIcon">📍</span>
+              <strong>Ubicación</strong>
+            </span>
+
             Manzanillo, Colima, México
           </p>
 
           <p>
-            <strong>LinkedIn</strong>
-            <br />
+            <span className="contactInfoHeading">
+              <span className="contactInfoIcon linkedinIcon">in</span>
+              <strong>LinkedIn</strong>
+            </span>
+
             <a
               href="https://www.linkedin.com/company/transportes-zusasa/"
               target="_blank"
