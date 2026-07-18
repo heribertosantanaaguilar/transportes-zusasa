@@ -29,14 +29,16 @@ export default function Gallery() {
 
       <div className="zusasaGalleryGrid">
         {photos.map((photo) => (
-          <article
-            className="zusasaGalleryCard"
-            key={photo.title}
-            style={{
-              backgroundImage: `linear-gradient(180deg, rgba(5, 24, 46, 0.12) 0%, rgba(5, 24, 46, 0.82) 100%), url('${photo.image}')`,
-            }}
-          >
-            <div>
+          <article className="zusasaGalleryCard" key={photo.title}>
+            <img
+              className="zusasaGalleryImage"
+              src={photo.image}
+              alt={photo.title}
+            />
+
+            <div className="zusasaGalleryOverlay"></div>
+
+            <div className="zusasaGalleryContent">
               <h3>{photo.title}</h3>
               <p>{photo.text}</p>
             </div>
