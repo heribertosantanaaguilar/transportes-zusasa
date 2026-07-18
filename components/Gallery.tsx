@@ -9,30 +9,33 @@ export default function Gallery() {
     {
       title: "Patio de maniobras",
       text: "Coordinación terrestre para atender traslados, resguardo y movimientos de carga contenerizada.",
-      image:
-        "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1600&q=85",
+      image: "/images/patio-maniobras-zusasa-1.jpg",
     },
   ];
 
   return (
-    <section className="zusasaGallerySection">
-      <div className="zusasaGalleryHeader">
+    <section className="zusasaGallery">
+      <div className="sectionHeader">
         <span>Operación logística</span>
 
-        <h2>Una operación enfocada en carga contenerizada.</h2>
+        <h2>Movimiento, resguardo y apoyo operativo en Manzanillo.</h2>
 
         <p>
-          Nuestro trabajo se desarrolla en un entorno donde la coordinación, la
-          puntualidad y la comunicación son esenciales para mantener en movimiento
-          las operaciones de importación y exportación.
+          Nuestra operación está enfocada en atender necesidades locales de
+          transporte, coordinación y resguardo de carga contenerizada vinculada
+          a actividades portuarias de importación y exportación.
         </p>
       </div>
 
       <div className="zusasaGalleryGrid">
         {photos.map((photo) => (
-          <article className="zusasaGalleryCard" key={photo.title}>
-            <img src={photo.image} alt={photo.title} />
-
+          <article
+            className="zusasaGalleryCard"
+            key={photo.title}
+            style={{
+              backgroundImage: `linear-gradient(180deg, rgba(5, 24, 46, 0.12) 0%, rgba(5, 24, 46, 0.82) 100%), url('${photo.image}')`,
+            }}
+          >
             <div>
               <h3>{photo.title}</h3>
               <p>{photo.text}</p>
