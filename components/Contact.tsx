@@ -115,11 +115,14 @@ export default function Contact() {
         <div className="contactInfoBox">
           <div
             className="contactInfoItem"
-            style={{
-              ...itemStyle,
-              gridColumn: "1 / -1",
-              minHeight: "120px",
-            }}
+           style={{
+  ...itemStyle,
+  gridColumn: "1 / -1",
+  minHeight: "auto",
+  paddingTop: "22px",
+  paddingBottom: "22px",
+  alignItems: "center",
+}}
           >
             <div className="contactInfoIcon" style={iconStyle}>
               ✉
