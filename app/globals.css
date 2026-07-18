@@ -8319,3 +8319,19 @@ body .heroShowcaseBar {
 .contactInfoItem {
   min-height: auto !important;
 }
+/* =========================================================
+   OPERACIÓN LOGÍSTICA - FOTO REAL PATIO DE MANIOBRAS
+   ========================================================= */
+
+.whatWeDoFeatureGrid .whatWeDoFeatureCard:nth-child(2) {
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(5, 24, 46, 0.18) 0%,
+      rgba(5, 24, 46, 0.82) 100%
+    ),
+    url("/images/patio-maniobras-zusasa-1.jpg") !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
