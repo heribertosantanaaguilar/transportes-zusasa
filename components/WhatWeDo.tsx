@@ -51,7 +51,7 @@ export default function WhatWeDo() {
 
       <div className="zusasaWhatWeDoImage">
         <img
-          src="https://images.openai.com/static-rsc-4/SrrhFV1Q0Q5pbE6Wx__rYAhnB4f47Z7bJTG2rTeQpMN4HXBaIvDj4bVEO2GWjXz_gR5cp8blxxs3GWbqKUs4TtPepcZiK20uqfiEd8F2G7r0ntHhNVWkFMnzKgR7xfQT7T1H2OjIzuEf1f_9XcBh3_3ESmUYcbl6yZEuXrcTvyQ?purpose=inline"
+         src="/images/patio-maniobras-zusasa-1.jpg"
           alt="Camión con contenedor en patio de maniobras"
         />
 
