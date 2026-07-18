@@ -8335,3 +8335,36 @@ body .heroShowcaseBar {
   background-position: center center !important;
   background-repeat: no-repeat !important;
 }
+/* =========================================================
+   OPERACIÓN LOGÍSTICA - FORZAR FOTO REAL EN PATIO
+   ========================================================= */
+
+.whatWeDoFeatureGrid article:nth-child(2),
+.whatWeDoFeatureGrid .whatWeDoFeatureCard:nth-child(2) {
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(5, 24, 46, 0.18) 0%,
+      rgba(5, 24, 46, 0.82) 100%
+    ),
+    url("/images/patio-maniobras-zusasa-1.jpg") !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
+.whatWeDoFeatureGrid article:nth-child(2)::before,
+.whatWeDoFeatureGrid article:nth-child(2)::after,
+.whatWeDoFeatureGrid .whatWeDoFeatureCard:nth-child(2)::before,
+.whatWeDoFeatureGrid .whatWeDoFeatureCard:nth-child(2)::after {
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(5, 24, 46, 0.18) 0%,
+      rgba(5, 24, 46, 0.82) 100%
+    ),
+    url("/images/patio-maniobras-zusasa-1.jpg") !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
