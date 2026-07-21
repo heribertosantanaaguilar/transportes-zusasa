@@ -70,7 +70,7 @@ export default function Footer() {
         </p>
 
         <p>
-          <strong>LinkedIn:</strong>
+          <strong>Redes sociales:</strong>
           <br />
           <a
             href="https://www.linkedin.com/company/transportes-zusasa/"
@@ -78,6 +78,14 @@ export default function Footer() {
             rel="noopener noreferrer"
           >
             Transportes ZUSASA en LinkedIn
+          </a>
+          <br />
+          <a
+            href="https://www.facebook.com/profile.php?id=61591897865110"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Transportes ZUSASA en Facebook
           </a>
         </p>
       </div>
