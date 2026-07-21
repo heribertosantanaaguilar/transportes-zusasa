@@ -29,8 +29,8 @@ export default function Company() {
 
         <div className="zusasaCompanyRight">
           <img
-            src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1400&q=85"
-            alt="Transporte de carga contenerizada"
+            src="/images/camion-rojo-zusasa-nosotros.png"
+            alt="Primer camión de Transportes ZUSASA"
           />
 
           <div className="zusasaFloatingCard">
