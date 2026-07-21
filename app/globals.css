@@ -8484,3 +8484,165 @@ body .heroShowcaseBar {
     object-position: center center !important;
   }
 }
+/* =========================================================
+   RESTAURAR OPERACIÓN LOGÍSTICA / GALERÍA
+   ========================================================= */
+
+.zusasaGallery {
+  padding: 110px 7% !important;
+  background: #f5f6f7 !important;
+  overflow: hidden !important;
+}
+
+.zusasaGallery .sectionHeader {
+  max-width: 980px !important;
+  margin-bottom: 54px !important;
+}
+
+.zusasaGallery .sectionHeader span {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+  color: #f26522 !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.2px !important;
+  font-size: 15px !important;
+  margin-bottom: 22px !important;
+}
+
+.zusasaGallery .sectionHeader span::before {
+  content: "" !important;
+  width: 48px !important;
+  height: 4px !important;
+  background: #f26522 !important;
+  border-radius: 999px !important;
+}
+
+.zusasaGallery .sectionHeader h2 {
+  max-width: 1000px !important;
+  font-size: clamp(42px, 5vw, 74px) !important;
+  line-height: 1.03 !important;
+  letter-spacing: -2px !important;
+  margin: 0 0 26px !important;
+  color: #0a1d36 !important;
+}
+
+.zusasaGallery .sectionHeader p {
+  max-width: 950px !important;
+  color: #3b4a5a !important;
+  font-size: 20px !important;
+  line-height: 1.7 !important;
+  margin: 0 !important;
+}
+
+.zusasaGalleryGrid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 34px !important;
+  margin-top: 54px !important;
+}
+
+.zusasaGalleryCard {
+  position: relative !important;
+  min-height: 360px !important;
+  border-radius: 30px !important;
+  overflow: hidden !important;
+  background: #0a1d36 !important;
+  box-shadow: 0 28px 75px rgba(10, 29, 54, 0.16) !important;
+}
+
+.zusasaGalleryImage {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+  z-index: 1 !important;
+}
+
+.zusasaGalleryOverlay {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 2 !important;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(5, 24, 46, 0.08) 0%,
+      rgba(5, 24, 46, 0.45) 48%,
+      rgba(5, 24, 46, 0.9) 100%
+    ) !important;
+}
+
+.zusasaGalleryContent {
+  position: absolute !important;
+  left: 38px !important;
+  right: 38px !important;
+  bottom: 34px !important;
+  z-index: 3 !important;
+}
+
+.zusasaGalleryContent h3 {
+  color: #ffffff !important;
+  font-size: 30px !important;
+  line-height: 1.1 !important;
+  font-weight: 900 !important;
+  margin: 0 0 14px !important;
+}
+
+.zusasaGalleryContent p {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 16px !important;
+  line-height: 1.55 !important;
+  margin: 0 !important;
+  max-width: 680px !important;
+}
+
+@media (max-width: 900px) {
+  .zusasaGallery {
+    padding: 80px 24px !important;
+  }
+
+  .zusasaGalleryGrid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .zusasaGalleryCard {
+    min-height: 330px !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .zusasaGallery .sectionHeader h2 {
+    font-size: 40px !important;
+  }
+
+  .zusasaGallery .sectionHeader p {
+    font-size: 17px !important;
+  }
+
+  .zusasaGalleryGrid {
+    gap: 24px !important;
+    margin-top: 38px !important;
+  }
+
+  .zusasaGalleryCard {
+    min-height: 300px !important;
+    border-radius: 24px !important;
+  }
+
+  .zusasaGalleryContent {
+    left: 24px !important;
+    right: 24px !important;
+    bottom: 26px !important;
+  }
+
+  .zusasaGalleryContent h3 {
+    font-size: 25px !important;
+  }
+
+  .zusasaGalleryContent p {
+    font-size: 15px !important;
+  }
+}
