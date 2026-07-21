@@ -1,52 +1,164 @@
 export default function WhatWeDo() {
+  const cards = [
+    {
+      title: "Entorno portuario",
+      text: "Operaciones vinculadas al movimiento local de contenedores dentro de la zona logística de Manzanillo.",
+      image:
+        "https://images.unsplash.com/photo-1494412685616-a5d310fbb07d?auto=format&fit=crop&w=1600&q=85",
+    },
+    {
+      title: "Patio de maniobras",
+      text: "Coordinación terrestre para atender traslados, resguardo y movimientos de carga contenerizada.",
+      image: "/images/patio-maniobras-zusasa-1.jpg",
+    },
+  ];
+
   return (
-    <section className="zusasaWhatWeDo">
-      <div className="sectionHeader">
-        <span>Operación logística</span>
+    <section
+      id="operacion-logistica"
+      style={{
+        padding: "110px 7%",
+        background: "#f5f6f7",
+        overflow: "hidden",
+      }}
+    >
+      <div
+        style={{
+          maxWidth: "980px",
+          marginBottom: "54px",
+        }}
+      >
+        <span
+          style={{
+            display: "inline-flex",
+            alignItems: "center",
+            gap: "14px",
+            color: "#f26522",
+            fontWeight: 900,
+            textTransform: "uppercase",
+            letterSpacing: "1.2px",
+            fontSize: "15px",
+            marginBottom: "22px",
+          }}
+        >
+          <span
+            style={{
+              display: "inline-block",
+              width: "48px",
+              height: "4px",
+              background: "#f26522",
+              borderRadius: "999px",
+            }}
+          />
+          Operación logística
+        </span>
 
-        <h2>Soluciones para mover y resguardar carga contenerizada.</h2>
+        <h2
+          style={{
+            maxWidth: "1000px",
+            fontSize: "clamp(42px, 5vw, 74px)",
+            lineHeight: 1.03,
+            letterSpacing: "-2px",
+            margin: "0 0 26px",
+            color: "#0a1d36",
+          }}
+        >
+          Soluciones para mover y resguardar carga contenerizada.
+        </h2>
 
-        <p>
+        <p
+          style={{
+            maxWidth: "950px",
+            color: "#3b4a5a",
+            fontSize: "20px",
+            lineHeight: 1.7,
+            margin: 0,
+          }}
+        >
           Atendemos operaciones vinculadas al movimiento local de contenedores,
           resguardo en patio de maniobras y apoyo operativo para clientes que
           requieren coordinación confiable en Manzanillo.
         </p>
       </div>
 
-      <div className="whatWeDoFeatureGrid">
-        <article
-          className="whatWeDoFeatureCard"
-          style={{
-            backgroundImage:
-              "linear-gradient(180deg, rgba(5, 24, 46, 0.18) 0%, rgba(5, 24, 46, 0.82) 100%), url('https://images.unsplash.com/photo-1494412685616-a5d310fbb07d?auto=format&fit=crop&w=1600&q=90')",
-          }}
-        >
-          <div>
-            <h3>Entorno portuario</h3>
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
+          gap: "34px",
+        }}
+      >
+        {cards.map((card) => (
+          <article
+            key={card.title}
+            style={{
+              position: "relative",
+              minHeight: "360px",
+              borderRadius: "30px",
+              overflow: "hidden",
+              background: "#0a1d36",
+              boxShadow: "0 28px 75px rgba(10, 29, 54, 0.16)",
+            }}
+          >
+            <img
+              src={card.image}
+              alt={card.title}
+              style={{
+                position: "absolute",
+                inset: 0,
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                display: "block",
+                zIndex: 1,
+              }}
+            />
 
-            <p>
-              Operaciones vinculadas al movimiento local de contenedores dentro
-              de la zona logística de Manzanillo.
-            </p>
-          </div>
-        </article>
+            <div
+              style={{
+                position: "absolute",
+                inset: 0,
+                zIndex: 2,
+                background:
+                  "linear-gradient(180deg, rgba(5, 24, 46, 0.08) 0%, rgba(5, 24, 46, 0.45) 48%, rgba(5, 24, 46, 0.92) 100%)",
+              }}
+            />
 
-        <article
-          className="whatWeDoFeatureCard"
-          style={{
-            backgroundImage:
-              "linear-gradient(180deg, rgba(5, 24, 46, 0.18) 0%, rgba(5, 24, 46, 0.82) 100%), url('/images/patio-maniobras-zusasa-1.jpg')",
-          }}
-        >
-          <div>
-            <h3>Patio de maniobras</h3>
+            <div
+              style={{
+                position: "absolute",
+                left: "38px",
+                right: "38px",
+                bottom: "34px",
+                zIndex: 3,
+              }}
+            >
+              <h3
+                style={{
+                  color: "#ffffff",
+                  fontSize: "30px",
+                  lineHeight: 1.1,
+                  fontWeight: 900,
+                  margin: "0 0 14px",
+                }}
+              >
+                {card.title}
+              </h3>
 
-            <p>
-              Coordinación terrestre para atender traslados, resguardo y
-              movimientos de carga contenerizada.
-            </p>
-          </div>
-        </article>
+              <p
+                style={{
+                  color: "rgba(255, 255, 255, 0.9)",
+                  fontSize: "16px",
+                  lineHeight: 1.55,
+                  margin: 0,
+                  maxWidth: "680px",
+                }}
+              >
+                {card.text}
+              </p>
+            </div>
+          </article>
+        ))}
       </div>
     </section>
   );
