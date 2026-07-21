@@ -9,7 +9,6 @@ import Value from "../components/Value";
 import Trust from "../components/Trust";
 import Process from "../components/Process";
 import Coverage from "../components/Coverage";
-import Gallery from "../components/Gallery";
 import Stats from "../components/Stats";
 import Quote from "../components/Quote";
 import FAQ from "../components/FAQ";
@@ -21,23 +20,24 @@ export default function Home() {
   return (
     <>
       <Navbar />
-<Hero />
-<WhatWeDo />
-<Company />
-<Services />
-<WhyChoose />
-<Sectors />
-<Value />
-<Trust />
-<Process />
-<Coverage />
-<Gallery />
-<Stats />
-<Quote />
-<FAQ />
-<Contact />
-<Footer />
-<WhatsAppButton />
+      <Hero />
+
+      <WhatWeDo />
+      <Stats />
+
+      <Company />
+      <Services />
+      <WhyChoose />
+      <Sectors />
+      <Value />
+      <Trust />
+      <Process />
+      <Coverage />
+      <Quote />
+      <FAQ />
+      <Contact />
+      <Footer />
+      <WhatsAppButton />
     </>
   );
 }
