@@ -17,7 +17,8 @@ export default function WhatWeDo() {
     <section
       id="operacion-logistica"
       style={{
-        padding: "110px 7%",
+        padding:
+          "clamp(64px, 8vw, 110px) clamp(18px, 7vw, 96px)",
         background: "#f5f6f7",
         overflow: "hidden",
       }}
@@ -25,42 +26,45 @@ export default function WhatWeDo() {
       <div
         style={{
           maxWidth: "980px",
-          marginBottom: "54px",
+          marginBottom: "clamp(34px, 5vw, 54px)",
         }}
       >
         <span
           style={{
             display: "inline-flex",
             alignItems: "center",
-            gap: "14px",
+            gap: "12px",
             color: "#f26522",
             fontWeight: 900,
             textTransform: "uppercase",
             letterSpacing: "1.2px",
-            fontSize: "15px",
+            fontSize: "clamp(13px, 2vw, 15px)",
             marginBottom: "22px",
           }}
         >
           <span
             style={{
               display: "inline-block",
-              width: "48px",
+              flexShrink: 0,
+              width: "clamp(36px, 5vw, 48px)",
               height: "4px",
               background: "#f26522",
               borderRadius: "999px",
             }}
           />
+
           Operación logística
         </span>
 
         <h2
           style={{
             maxWidth: "1000px",
-            fontSize: "clamp(42px, 5vw, 74px)",
-            lineHeight: 1.03,
-            letterSpacing: "-2px",
-            margin: "0 0 26px",
+            fontSize: "clamp(34px, 5vw, 74px)",
+            lineHeight: 1.06,
+            letterSpacing: "clamp(-2px, -0.1vw, -1px)",
+            margin: "0 0 24px",
             color: "#0a1d36",
+            overflowWrap: "break-word",
           }}
         >
           Soluciones para mover y resguardar carga contenerizada.
@@ -70,8 +74,8 @@ export default function WhatWeDo() {
           style={{
             maxWidth: "950px",
             color: "#3b4a5a",
-            fontSize: "20px",
-            lineHeight: 1.7,
+            fontSize: "clamp(16px, 2vw, 20px)",
+            lineHeight: 1.65,
             margin: 0,
           }}
         >
@@ -84,8 +88,10 @@ export default function WhatWeDo() {
       <div
         style={{
           display: "grid",
-          gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
-          gap: "34px",
+          gridTemplateColumns:
+            "repeat(auto-fit, minmax(min(100%, 360px), 1fr))",
+          gap: "clamp(22px, 3vw, 34px)",
+          width: "100%",
         }}
       >
         {cards.map((card) => (
@@ -93,8 +99,10 @@ export default function WhatWeDo() {
             key={card.title}
             style={{
               position: "relative",
-              minHeight: "360px",
-              borderRadius: "30px",
+              width: "100%",
+              minWidth: 0,
+              minHeight: "clamp(390px, 52vw, 460px)",
+              borderRadius: "clamp(22px, 3vw, 30px)",
               overflow: "hidden",
               background: "#0a1d36",
               boxShadow: "0 28px 75px rgba(10, 29, 54, 0.16)",
@@ -109,6 +117,7 @@ export default function WhatWeDo() {
                 width: "100%",
                 height: "100%",
                 objectFit: "cover",
+                objectPosition: "center",
                 display: "block",
                 zIndex: 1,
               }}
@@ -120,26 +129,27 @@ export default function WhatWeDo() {
                 inset: 0,
                 zIndex: 2,
                 background:
-                  "linear-gradient(180deg, rgba(5, 24, 46, 0.08) 0%, rgba(5, 24, 46, 0.45) 48%, rgba(5, 24, 46, 0.92) 100%)",
+                  "linear-gradient(180deg, rgba(5, 24, 46, 0.08) 0%, rgba(5, 24, 46, 0.38) 42%, rgba(5, 24, 46, 0.97) 100%)",
               }}
             />
 
             <div
               style={{
                 position: "absolute",
-                left: "38px",
-                right: "38px",
-                bottom: "34px",
+                left: "clamp(22px, 4vw, 38px)",
+                right: "clamp(22px, 4vw, 38px)",
+                bottom: "clamp(24px, 4vw, 34px)",
                 zIndex: 3,
               }}
             >
               <h3
                 style={{
                   color: "#ffffff",
-                  fontSize: "30px",
-                  lineHeight: 1.1,
+                  fontSize: "clamp(25px, 3vw, 30px)",
+                  lineHeight: 1.12,
                   fontWeight: 900,
-                  margin: "0 0 14px",
+                  margin: "0 0 12px",
+                  overflowWrap: "break-word",
                 }}
               >
                 {card.title}
@@ -147,11 +157,12 @@ export default function WhatWeDo() {
 
               <p
                 style={{
-                  color: "rgba(255, 255, 255, 0.9)",
-                  fontSize: "16px",
+                  color: "rgba(255, 255, 255, 0.94)",
+                  fontSize: "clamp(15px, 2vw, 16px)",
                   lineHeight: 1.55,
                   margin: 0,
                   maxWidth: "680px",
+                  overflowWrap: "break-word",
                 }}
               >
                 {card.text}
