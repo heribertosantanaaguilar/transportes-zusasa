@@ -2,7 +2,7 @@ export default function Contact() {
   const whatsappMessage =
     "https://wa.me/522224556651?text=Hola%2C%20quiero%20solicitar%20informaci%C3%B3n%20y%2Fo%20cotizaci%C3%B3n%20con%20Transportes%20ZUSASA%20para%20un%20servicio%20en%20Manzanillo.%0A%0AServicio%20que%20necesito%3A%0A-%20Movimiento%20local%20de%20contenedores%3A%0A-%20Resguardo%20en%20patio%20de%20maniobras%3A%0A-%20Apoyo%20operativo%20para%20contenedores%3A%0A-%20Seguimiento%20de%20operaci%C3%B3n%3A%0A-%20Otro%3A%0A%0ADatos%20del%20servicio%3A%0A-%20Empresa%3A%0A-%20Nombre%20de%20contacto%3A%0A-%20Tel%C3%A9fono%3A%0A-%20Tipo%20de%20contenedor%3A%0A-%20Origen%3A%0A-%20Destino%3A%0A-%20Fecha%20estimada%3A%0A-%20Comentarios%3A";
 
-  const iconStyle = {
+  const orangeIconStyle = {
     width: "44px",
     height: "44px",
     minWidth: "44px",
@@ -112,19 +112,24 @@ export default function Contact() {
           <a href="tel:3148721897">314 872 1897</a>
         </div>
 
-        <div className="contactInfoBox">
+        <div
+          className="contactInfoBox"
+          style={{
+            rowGap: "18px",
+          }}
+        >
           <div
             className="contactInfoItem"
-           style={{
-  ...itemStyle,
-  gridColumn: "1 / -1",
-  minHeight: "auto",
-  paddingTop: "22px",
-  paddingBottom: "22px",
-  alignItems: "center",
-}}
+            style={{
+              ...itemStyle,
+              gridColumn: "1 / -1",
+              minHeight: "auto",
+              paddingTop: "22px",
+              paddingBottom: "22px",
+              alignItems: "center",
+            }}
           >
-            <div className="contactInfoIcon" style={iconStyle}>
+            <div className="contactInfoIcon" style={orangeIconStyle}>
               ✉
             </div>
 
@@ -141,7 +146,7 @@ export default function Contact() {
           </div>
 
           <div className="contactInfoItem" style={itemStyle}>
-            <div className="contactInfoIcon" style={iconStyle}>
+            <div className="contactInfoIcon" style={orangeIconStyle}>
               📍
             </div>
 
@@ -190,6 +195,45 @@ export default function Contact() {
 
               <a
                 href="https://www.linkedin.com/company/transportes-zusasa/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={textStyle}
+              >
+                Transportes ZUSASA
+              </a>
+            </div>
+          </div>
+
+          <div className="contactInfoItem" style={itemStyle}>
+            <div
+              style={{
+                width: "44px",
+                height: "44px",
+                minWidth: "44px",
+                maxWidth: "44px",
+                minHeight: "44px",
+                maxHeight: "44px",
+                borderRadius: "999px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                background: "#1877f2",
+                color: "#ffffff",
+                fontSize: "30px",
+                fontWeight: 900,
+                fontFamily: "Arial, sans-serif",
+                flex: "0 0 44px",
+                lineHeight: 1,
+              }}
+            >
+              f
+            </div>
+
+            <div style={textBoxStyle}>
+              <strong style={titleStyle}>Facebook</strong>
+
+              <a
+                href="https://www.facebook.com/profile.php?id=61591897865110"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={textStyle}
