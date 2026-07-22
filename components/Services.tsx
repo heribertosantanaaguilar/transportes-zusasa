@@ -4,182 +4,256 @@ export default function Services() {
       number: "01",
       title: "Movimiento local de contenedores",
       text: "Traslados locales de carga contenerizada dentro de la zona portuaria y logística de Manzanillo.",
-      link: "/cotizacion",
-      button: "Solicitar cotización",
+      cta: "Solicitar cotización",
+      href: "#contacto",
     },
     {
       number: "02",
       title: "Resguardo en patio de maniobras",
       text: "Resguardo temporal de contenedores llenos o vacíos, sujeto a disponibilidad y condiciones operativas.",
-      link: "/resguardo-de-contenedores-manzanillo",
-      button: "Conocer servicio",
+      cta: "Conocer servicio",
+      href: "#contacto",
     },
     {
       number: "03",
       title: "Apoyo operativo para contenedores",
       text: "Coordinación de movimientos, maniobras y apoyo local para operaciones de carga contenerizada.",
-      link: "/cotizacion",
-      button: "Cotizar apoyo",
+      cta: "Cotizar apoyo",
+      href: "#contacto",
     },
     {
       number: "04",
       title: "Seguimiento y comunicación constante",
       text: "Comunicación directa durante la solicitud, coordinación y cierre de cada servicio.",
-      link: "/cotizacion",
-      button: "Solicitar atención",
+      cta: "Solicitar atención",
+      href: "#contacto",
     },
   ];
 
   return (
-    <section
-      id="servicios"
-      style={{
-        padding: "110px 7%",
-        background: "#f5f6f7",
-        overflow: "hidden",
-      }}
-    >
-      <div
-        style={{
-          maxWidth: "980px",
-          marginBottom: "58px",
-        }}
-      >
-        <div
-          style={{
-            display: "inline-flex",
-            alignItems: "center",
-            gap: "14px",
-            color: "#f26522",
-            fontWeight: 900,
-            textTransform: "uppercase",
-            letterSpacing: "1.2px",
-            fontSize: "15px",
-            marginBottom: "22px",
-          }}
-        >
-          <span
-            style={{
-              width: "48px",
-              height: "4px",
-              background: "#f26522",
-              borderRadius: "999px",
-              display: "inline-block",
-            }}
-          />
-          Servicios
+    <section id="servicios" className="services-section">
+      <div className="services-container">
+        <div className="services-header">
+          <div className="eyebrow-wrap">
+            <span className="eyebrow-line" />
+            <span className="eyebrow">Servicios</span>
+          </div>
+
+          <h2>
+            Soluciones locales para mover y resguardar tu carga.
+          </h2>
+
+          <p>
+            Atendemos operaciones de carga contenerizada en Manzanillo con
+            enfoque en coordinación, resguardo, seguimiento y respuesta clara.
+          </p>
         </div>
 
-        <h2
-          style={{
-            maxWidth: "1000px",
-            color: "#0a1d36",
-            fontSize: "clamp(42px, 5vw, 72px)",
-            lineHeight: 1.04,
-            letterSpacing: "-2px",
-            margin: "0 0 26px",
-            fontWeight: 900,
-          }}
-        >
-          Soluciones locales para mover y resguardar tu carga.
-        </h2>
+        <div className="services-grid">
+          {services.map((service) => (
+            <article key={service.number} className="service-card">
+              <div className="service-number">{service.number}</div>
 
-        <p
-          style={{
-            maxWidth: "900px",
-            color: "#3b4a5a",
-            fontSize: "20px",
-            lineHeight: 1.7,
-            margin: 0,
-          }}
-        >
-          Atendemos operaciones de carga contenerizada en Manzanillo con enfoque
-          en coordinación, resguardo, seguimiento y respuesta clara.
-        </p>
+              <h3>{service.title}</h3>
+
+              <p>{service.text}</p>
+
+              <a href={service.href} className="service-link">
+                {service.cta} <span>→</span>
+              </a>
+            </article>
+          ))}
+        </div>
       </div>
 
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(4, minmax(0, 1fr))",
-          gap: "24px",
-        }}
-      >
-        {services.map((service) => (
-          <article
-            key={service.title}
-            style={{
-              minHeight: "380px",
-              padding: "34px 30px",
-              borderRadius: "30px",
-              background: "#ffffff",
-              border: "1px solid rgba(10, 29, 54, 0.08)",
-              borderBottom: "7px solid #f26522",
-              boxShadow: "0 24px 65px rgba(10, 29, 54, 0.10)",
-              display: "flex",
-              flexDirection: "column",
-            }}
-          >
-            <strong
-              style={{
-                display: "block",
-                color: "#f26522",
-                fontSize: "24px",
-                fontWeight: 900,
-                marginBottom: "24px",
-              }}
-            >
-              {service.number}
-            </strong>
+      <style jsx>{`
+        .services-section {
+          background: #f5f6f8;
+          padding: 110px 0;
+        }
 
-            <h3
-              style={{
-                color: "#0a1d36",
-                fontSize: "28px",
-                lineHeight: 1.12,
-                fontWeight: 900,
-                margin: "0 0 20px",
-              }}
-            >
-              {service.title}
-            </h3>
+        .services-container {
+          width: min(1180px, 92%);
+          margin: 0 auto;
+        }
 
-            <p
-              style={{
-                color: "#3b4a5a",
-                fontSize: "16px",
-                lineHeight: 1.62,
-                margin: 0,
-              }}
-            >
-              {service.text}
-            </p>
+        .services-header {
+          max-width: 920px;
+          margin-bottom: 48px;
+        }
 
-            <a
-              href={service.link}
-              style={{
-                marginTop: "auto",
-                minHeight: "54px",
-                width: "fit-content",
-                maxWidth: "100%",
-                padding: "0 24px",
-                borderRadius: "999px",
-                background: "#f26522",
-                color: "#ffffff",
-                textDecoration: "none",
-                fontWeight: 900,
-                fontSize: "15px",
-                display: "inline-flex",
-                alignItems: "center",
-                justifyContent: "center",
-                boxShadow: "0 18px 40px rgba(242, 101, 34, 0.28)",
-              }}
-            >
-              {service.button} →
-            </a>
-          </article>
-        ))}
-      </div>
+        .eyebrow-wrap {
+          display: flex;
+          align-items: center;
+          gap: 14px;
+          margin-bottom: 22px;
+        }
+
+        .eyebrow-line {
+          width: 48px;
+          height: 4px;
+          border-radius: 999px;
+          background: #f26522;
+          display: inline-block;
+        }
+
+        .eyebrow {
+          color: #f26522;
+          text-transform: uppercase;
+          font-weight: 900;
+          letter-spacing: 1px;
+          font-size: 15px;
+        }
+
+        .services-header h2 {
+          margin: 0 0 22px;
+          color: #08224a;
+          font-size: clamp(42px, 6vw, 84px);
+          line-height: 0.98;
+          letter-spacing: -2px;
+          font-weight: 900;
+        }
+
+        .services-header p {
+          margin: 0;
+          max-width: 900px;
+          color: #334a68;
+          font-size: 20px;
+          line-height: 1.7;
+        }
+
+        .services-grid {
+          display: grid;
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+          gap: 28px;
+          align-items: stretch;
+        }
+
+        .service-card {
+          background: #ffffff;
+          border-radius: 34px;
+          padding: 34px 32px 28px;
+          box-shadow: 0 18px 45px rgba(8, 34, 74, 0.08);
+          border-bottom: 6px solid #f26522;
+          display: flex;
+          flex-direction: column;
+          min-height: 100%;
+        }
+
+        .service-number {
+          color: #f26522;
+          font-size: 24px;
+          font-weight: 900;
+          line-height: 1;
+          margin-bottom: 28px;
+        }
+
+        .service-card h3 {
+          margin: 0 0 18px;
+          color: #08224a;
+          font-size: 30px;
+          line-height: 1.06;
+          font-weight: 900;
+          letter-spacing: -0.5px;
+        }
+
+        .service-card p {
+          margin: 0;
+          color: #334a68;
+          font-size: 18px;
+          line-height: 1.7;
+        }
+
+        .service-link {
+          margin-top: auto;
+          align-self: flex-start;
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          margin-top: 28px;
+          padding: 14px 22px;
+          border-radius: 999px;
+          background: rgba(242, 101, 34, 0.12);
+          color: #f26522;
+          font-weight: 800;
+          text-decoration: none;
+          transition: all 0.2s ease;
+        }
+
+        .service-link:hover {
+          background: #f26522;
+          color: #ffffff;
+          transform: translateY(-1px);
+        }
+
+        .service-link span {
+          font-size: 18px;
+          line-height: 1;
+        }
+
+        @media (max-width: 1100px) {
+          .services-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+          }
+
+          .service-card h3 {
+            font-size: 26px;
+          }
+        }
+
+        @media (max-width: 768px) {
+          .services-section {
+            padding: 84px 0;
+          }
+
+          .services-header {
+            margin-bottom: 34px;
+          }
+
+          .services-header h2 {
+            font-size: clamp(34px, 12vw, 54px);
+            line-height: 1.02;
+            letter-spacing: -1.2px;
+          }
+
+          .services-header p {
+            font-size: 18px;
+            line-height: 1.65;
+          }
+
+          .services-grid {
+            grid-template-columns: 1fr;
+            gap: 20px;
+          }
+
+          .service-card {
+            padding: 26px 22px 22px;
+            border-radius: 28px;
+          }
+
+          .service-number {
+            font-size: 22px;
+            margin-bottom: 20px;
+          }
+
+          .service-card h3 {
+            font-size: 22px;
+            line-height: 1.12;
+            margin-bottom: 14px;
+          }
+
+          .service-card p {
+            font-size: 16px;
+            line-height: 1.65;
+          }
+
+          .service-link {
+            margin-top: 22px;
+            padding: 12px 18px;
+            font-size: 15px;
+          }
+        }
+      `}</style>
     </section>
   );
 }
