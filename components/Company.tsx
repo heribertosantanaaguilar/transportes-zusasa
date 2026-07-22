@@ -5,25 +5,25 @@ export default function Company() {
         <div className="zusasaCompanyLeft">
           <span className="zusasaMiniTitle">Nosotros</span>
 
-          <h2>Conectamos operaciones. Cumplimos compromisos.</h2>
+          <h2>Empresa local, atención directa y compromiso operativo.</h2>
 
           <p>
-            Transportes ZUSASA es una empresa mexicana ubicada en Manzanillo,
-            Colima, especializada en el autotransporte local de carga
-            contenerizada para operaciones de importación y exportación.
+            Transportes ZUSASA es una empresa local ubicada en Manzanillo,
+            Colima, enfocada en brindar atención directa, comunicación honesta
+            y coordinación operativa para movimientos de carga contenerizada.
           </p>
 
           <p>
-            Trabajamos con agencias aduanales, operadores logísticos,
-            transportistas, importadores y exportadores que necesitan un aliado
-            confiable para coordinar movimientos locales dentro de la zona
+            Atendemos a agencias aduanales, operadores logísticos,
+            transportistas, importadores y exportadores que requieren apoyo
+            confiable para coordinar servicios locales dentro de la zona
             portuaria y logística de Manzanillo.
           </p>
 
           <p>
-            Nuestro compromiso es brindar atención directa, comunicación honesta
-            y seguimiento operativo para que cada cliente tenga claridad sobre
-            su servicio desde la solicitud hasta la confirmación final.
+            Nuestro compromiso es trabajar con seriedad, claridad y seguimiento
+            cercano en cada solicitud, revisando disponibilidad, condiciones y
+            necesidades reales de la operación antes de confirmar un servicio.
           </p>
         </div>
 
@@ -34,10 +34,10 @@ export default function Company() {
           />
 
           <div className="zusasaFloatingCard">
-            <strong>Manzanillo, Colima</strong>
+            <strong>Nuestro primer camión</strong>
             <span>
-              Transporte local especializado para operaciones de carga
-              contenerizada.
+              Unidad operativa para apoyar movimientos locales de carga
+              contenerizada en Manzanillo.
             </span>
           </div>
         </div>
@@ -47,33 +47,36 @@ export default function Company() {
         <article>
           <strong>01</strong>
           <h3>Enfoque local</h3>
-          <p>Conocemos la operación logística y portuaria de Manzanillo.</p>
+          <p>
+            Conocemos la importancia de atender operaciones dentro de la zona
+            logística y portuaria de Manzanillo.
+          </p>
         </article>
 
         <article>
           <strong>02</strong>
-          <h3>Carga contenerizada</h3>
+          <h3>Atención directa</h3>
           <p>
-            Atendemos movimientos locales vinculados a importación y
-            exportación.
+            Revisamos cada solicitud de forma cercana para entender la necesidad
+            real del cliente.
           </p>
         </article>
 
         <article>
           <strong>03</strong>
-          <h3>Atención directa</h3>
+          <h3>Comunicación honesta</h3>
           <p>
-            Comunicación cercana para revisar necesidades, tiempos y
-            disponibilidad.
+            Hablamos con claridad sobre tiempos, disponibilidad y condiciones de
+            cada servicio.
           </p>
         </article>
 
         <article>
           <strong>04</strong>
-          <h3>Seriedad operativa</h3>
+          <h3>Compromiso operativo</h3>
           <p>
-            Trabajamos con responsabilidad, claridad y compromiso en cada
-            movimiento.
+            Trabajamos con seriedad y responsabilidad para apoyar movimientos
+            locales de carga contenerizada.
           </p>
         </article>
       </div>
