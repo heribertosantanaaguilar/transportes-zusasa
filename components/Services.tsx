@@ -31,28 +31,150 @@ export default function Services() {
   ];
 
   return (
-    <section id="servicios" className="zusasaServices">
-      <div className="sectionHeader">
-        <span>Servicios</span>
+    <section
+      id="servicios"
+      style={{
+        padding: "110px 7%",
+        background: "#f5f6f7",
+        overflow: "hidden",
+      }}
+    >
+      <div
+        style={{
+          maxWidth: "980px",
+          marginBottom: "58px",
+        }}
+      >
+        <div
+          style={{
+            display: "inline-flex",
+            alignItems: "center",
+            gap: "14px",
+            color: "#f26522",
+            fontWeight: 900,
+            textTransform: "uppercase",
+            letterSpacing: "1.2px",
+            fontSize: "15px",
+            marginBottom: "22px",
+          }}
+        >
+          <span
+            style={{
+              width: "48px",
+              height: "4px",
+              background: "#f26522",
+              borderRadius: "999px",
+              display: "inline-block",
+            }}
+          />
+          Servicios
+        </div>
 
-        <h2>Soluciones locales para mover y resguardar tu carga.</h2>
+        <h2
+          style={{
+            maxWidth: "1000px",
+            color: "#0a1d36",
+            fontSize: "clamp(42px, 5vw, 72px)",
+            lineHeight: 1.04,
+            letterSpacing: "-2px",
+            margin: "0 0 26px",
+            fontWeight: 900,
+          }}
+        >
+          Soluciones locales para mover y resguardar tu carga.
+        </h2>
 
-        <p>
+        <p
+          style={{
+            maxWidth: "900px",
+            color: "#3b4a5a",
+            fontSize: "20px",
+            lineHeight: 1.7,
+            margin: 0,
+          }}
+        >
           Atendemos operaciones de carga contenerizada en Manzanillo con enfoque
           en coordinación, resguardo, seguimiento y respuesta clara.
         </p>
       </div>
 
-      <div className="zusasaServicesGrid">
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(4, minmax(0, 1fr))",
+          gap: "24px",
+        }}
+      >
         {services.map((service) => (
-          <article className="zusasaServiceCard" key={service.title}>
-            <strong>{service.number}</strong>
+          <article
+            key={service.title}
+            style={{
+              minHeight: "380px",
+              padding: "34px 30px",
+              borderRadius: "30px",
+              background: "#ffffff",
+              border: "1px solid rgba(10, 29, 54, 0.08)",
+              borderBottom: "7px solid #f26522",
+              boxShadow: "0 24px 65px rgba(10, 29, 54, 0.10)",
+              display: "flex",
+              flexDirection: "column",
+            }}
+          >
+            <strong
+              style={{
+                display: "block",
+                color: "#f26522",
+                fontSize: "24px",
+                fontWeight: 900,
+                marginBottom: "24px",
+              }}
+            >
+              {service.number}
+            </strong>
 
-            <h3>{service.title}</h3>
+            <h3
+              style={{
+                color: "#0a1d36",
+                fontSize: "28px",
+                lineHeight: 1.12,
+                fontWeight: 900,
+                margin: "0 0 20px",
+              }}
+            >
+              {service.title}
+            </h3>
 
-            <p>{service.text}</p>
+            <p
+              style={{
+                color: "#3b4a5a",
+                fontSize: "16px",
+                lineHeight: 1.62,
+                margin: 0,
+              }}
+            >
+              {service.text}
+            </p>
 
-            <a className="serviceCardLink" href={service.link}>
+            <a
+              href={service.link}
+              style={{
+                marginTop: "auto",
+                minHeight: "54px",
+                width: "fit-content",
+                maxWidth: "100%",
+                padding: "0 24px",
+                borderRadius: "999px",
+                background: "#f26522",
+                color: "#ffffff",
+                textDecoration: "none",
+                fontWeight: 900,
+                fontSize: "15px",
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center",
+                boxShadow: "0 18px 40px rgba(242, 101, 34, 0.28)",
+              }}
+            >
               {service.button} →
             </a>
           </article>
