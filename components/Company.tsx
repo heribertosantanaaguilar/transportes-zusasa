@@ -7,24 +7,23 @@ export default function Company() {
 
           <h2>Empresa local, atención directa y compromiso operativo.</h2>
 
-          <p>
-            Transportes ZUSASA es una empresa local ubicada en Manzanillo,
-            Colima, enfocada en brindar atención directa, comunicación honesta
-            y coordinación operativa para movimientos de carga contenerizada.
-          </p>
+<p>
+  Somos una empresa local enfocada en brindar atención directa, comunicación
+  honesta y coordinación operativa para movimientos de carga contenerizada en
+  Manzanillo, Colima.
+</p>
 
-          <p>
-            Atendemos a agencias aduanales, operadores logísticos,
-            transportistas, importadores y exportadores que requieren apoyo
-            confiable para coordinar servicios locales dentro de la zona
-            portuaria y logística de Manzanillo.
-          </p>
+<p>
+  Atendemos a agencias aduanales, operadores logísticos, transportistas,
+  importadores y exportadores que requieren apoyo confiable para coordinar
+  servicios locales dentro de la zona portuaria y logística de Manzanillo.
+</p>
 
-          <p>
-            Nuestro compromiso es trabajar con seriedad, claridad y seguimiento
-            cercano en cada solicitud, revisando disponibilidad, condiciones y
-            necesidades reales de la operación antes de confirmar un servicio.
-          </p>
+<p>
+  Nuestro compromiso es trabajar con seriedad, claridad y seguimiento cercano
+  en cada solicitud, revisando disponibilidad, condiciones y necesidades reales
+  de la operación antes de confirmar un servicio.
+</p>
         </div>
 
         <div className="zusasaCompanyRight">
