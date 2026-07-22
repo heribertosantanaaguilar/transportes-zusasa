@@ -2,50 +2,48 @@ export default function Process() {
   const steps = [
     {
       number: "01",
-      title: "Solicitud del servicio",
-      text: "Recibimos los datos de tu operación: tipo de contenedor, origen, destino, fecha estimada y requerimientos específicos.",
+      title: "Recibimos tu solicitud",
+      text: "Nos compartes el servicio que necesitas, datos de contacto y detalles básicos de la operación.",
     },
     {
       number: "02",
-      title: "Revisión y coordinación",
-      text: "Analizamos disponibilidad, tiempos y condiciones operativas para darte una respuesta clara y realista.",
+      title: "Revisamos disponibilidad",
+      text: "Analizamos tiempos, condiciones operativas y posibilidades reales para atender tu servicio.",
     },
     {
       number: "03",
-      title: "Ejecución del movimiento",
-      text: "Coordinamos el traslado local de la carga contenerizada con seguimiento operativo y comunicación constante.",
+      title: "Coordinamos el movimiento o resguardo",
+      text: "Organizamos la atención del servicio de acuerdo con la operación requerida en Manzanillo.",
     },
     {
       number: "04",
-      title: "Confirmación y cierre",
-      text: "Validamos el cumplimiento del servicio, confirmamos el movimiento y damos cierre a la operación.",
+      title: "Confirmamos el cierre del servicio",
+      text: "Mantenemos comunicación clara hasta confirmar el avance y cierre de la operación.",
     },
   ];
 
   return (
-    <section className="zusasaFlowSection">
-      <div className="zusasaFlowHeader">
+    <section className="zusasaProcess">
+      <div className="sectionHeader">
         <span>Proceso operativo</span>
 
-        <h2>Un proceso claro para coordinar tu carga con confianza.</h2>
+        <h2>Así coordinamos tu servicio.</h2>
 
         <p>
-          Desde la solicitud inicial hasta la confirmación final, trabajamos con
-          orden, comunicación directa y seguimiento puntual para que tu operación
-          avance con claridad.
+          Trabajamos con un proceso claro para revisar tu solicitud, coordinar
+          la operación y mantener comunicación durante cada etapa del servicio.
         </p>
       </div>
 
-      <div className="zusasaFlowTrack">
+      <div className="processTimeline">
         {steps.map((step) => (
-          <article className="zusasaFlowCard" key={step.title}>
-            <div className="zusasaFlowNumber">{step.number}</div>
+          <article className="processStep" key={step.title}>
+            <strong>{step.number}</strong>
 
-            <div className="zusasaFlowDot"></div>
-
-            <h3>{step.title}</h3>
-
-            <p>{step.text}</p>
+            <div>
+              <h3>{step.title}</h3>
+              <p>{step.text}</p>
+            </div>
           </article>
         ))}
       </div>
