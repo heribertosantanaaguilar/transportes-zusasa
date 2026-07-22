@@ -1,53 +1,58 @@
 export default function Value() {
   const values = [
     {
-      title: "Atención personalizada",
-      text: "Escuchamos las necesidades de cada cliente para coordinar soluciones acordes a su operación.",
+      number: "01",
+      title: "Atención directa",
+      text: "Atendemos cada solicitud con comunicación cercana para entender la operación, revisar necesidades y orientar al cliente desde el primer contacto.",
     },
     {
-      title: "Respuesta rápida",
-      text: "Revisamos disponibilidad, tiempos y condiciones para atender tus movimientos con agilidad.",
+      number: "02",
+      title: "Respuesta ágil",
+      text: "Revisamos disponibilidad, condiciones y tiempos de servicio para dar una respuesta clara y oportuna a cada operación.",
     },
     {
+      number: "03",
       title: "Comunicación honesta",
-      text: "Brindamos información clara y realista sobre tiempos, avances y alcance del servicio.",
+      text: "Hablamos con claridad sobre tiempos, posibilidades y condiciones reales del servicio, evitando promesas que no podamos cumplir.",
     },
     {
-      title: "Seguridad en la carga",
-      text: "Cuidamos cada movimiento con responsabilidad, seguimiento y enfoque operativo.",
+      number: "04",
+      title: "Seguimiento operativo",
+      text: "Mantenemos informado al cliente durante el proceso para que tenga mayor claridad sobre el avance y cierre del movimiento.",
     },
     {
+      number: "05",
       title: "Conocimiento local",
-      text: "Entendemos la dinámica portuaria y logística de Manzanillo para coordinar mejor cada servicio.",
+      text: "Nuestro enfoque está en Manzanillo, Colima, una zona clave para operaciones portuarias, logísticas, de importación y exportación.",
     },
     {
-      title: "Compromiso operativo",
-      text: "Trabajamos con seriedad para cumplir lo acordado y dar certeza durante toda la operación.",
+      number: "06",
+      title: "Seriedad en cada servicio",
+      text: "Trabajamos con responsabilidad, compromiso y enfoque operativo para apoyar movimientos locales de carga contenerizada.",
     },
   ];
 
   return (
-    <section className="zusasaValue">
-      <div className="zusasaValueText">
-        <span>¿Por qué elegirnos?</span>
+    <section id="por-que-elegir" className="zusasaUnifiedValue">
+      <div className="zusasaUnifiedValueHeader">
+        <span>Por qué elegirnos</span>
 
-        <h2>Un aliado local para mover tu carga con claridad y confianza.</h2>
+        <h2>Atención directa, comunicación clara y compromiso operativo.</h2>
 
         <p>
-          En ZUSASA sabemos que cada movimiento cuenta. Por eso trabajamos con
-          atención directa, comunicación clara y compromiso real para que tu
-          operación avance con seguridad.
+          En Transportes ZUSASA sabemos que cada movimiento de carga requiere
+          coordinación, confianza y respuesta. Por eso trabajamos con un enfoque
+          cercano, honesto y orientado a resolver las necesidades logísticas de
+          nuestros clientes en Manzanillo.
         </p>
       </div>
 
-      <div className="zusasaValueGrid">
-        {values.map((value) => (
-          <article key={value.title}>
-            <strong>✓</strong>
-            <div>
-              <h3>{value.title}</h3>
-              <p>{value.text}</p>
-            </div>
+      <div className="zusasaUnifiedValueGrid">
+        {values.map((item) => (
+          <article className="zusasaUnifiedValueCard" key={item.title}>
+            <strong>{item.number}</strong>
+            <h3>{item.title}</h3>
+            <p>{item.text}</p>
           </article>
         ))}
       </div>
