@@ -1,4 +1,3 @@
-import WhyChoose from "../components/WhyChoose";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import WhatWeDo from "../components/WhatWeDo";
@@ -6,9 +5,9 @@ import Company from "../components/Company";
 import Services from "../components/Services";
 import Sectors from "../components/Sectors";
 import Value from "../components/Value";
-import Trust from "../components/Trust";
 import Process from "../components/Process";
 import Coverage from "../components/Coverage";
+import Gallery from "../components/Gallery";
 import Stats from "../components/Stats";
 import Quote from "../components/Quote";
 import FAQ from "../components/FAQ";
@@ -21,18 +20,15 @@ export default function Home() {
     <>
       <Navbar />
       <Hero />
-
       <WhatWeDo />
-      <Stats />
-
       <Company />
       <Services />
-      <WhyChoose />
       <Sectors />
       <Value />
-      <Trust />
       <Process />
       <Coverage />
+      <Gallery />
+      <Stats />
       <Quote />
       <FAQ />
       <Contact />
