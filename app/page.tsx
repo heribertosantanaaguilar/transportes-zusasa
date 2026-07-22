@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import WhatWeDo from "../components/WhatWeDo";
 import Company from "../components/Company";
 import Services from "../components/Services";
+import ServiceCTA from "../components/ServiceCTA";
 import Sectors from "../components/Sectors";
 import Value from "../components/Value";
 import Process from "../components/Process";
@@ -20,8 +21,9 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Company />
-      <Services />
       <WhatWeDo />
+      <Services />
+      <ServiceCTA />
       <Sectors />
       <Value />
       <Process />
