@@ -1,36 +1,50 @@
 export default function Stats() {
   const stats = [
     {
-      number: "100%",
-      label: "Compromiso",
-      text: "En cada operación.",
+      number: "Local",
+      label: "Enfoque en Manzanillo",
+      text: "Atención especializada en la zona portuaria y logística de Manzanillo, Colima.",
     },
     {
-      number: "24/7",
-      label: "Disponibilidad",
-      text: "Atención operativa.",
+      number: "Ágil",
+      label: "Respuesta operativa",
+      text: "Revisamos cada solicitud de acuerdo con disponibilidad, tiempos y condiciones reales.",
     },
     {
-      number: "GPS",
-      label: "Seguimiento",
-      text: "Control en tiempo real.",
+      number: "Directa",
+      label: "Comunicación con el cliente",
+      text: "Mantenemos contacto claro durante la solicitud, coordinación y seguimiento del servicio.",
     },
     {
-      number: "1",
-      label: "Puerto clave",
-      text: "Manzanillo, Colima.",
+      number: "Real",
+      label: "Compromiso operativo",
+      text: "Trabajamos con seriedad, honestidad y enfoque en cada movimiento de carga contenerizada.",
     },
   ];
 
   return (
-    <section className="zusasaStatsFinal">
-      {stats.map((stat) => (
-        <article className="zusasaStatCard" key={stat.label}>
-          <strong>{stat.number}</strong>
-          <h3>{stat.label}</h3>
-          <p>{stat.text}</p>
-        </article>
-      ))}
+    <section className="zusasaStats">
+      <div className="zusasaStatsHeader">
+        <span>Indicadores de servicio</span>
+
+        <h2>Un enfoque operativo claro, local y confiable.</h2>
+
+        <p>
+          Nuestro objetivo es brindar atención directa, respuesta oportuna y
+          seguimiento claro para cada solicitud de transporte, resguardo o apoyo
+          operativo en Manzanillo.
+        </p>
+      </div>
+
+      <div className="zusasaStatsGrid">
+        {stats.map((item) => (
+          <article className="zusasaStatCard" key={item.label}>
+            <strong>{item.number}</strong>
+            <h3>{item.label}</h3>
+            <p>{item.text}</p>
+          </article>
+        ))}
+      </div>
     </section>
   );
 }
