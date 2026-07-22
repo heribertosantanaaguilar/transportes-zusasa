@@ -65,12 +65,11 @@ export default function Contact() {
 
         <h2>Solicita tu cotización y coordinemos tu operación.</h2>
 
-        <p>
-          Cuéntanos qué tipo de contenedor necesitas mover, el origen, el
-          destino y la fecha estimada del servicio. En Transportes ZUSASA te
-          brindaremos atención directa para revisar tu operación y darte una
-          respuesta clara.
-        </p>
+       <p>
+  Cuéntanos qué servicio necesitas: movimiento local de contenedores,
+  resguardo en patio de maniobras o apoyo operativo. Revisaremos tu
+  solicitud para darte una respuesta clara y personalizada.
+</p>
 
         <div className="zusasaContactActions">
           <a
