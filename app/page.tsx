@@ -20,8 +20,8 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Company />
-      <WhatWeDo />
       <Services />
+      <WhatWeDo />
       <Sectors />
       <Value />
       <Process />
