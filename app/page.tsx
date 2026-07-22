@@ -7,7 +7,6 @@ import Sectors from "../components/Sectors";
 import Value from "../components/Value";
 import Process from "../components/Process";
 import Coverage from "../components/Coverage";
-import Gallery from "../components/Gallery";
 import Stats from "../components/Stats";
 import Quote from "../components/Quote";
 import FAQ from "../components/FAQ";
@@ -21,13 +20,12 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Company />
-      <Services />
       <WhatWeDo />
+      <Services />
       <Sectors />
       <Value />
       <Process />
       <Coverage />
-      <Gallery />
       <Stats />
       <Quote />
       <FAQ />
