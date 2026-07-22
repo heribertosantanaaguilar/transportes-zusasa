@@ -1,3 +1,5 @@
+"use client";
+
 export default function Services() {
   const services = [
     {
@@ -5,28 +7,28 @@ export default function Services() {
       title: "Movimiento local de contenedores",
       text: "Traslados locales de carga contenerizada dentro de la zona portuaria y logística de Manzanillo.",
       cta: "Solicitar cotización",
-      href: "#contacto",
+      href: "/cotizacion",
     },
     {
       number: "02",
       title: "Resguardo en patio de maniobras",
       text: "Resguardo temporal de contenedores llenos o vacíos, sujeto a disponibilidad y condiciones operativas.",
       cta: "Conocer servicio",
-      href: "#contacto",
+      href: "/resguardo-de-contenedores-manzanillo",
     },
     {
       number: "03",
       title: "Apoyo operativo para contenedores",
       text: "Coordinación de movimientos, maniobras y apoyo local para operaciones de carga contenerizada.",
       cta: "Cotizar apoyo",
-      href: "#contacto",
+      href: "/cotizacion",
     },
     {
       number: "04",
       title: "Seguimiento y comunicación constante",
       text: "Comunicación directa durante la solicitud, coordinación y cierre de cada servicio.",
       cta: "Solicitar atención",
-      href: "#contacto",
+      href: "/cotizacion",
     },
   ];
 
@@ -39,9 +41,7 @@ export default function Services() {
             <span className="eyebrow">Servicios</span>
           </div>
 
-          <h2>
-            Soluciones locales para mover y resguardar tu carga.
-          </h2>
+          <h2>Soluciones locales para mover y resguardar tu carga.</h2>
 
           <p>
             Atendemos operaciones de carga contenerizada en Manzanillo con
@@ -137,7 +137,7 @@ export default function Services() {
           border-bottom: 6px solid #f26522;
           display: flex;
           flex-direction: column;
-          min-height: 100%;
+          min-height: 390px;
         }
 
         .service-number {
@@ -151,8 +151,8 @@ export default function Services() {
         .service-card h3 {
           margin: 0 0 18px;
           color: #08224a;
-          font-size: 30px;
-          line-height: 1.06;
+          font-size: 28px;
+          line-height: 1.08;
           font-weight: 900;
           letter-spacing: -0.5px;
         }
@@ -160,8 +160,8 @@ export default function Services() {
         .service-card p {
           margin: 0;
           color: #334a68;
-          font-size: 18px;
-          line-height: 1.7;
+          font-size: 16px;
+          line-height: 1.65;
         }
 
         .service-link {
@@ -170,20 +170,13 @@ export default function Services() {
           display: inline-flex;
           align-items: center;
           gap: 10px;
-          margin-top: 28px;
           padding: 14px 22px;
           border-radius: 999px;
-          background: rgba(242, 101, 34, 0.12);
-          color: #f26522;
-          font-weight: 800;
-          text-decoration: none;
-          transition: all 0.2s ease;
-        }
-
-        .service-link:hover {
           background: #f26522;
           color: #ffffff;
-          transform: translateY(-1px);
+          font-weight: 900;
+          text-decoration: none;
+          box-shadow: 0 18px 40px rgba(242, 101, 34, 0.28);
         }
 
         .service-link span {
@@ -194,6 +187,10 @@ export default function Services() {
         @media (max-width: 1100px) {
           .services-grid {
             grid-template-columns: repeat(2, minmax(0, 1fr));
+          }
+
+          .service-card {
+            min-height: 330px;
           }
 
           .service-card h3 {
@@ -223,11 +220,12 @@ export default function Services() {
 
           .services-grid {
             grid-template-columns: 1fr;
-            gap: 20px;
+            gap: 22px;
           }
 
           .service-card {
-            padding: 26px 22px 22px;
+            min-height: auto;
+            padding: 28px 24px 24px;
             border-radius: 28px;
           }
 
@@ -237,7 +235,7 @@ export default function Services() {
           }
 
           .service-card h3 {
-            font-size: 22px;
+            font-size: 26px;
             line-height: 1.12;
             margin-bottom: 14px;
           }
@@ -248,8 +246,8 @@ export default function Services() {
           }
 
           .service-link {
-            margin-top: 22px;
-            padding: 12px 18px;
+            margin-top: 24px;
+            padding: 13px 20px;
             font-size: 15px;
           }
         }
