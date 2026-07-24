@@ -3,9 +3,28 @@ import Footer from "../../components/Footer";
 import WhatsAppButton from "../../components/WhatsAppButton";
 
 export default function CotizacionPage() {
-  const whatsappLink =
-    "https://wa.me/522224556651?text=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20con%20Transportes%20ZUSASA.%0A%0AServicio%20que%20necesito%3A%0A-%20Movimiento%20local%20de%20contenedores%3A%0A-%20Movimiento%20local%20de%20ISO%20tanques%3A%0A-%20Resguardo%20en%20patio%20de%20maniobras%3A%0A-%20Apoyo%20operativo%3A%0A%0ADatos%20del%20servicio%3A%0A-%20Empresa%3A%0A-%20Nombre%20de%20contacto%3A%0A-%20Tel%C3%A9fono%3A%0A-%20Tipo%20de%20contenedor%20o%20ISO%20tanque%3A%0A-%20Origen%3A%0A-%20Destino%3A%0A-%20Fecha%20estimada%3A%0A-%20Peso%20aproximado%3A%0A-%20Comentarios%3A";
+const whatsappMessage = `Hola, quiero solicitar una cotización con Transportes ZUSASA.
 
+Servicio que necesito:
+- Movimiento local de contenedores:
+- Movimiento local de ISO tanques:
+- Resguardo en patio de maniobras:
+- Apoyo operativo:
+
+Datos del servicio:
+- Empresa:
+- Nombre de contacto:
+- Teléfono:
+- Tipo de contenedor o ISO tanque:
+- Origen:
+- Destino:
+- Fecha estimada:
+- Peso aproximado:
+- Comentarios:`;
+
+const whatsappLink = `https://wa.me/522224556651?text=${encodeURIComponent(
+  whatsappMessage
+)}`;
   const services = [
     {
       number: "01",
