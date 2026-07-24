@@ -11,23 +11,23 @@ export default function Services() {
     },
     {
       number: "02",
+      title: "Movimiento local de ISO tanques",
+      text: "Traslado local de ISO tanques en Manzanillo, sujeto a revisión del tipo de carga, documentación, disponibilidad y condiciones operativas aplicables.",
+      cta: "Cotizar servicio",
+      href: "/cotizacion",
+    },
+    {
+      number: "03",
       title: "Resguardo en patio de maniobras",
       text: "Resguardo temporal de contenedores llenos o vacíos, sujeto a disponibilidad y condiciones operativas.",
       cta: "Conocer servicio",
       href: "/resguardo-de-contenedores-manzanillo",
     },
     {
-      number: "03",
+      number: "04",
       title: "Apoyo operativo para contenedores",
       text: "Coordinación de movimientos, maniobras y apoyo local para operaciones de carga contenerizada.",
       cta: "Cotizar apoyo",
-      href: "/cotizacion",
-    },
-    {
-      number: "04",
-      title: "Seguimiento y comunicación constante",
-      text: "Comunicación directa durante la solicitud, coordinación y cierre de cada servicio.",
-      cta: "Solicitar atención",
       href: "/cotizacion",
     },
   ];
@@ -44,8 +44,9 @@ export default function Services() {
           <h2>Soluciones locales para mover y resguardar tu carga.</h2>
 
           <p>
-            Atendemos operaciones de carga contenerizada en Manzanillo con
-            enfoque en coordinación, resguardo, seguimiento y respuesta clara.
+            Atendemos operaciones de carga contenerizada e ISO tanques en
+            Manzanillo con enfoque en coordinación, resguardo, apoyo operativo y
+            respuesta clara.
           </p>
         </div>
 
@@ -63,6 +64,32 @@ export default function Services() {
               </a>
             </article>
           ))}
+        </div>
+
+        <div className="services-value-block">
+          <div className="value-item">
+            <span>Valor agregado</span>
+
+            <h3>Seguimiento y comunicación constante</h3>
+
+            <p>
+              En cada servicio mantenemos comunicación directa durante la
+              solicitud, coordinación y cierre de la operación, brindando
+              claridad sobre tiempos, condiciones y avances del servicio.
+            </p>
+          </div>
+
+          <div className="value-item">
+            <span>Experiencia especializada</span>
+
+            <h3>Conocimiento operativo en ISO tanques</h3>
+
+            <p>
+              Contamos con experiencia en operaciones relacionadas con ISO
+              tanques y con apoyo especializado para revisar requerimientos
+              particulares de este tipo de equipo.
+            </p>
+          </div>
         </div>
       </div>
 
@@ -137,7 +164,7 @@ export default function Services() {
           border-bottom: 6px solid #f26522;
           display: flex;
           flex-direction: column;
-          min-height: 390px;
+          min-height: 410px;
         }
 
         .service-number {
@@ -151,7 +178,7 @@ export default function Services() {
         .service-card h3 {
           margin: 0 0 18px;
           color: #08224a;
-          font-size: 28px;
+          font-size: 27px;
           line-height: 1.08;
           font-weight: 900;
           letter-spacing: -0.5px;
@@ -184,13 +211,54 @@ export default function Services() {
           line-height: 1;
         }
 
+        .services-value-block {
+          margin-top: 42px;
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 26px;
+        }
+
+        .value-item {
+          background: linear-gradient(135deg, #0a1d36, #0f2d52);
+          border-radius: 34px;
+          padding: 38px 36px;
+          color: #ffffff;
+          border-left: 7px solid #f26522;
+          box-shadow: 0 24px 60px rgba(8, 34, 74, 0.16);
+        }
+
+        .value-item span {
+          display: inline-block;
+          color: #f26522;
+          text-transform: uppercase;
+          font-size: 13px;
+          letter-spacing: 1px;
+          font-weight: 900;
+          margin-bottom: 16px;
+        }
+
+        .value-item h3 {
+          margin: 0 0 16px;
+          font-size: 28px;
+          line-height: 1.1;
+          font-weight: 900;
+          letter-spacing: -0.5px;
+        }
+
+        .value-item p {
+          margin: 0;
+          color: rgba(255, 255, 255, 0.84);
+          font-size: 16px;
+          line-height: 1.65;
+        }
+
         @media (max-width: 1100px) {
           .services-grid {
             grid-template-columns: repeat(2, minmax(0, 1fr));
           }
 
           .service-card {
-            min-height: 330px;
+            min-height: 340px;
           }
 
           .service-card h3 {
@@ -249,6 +317,25 @@ export default function Services() {
             margin-top: 24px;
             padding: 13px 20px;
             font-size: 15px;
+          }
+
+          .services-value-block {
+            grid-template-columns: 1fr;
+            margin-top: 30px;
+            gap: 20px;
+          }
+
+          .value-item {
+            padding: 30px 24px;
+            border-radius: 28px;
+          }
+
+          .value-item h3 {
+            font-size: 25px;
+          }
+
+          .value-item p {
+            font-size: 15.5px;
           }
         }
       `}</style>
