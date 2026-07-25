@@ -86,11 +86,32 @@ const whatsappLink = `https://wa.me/522224556651?text=${encodeURIComponent(
               </a>
 
               <a
-                className="secondaryQuoteButton"
-                href="mailto:transportes.zusasa@gmail.com"
-              >
-                Enviar correo
-              </a>
+  className="secondaryQuoteButton"
+  href={`mailto:transportes.zusasa@gmail.com?subject=${encodeURIComponent(
+    "Solicitud de cotización - Transportes ZUSASA"
+  )}&body=${encodeURIComponent(
+    `Hola, quiero solicitar una cotización con Transportes ZUSASA.
+
+Servicio que necesito:
+- Movimiento local de contenedores:
+- Movimiento local de ISO tanques:
+- Resguardo en patio de maniobras:
+- Apoyo operativo:
+
+Datos del servicio:
+- Empresa:
+- Nombre de contacto:
+- Teléfono:
+- Tipo de contenedor o ISO tanque:
+- Origen:
+- Destino:
+- Fecha estimada:
+- Peso aproximado:
+- Comentarios:`
+  )}`}
+>
+  Enviar correo
+</a>
             </div>
           </div>
         </section>
