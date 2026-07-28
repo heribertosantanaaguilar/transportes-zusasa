@@ -1,56 +1,35 @@
+import type { Metadata } from "next";
 import "./globals.css";
 
-export const metadata = {
-  metadataBase: new URL("https://transporteszusasa.com"),
-
+export const metadata: Metadata = {
+  metadataBase: new URL("https://www.transporteszusasa.com"),
   title: {
     default:
-      "Transportes ZUSASA | Transporte local de contenedores en Manzanillo",
+      "Transportes ZUSASA | Soluciones logísticas para contenedores e ISO tanques en Manzanillo",
     template: "%s | Transportes ZUSASA",
   },
-
   description:
-    "Transportes ZUSASA ofrece transporte local de carga contenerizada en Manzanillo, Colima. Cotiza movimientos de contenedores para operaciones portuarias, importación y exportación.",
-
+    "Transportes ZUSASA coordina soluciones logísticas para contenedores e ISO tanques desde Manzanillo, integrando movimiento local, resguardo en patio de maniobras, apoyo operativo y gestión de transporte nacional mediante alianza comercial.",
   keywords: [
-    "transporte de contenedores en Manzanillo",
-    "transporte local de contenedores",
-    "transporte de carga en Manzanillo",
-    "autotransporte portuario Manzanillo",
-    "movimiento de contenedores Manzanillo",
-    "carga contenerizada Manzanillo",
-    "logística portuaria Manzanillo",
-    "transporte para agencias aduanales",
-    "transporte para importadores",
-    "transporte para exportadores",
     "Transportes ZUSASA",
+    "transporte de contenedores Manzanillo",
+    "movimiento local de contenedores Manzanillo",
+    "transporte nacional de contenedores",
+    "transporte de ISO tanques",
+    "resguardo de contenedores Manzanillo",
+    "patio de maniobras Manzanillo",
+    "logística Manzanillo",
+    "Puerto de Manzanillo",
   ],
-
-  authors: [{ name: "Transportes ZUSASA" }],
-  creator: "Transportes ZUSASA",
-  publisher: "Transportes ZUSASA",
-
   alternates: {
-    canonical: "https://transporteszusasa.com",
+    canonical: "https://www.transporteszusasa.com",
   },
-
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-      "max-video-preview": -1,
-    },
-  },
-
   openGraph: {
-    title: "Transportes ZUSASA | Transporte local de contenedores",
+    title:
+      "Transportes ZUSASA | Soluciones logísticas desde Manzanillo",
     description:
-      "Soluciones de transporte local de carga contenerizada para operaciones portuarias, importación y exportación en Manzanillo, Colima.",
-    url: "https://transporteszusasa.com",
+      "Movimiento local, resguardo, apoyo operativo y gestión de transporte nacional de contenedores e ISO tanques desde Manzanillo mediante alianza comercial.",
+    url: "https://www.transporteszusasa.com",
     siteName: "Transportes ZUSASA",
     locale: "es_MX",
     type: "website",
@@ -63,22 +42,18 @@ export const metadata = {
       },
     ],
   },
-
   twitter: {
     card: "summary_large_image",
-    title: "Transportes ZUSASA | Transporte local de contenedores",
+    title:
+      "Transportes ZUSASA | Soluciones logísticas desde Manzanillo",
     description:
-      "Transporte local de carga contenerizada en Manzanillo, Colima.",
+      "Movimiento local, resguardo, apoyo operativo y gestión de transporte nacional de contenedores e ISO tanques desde Manzanillo.",
     images: ["/images/logo-zusasa.png"],
   },
-
-icons: {
-  icon: "/images/favicon-zusasa.png",
-  shortcut: "/images/favicon-zusasa.png",
-  apple: "/images/favicon-zusasa.png",
-},
-
-  category: "transportation",
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
@@ -87,7 +62,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es-MX">
+    <html lang="es">
       <body>{children}</body>
     </html>
   );
