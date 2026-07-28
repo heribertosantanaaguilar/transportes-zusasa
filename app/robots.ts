@@ -1,11 +1,13 @@
 import type { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
+  const baseUrl = "https://www.transporteszusasa.com";
+
   return {
     rules: {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://transporteszusasa.com/sitemap.xml",
+    sitemap: `${baseUrl}/sitemap.xml`,
   };
 }
