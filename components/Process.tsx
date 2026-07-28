@@ -3,22 +3,22 @@ export default function Process() {
     {
       number: "01",
       title: "Recibimos tu solicitud",
-      text: "Nos compartes el servicio que necesitas, datos de contacto y detalles básicos de la operación.",
+      text: "Nos compartes el servicio que necesitas, datos de contacto, tipo de contenedor o ISO tanque, origen, destino, fecha estimada y requerimientos operativos.",
     },
     {
       number: "02",
-      title: "Revisamos disponibilidad",
-      text: "Analizamos tiempos, condiciones operativas y posibilidades reales para atender tu servicio.",
+      title: "Revisamos disponibilidad y condiciones",
+      text: "Analizamos el tipo de operación, documentación, peso, ruta, destino, disponibilidad, necesidad de resguardo y condiciones reales del servicio.",
     },
     {
       number: "03",
-      title: "Coordinamos el movimiento o resguardo",
-      text: "Organizamos la atención del servicio de acuerdo con la operación requerida en Manzanillo.",
+      title: "Coordinamos la operación",
+      text: "Organizamos el movimiento local en Manzanillo, resguardo, apoyo operativo o gestión de transporte nacional mediante alianza comercial, según lo requiera el cliente.",
     },
     {
       number: "04",
-      title: "Confirmamos el cierre del servicio",
-      text: "Mantenemos comunicación clara hasta confirmar el avance y cierre de la operación.",
+      title: "Damos seguimiento hasta el cierre",
+      text: "Mantenemos comunicación clara durante la coordinación del servicio, informando avances y confirmando el cierre de la operación.",
     },
   ];
 
@@ -34,122 +34,149 @@ export default function Process() {
     >
       <div
         style={{
-          maxWidth: "980px",
-          marginBottom: "58px",
+          maxWidth: "1180px",
+          margin: "0 auto",
         }}
       >
         <div
           style={{
-            display: "inline-flex",
-            alignItems: "center",
-            gap: "14px",
-            color: "#f26522",
-            fontWeight: 900,
-            textTransform: "uppercase",
-            letterSpacing: "1.2px",
-            fontSize: "15px",
-            marginBottom: "22px",
+            maxWidth: "960px",
+            marginBottom: "56px",
           }}
         >
           <span
             style={{
-              width: "48px",
-              height: "4px",
-              background: "#f26522",
-              borderRadius: "999px",
               display: "inline-block",
-            }}
-          />
-          Proceso operativo
-        </div>
-
-        <h2
-          style={{
-            maxWidth: "950px",
-            color: "#ffffff",
-            fontSize: "clamp(42px, 5vw, 72px)",
-            lineHeight: 1.04,
-            letterSpacing: "-2px",
-            margin: "0 0 26px",
-            fontWeight: 900,
-          }}
-        >
-          Así coordinamos tu servicio.
-        </h2>
-
-        <p
-          style={{
-            maxWidth: "900px",
-            color: "rgba(255, 255, 255, 0.82)",
-            fontSize: "20px",
-            lineHeight: 1.7,
-            margin: 0,
-          }}
-        >
-          Trabajamos con un proceso claro para revisar tu solicitud, coordinar
-          la operación y mantener comunicación durante cada etapa del servicio.
-        </p>
-      </div>
-
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
-          gap: "24px",
-        }}
-      >
-        {steps.map((step) => (
-          <article
-            key={step.title}
-            style={{
-              minHeight: "280px",
-              padding: "34px 30px",
-              borderRadius: "28px",
-              background: "rgba(255, 255, 255, 0.08)",
-              border: "1px solid rgba(255, 255, 255, 0.12)",
-              borderBottom: "6px solid #f26522",
-              boxShadow: "0 24px 65px rgba(0, 0, 0, 0.18)",
-              display: "flex",
-              flexDirection: "column",
+              color: "#f26522",
+              textTransform: "uppercase",
+              letterSpacing: "1.2px",
+              fontSize: "14px",
+              fontWeight: 900,
+              marginBottom: "18px",
             }}
           >
-            <strong
-              style={{
-                display: "block",
-                color: "#f26522",
-                fontSize: "28px",
-                fontWeight: 900,
-                marginBottom: "24px",
-              }}
-            >
-              {step.number}
-            </strong>
+            Proceso de trabajo
+          </span>
 
-            <h3
-              style={{
-                color: "#ffffff",
-                fontSize: "25px",
-                lineHeight: 1.15,
-                margin: "0 0 16px",
-                fontWeight: 900,
-              }}
-            >
-              {step.title}
-            </h3>
+          <h2
+            style={{
+              margin: "0 0 22px",
+              color: "#ffffff",
+              fontSize: "clamp(40px, 5vw, 72px)",
+              lineHeight: 1.02,
+              letterSpacing: "-2px",
+              fontWeight: 900,
+            }}
+          >
+            Coordinación clara para cada operación logística.
+          </h2>
 
-            <p
-              style={{
-                color: "rgba(255, 255, 255, 0.82)",
-                fontSize: "16px",
-                lineHeight: 1.65,
-                margin: 0,
-              }}
-            >
-              {step.text}
-            </p>
-          </article>
-        ))}
+          <p
+            style={{
+              margin: 0,
+              maxWidth: "900px",
+              color: "rgba(255, 255, 255, 0.82)",
+              fontSize: "20px",
+              lineHeight: 1.7,
+            }}
+          >
+            Revisamos cada solicitud de forma particular para coordinar
+            movimiento local, resguardo, apoyo operativo o gestión de transporte
+            nacional desde Manzanillo, de acuerdo con las condiciones reales del
+            servicio.
+          </p>
+        </div>
+
+        <div className="processGrid">
+          {steps.map((step) => (
+            <article className="processCard" key={step.number}>
+              <strong>{step.number}</strong>
+              <h3>{step.title}</h3>
+              <p>{step.text}</p>
+            </article>
+          ))}
+        </div>
       </div>
+
+      <style>{`
+        .processGrid {
+          display: grid;
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+          gap: 24px;
+        }
+
+        .processCard {
+          min-height: 330px;
+          padding: 34px 30px;
+          border-radius: 32px;
+          background: rgba(255, 255, 255, 0.08);
+          border: 1px solid rgba(255, 255, 255, 0.13);
+          border-bottom: 7px solid #f26522;
+          box-shadow: 0 24px 65px rgba(0, 0, 0, 0.14);
+          backdrop-filter: blur(10px);
+        }
+
+        .processCard strong {
+          display: block;
+          margin-bottom: 26px;
+          color: #f26522;
+          font-size: 28px;
+          line-height: 1;
+          font-weight: 900;
+        }
+
+        .processCard h3 {
+          margin: 0 0 18px;
+          color: #ffffff;
+          font-size: 26px;
+          line-height: 1.12;
+          letter-spacing: -0.5px;
+          font-weight: 900;
+        }
+
+        .processCard p {
+          margin: 0;
+          color: rgba(255, 255, 255, 0.78);
+          font-size: 16px;
+          line-height: 1.65;
+        }
+
+        @media (max-width: 1100px) {
+          .processGrid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+          }
+
+          .processCard {
+            min-height: 280px;
+          }
+        }
+
+        @media (max-width: 650px) {
+          .processGrid {
+            grid-template-columns: 1fr;
+            gap: 20px;
+          }
+
+          .processCard {
+            min-height: auto;
+            padding: 28px 24px;
+            border-radius: 28px;
+          }
+
+          .processCard strong {
+            font-size: 24px;
+            margin-bottom: 20px;
+          }
+
+          .processCard h3 {
+            font-size: 25px;
+          }
+
+          .processCard p {
+            font-size: 15.8px;
+          }
+        }
+      `}</style>
     </section>
   );
 }
