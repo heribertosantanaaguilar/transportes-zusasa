@@ -3,11 +3,12 @@ import Footer from "../../components/Footer";
 import WhatsAppButton from "../../components/WhatsAppButton";
 
 export default function CotizacionPage() {
-const whatsappMessage = `Hola, quiero solicitar una cotización con Transportes ZUSASA.
+  const whatsappMessage = `Hola, quiero solicitar una cotización con Transportes ZUSASA.
 
 Servicio que necesito:
 - Movimiento local de contenedores:
 - Movimiento local de ISO tanques:
+- Transporte nacional de contenedores e ISO tanques:
 - Resguardo en patio de maniobras:
 - Apoyo operativo:
 
@@ -17,14 +18,47 @@ Datos del servicio:
 - Teléfono:
 - Tipo de contenedor o ISO tanque:
 - Origen:
-- Destino:
+- Destino local:
+- Destino nacional:
 - Fecha estimada:
 - Peso aproximado:
+- Requiere movimiento local previo:
+- Requiere resguardo:
 - Comentarios:`;
 
-const whatsappLink = `https://wa.me/522224556651?text=${encodeURIComponent(
-  whatsappMessage
-)}`;
+  const whatsappLink = `https://wa.me/522224556651?text=${encodeURIComponent(
+    whatsappMessage
+  )}`;
+
+  const emailSubject = "Solicitud de cotización - Transportes ZUSASA";
+
+  const emailBody = `Hola, quiero solicitar una cotización con Transportes ZUSASA.
+
+Servicio que necesito:
+- Movimiento local de contenedores:
+- Movimiento local de ISO tanques:
+- Transporte nacional de contenedores e ISO tanques:
+- Resguardo en patio de maniobras:
+- Apoyo operativo:
+
+Datos del servicio:
+- Empresa:
+- Nombre de contacto:
+- Teléfono:
+- Tipo de contenedor o ISO tanque:
+- Origen:
+- Destino local:
+- Destino nacional:
+- Fecha estimada:
+- Peso aproximado:
+- Requiere movimiento local previo:
+- Requiere resguardo:
+- Comentarios:`;
+
+  const emailLink = `mailto:transportes.zusasa@gmail.com?subject=${encodeURIComponent(
+    emailSubject
+  )}&body=${encodeURIComponent(emailBody)}`;
+
   const services = [
     {
       number: "01",
@@ -38,11 +72,16 @@ const whatsappLink = `https://wa.me/522224556651?text=${encodeURIComponent(
     },
     {
       number: "03",
+      title: "Transporte nacional de contenedores e ISO tanques",
+      text: "Gestión del traslado nacional de contenedores e ISO tanques desde Manzanillo hacia distintos destinos del país, mediante alianza comercial con transportista foráneo.",
+    },
+    {
+      number: "04",
       title: "Resguardo en patio de maniobras",
       text: "Resguardo temporal de contenedores llenos o vacíos, sujeto a disponibilidad y condiciones operativas.",
     },
     {
-      number: "04",
+      number: "05",
       title: "Apoyo operativo para contenedores",
       text: "Coordinación de movimientos, maniobras y apoyo local para operaciones de carga contenerizada.",
     },
@@ -51,10 +90,13 @@ const whatsappLink = `https://wa.me/522224556651?text=${encodeURIComponent(
   const quoteData = [
     "Servicio requerido",
     "Tipo de contenedor o ISO tanque",
-    "Origen y destino",
+    "Origen",
+    "Destino local",
+    "Destino nacional",
     "Fecha estimada del servicio",
     "Peso aproximado",
-    "Si requiere resguardo",
+    "Si requiere movimiento local previo",
+    "Si requiere resguardo en patio",
     "Comentarios operativos",
   ];
 
@@ -67,12 +109,12 @@ const whatsappLink = `https://wa.me/522224556651?text=${encodeURIComponent(
           <div className="quoteHeroInner">
             <span className="quoteEyebrow">Cotización</span>
 
-            <h1>Solicita una cotización para tu operación en Manzanillo.</h1>
+            <h1>Solicita una cotización para tu operación logística.</h1>
 
             <p>
               Compártenos los datos de tu servicio y revisaremos disponibilidad,
-              condiciones operativas y requerimientos específicos para brindarte
-              una respuesta clara y personalizada.
+              condiciones operativas, requerimientos específicos y opciones de
+              coordinación local o nacional desde Manzanillo.
             </p>
 
             <div className="quoteActions">
@@ -85,33 +127,9 @@ const whatsappLink = `https://wa.me/522224556651?text=${encodeURIComponent(
                 Cotizar por WhatsApp →
               </a>
 
-              <a
-  className="secondaryQuoteButton"
-  href={`mailto:transportes.zusasa@gmail.com?subject=${encodeURIComponent(
-    "Solicitud de cotización - Transportes ZUSASA"
-  )}&body=${encodeURIComponent(
-    `Hola, quiero solicitar una cotización con Transportes ZUSASA.
-
-Servicio que necesito:
-- Movimiento local de contenedores:
-- Movimiento local de ISO tanques:
-- Resguardo en patio de maniobras:
-- Apoyo operativo:
-
-Datos del servicio:
-- Empresa:
-- Nombre de contacto:
-- Teléfono:
-- Tipo de contenedor o ISO tanque:
-- Origen:
-- Destino:
-- Fecha estimada:
-- Peso aproximado:
-- Comentarios:`
-  )}`}
->
-  Enviar correo
-</a>
+              <a className="secondaryQuoteButton" href={emailLink}>
+                Enviar correo
+              </a>
             </div>
           </div>
         </section>
@@ -120,12 +138,15 @@ Datos del servicio:
           <div className="sectionIntro">
             <span>Servicios que puedes cotizar</span>
 
-            <h2>Soluciones locales para carga contenerizada e ISO tanques.</h2>
+            <h2>
+              Soluciones logísticas para contenedores e ISO tanques desde
+              Manzanillo.
+            </h2>
 
             <p>
               Cada solicitud será revisada de forma particular, considerando el
               tipo de servicio, documentación, disponibilidad, origen, destino,
-              peso y condiciones operativas aplicables.
+              peso, ruta, resguardo y condiciones operativas aplicables.
             </p>
           </div>
 
@@ -140,6 +161,44 @@ Datos del servicio:
           </div>
         </section>
 
+        <section className="quoteIntegralBlock">
+          <div>
+            <span>Solución logística integral</span>
+
+            <h2>Del puerto interior en Manzanillo al destino nacional.</h2>
+
+            <p>
+              En Transportes ZUSASA podemos coordinar el movimiento local desde
+              el puerto interior hacia patio de maniobras y, mediante alianza
+              comercial, gestionar el transporte nacional de contenedores e ISO
+              tanques hacia distintos destinos del país.
+            </p>
+
+            <p>
+              Esto permite al cliente contar con un solo punto de contacto para
+              revisar disponibilidad, coordinar la operación, recibir
+              seguimiento y gestionar la cotización del servicio.
+            </p>
+          </div>
+
+          <div className="integralSteps">
+            <article>
+              <strong>01</strong>
+              <p>Movimiento local en Manzanillo</p>
+            </article>
+
+            <article>
+              <strong>02</strong>
+              <p>Resguardo y apoyo operativo</p>
+            </article>
+
+            <article>
+              <strong>03</strong>
+              <p>Gestión de transporte nacional</p>
+            </article>
+          </div>
+        </section>
+
         <section className="quoteInfoBlock">
           <div className="quoteInfoLeft">
             <span>Para cotizar más rápido</span>
@@ -148,7 +207,8 @@ Datos del servicio:
 
             <p>
               Mientras más completa sea la información inicial, más ágil será la
-              revisión de disponibilidad, condiciones y costos del servicio.
+              revisión de disponibilidad, condiciones, ruta y costos del
+              servicio.
             </p>
           </div>
 
@@ -193,7 +253,8 @@ Datos del servicio:
 
           <p>
             Envíanos los datos del servicio y con gusto revisamos disponibilidad,
-            condiciones operativas y requerimientos específicos.
+            condiciones operativas, ruta, requerimientos específicos y opciones
+            de coordinación local o nacional.
           </p>
 
           <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
@@ -225,7 +286,8 @@ Datos del servicio:
         .quoteEyebrow,
         .sectionIntro span,
         .quoteInfoLeft span,
-        .quoteValue span {
+        .quoteValue span,
+        .quoteIntegralBlock span {
           display: inline-block;
           color: #f26522;
           text-transform: uppercase;
@@ -315,7 +377,7 @@ Datos del servicio:
 
         .quoteServicesGrid {
           display: grid;
-          grid-template-columns: repeat(4, minmax(0, 1fr));
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
           gap: 24px;
         }
 
@@ -350,6 +412,63 @@ Datos del servicio:
           color: #3b4a5a;
           font-size: 16px;
           line-height: 1.65;
+        }
+
+        .quoteIntegralBlock {
+          margin: 0 7% 110px;
+          padding: 48px;
+          border-radius: 36px;
+          background: linear-gradient(135deg, #0a1d36, #0f2d52);
+          color: #ffffff;
+          display: grid;
+          grid-template-columns: 1.3fr 0.7fr;
+          gap: 38px;
+          align-items: center;
+          box-shadow: 0 28px 70px rgba(8, 34, 74, 0.18);
+          border-left: 8px solid #f26522;
+        }
+
+        .quoteIntegralBlock h2 {
+          margin: 0 0 18px;
+          color: #ffffff;
+          font-size: clamp(32px, 4vw, 52px);
+          line-height: 1.08;
+          font-weight: 900;
+          letter-spacing: -1px;
+        }
+
+        .quoteIntegralBlock p {
+          margin: 0 0 14px;
+          color: rgba(255, 255, 255, 0.84);
+          font-size: 17px;
+          line-height: 1.65;
+        }
+
+        .integralSteps {
+          display: grid;
+          gap: 18px;
+        }
+
+        .integralSteps article {
+          background: rgba(255, 255, 255, 0.08);
+          border: 1px solid rgba(255, 255, 255, 0.12);
+          border-radius: 24px;
+          padding: 22px 24px;
+        }
+
+        .integralSteps strong {
+          display: block;
+          color: #f26522;
+          font-size: 22px;
+          font-weight: 900;
+          margin-bottom: 8px;
+        }
+
+        .integralSteps p {
+          margin: 0;
+          color: #ffffff;
+          font-weight: 800;
+          line-height: 1.35;
         }
 
         .quoteInfoBlock {
@@ -417,10 +536,10 @@ Datos del servicio:
         .quoteValue > div {
           padding: 40px 36px;
           border-radius: 34px;
-          background: linear-gradient(135deg, #0a1d36, #0f2d52);
-          color: #ffffff;
+          background: #ffffff;
+          color: #0a1d36;
           border-left: 7px solid #f26522;
-          box-shadow: 0 24px 60px rgba(8, 34, 74, 0.16);
+          box-shadow: 0 24px 60px rgba(8, 34, 74, 0.1);
         }
 
         .quoteValue h2 {
@@ -432,7 +551,7 @@ Datos del servicio:
 
         .quoteValue p {
           margin: 0;
-          color: rgba(255, 255, 255, 0.84);
+          color: #3b4a5a;
           font-size: 16px;
           line-height: 1.65;
         }
@@ -462,13 +581,11 @@ Datos del servicio:
           line-height: 1.65;
         }
 
-        @media (max-width: 1100px) {
-          .quoteServicesGrid {
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-          }
-
-          .quoteServiceCard {
-            min-height: 280px;
+        @media (max-width: 900px) {
+          .quoteIntegralBlock,
+          .quoteInfoBlock,
+          .quoteValue {
+            grid-template-columns: 1fr;
           }
         }
 
@@ -491,12 +608,7 @@ Datos del servicio:
             padding: 84px 7%;
           }
 
-          .quoteServicesGrid,
-          .quoteInfoBlock,
-          .quoteValue {
-            grid-template-columns: 1fr;
-          }
-
+          .quoteIntegralBlock,
           .quoteInfoBlock,
           .quoteValue,
           .quoteFinalCta {
@@ -505,6 +617,7 @@ Datos del servicio:
             margin-bottom: 84px;
           }
 
+          .quoteIntegralBlock,
           .quoteInfoBlock {
             padding: 32px 24px;
           }
