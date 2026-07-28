@@ -1,227 +1,654 @@
-import styles from "./resguardo.module.css";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
+import WhatsAppButton from "../../components/WhatsAppButton";
 
 export const metadata = {
-  title: "Resguardo de contenedores en Manzanillo | Transportes ZUSASA",
+  title:
+    "Resguardo de contenedores en Manzanillo | Transportes ZUSASA",
   description:
-    "Servicio de resguardo temporal de contenedores en patio de maniobras en Manzanillo, Colima. Apoyo operativo para carga contenerizada, importación, exportación y movimientos locales.",
+    "Resguardo temporal de contenedores en patio de maniobras en Manzanillo, integrado con movimiento local, apoyo operativo y gestión de transporte nacional de contenedores e ISO tanques.",
 };
 
 export default function ResguardoContenedoresPage() {
-  const whatsappResguardo =
-    "https://wa.me/522224556651?text=Hola%2C%20quiero%20solicitar%20informaci%C3%B3n%20sobre%20resguardo%20de%20contenedores%20en%20patio%20de%20maniobras%20en%20Manzanillo.%0A%0ADatos%20del%20servicio%3A%0A-%20Empresa%3A%0A-%20Nombre%20de%20contacto%3A%0A-%20Tel%C3%A9fono%3A%0A-%20Tipo%20de%20contenedor%3A%0A-%20Contenedor%20lleno%20o%20vac%C3%ADo%3A%0A-%20Tiempo%20estimado%20de%20resguardo%3A%0A-%20Fecha%20estimada%3A%0A-%20Comentarios%3A";
+  const whatsappMessage = [
+    "Hola, quiero solicitar informacion o una cotizacion con Transportes ZUSASA.",
+    "",
+    "Servicio que necesito:",
+    "- Resguardo en patio de maniobras:",
+    "- Movimiento local previo en Manzanillo:",
+    "- Transporte nacional de contenedores e ISO tanques:",
+    "- Apoyo operativo:",
+    "",
+    "Datos del servicio:",
+    "- Empresa:",
+    "- Nombre de contacto:",
+    "- Telefono:",
+    "- Tipo de contenedor o ISO tanque:",
+    "- Origen:",
+    "- Destino local:",
+    "- Destino nacional:",
+    "- Fecha estimada:",
+    "- Peso aproximado:",
+    "- Tiempo estimado de resguardo:",
+    "- Requiere transporte nacional:",
+    "- Comentarios:",
+  ].join("\n");
+
+  const whatsappLink = `https://wa.me/522224556651?${new URLSearchParams({
+    text: whatsappMessage,
+  }).toString()}`;
+
+  const services = [
+    {
+      title: "Resguardo temporal",
+      text: "Apoyo para resguardar contenedores llenos o vacíos en patio de maniobras, sujeto a disponibilidad y condiciones operativas.",
+    },
+    {
+      title: "Movimiento local previo",
+      text: "Coordinación del traslado local desde el puerto interior hacia patio de maniobras o punto operativo dentro de Manzanillo.",
+    },
+    {
+      title: "Apoyo operativo",
+      text: "Seguimiento, comunicación y coordinación durante la solicitud, recepción, resguardo y salida del contenedor.",
+    },
+    {
+      title: "Conexión con transporte nacional",
+      text: "Cuando el cliente lo requiere, podemos integrar el resguardo con la gestión de transporte nacional mediante alianza comercial.",
+    },
+  ];
+
+  const process = [
+    {
+      number: "01",
+      title: "Recibimos tu solicitud",
+      text: "Nos compartes tipo de contenedor o ISO tanque, origen, fecha estimada, tiempo de resguardo y requerimientos operativos.",
+    },
+    {
+      number: "02",
+      title: "Revisamos disponibilidad",
+      text: "Validamos condiciones del patio, tiempos, documentación, peso, necesidades de movimiento local y posibles servicios adicionales.",
+    },
+    {
+      number: "03",
+      title: "Coordinamos el ingreso y resguardo",
+      text: "Organizamos el movimiento local, la recepción en patio y el seguimiento operativo durante el periodo de resguardo.",
+    },
+    {
+      number: "04",
+      title: "Coordinamos salida o siguiente movimiento",
+      text: "Al finalizar el resguardo, apoyamos con la salida del contenedor o la gestión de transporte nacional cuando aplique.",
+    },
+  ];
 
   return (
-    <main className={styles.page}>
-      <section className={styles.hero}>
-        <a className={styles.back} href="/">
-          ← Volver al inicio
-        </a>
+    <>
+      <Navbar />
 
-        <div className={styles.heroContent}>
-          <span>Resguardo en patio de maniobras</span>
+      <main className="storagePage">
+        <section className="storageHero">
+          <div className="storageHeroContent">
+            <span>Resguardo en Manzanillo</span>
 
-          <h1>Resguardo de contenedores en Manzanillo.</h1>
+            <h1>Resguardo de contenedores en patio de maniobras.</h1>
 
-          <p>
-            Apoyamos con el resguardo temporal de contenedores llenos o vacíos
-            en patio de maniobras, sujeto a disponibilidad, condiciones
-            operativas y requerimientos de cada servicio.
-          </p>
+            <p>
+              En Transportes ZUSASA apoyamos operaciones que requieren resguardo
+              temporal de contenedores en Manzanillo, integrando movimiento
+              local, coordinación operativa y, cuando se requiere, gestión de
+              transporte nacional mediante alianza comercial.
+            </p>
 
-          <div className={styles.actions}>
-            <a
-              className={styles.primaryButton}
-              href={whatsappResguardo}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Solicitar información
-            </a>
+            <div className="storageActions">
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+                Cotizar resguardo →
+              </a>
 
-            <a className={styles.secondaryButton} href="/cotizacion">
-              Ir a cotización
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section className={styles.body}>
-        <div className={styles.mainContent}>
-          <span>Servicio especializado</span>
-
-          <h2>Apoyo operativo para el resguardo temporal de contenedores.</h2>
-
-          <p>
-            En Transportes ZUSASA entendemos que las operaciones portuarias y
-            logísticas pueden requerir espacios de apoyo para coordinar tiempos,
-            movimientos y disponibilidad. Por eso ofrecemos apoyo para el
-            resguardo temporal de contenedores en patio de maniobras dentro de
-            la zona de Manzanillo.
-          </p>
-
-          <div className={styles.cards}>
-            <article>
-              <strong>01</strong>
-              <h3>Contenedores llenos o vacíos</h3>
-              <p>
-                Apoyamos con resguardo temporal de contenedores llenos o vacíos
-                de acuerdo con las condiciones operativas disponibles.
-              </p>
-            </article>
-
-            <article>
-              <strong>02</strong>
-              <h3>Patio de maniobras</h3>
-              <p>
-                Coordinación en patio para apoyar necesidades logísticas
-                vinculadas al movimiento local de carga contenerizada.
-              </p>
-            </article>
-
-            <article>
-              <strong>03</strong>
-              <h3>Operación local en Manzanillo</h3>
-              <p>
-                Enfoque en la zona portuaria y logística de Manzanillo, Colima,
-                con atención directa y respuesta ágil.
-              </p>
-            </article>
-
-            <article>
-              <strong>04</strong>
-              <h3>Seguimiento operativo</h3>
-              <p>
-                Comunicación clara para revisar disponibilidad, tiempos,
-                condiciones y requerimientos específicos del servicio.
-              </p>
-            </article>
-          </div>
-
-          <section className={styles.gallerySection}>
-            <div className={styles.galleryHeader}>
-              <span>Fotos reales</span>
-
-              <h2>Patio de maniobras para apoyo operativo en Manzanillo.</h2>
-
-              <p>
-                Estas imágenes muestran espacios reales de patio de maniobras
-                que fortalecen nuestra capacidad de apoyo para operaciones
-                locales de carga contenerizada.
-              </p>
+              <a href="/#servicios">Ver servicios</a>
             </div>
-
-            <div className={styles.galleryGrid}>
-              <article>
-                <img
-                  src="/images/patio-maniobras-zusasa-1.jpg"
-                  alt="Patio de maniobras para contenedores en Manzanillo"
-                />
-                <div>
-                  <strong>Patio de maniobras</strong>
-                  <p>Espacio operativo para apoyo logístico local.</p>
-                </div>
-              </article>
-
-              <article>
-                <img
-                  src="/images/patio-maniobras-zusasa-2.jpg"
-                  alt="Área de resguardo y maniobras de contenedores"
-                />
-                <div>
-                  <strong>Resguardo temporal</strong>
-                  <p>Apoyo para contenedores llenos o vacíos.</p>
-                </div>
-              </article>
-
-              <article>
-                <img
-                  src="/images/patio-maniobras-zusasa-3.jpg"
-                  alt="Patio para maniobras logísticas en Manzanillo"
-                />
-                <div>
-                  <strong>Operación local</strong>
-                  <p>Coordinación para movimientos en Manzanillo.</p>
-                </div>
-              </article>
-            </div>
-   <section className={styles.videoSection}>
-  <div className={styles.videoText}>
-    <span>Video del patio</span>
-
-    <h2>Conoce nuestro patio de maniobras.</h2>
-
-    <p>
-      Mira una muestra del espacio operativo que puede apoyar tus necesidades
-      de resguardo temporal, maniobras y coordinación local de contenedores en
-      Manzanillo.
-    </p>
-  </div>
-
-  <div className={styles.videoFrame}>
-    <video
-      controls
-      preload="metadata"
-      poster="/images/patio_maniobras_zusasa_poster.jpg"
-    >
-      <source
-        src="/images/patio_maniobras_zusasa_15s_web.mp4"
-        type="video/mp4"
-      />
-      Tu navegador no puede reproducir este video.
-    </video>
-  </div>
-</section>       </section>
-
-          <div className={styles.infoBlock}>
-            <h2>¿Qué información necesitamos para revisar el resguardo?</h2>
-
-            <ul>
-              <li>Nombre de la empresa y contacto responsable.</li>
-              <li>Tipo de contenedor: 20 pies, 40 pies u otro.</li>
-              <li>Si el contenedor está lleno o vacío.</li>
-              <li>Fecha estimada de ingreso al patio.</li>
-              <li>Tiempo aproximado de resguardo requerido.</li>
-              <li>Requerimientos especiales de la operación.</li>
-            </ul>
           </div>
-        </div>
+        </section>
 
-        <aside className={styles.panel}>
-          <h2>Solicita disponibilidad</h2>
+        <section className="storageIntro">
+          <div className="storageIntroText">
+            <span>Servicio conectado a tu operación</span>
+
+            <h2>Del puerto interior al patio, y del patio al siguiente destino.</h2>
+
+            <p>
+              El resguardo en patio de maniobras puede formar parte de una
+              solución logística más completa. Podemos coordinar el movimiento
+              local del contenedor desde el puerto interior hacia patio y,
+              posteriormente, apoyar con la salida, entrega local o gestión de
+              transporte nacional hacia otro destino del país.
+            </p>
+
+            <p>
+              Cada solicitud se revisa de forma particular, considerando
+              disponibilidad, tipo de contenedor o ISO tanque, documentación,
+              tiempos, peso, condiciones operativas y requerimientos del cliente.
+            </p>
+          </div>
+
+          <div className="storageIntroCard">
+            <strong>Movimiento local → resguardo → destino nacional</strong>
+
+            <p>
+              Una alternativa para clientes que requieren mantener control,
+              trazabilidad y coordinación durante su operación logística desde
+              Manzanillo.
+            </p>
+          </div>
+        </section>
+
+        <section className="storageServices">
+          <div className="sectionHeader">
+            <span>Alcance del servicio</span>
+
+            <h2>Resguardo integrado con coordinación operativa.</h2>
+
+            <p>
+              Nuestro objetivo es que el cliente cuente con atención directa,
+              información clara y seguimiento durante el proceso de resguardo y
+              los movimientos relacionados con su contenedor.
+            </p>
+          </div>
+
+          <div className="servicesGrid">
+            {services.map((item) => (
+              <article className="serviceCard" key={item.title}>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="storageProcess">
+          <div className="sectionHeader white">
+            <span>Proceso de trabajo</span>
+
+            <h2>Coordinamos cada etapa con claridad.</h2>
+
+            <p>
+              Revisamos cada operación antes de confirmar el servicio para
+              asegurar que las condiciones, tiempos y requerimientos estén
+              claramente definidos.
+            </p>
+          </div>
+
+          <div className="processGrid">
+            {process.map((step) => (
+              <article className="processCard" key={step.number}>
+                <strong>{step.number}</strong>
+                <h3>{step.title}</h3>
+                <p>{step.text}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="storageValue">
+          <div>
+            <span>Valor agregado</span>
+
+            <h2>Portal de monitoreo y control operativo.</h2>
+
+            <p>
+              Como parte del servicio de resguardo, Transportes ZUSASA puede
+              ofrecer acceso a un portal de monitoreo mediante usuario y
+              contraseña. Esta herramienta permite consultar evidencia
+              fotográfica y videográfica, así como apoyar el control de
+              operaciones mediante códigos QR.
+            </p>
+          </div>
+
+          <div>
+            <span>Seguimiento</span>
+
+            <h2>Comunicación durante la operación.</h2>
+
+            <p>
+              Mantenemos comunicación directa para revisar el ingreso,
+              permanencia, salida o siguiente movimiento del contenedor,
+              brindando mayor claridad durante el servicio.
+            </p>
+          </div>
+        </section>
+
+        <section className="storageNotice">
+          <span>Importante</span>
+
+          <h2>Servicio sujeto a disponibilidad y condiciones operativas.</h2>
 
           <p>
-            Comparte los datos de tu operación y revisaremos si es posible
-            apoyar con el resguardo temporal del contenedor.
+            El resguardo, movimiento local y gestión de transporte nacional se
+            revisan de acuerdo con las características de cada operación. Antes
+            de confirmar el servicio se validan disponibilidad, documentación,
+            tipo de carga, peso, tiempos, ruta y condiciones aplicables.
+          </p>
+        </section>
+
+        <section className="storageQuote">
+          <h2>Solicita una cotización para resguardo.</h2>
+
+          <p>
+            Compártenos los datos de tu operación y revisaremos disponibilidad,
+            condiciones del servicio, movimiento local previo y posible conexión
+            con transporte nacional.
           </p>
 
-          <div className={styles.person}>
-            <strong>José Alberto Zúñiga Ramos</strong>
-            <span>Gerente General</span>
-            <a href="tel:2224556651">222 455 6651</a>
-          </div>
-
-          <a
-            className={styles.whatsappButton}
-            href={whatsappResguardo}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Consultar por WhatsApp
+          <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+            Cotizar por WhatsApp →
           </a>
+        </section>
+      </main>
 
-          <a
-            className={styles.emailButton}
-            href="mailto:transportes.zusasa@gmail.com?subject=Consulta%20sobre%20resguardo%20de%20contenedores%20en%20Manzanillo&body=Hola%2C%20quiero%20solicitar%20informaci%C3%B3n%20sobre%20resguardo%20de%20contenedores%20en%20patio%20de%20maniobras%20en%20Manzanillo."
-          >
-            Enviar correo
-          </a>
+      <Footer />
+      <WhatsAppButton />
 
-          <div className={styles.note}>
-            <strong>Nota:</strong> El resguardo está sujeto a disponibilidad,
-            condiciones operativas del patio y características del servicio.
-          </div>
-        </aside>
-      </section>
-    </main>
+      <style>{`
+        .storagePage {
+          background: #f5f6f7;
+          color: #0a1d36;
+        }
+
+        .storageHero {
+          min-height: 720px;
+          padding: 160px 7% 110px;
+          display: flex;
+          align-items: center;
+          background:
+            linear-gradient(135deg, rgba(10, 29, 54, 0.98), rgba(15, 45, 82, 0.92)),
+            url("/images/patio-maniobras-zusasa-1.jpg");
+          background-size: cover;
+          background-position: center;
+          color: #ffffff;
+        }
+
+        .storageHeroContent {
+          max-width: 1040px;
+        }
+
+        .storageHero span,
+        .storageIntroText span,
+        .sectionHeader span,
+        .storageValue span,
+        .storageNotice span {
+          display: inline-block;
+          color: #f26522;
+          text-transform: uppercase;
+          letter-spacing: 1.2px;
+          font-size: 14px;
+          font-weight: 900;
+          margin-bottom: 18px;
+        }
+
+        .storageHero h1 {
+          max-width: 1050px;
+          margin: 0 0 26px;
+          color: #ffffff;
+          font-size: clamp(44px, 7vw, 86px);
+          line-height: 0.98;
+          letter-spacing: -2.4px;
+          font-weight: 900;
+        }
+
+        .storageHero p {
+          max-width: 900px;
+          margin: 0;
+          color: rgba(255, 255, 255, 0.84);
+          font-size: 20px;
+          line-height: 1.7;
+        }
+
+        .storageActions {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 16px;
+          margin-top: 38px;
+        }
+
+        .storageActions a,
+        .storageQuote a {
+          min-height: 58px;
+          padding: 0 30px;
+          border-radius: 999px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          font-weight: 900;
+          font-size: 16px;
+        }
+
+        .storageActions a:first-child,
+        .storageQuote a {
+          background: #f26522;
+          color: #ffffff;
+          box-shadow: 0 18px 40px rgba(242, 101, 34, 0.28);
+        }
+
+        .storageActions a:last-child {
+          color: #ffffff;
+          border: 1px solid rgba(255, 255, 255, 0.22);
+          background: rgba(255, 255, 255, 0.08);
+        }
+
+        .storageIntro {
+          margin: -70px 7% 110px;
+          padding: 50px;
+          border-radius: 38px;
+          background: #ffffff;
+          display: grid;
+          grid-template-columns: 1.2fr 0.8fr;
+          gap: 38px;
+          align-items: center;
+          box-shadow: 0 28px 75px rgba(8, 34, 74, 0.16);
+          position: relative;
+          z-index: 2;
+        }
+
+        .storageIntroText h2,
+        .sectionHeader h2,
+        .storageValue h2,
+        .storageNotice h2,
+        .storageQuote h2 {
+          margin: 0 0 22px;
+          color: #0a1d36;
+          font-size: clamp(38px, 5vw, 66px);
+          line-height: 1.04;
+          letter-spacing: -1.8px;
+          font-weight: 900;
+        }
+
+        .storageIntroText p,
+        .sectionHeader p,
+        .storageValue p,
+        .storageNotice p,
+        .storageQuote p {
+          margin: 0 0 16px;
+          color: #3b4a5a;
+          font-size: 18px;
+          line-height: 1.7;
+        }
+
+        .storageIntroCard {
+          padding: 36px 34px;
+          border-radius: 32px;
+          background: linear-gradient(135deg, #0a1d36, #0f2d52);
+          color: #ffffff;
+          border-left: 7px solid #f26522;
+        }
+
+        .storageIntroCard strong {
+          display: block;
+          margin-bottom: 16px;
+          color: #ffffff;
+          font-size: 30px;
+          line-height: 1.12;
+          font-weight: 900;
+          letter-spacing: -0.8px;
+        }
+
+        .storageIntroCard p {
+          margin: 0;
+          color: rgba(255, 255, 255, 0.82);
+          font-size: 16px;
+          line-height: 1.65;
+        }
+
+        .storageServices {
+          padding: 0 7% 110px;
+        }
+
+        .sectionHeader {
+          max-width: 980px;
+          margin-bottom: 54px;
+        }
+
+        .servicesGrid {
+          display: grid;
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+          gap: 24px;
+        }
+
+        .serviceCard {
+          min-height: 285px;
+          padding: 34px 30px;
+          border-radius: 30px;
+          background: #ffffff;
+          border: 1px solid rgba(10, 29, 54, 0.08);
+          border-bottom: 7px solid #f26522;
+          box-shadow: 0 24px 65px rgba(10, 29, 54, 0.1);
+        }
+
+        .serviceCard h3 {
+          margin: 0 0 16px;
+          color: #0a1d36;
+          font-size: 25px;
+          line-height: 1.14;
+          font-weight: 900;
+        }
+
+        .serviceCard p {
+          margin: 0;
+          color: #3b4a5a;
+          font-size: 16px;
+          line-height: 1.65;
+        }
+
+        .storageProcess {
+          padding: 110px 7%;
+          background: linear-gradient(135deg, #0a1d36, #0f2d52);
+          color: #ffffff;
+        }
+
+        .sectionHeader.white h2 {
+          color: #ffffff;
+        }
+
+        .sectionHeader.white p {
+          color: rgba(255, 255, 255, 0.82);
+        }
+
+        .processGrid {
+          display: grid;
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+          gap: 24px;
+        }
+
+        .processCard {
+          min-height: 315px;
+          padding: 34px 30px;
+          border-radius: 30px;
+          background: rgba(255, 255, 255, 0.08);
+          border: 1px solid rgba(255, 255, 255, 0.13);
+          border-bottom: 7px solid #f26522;
+          box-shadow: 0 24px 65px rgba(0, 0, 0, 0.14);
+        }
+
+        .processCard strong {
+          display: block;
+          margin-bottom: 24px;
+          color: #f26522;
+          font-size: 26px;
+          font-weight: 900;
+        }
+
+        .processCard h3 {
+          margin: 0 0 16px;
+          color: #ffffff;
+          font-size: 25px;
+          line-height: 1.12;
+          font-weight: 900;
+        }
+
+        .processCard p {
+          margin: 0;
+          color: rgba(255, 255, 255, 0.78);
+          font-size: 16px;
+          line-height: 1.65;
+        }
+
+        .storageValue {
+          margin: 110px 7%;
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 26px;
+        }
+
+        .storageValue > div {
+          padding: 44px 40px;
+          border-radius: 34px;
+          background: #ffffff;
+          border-left: 8px solid #f26522;
+          box-shadow: 0 24px 65px rgba(10, 29, 54, 0.1);
+        }
+
+        .storageValue h2 {
+          font-size: clamp(30px, 4vw, 48px);
+        }
+
+        .storageNotice {
+          margin: 0 7% 110px;
+          padding: 50px;
+          border-radius: 36px;
+          background: #ffffff;
+          border-left: 8px solid #f26522;
+          box-shadow: 0 24px 65px rgba(10, 29, 54, 0.1);
+        }
+
+        .storageNotice p {
+          max-width: 980px;
+        }
+
+        .storageQuote {
+          margin: 0 7% 110px;
+          padding: 56px 48px;
+          border-radius: 38px;
+          background: linear-gradient(135deg, #0a1d36, #0f2d52);
+          color: #ffffff;
+          text-align: center;
+          box-shadow: 0 28px 75px rgba(8, 34, 74, 0.2);
+        }
+
+        .storageQuote h2 {
+          color: #ffffff;
+        }
+
+        .storageQuote p {
+          max-width: 820px;
+          margin: 0 auto 30px;
+          color: rgba(255, 255, 255, 0.82);
+        }
+
+        @media (max-width: 1100px) {
+          .servicesGrid,
+          .processGrid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+          }
+
+          .storageIntro,
+          .storageValue {
+            grid-template-columns: 1fr;
+          }
+        }
+
+        @media (max-width: 700px) {
+          .storageHero {
+            min-height: auto;
+            padding: 140px 7% 110px;
+          }
+
+          .storageHero h1 {
+            font-size: clamp(38px, 12vw, 56px);
+            letter-spacing: -1.2px;
+          }
+
+          .storageHero p {
+            font-size: 17px;
+          }
+
+          .storageActions a,
+          .storageQuote a {
+            width: 100%;
+            text-align: center;
+          }
+
+          .storageIntro {
+            margin: -50px 7% 84px;
+            padding: 32px 24px;
+            border-radius: 30px;
+          }
+
+          .storageIntroText h2,
+          .sectionHeader h2,
+          .storageValue h2,
+          .storageNotice h2,
+          .storageQuote h2 {
+            font-size: clamp(32px, 11vw, 48px);
+            letter-spacing: -1px;
+          }
+
+          .storageIntroText p,
+          .sectionHeader p,
+          .storageValue p,
+          .storageNotice p,
+          .storageQuote p {
+            font-size: 16px;
+          }
+
+          .storageIntroCard {
+            padding: 30px 24px;
+            border-radius: 26px;
+          }
+
+          .storageIntroCard strong {
+            font-size: 25px;
+          }
+
+          .storageServices {
+            padding: 0 7% 84px;
+          }
+
+          .servicesGrid,
+          .processGrid {
+            grid-template-columns: 1fr;
+          }
+
+          .serviceCard,
+          .processCard {
+            min-height: auto;
+            padding: 28px 24px;
+            border-radius: 26px;
+          }
+
+          .storageProcess {
+            padding: 84px 7%;
+          }
+
+          .storageValue {
+            margin: 84px 7%;
+          }
+
+          .storageValue > div {
+            padding: 32px 24px;
+            border-radius: 28px;
+          }
+
+          .storageNotice {
+            margin: 0 7% 84px;
+            padding: 32px 24px;
+            border-radius: 28px;
+          }
+
+          .storageQuote {
+            margin: 0 7% 84px;
+            padding: 40px 24px;
+            border-radius: 30px;
+          }
+        }
+      `}</style>
+    </>
   );
 }
