@@ -1,6 +1,32 @@
 export default function Contact() {
-  const whatsappMessage =
-    "https://wa.me/522224556651?text=Hola%2C%20quiero%20solicitar%20informaci%C3%B3n%20y%2Fo%20cotizaci%C3%B3n%20con%20Transportes%20ZUSASA%20para%20un%20servicio%20en%20Manzanillo.%0A%0AServicio%20que%20necesito%3A%0A-%20Movimiento%20local%20de%20contenedores%3A%0A-%20Resguardo%20en%20patio%20de%20maniobras%3A%0A-%20Apoyo%20operativo%20para%20contenedores%3A%0A-%20Seguimiento%20de%20operaci%C3%B3n%3A%0A-%20Otro%3A%0A%0ADatos%20del%20servicio%3A%0A-%20Empresa%3A%0A-%20Nombre%20de%20contacto%3A%0A-%20Tel%C3%A9fono%3A%0A-%20Tipo%20de%20contenedor%3A%0A-%20Origen%3A%0A-%20Destino%3A%0A-%20Fecha%20estimada%3A%0A-%20Comentarios%3A";
+ const whatsappMessage = [
+  "Hola, quiero solicitar informacion o una cotizacion con Transportes ZUSASA.",
+  "",
+  "Servicio que necesito:",
+  "- Movimiento local de contenedores:",
+  "- Movimiento local de ISO tanques:",
+  "- Transporte nacional de contenedores e ISO tanques:",
+  "- Resguardo en patio de maniobras:",
+  "- Apoyo operativo:",
+  "",
+  "Datos del servicio:",
+  "- Empresa:",
+  "- Nombre de contacto:",
+  "- Telefono:",
+  "- Tipo de contenedor o ISO tanque:",
+  "- Origen:",
+  "- Destino local:",
+  "- Destino nacional:",
+  "- Fecha estimada:",
+  "- Peso aproximado:",
+  "- Requiere movimiento local previo:",
+  "- Requiere resguardo:",
+  "- Comentarios:",
+].join("\n");
+
+const whatsappLink = `https://wa.me/522224556651?${new URLSearchParams({
+  text: whatsappMessage,
+}).toString()}`;
 
   const orangeIconStyle = {
     width: "44px",
@@ -65,9 +91,10 @@ export default function Contact() {
 
         <h2>Solicita tu cotización y coordinemos tu operación.</h2>
 
-       <p>
+      <p>
   Cuéntanos qué servicio necesitas: movimiento local de contenedores,
-  resguardo en patio de maniobras o apoyo operativo. Revisaremos tu
+  movimiento local de ISO tanques, transporte nacional de contenedores e ISO
+  tanques, resguardo en patio de maniobras o apoyo operativo. Revisaremos tu
   solicitud para darte una respuesta clara y personalizada.
 </p>
 
