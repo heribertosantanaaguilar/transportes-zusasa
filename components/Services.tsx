@@ -16,13 +16,13 @@ export default function Services() {
       cta: "Cotizar servicio",
       href: "/cotizacion",
     },
-    {
-      number: "03",
-      title: "Transporte nacional de contenedores e ISO tanques",
-      text: "Gestión del traslado nacional de contenedores e ISO tanques desde Manzanillo hacia distintos destinos del país, mediante alianza comercial con transportista foráneo.",
-      cta: "Cotizar transporte",
-      href: "/cotizacion",
-    },
+   {
+  number: "03",
+  title: "Transporte nacional de contenedores e ISO tanques",
+  text: "Gestión del traslado nacional de contenedores e ISO tanques desde Manzanillo hacia distintos destinos del país, mediante alianza comercial con transportista foráneo.",
+  cta: "Conocer servicio",
+  href: "/transporte-nacional-contenedores-iso-tanques",
+},
     {
       number: "04",
       title: "Resguardo en patio de maniobras",
