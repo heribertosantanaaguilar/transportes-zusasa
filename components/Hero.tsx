@@ -13,9 +13,9 @@ export default function Hero() {
         </h1>
 
         <p>
-          Coordinamos movimientos locales de carga contenerizada para agencias
-          aduanales, operadores logísticos, importadores y exportadores que
-          necesitan seguridad, comunicación clara y cumplimiento en Manzanillo.
+          Integramos movimiento local, resguardo, apoyo operativo y transporte
+          nacional de contenedores e ISO tanques desde Manzanillo, con atención
+          directa, coordinación clara y seguimiento operativo.
         </p>
 
         <div className={styles.actions}>
