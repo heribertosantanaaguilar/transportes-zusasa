@@ -55,13 +55,17 @@ export default function Footer() {
             <h3>Servicios</h3>
 
             <a href="/#servicios">Movimiento local de contenedores</a>
+
             <a href="/#servicios">Movimiento local de ISO tanques</a>
-            <a href="/#servicios">
+
+            <a href="/transporte-nacional-contenedores-iso-tanques">
               Transporte nacional de contenedores e ISO tanques
             </a>
+
             <a href="/resguardo-de-contenedores-manzanillo">
               Resguardo en patio de maniobras
             </a>
+
             <a href="/#servicios">Apoyo operativo</a>
           </div>
 
