@@ -2,23 +2,23 @@ export default function Stats() {
   const stats = [
     {
       number: "Local",
-      label: "Enfoque en Manzanillo",
+      label: "Base operativa en Manzanillo",
       text: "Atención especializada en la zona portuaria y logística de Manzanillo, Colima.",
     },
     {
-      number: "Ágil",
-      label: "Respuesta operativa",
-      text: "Revisamos cada solicitud de acuerdo con disponibilidad, tiempos y condiciones reales.",
+      number: "Integral",
+      label: "Solución logística completa",
+      text: "Coordinamos movimiento local, resguardo, apoyo operativo y gestión de transporte nacional mediante alianza comercial.",
     },
     {
       number: "Directa",
-      label: "Comunicación con el cliente",
-      text: "Mantenemos contacto claro durante la solicitud, coordinación y seguimiento del servicio.",
+      label: "Un solo punto de contacto",
+      text: "El cliente puede revisar su operación, solicitar cotización y dar seguimiento al servicio desde un mismo canal.",
     },
     {
-      number: "Seria",
-      label: "Compromiso operativo",
-      text: "Trabajamos con responsabilidad, honestidad y enfoque en cada movimiento de carga contenerizada.",
+      number: "Coordinada",
+      label: "Seguimiento operativo",
+      text: "Mantenemos comunicación clara durante la solicitud, coordinación, avance y cierre de cada operación logística.",
     },
   ];
 
@@ -73,7 +73,7 @@ export default function Stats() {
             fontWeight: 900,
           }}
         >
-          Un enfoque operativo claro, local y confiable.
+          Un enfoque local con coordinación logística integral.
         </h2>
 
         <p
@@ -86,8 +86,8 @@ export default function Stats() {
           }}
         >
           Nuestro objetivo es brindar atención directa, respuesta oportuna y
-          seguimiento claro para cada solicitud de transporte, resguardo o apoyo
-          operativo en Manzanillo.
+          seguimiento claro para operaciones de movimiento local, resguardo,
+          apoyo operativo y gestión de transporte nacional desde Manzanillo.
         </p>
       </div>
 
