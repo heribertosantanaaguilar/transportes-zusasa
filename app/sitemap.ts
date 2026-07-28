@@ -1,36 +1,44 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = "https://www.transporteszusasa.com";
+
   return [
     {
-      url: "https://transporteszusasa.com",
+      url: baseUrl,
       lastModified: new Date(),
-      changeFrequency: "monthly",
+      changeFrequency: "weekly",
       priority: 1,
     },
     {
-      url: "https://transporteszusasa.com/cotizacion",
+      url: `${baseUrl}/cotizacion`,
       lastModified: new Date(),
-      changeFrequency: "monthly",
+      changeFrequency: "weekly",
       priority: 0.9,
     },
     {
-      url: "https://transporteszusasa.com/transporte-de-contenedores-manzanillo",
+      url: `${baseUrl}/transporte-nacional-contenedores-iso-tanques`,
       lastModified: new Date(),
-      changeFrequency: "monthly",
+      changeFrequency: "weekly",
       priority: 0.9,
     },
     {
-      url: "https://transporteszusasa.com/resguardo-de-contenedores-manzanillo",
+      url: `${baseUrl}/resguardo-de-contenedores-manzanillo`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: "https://transporteszusasa.com/aviso-de-privacidad",
+      url: `${baseUrl}/transporte-de-contenedores-manzanillo`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/aviso-de-privacidad`,
       lastModified: new Date(),
       changeFrequency: "yearly",
-      priority: 0.4,
+      priority: 0.3,
     },
   ];
 }
