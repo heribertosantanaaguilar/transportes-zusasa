@@ -18,13 +18,20 @@ export default function Services() {
     },
     {
       number: "03",
+      title: "Transporte nacional de contenedores e ISO tanques",
+      text: "Gestión del traslado nacional de contenedores e ISO tanques desde Manzanillo hacia distintos destinos del país, mediante alianza comercial con transportista foráneo.",
+      cta: "Cotizar transporte",
+      href: "/cotizacion",
+    },
+    {
+      number: "04",
       title: "Resguardo en patio de maniobras",
       text: "Resguardo temporal de contenedores llenos o vacíos, sujeto a disponibilidad y condiciones operativas.",
       cta: "Conocer servicio",
       href: "/resguardo-de-contenedores-manzanillo",
     },
     {
-      number: "04",
+      number: "05",
       title: "Apoyo operativo para contenedores",
       text: "Coordinación de movimientos, maniobras y apoyo local para operaciones de carga contenerizada.",
       cta: "Cotizar apoyo",
@@ -41,12 +48,12 @@ export default function Services() {
             <span className="eyebrow">Servicios</span>
           </div>
 
-          <h2>Soluciones locales para mover y resguardar tu carga.</h2>
+          <h2>Soluciones logísticas para contenedores e ISO tanques.</h2>
 
           <p>
-            Atendemos operaciones de carga contenerizada e ISO tanques en
-            Manzanillo con enfoque en coordinación, resguardo, apoyo operativo y
-            respuesta clara.
+            Integramos movimiento local, resguardo, apoyo operativo y transporte
+            nacional de contenedores e ISO tanques desde Manzanillo, con
+            atención directa, coordinación clara y seguimiento operativo.
           </p>
         </div>
 
@@ -64,6 +71,44 @@ export default function Services() {
               </a>
             </article>
           ))}
+        </div>
+
+        <div className="integral-block">
+          <div>
+            <span>Solución logística integral</span>
+
+            <h3>Del puerto interior en Manzanillo al destino nacional.</h3>
+
+            <p>
+              En Transportes ZUSASA coordinamos el movimiento local desde el
+              puerto interior hacia patio de maniobras y, mediante alianza
+              comercial, podemos gestionar el transporte nacional de
+              contenedores e ISO tanques hacia distintos destinos del país.
+            </p>
+
+            <p>
+              Esto permite al cliente contar con un solo punto de contacto para
+              revisar disponibilidad, coordinar la operación, recibir
+              seguimiento y gestionar la cotización del servicio.
+            </p>
+          </div>
+
+          <div className="integral-points">
+            <div>
+              <strong>01</strong>
+              <p>Movimiento local en Manzanillo</p>
+            </div>
+
+            <div>
+              <strong>02</strong>
+              <p>Resguardo y apoyo operativo</p>
+            </div>
+
+            <div>
+              <strong>03</strong>
+              <p>Gestión de transporte nacional</p>
+            </div>
+          </div>
         </div>
 
         <div className="services-value-block">
@@ -105,7 +150,7 @@ export default function Services() {
         }
 
         .services-header {
-          max-width: 920px;
+          max-width: 980px;
           margin-bottom: 48px;
         }
 
@@ -143,7 +188,7 @@ export default function Services() {
 
         .services-header p {
           margin: 0;
-          max-width: 900px;
+          max-width: 940px;
           color: #334a68;
           font-size: 20px;
           line-height: 1.7;
@@ -151,7 +196,7 @@ export default function Services() {
 
         .services-grid {
           display: grid;
-          grid-template-columns: repeat(4, minmax(0, 1fr));
+          grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
           gap: 28px;
           align-items: stretch;
         }
@@ -211,22 +256,21 @@ export default function Services() {
           line-height: 1;
         }
 
-        .services-value-block {
-          margin-top: 42px;
-          display: grid;
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-          gap: 26px;
-        }
-
-        .value-item {
+        .integral-block {
+          margin-top: 46px;
+          padding: 48px;
+          border-radius: 36px;
           background: linear-gradient(135deg, #0a1d36, #0f2d52);
-          border-radius: 34px;
-          padding: 38px 36px;
           color: #ffffff;
-          border-left: 7px solid #f26522;
-          box-shadow: 0 24px 60px rgba(8, 34, 74, 0.16);
+          display: grid;
+          grid-template-columns: 1.3fr 0.7fr;
+          gap: 38px;
+          align-items: center;
+          box-shadow: 0 28px 70px rgba(8, 34, 74, 0.18);
+          border-left: 8px solid #f26522;
         }
 
+        .integral-block span,
         .value-item span {
           display: inline-block;
           color: #f26522;
@@ -237,8 +281,68 @@ export default function Services() {
           margin-bottom: 16px;
         }
 
+        .integral-block h3 {
+          margin: 0 0 18px;
+          color: #ffffff;
+          font-size: clamp(30px, 4vw, 48px);
+          line-height: 1.08;
+          font-weight: 900;
+          letter-spacing: -1px;
+        }
+
+        .integral-block p {
+          margin: 0 0 14px;
+          color: rgba(255, 255, 255, 0.84);
+          font-size: 17px;
+          line-height: 1.65;
+        }
+
+        .integral-points {
+          display: grid;
+          gap: 18px;
+        }
+
+        .integral-points div {
+          background: rgba(255, 255, 255, 0.08);
+          border: 1px solid rgba(255, 255, 255, 0.12);
+          border-radius: 24px;
+          padding: 22px 24px;
+        }
+
+        .integral-points strong {
+          display: block;
+          color: #f26522;
+          font-size: 22px;
+          font-weight: 900;
+          margin-bottom: 8px;
+        }
+
+        .integral-points p {
+          margin: 0;
+          color: #ffffff;
+          font-weight: 800;
+          line-height: 1.35;
+        }
+
+        .services-value-block {
+          margin-top: 28px;
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 26px;
+        }
+
+        .value-item {
+          background: #ffffff;
+          border-radius: 34px;
+          padding: 38px 36px;
+          color: #0a1d36;
+          border-left: 7px solid #f26522;
+          box-shadow: 0 24px 60px rgba(8, 34, 74, 0.1);
+        }
+
         .value-item h3 {
           margin: 0 0 16px;
+          color: #0a1d36;
           font-size: 28px;
           line-height: 1.1;
           font-weight: 900;
@@ -247,22 +351,18 @@ export default function Services() {
 
         .value-item p {
           margin: 0;
-          color: rgba(255, 255, 255, 0.84);
+          color: #334a68;
           font-size: 16px;
           line-height: 1.65;
         }
 
         @media (max-width: 1100px) {
-          .services-grid {
-            grid-template-columns: repeat(2, minmax(0, 1fr));
+          .integral-block {
+            grid-template-columns: 1fr;
           }
 
           .service-card {
-            min-height: 340px;
-          }
-
-          .service-card h3 {
-            font-size: 26px;
+            min-height: 360px;
           }
         }
 
@@ -319,9 +419,23 @@ export default function Services() {
             font-size: 15px;
           }
 
+          .integral-block {
+            margin-top: 32px;
+            padding: 32px 24px;
+            border-radius: 28px;
+          }
+
+          .integral-block h3 {
+            font-size: 30px;
+          }
+
+          .integral-block p {
+            font-size: 15.8px;
+          }
+
           .services-value-block {
             grid-template-columns: 1fr;
-            margin-top: 30px;
+            margin-top: 24px;
             gap: 20px;
           }
 
