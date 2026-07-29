@@ -1,23 +1,19 @@
 export default function Process() {
   const steps = [
     {
-      number: "01",
       title: "Recibimos tu solicitud",
       text: "Nos compartes el servicio que necesitas, datos de contacto, tipo de contenedor o ISO tanque, origen, destino, fecha estimada y requerimientos operativos.",
     },
     {
-      number: "02",
-      title: "Revisamos disponibilidad y condiciones",
+      title: "Revisamos disponibilidad",
       text: "Analizamos el tipo de operación, documentación, peso, ruta, destino, disponibilidad, necesidad de resguardo y condiciones reales del servicio.",
     },
     {
-      number: "03",
       title: "Coordinamos la operación",
-      text: "Organizamos el movimiento local en Manzanillo, resguardo, apoyo operativo o gestión de transporte nacional mediante alianza comercial, según lo requiera el cliente.",
+      text: "Organizamos el movimiento local en Manzanillo, resguardo o gestión de transporte nacional mediante alianza comercial, según lo requiera el cliente.",
     },
     {
-      number: "04",
-      title: "Damos seguimiento hasta el cierre",
+      title: "Damos seguimiento",
       text: "Mantenemos comunicación clara durante la coordinación del servicio, informando avances y confirmando el cierre de la operación.",
     },
   ];
@@ -81,16 +77,14 @@ export default function Process() {
             }}
           >
             Revisamos cada solicitud de forma particular para coordinar
-            movimiento local, resguardo, apoyo operativo o gestión de transporte
-            nacional desde Manzanillo, de acuerdo con las condiciones reales del
-            servicio.
+            movimiento local, resguardo o gestión de transporte nacional desde
+            Manzanillo, de acuerdo con las condiciones reales del servicio.
           </p>
         </div>
 
         <div className="processGrid">
           {steps.map((step) => (
-            <article className="processCard" key={step.number}>
-              <strong>{step.number}</strong>
+            <article className="processCard" key={step.title}>
               <h3>{step.title}</h3>
               <p>{step.text}</p>
             </article>
@@ -106,29 +100,23 @@ export default function Process() {
         }
 
         .processCard {
-          min-height: 330px;
-          padding: 34px 30px;
+          min-height: 280px;
+          padding: 38px 30px 34px;
           border-radius: 32px;
           background: rgba(255, 255, 255, 0.08);
           border: 1px solid rgba(255, 255, 255, 0.13);
           border-bottom: 7px solid #f26522;
           box-shadow: 0 24px 65px rgba(0, 0, 0, 0.14);
           backdrop-filter: blur(10px);
-        }
-
-        .processCard strong {
-          display: block;
-          margin-bottom: 26px;
-          color: #f26522;
-          font-size: 28px;
-          line-height: 1;
-          font-weight: 900;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
         }
 
         .processCard h3 {
-          margin: 0 0 18px;
+          margin: 0 0 20px;
           color: #ffffff;
-          font-size: 26px;
+          font-size: 28px;
           line-height: 1.12;
           letter-spacing: -0.5px;
           font-weight: 900;
@@ -147,7 +135,7 @@ export default function Process() {
           }
 
           .processCard {
-            min-height: 280px;
+            min-height: 250px;
           }
         }
 
@@ -159,13 +147,8 @@ export default function Process() {
 
           .processCard {
             min-height: auto;
-            padding: 28px 24px;
+            padding: 30px 24px;
             border-radius: 28px;
-          }
-
-          .processCard strong {
-            font-size: 24px;
-            margin-bottom: 20px;
           }
 
           .processCard h3 {
