@@ -16,9 +16,9 @@ export default function CoverageMap() {
         </div>
 
         <div className="zusasaCoverageMapCard">
-          <img
-            src="/images/cobertura_nacional_desde_manzanillo.png"
-            alt="Mapa de cobertura nacional desde Manzanillo de Transportes ZUSASA"
+          <iframe
+            src="/mapa-rutas-zusasa.html"
+            title="Mapa interactivo de rutas nacionales desde Manzanillo de Transportes ZUSASA"
           />
         </div>
 
@@ -92,17 +92,19 @@ export default function CoverageMap() {
         .zusasaCoverageMapCard {
           background: #ffffff;
           border-radius: 34px;
-          padding: 24px;
+          padding: 18px;
           border: 1px solid rgba(10, 29, 54, 0.08);
           box-shadow: 0 28px 70px rgba(10, 29, 54, 0.1);
           overflow: hidden;
         }
 
-        .zusasaCoverageMapCard img {
-          display: block;
+        .zusasaCoverageMapCard iframe {
           width: 100%;
-          height: auto;
+          height: 680px;
+          display: block;
+          border: 0;
           border-radius: 24px;
+          background: #f5f6f7;
         }
 
         .coverageQuoteBox {
@@ -187,11 +189,12 @@ export default function CoverageMap() {
           }
 
           .zusasaCoverageMapCard {
-            padding: 14px;
+            padding: 10px;
             border-radius: 24px;
           }
 
-          .zusasaCoverageMapCard img {
+          .zusasaCoverageMapCard iframe {
+            height: 560px;
             border-radius: 16px;
           }
 
