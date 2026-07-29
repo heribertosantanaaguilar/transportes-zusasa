@@ -32,24 +32,22 @@ export default function ServiceCTA() {
     <section className="serviceCtaBlock">
       <div className="serviceCtaContent">
         <div className="serviceCtaText">
-          <span>Solución logística integral</span>
+          <span>Cotización</span>
 
-          <h2>Coordinemos tu operación desde Manzanillo.</h2>
+          <h2>¿Necesitas coordinar una operación desde Manzanillo?</h2>
 
           <p>
-            Podemos ayudarte a revisar movimiento local de contenedores e ISO
-            tanques, resguardo en patio de maniobras, apoyo operativo y gestión
-            de transporte nacional mediante alianza comercial.
+            Revisamos tu solicitud y te orientamos sobre movimiento local,
+            resguardo o transporte nacional de contenedores e ISO tanques.
           </p>
         </div>
 
         <div className="serviceCtaCard">
-          <strong>Puerto interior → patio → destino nacional</strong>
+          <strong>Atención directa para tu operación</strong>
 
           <p>
-            Integramos la operación local en Manzanillo con la gestión del
-            traslado nacional para que el cliente tenga un solo punto de
-            contacto durante la coordinación del servicio.
+            Compártenos los datos básicos del servicio y revisaremos
+            disponibilidad, condiciones operativas y opciones de coordinación.
           </p>
 
           <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
