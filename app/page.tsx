@@ -1,9 +1,10 @@
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
-import WhatWeDo from "../components/WhatWeDo";
 import Company from "../components/Company";
+import WhatWeDo from "../components/WhatWeDo";
 import Services from "../components/Services";
 import CoverageMap from "../components/CoverageMap";
+import OperationPhotos from "../components/OperationPhotos";
 import ServiceCTA from "../components/ServiceCTA";
 import Sectors from "../components/Sectors";
 import Value from "../components/Value";
@@ -25,6 +26,7 @@ export default function Home() {
       <WhatWeDo />
       <Services />
       <CoverageMap />
+      <OperationPhotos />
       <ServiceCTA />
       <Sectors />
       <Value />
