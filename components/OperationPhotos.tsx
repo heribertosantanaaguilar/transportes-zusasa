@@ -3,22 +3,22 @@ export default function OperationPhotos() {
     {
       title: "Transporte nacional de contenedores",
       text: "Coordinación de unidades con contenedores para operaciones desde Manzanillo hacia destinos nacionales.",
-      image: "/images/operacion-camion-doble-zusasa.png",
+      image: "/images/operacion-camion-doble-zusasa.png.png",
     },
     {
       title: "Movimiento de contenedores",
       text: "Apoyo operativo para carga contenerizada en rutas locales y nacionales.",
-      image: "/images/operacion-camiones-dobles-zusasa.jpeg",
+      image: "/images/operacion-camiones-dobles-zusasa.jpeg.jpeg",
     },
     {
       title: "Operación con ISO tanques",
       text: "Atención a servicios relacionados con ISO tanques, sujetos a revisión operativa y documental.",
-      image: "/images/operacion-iso-tanques-zusasa.jpeg",
+      image: "/images/operacion-iso-tanques-zusasa.jpeg.jpeg",
     },
     {
       title: "Patio y equipo especializado",
       text: "Coordinación en patio para operaciones con contenedores, ISO tanques y unidades de carga.",
-      image: "/images/operacion-iso-zusasa.jpeg",
+      image: "/images/operacion-iso-zusasa.jpeg.jpeg",
     },
   ];
 
