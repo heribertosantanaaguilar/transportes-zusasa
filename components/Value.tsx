@@ -1,166 +1,97 @@
 export default function Value() {
-  const values = [
-    {
-      number: "01",
-      title: "Atención directa",
-      text: "Atendemos cada solicitud con comunicación cercana para entender la operación, revisar necesidades y orientar al cliente desde el primer contacto.",
-    },
-    {
-      number: "02",
-      title: "Respuesta ágil",
-      text: "Revisamos disponibilidad, condiciones y tiempos de servicio para dar una respuesta clara y oportuna a cada operación.",
-    },
-    {
-      number: "03",
-      title: "Comunicación honesta",
-      text: "Hablamos con claridad sobre tiempos, posibilidades y condiciones reales del servicio, evitando promesas que no podamos cumplir.",
-    },
-    {
-      number: "04",
-      title: "Seguimiento operativo",
-      text: "Mantenemos informado al cliente durante el proceso para que tenga mayor claridad sobre el avance y cierre del movimiento.",
-    },
-    {
-      number: "05",
-      title: "Conocimiento local",
-      text: "Nuestro enfoque está en Manzanillo, Colima, una zona clave para operaciones portuarias, logísticas, de importación y exportación.",
-    },
-    {
-      number: "06",
-      title: "Seriedad en cada servicio",
-      text: "Trabajamos con responsabilidad, compromiso y enfoque operativo para apoyar movimientos locales de carga contenerizada.",
-    },
-  ];
-
   return (
-    <section
-      id="por-que-elegir"
-      style={{
-        padding: "110px 7%",
-        background:
-          "linear-gradient(135deg, rgba(10, 29, 54, 0.98), rgba(15, 45, 82, 0.96))",
-        color: "#ffffff",
-        overflow: "hidden",
-      }}
-    >
-      <div
-        style={{
-          maxWidth: "1050px",
-          marginBottom: "58px",
-        }}
-      >
-        <div
-          style={{
-            display: "inline-flex",
-            alignItems: "center",
-            gap: "14px",
-            color: "#f26522",
-            fontWeight: 900,
-            textTransform: "uppercase",
-            letterSpacing: "1.2px",
-            fontSize: "15px",
-            marginBottom: "22px",
-          }}
-        >
-          <span
-            style={{
-              width: "48px",
-              height: "4px",
-              background: "#f26522",
-              borderRadius: "999px",
-              display: "inline-block",
-            }}
-          />
-          Por qué elegirnos
+    <section className="valueCleanSection">
+      <div className="valueCleanContainer">
+        <div className="valueCleanLabel">
+          <span />
+          <strong>Por qué elegirnos</strong>
         </div>
 
-        <h2
-          style={{
-            maxWidth: "1050px",
-            color: "#ffffff",
-            fontSize: "clamp(42px, 5vw, 74px)",
-            lineHeight: 1.03,
-            letterSpacing: "-2px",
-            margin: "0 0 26px",
-            fontWeight: 900,
-          }}
-        >
-          Atención directa, comunicación clara y compromiso operativo.
-        </h2>
+        <div className="valueCleanContent">
+          <h2>Atención directa, comunicación clara y compromiso operativo.</h2>
 
-        <p
-          style={{
-            maxWidth: "940px",
-            color: "rgba(255, 255, 255, 0.82)",
-            fontSize: "20px",
-            lineHeight: 1.7,
-            margin: 0,
-          }}
-        >
-          En Transportes ZUSASA sabemos que cada movimiento de carga requiere
-          coordinación, confianza y respuesta. Por eso trabajamos con un enfoque
-          cercano, honesto y orientado a resolver las necesidades logísticas de
-          nuestros clientes en Manzanillo.
-        </p>
+          <p>
+            En Transportes ZUSASA trabajamos con un enfoque cercano, honesto y
+            orientado a coordinar cada operación con claridad. Revisamos las
+            necesidades del cliente, las condiciones reales del servicio y la
+            mejor forma de apoyar su movimiento logístico desde Manzanillo.
+          </p>
+        </div>
       </div>
 
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-          gap: "24px",
-        }}
-      >
-        {values.map((item) => (
-          <article
-            key={item.title}
-            style={{
-              minHeight: "280px",
-              padding: "34px 30px",
-              borderRadius: "28px",
-              background: "rgba(255, 255, 255, 0.08)",
-              border: "1px solid rgba(255, 255, 255, 0.12)",
-              borderBottom: "6px solid #f26522",
-              boxShadow: "0 24px 65px rgba(0, 0, 0, 0.18)",
-            }}
-          >
-            <strong
-              style={{
-                display: "block",
-                color: "#f26522",
-                fontSize: "24px",
-                fontWeight: 900,
-                marginBottom: "20px",
-              }}
-            >
-              {item.number}
-            </strong>
+      <style>{`
+        .valueCleanSection {
+          padding: 110px 7%;
+          background: linear-gradient(135deg, #0a1d36, #0f2d52);
+          color: #ffffff;
+          overflow: hidden;
+        }
 
-            <h3
-              style={{
-                color: "#ffffff",
-                fontSize: "25px",
-                lineHeight: 1.15,
-                margin: "0 0 16px",
-                fontWeight: 900,
-              }}
-            >
-              {item.title}
-            </h3>
+        .valueCleanContainer {
+          max-width: 1180px;
+          margin: 0 auto;
+        }
 
-            <p
-              style={{
-                color: "rgba(255, 255, 255, 0.82)",
-                fontSize: "16px",
-                lineHeight: 1.65,
-                margin: 0,
-              }}
-            >
-              {item.text}
-            </p>
-          </article>
-        ))}
-      </div>
+        .valueCleanLabel {
+          display: flex;
+          align-items: center;
+          gap: 14px;
+          margin-bottom: 26px;
+        }
+
+        .valueCleanLabel span {
+          width: 48px;
+          height: 4px;
+          border-radius: 999px;
+          background: #f26522;
+          display: inline-block;
+        }
+
+        .valueCleanLabel strong {
+          color: #f26522;
+          text-transform: uppercase;
+          letter-spacing: 1.2px;
+          font-size: 15px;
+          font-weight: 900;
+        }
+
+        .valueCleanContent {
+          max-width: 980px;
+        }
+
+        .valueCleanContent h2 {
+          margin: 0 0 28px;
+          color: #ffffff;
+          font-size: clamp(42px, 6vw, 82px);
+          line-height: 1.02;
+          letter-spacing: -2px;
+          font-weight: 900;
+        }
+
+        .valueCleanContent p {
+          max-width: 900px;
+          margin: 0;
+          color: rgba(255, 255, 255, 0.84);
+          font-size: 20px;
+          line-height: 1.75;
+        }
+
+        @media (max-width: 768px) {
+          .valueCleanSection {
+            padding: 84px 7%;
+          }
+
+          .valueCleanContent h2 {
+            font-size: clamp(34px, 12vw, 54px);
+            letter-spacing: -1.2px;
+          }
+
+          .valueCleanContent p {
+            font-size: 17px;
+            line-height: 1.7;
+          }
+        }
+      `}</style>
     </section>
   );
 }
