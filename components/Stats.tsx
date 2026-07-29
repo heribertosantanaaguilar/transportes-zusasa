@@ -2,23 +2,23 @@ export default function Stats() {
   const stats = [
     {
       number: "Local",
-      label: "Base operativa en Manzanillo",
-      text: "Atención especializada en la zona portuaria y logística de Manzanillo, Colima.",
+      label: "Manzanillo como base",
+      text: "Atención enfocada en la zona portuaria y logística.",
     },
     {
       number: "Integral",
-      label: "Solución logística completa",
-      text: "Coordinamos movimiento local, resguardo, apoyo operativo y gestión de transporte nacional mediante alianza comercial.",
+      label: "Coordinación completa",
+      text: "Movimiento local, resguardo y conexión con transporte nacional.",
     },
     {
       number: "Directa",
-      label: "Un solo punto de contacto",
-      text: "El cliente puede revisar su operación, solicitar cotización y dar seguimiento al servicio desde un mismo canal.",
+      label: "Un solo contacto",
+      text: "Comunicación clara para revisar, cotizar y dar seguimiento.",
     },
     {
-      number: "Coordinada",
-      label: "Seguimiento operativo",
-      text: "Mantenemos comunicación clara durante la solicitud, coordinación, avance y cierre de cada operación logística.",
+      number: "Confiable",
+      label: "Servicio con claridad",
+      text: "Revisamos cada operación antes de confirmar condiciones.",
     },
   ];
 
@@ -26,15 +26,15 @@ export default function Stats() {
     <section
       className="zusasaStats"
       style={{
-        padding: "110px 7%",
+        padding: "100px 7%",
         background: "#f5f6f7",
       }}
     >
       <div
         className="zusasaStatsHeader"
         style={{
-          maxWidth: "980px",
-          marginBottom: "54px",
+          maxWidth: "900px",
+          marginBottom: "46px",
         }}
       >
         <span
@@ -59,35 +59,34 @@ export default function Stats() {
               display: "inline-block",
             }}
           />
-          Indicadores de servicio
+          Nuestra forma de trabajo
         </span>
 
         <h2
           style={{
-            maxWidth: "1000px",
+            maxWidth: "900px",
             color: "#0a1d36",
-            fontSize: "clamp(42px, 5vw, 70px)",
+            fontSize: "clamp(38px, 5vw, 64px)",
             lineHeight: 1.04,
-            letterSpacing: "-2px",
-            margin: "0 0 26px",
+            letterSpacing: "-1.8px",
+            margin: "0 0 22px",
             fontWeight: 900,
           }}
         >
-          Un enfoque local con coordinación logística integral.
+          Atención directa y coordinación clara.
         </h2>
 
         <p
           style={{
-            maxWidth: "920px",
+            maxWidth: "820px",
             color: "#3b4a5a",
-            fontSize: "20px",
+            fontSize: "19px",
             lineHeight: 1.7,
             margin: 0,
           }}
         >
-          Nuestro objetivo es brindar atención directa, respuesta oportuna y
-          seguimiento claro para operaciones de movimiento local, resguardo,
-          apoyo operativo y gestión de transporte nacional desde Manzanillo.
+          Trabajamos cada solicitud con seriedad, revisando disponibilidad,
+          condiciones operativas y necesidades reales del servicio.
         </p>
       </div>
 
@@ -95,8 +94,8 @@ export default function Stats() {
         className="zusasaStatsGrid"
         style={{
           display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
-          gap: "24px",
+          gridTemplateColumns: "repeat(auto-fit, minmax(230px, 1fr))",
+          gap: "22px",
         }}
       >
         {stats.map((item) => (
@@ -104,13 +103,13 @@ export default function Stats() {
             className="zusasaStatCard"
             key={item.label}
             style={{
-              minHeight: "260px",
-              padding: "34px 30px",
+              minHeight: "230px",
+              padding: "30px 28px",
               borderRadius: "28px",
               background: "#ffffff",
               border: "1px solid rgba(10, 29, 54, 0.08)",
               borderTop: "6px solid #f26522",
-              boxShadow: "0 24px 65px rgba(10, 29, 54, 0.1)",
+              boxShadow: "0 20px 55px rgba(10, 29, 54, 0.09)",
               display: "flex",
               flexDirection: "column",
               justifyContent: "flex-start",
@@ -120,10 +119,10 @@ export default function Stats() {
               style={{
                 display: "block",
                 color: "#f26522",
-                fontSize: "42px",
+                fontSize: "36px",
                 lineHeight: 1,
                 fontWeight: 900,
-                marginBottom: "22px",
+                marginBottom: "20px",
               }}
             >
               {item.number}
@@ -132,9 +131,9 @@ export default function Stats() {
             <h3
               style={{
                 color: "#0a1d36",
-                fontSize: "24px",
+                fontSize: "23px",
                 lineHeight: 1.15,
-                margin: "0 0 16px",
+                margin: "0 0 14px",
                 fontWeight: 900,
               }}
             >
@@ -144,8 +143,8 @@ export default function Stats() {
             <p
               style={{
                 color: "#3b4a5a",
-                fontSize: "16px",
-                lineHeight: 1.65,
+                fontSize: "15.8px",
+                lineHeight: 1.6,
                 margin: 0,
               }}
             >
