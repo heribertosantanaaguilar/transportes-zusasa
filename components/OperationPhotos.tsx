@@ -15,11 +15,6 @@ export default function OperationPhotos() {
       text: "Atención a servicios relacionados con ISO tanques, sujetos a revisión operativa y documental.",
       image: "/images/operacion-iso-tanques-zusasa.jpeg.jpeg",
     },
-    {
-      title: "Patio y equipo especializado",
-      text: "Coordinación en patio para operaciones con contenedores, ISO tanques y unidades de carga.",
-      image: "/images/operacion-iso-zusasa.jpeg.jpeg",
-    },
   ];
 
   return (
@@ -97,7 +92,7 @@ export default function OperationPhotos() {
 
         .operationPhotosGrid {
           display: grid;
-          grid-template-columns: repeat(2, minmax(0, 1fr));
+          grid-template-columns: repeat(3, minmax(0, 1fr));
           gap: 26px;
         }
 
@@ -112,7 +107,7 @@ export default function OperationPhotos() {
         .operationPhotoCard img {
           display: block;
           width: 100%;
-          height: 330px;
+          height: 300px;
           object-fit: cover;
         }
 
@@ -123,7 +118,7 @@ export default function OperationPhotos() {
         .operationPhotoText h3 {
           margin: 0 0 14px;
           color: #0a1d36;
-          font-size: 27px;
+          font-size: 26px;
           line-height: 1.12;
           font-weight: 900;
           letter-spacing: -0.5px;
@@ -136,7 +131,7 @@ export default function OperationPhotos() {
           line-height: 1.65;
         }
 
-        @media (max-width: 900px) {
+        @media (max-width: 1000px) {
           .operationPhotosGrid {
             grid-template-columns: 1fr;
           }
