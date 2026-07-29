@@ -26,12 +26,6 @@ export default function Services() {
       cta: "Conocer servicio",
       href: "/resguardo-de-contenedores-manzanillo",
     },
-    {
-      title: "Apoyo operativo para contenedores",
-      text: "Coordinación local, seguimiento y apoyo operativo para movimientos de carga contenerizada.",
-      cta: "Cotizar apoyo",
-      href: "/cotizacion",
-    },
   ];
 
   return (
@@ -165,7 +159,7 @@ export default function Services() {
 
         .services-grid {
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+          grid-template-columns: repeat(4, minmax(0, 1fr));
           gap: 28px;
           align-items: stretch;
         }
@@ -304,6 +298,12 @@ export default function Services() {
           color: #334a68;
           font-size: 16px;
           line-height: 1.65;
+        }
+
+        @media (max-width: 1100px) {
+          .services-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+          }
         }
 
         @media (max-width: 900px) {
