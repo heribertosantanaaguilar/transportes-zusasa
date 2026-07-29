@@ -8,13 +8,23 @@ export default function Value() {
         </div>
 
         <div className="valueCleanContent">
-          <h2>Atención directa, comunicación clara y compromiso operativo.</h2>
+          <h2>
+            Facilitamos la gestión logística para que tu carga llegue a su
+            destino.
+          </h2>
 
           <p>
-            En Transportes ZUSASA trabajamos con un enfoque cercano, honesto y
-            orientado a coordinar cada operación con claridad. Revisamos las
-            necesidades del cliente, las condiciones reales del servicio y la
-            mejor forma de apoyar su movimiento logístico desde Manzanillo.
+            En Transportes ZUSASA ayudamos a coordinar las etapas necesarias
+            para que tu contenedor o ISO tanque avance desde Manzanillo hacia su
+            siguiente destino. Revisamos el movimiento local, el resguardo, las
+            condiciones operativas y, cuando se requiere, la gestión de
+            transporte nacional mediante alianza comercial.
+          </p>
+
+          <p>
+            Nuestro objetivo es que el cliente cuente con un solo punto de
+            contacto para revisar disponibilidad, cotizar, coordinar y dar
+            seguimiento a su operación logística con mayor claridad.
           </p>
         </div>
       </div>
@@ -56,7 +66,7 @@ export default function Value() {
         }
 
         .valueCleanContent {
-          max-width: 980px;
+          max-width: 1020px;
         }
 
         .valueCleanContent h2 {
@@ -69,11 +79,15 @@ export default function Value() {
         }
 
         .valueCleanContent p {
-          max-width: 900px;
-          margin: 0;
+          max-width: 940px;
+          margin: 0 0 20px;
           color: rgba(255, 255, 255, 0.84);
           font-size: 20px;
           line-height: 1.75;
+        }
+
+        .valueCleanContent p:last-child {
+          margin-bottom: 0;
         }
 
         @media (max-width: 768px) {
