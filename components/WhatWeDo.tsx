@@ -1,19 +1,19 @@
 export default function WhatWeDo() {
   const cards = [
     {
-      title: "Movimiento local en Manzanillo",
-      text: "Coordinamos el movimiento local de contenedores e ISO tanques desde el puerto interior hacia patio de maniobras o puntos operativos dentro de Manzanillo.",
+      title: "Punto de origen",
+      text: "La operación inicia en Manzanillo, donde se concentra una parte clave del movimiento de carga contenerizada e ISO tanques.",
       image:
         "https://images.unsplash.com/photo-1494412685616-a5d310fbb07d?auto=format&fit=crop&w=1600&q=85",
     },
     {
-      title: "Resguardo y apoyo operativo",
-      text: "Apoyamos operaciones que requieren resguardo temporal, coordinación local, maniobras y seguimiento operativo para carga contenerizada.",
+      title: "Coordinación local",
+      text: "Revisamos tiempos, condiciones y necesidades operativas para apoyar la salida, resguardo o movimiento de la carga dentro de Manzanillo.",
       image: "/images/patio-maniobras-zusasa-1.jpg",
     },
     {
-      title: "Transporte nacional mediante alianza",
-      text: "Mediante alianza comercial con transportista foráneo, podemos gestionar el traslado nacional de contenedores e ISO tanques hacia distintos destinos del país.",
+      title: "Continuidad logística",
+      text: "Cuando la operación lo requiere, podemos conectar la coordinación local con la gestión del traslado nacional mediante alianza comercial.",
       image: "/images/camion-rojo-zusasa-nosotros.png",
     },
   ];
@@ -35,7 +35,7 @@ export default function WhatWeDo() {
       >
         <div
           style={{
-            maxWidth: "980px",
+            maxWidth: "920px",
             marginBottom: "52px",
           }}
         >
@@ -63,22 +63,21 @@ export default function WhatWeDo() {
               fontWeight: 900,
             }}
           >
-            Coordinamos soluciones desde Manzanillo hasta el destino nacional.
+            Coordinamos cada etapa con claridad.
           </h2>
 
           <p
             style={{
               margin: 0,
-              maxWidth: "900px",
+              maxWidth: "860px",
               color: "#3b4a5a",
               fontSize: "20px",
               lineHeight: 1.7,
             }}
           >
-            Integramos movimiento local, resguardo, apoyo operativo y gestión de
-            transporte nacional para contenedores e ISO tanques, brindando al
-            cliente un solo punto de contacto para revisar y coordinar su
-            operación.
+            Nuestro trabajo es ayudar al cliente a ordenar la operación desde
+            Manzanillo, revisando qué necesita mover, dónde debe resguardarse,
+            qué condiciones aplican y cómo debe continuar el servicio.
           </p>
         </div>
 
