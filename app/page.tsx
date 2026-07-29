@@ -9,7 +9,6 @@ import ServiceCTA from "../components/ServiceCTA";
 import Sectors from "../components/Sectors";
 import Value from "../components/Value";
 import Process from "../components/Process";
-import Coverage from "../components/Coverage";
 import Stats from "../components/Stats";
 import Quote from "../components/Quote";
 import FAQ from "../components/FAQ";
@@ -31,7 +30,6 @@ export default function Home() {
       <Sectors />
       <Value />
       <Process />
-      <Coverage />
       <Stats />
       <Quote />
       <FAQ />
