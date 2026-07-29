@@ -16,10 +16,10 @@ export default function CoverageMap() {
         </div>
 
         <div className="zusasaCoverageMapCard">
-          <img
-            src="/images/cobertura-nacional-desde-manzanillo.png"
-            alt="Mapa de cobertura nacional desde Manzanillo de Transportes ZUSASA"
-          />
+         <img
+  src="/images/cobertura_nacional_desde_manzanillo.png"
+  alt="Mapa de cobertura nacional desde Manzanillo de Transportes ZUSASA"
+/>
         </div>
       </div>
 
