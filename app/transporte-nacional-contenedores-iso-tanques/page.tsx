@@ -4,87 +4,20 @@ import WhatsAppButton from "../../components/WhatsAppButton";
 
 export const metadata = {
   title:
-    "Transporte nacional de contenedores e ISO tanques desde Manzanillo | Transportes ZUSASA",
+    "Transporte nacional de contenedores e ISO tanques | Transportes ZUSASA",
   description:
-    "Gestión de transporte nacional de contenedores e ISO tanques desde Manzanillo mediante alianza comercial. Movimiento local, resguardo, apoyo operativo y coordinación logística integral.",
+    "Coordinación de transporte nacional de contenedores e ISO tanques desde Manzanillo mediante alianza comercial con transportistas especializados.",
 };
 
 export default function TransporteNacionalPage() {
-  const whatsappMessage = [
-    "Hola, quiero solicitar informacion o una cotizacion con Transportes ZUSASA.",
-    "",
-    "Servicio que necesito:",
-    "- Transporte nacional de contenedores e ISO tanques:",
-    "- Movimiento local previo en Manzanillo:",
-    "- Resguardo en patio de maniobras:",
-    "- Apoyo operativo:",
-    "",
-    "Datos del servicio:",
-    "- Empresa:",
-    "- Nombre de contacto:",
-    "- Telefono:",
-    "- Tipo de contenedor o ISO tanque:",
-    "- Origen en Manzanillo:",
-    "- Destino nacional:",
-    "- Fecha estimada:",
-    "- Peso aproximado:",
-    "- Requiere movimiento local previo:",
-    "- Requiere resguardo:",
-    "- Comentarios:",
-  ].join("\n");
-
-  const whatsappLink = `https://wa.me/522224556651?${new URLSearchParams({
-    text: whatsappMessage,
-  }).toString()}`;
-
-  const benefits = [
-    {
-      title: "Un solo punto de contacto",
-      text: "El cliente puede revisar la operación local y la gestión del transporte nacional desde un mismo canal de atención.",
-    },
-    {
-      title: "Menor desgaste operativo",
-      text: "La coordinación local en Manzanillo ayuda a reducir tiempos de espera y movimientos innecesarios para transportistas foráneos.",
-    },
-    {
-      title: "Coordinación local y nacional",
-      text: "Integramos movimiento local, resguardo, apoyo operativo y gestión de traslado nacional mediante alianza comercial.",
-    },
-    {
-      title: "Seguimiento claro",
-      text: "Mantenemos comunicación durante la solicitud, coordinación, avance y cierre del servicio.",
-    },
-  ];
-
-  const process = [
-    {
-      number: "01",
-      title: "Recibimos la solicitud",
-      text: "Revisamos tipo de contenedor o ISO tanque, origen, destino nacional, fecha estimada, peso y requerimientos operativos.",
-    },
-    {
-      number: "02",
-      title: "Analizamos condiciones",
-      text: "Validamos disponibilidad, ruta, documentación, necesidad de movimiento local, resguardo y condiciones particulares del servicio.",
-    },
-    {
-      number: "03",
-      title: "Coordinamos la operación",
-      text: "Gestionamos el movimiento local en Manzanillo y el transporte nacional mediante alianza comercial con transportista foráneo.",
-    },
-    {
-      number: "04",
-      title: "Damos seguimiento",
-      text: "Mantenemos comunicación clara hasta confirmar el avance y cierre de la operación logística.",
-    },
-  ];
-
   return (
     <>
       <Navbar />
 
-      <main className="nationalPage">
+      <main>
         <section className="nationalHero">
+          <div className="nationalHeroOverlay" />
+
           <div className="nationalHeroContent">
             <span>Servicio nacional desde Manzanillo</span>
 
@@ -93,129 +26,219 @@ export default function TransporteNacionalPage() {
             <p>
               En Transportes ZUSASA gestionamos el traslado nacional de
               contenedores e ISO tanques desde Manzanillo hacia distintos
-              destinos del país mediante alianza comercial con transportista
-              foráneo, integrando movimiento local, resguardo y seguimiento
-              operativo.
+              destinos del país mediante alianza comercial con transportistas
+              especializados, integrando movimiento local, resguardo y
+              seguimiento operativo.
             </p>
 
-            <div className="nationalActions">
-              <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+            <div className="nationalHeroActions">
+              <a
+                href="https://wa.me/522224556651?text=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20para%20transporte%20nacional%20de%20contenedores%20desde%20Manzanillo."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="primaryButton"
+              >
                 Cotizar transporte nacional →
               </a>
 
-              <a href="/#servicios">Ver otros servicios</a>
+              <a href="/#servicios" className="secondaryButton">
+                Ver otros servicios
+              </a>
             </div>
           </div>
         </section>
 
         <section className="nationalIntro">
-          <div className="nationalIntroText">
-            <span>Solución logística integral</span>
+          <div className="nationalContainer introGrid">
+            <div>
+              <span className="sectionEyebrow">Solución logística nacional</span>
 
-            <h2>Del puerto interior en Manzanillo al destino nacional.</h2>
+              <h2>Coordinamos movimientos foráneos desde Manzanillo.</h2>
 
-            <p>
-              Esta solución permite coordinar el movimiento local desde el
-              puerto interior hacia patio de maniobras o punto operativo en
-              Manzanillo y, cuando el cliente lo requiere, gestionar el envío
-              nacional del contenedor o ISO tanque hacia otro estado del país.
-            </p>
+              <p>
+                Nuestro servicio de transporte nacional está diseñado para
+                clientes que requieren mover contenedores o ISO tanques desde
+                Manzanillo hacia distintos puntos del país, con atención
+                directa, comunicación clara y seguimiento operativo.
+              </p>
 
-            <p>
-              El transporte nacional se realiza mediante alianza comercial con
-              transportista foráneo. Transportes ZUSASA participa como punto de
-              contacto para la coordinación, cotización, seguimiento y gestión
-              comercial del servicio.
-            </p>
-          </div>
+              <p>
+                Este servicio se realiza mediante alianza comercial con
+                transportistas especializados, sujeto a disponibilidad de
+                unidades, ruta, tipo de carga, condiciones operativas y
+                requerimientos documentales de cada operación.
+              </p>
+            </div>
 
-          <div className="nationalIntroCard">
-            <strong>Puerto interior → patio → destino nacional</strong>
+            <div className="introCard">
+              <h3>Servicio sujeto a análisis particular</h3>
 
-            <p>
-              Una opción pensada para clientes que buscan coordinación clara,
-              atención directa y una solución logística más completa desde
-              Manzanillo.
-            </p>
+              <p>
+                Cada cotización se revisa de forma individual para confirmar
+                viabilidad, disponibilidad, tipo de unidad, maniobras,
+                condiciones de ruta, peso, documentación y tiempos de servicio.
+              </p>
+            </div>
           </div>
         </section>
 
-        <section className="nationalBenefits">
-          <div className="sectionHeader">
-            <span>Ventajas del servicio</span>
+        <section className="includedSection">
+          <div className="nationalContainer">
+            <div className="includedHeader">
+              <span className="sectionEyebrow">Qué contempla el servicio</span>
 
-            <h2>Una forma más práctica de coordinar tu operación.</h2>
+              <h2>Coordinación, seguimiento y apoyo operativo.</h2>
 
-            <p>
-              El objetivo es facilitar la gestión logística para clientes,
-              agencias aduanales, operadores logísticos, importadores,
-              exportadores y transportistas que requieren mover carga desde
-              Manzanillo hacia destinos nacionales.
-            </p>
-          </div>
+              <p>
+                Integramos los elementos necesarios para dar mayor claridad y
+                control durante la operación nacional desde Manzanillo.
+              </p>
+            </div>
 
-          <div className="benefitsGrid">
-            {benefits.map((item) => (
-              <article className="benefitCard" key={item.title}>
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
+            <div className="includedGrid">
+              <article>
+                <span>01</span>
+                <h3>Monitoreo GPS</h3>
+                <p>
+                  Seguimiento vía GPS durante el traslado para contar con mayor
+                  visibilidad de la unidad durante la operación.
+                </p>
               </article>
-            ))}
-          </div>
-        </section>
 
-        <section className="nationalProcess">
-          <div className="sectionHeader white">
-            <span>Proceso de coordinación</span>
-
-            <h2>Revisamos cada solicitud de forma particular.</h2>
-
-            <p>
-              Cada servicio está sujeto a disponibilidad, destino, ruta, tipo de
-              carga, documentación, peso, condiciones operativas y confirmación
-              previa.
-            </p>
-          </div>
-
-          <div className="processGrid">
-            {process.map((step) => (
-              <article className="processCard" key={step.number}>
-                <strong>{step.number}</strong>
-                <h3>{step.title}</h3>
-                <p>{step.text}</p>
+              <article>
+                <span>02</span>
+                <h3>Movimiento en Manzanillo</h3>
+                <p>
+                  Coordinación del movimiento local requerido en Manzanillo
+                  previo al traslado nacional, según las condiciones de cada
+                  servicio.
+                </p>
               </article>
-            ))}
+
+              <article>
+                <span>03</span>
+                <h3>Maniobra en Manzanillo</h3>
+                <p>
+                  Apoyo para maniobras locales relacionadas con la operación,
+                  sujeto a disponibilidad, tipo de carga y condiciones
+                  operativas.
+                </p>
+              </article>
+
+              <article>
+                <span>04</span>
+                <h3>Unidades de rescate</h3>
+                <p>
+                  Disponibilidad de apoyo operativo o unidades de rescate
+                  conforme a ruta, condiciones del servicio y disponibilidad de
+                  la red aliada.
+                </p>
+              </article>
+            </div>
           </div>
         </section>
 
-        <section className="nationalNotice">
-          <div>
-            <span>Importante</span>
+        <section className="photoSection">
+          <div className="nationalContainer photoGrid">
+            <article className="photoCard large">
+              <img
+                src="/images/transporte-nacional-zusasa-2.jpeg"
+                alt="Unidades aliadas para transporte nacional desde Manzanillo"
+              />
+              <div>
+                <h3>Unidades aliadas para rutas nacionales</h3>
+                <p>
+                  Coordinación con transportistas especializados para servicios
+                  foráneos de carga contenerizada.
+                </p>
+              </div>
+            </article>
 
-            <h2>Servicio mediante alianza comercial.</h2>
-
-            <p>
-              El transporte nacional de contenedores e ISO tanques se gestiona
-              mediante alianza comercial con transportista foráneo. Transportes
-              ZUSASA realiza la coordinación comercial y operativa con el
-              cliente, revisando disponibilidad, condiciones y requerimientos
-              antes de confirmar el servicio.
-            </p>
+            <article className="photoCard">
+              <img
+                src="/images/transporte-nacional-zusasa-1.jpeg"
+                alt="Transporte nacional de contenedores mediante alianza comercial"
+              />
+              <div>
+                <h3>Capacidad operativa nacional</h3>
+                <p>
+                  Servicios sujetos a disponibilidad, ruta, condiciones
+                  operativas y análisis particular de cada cotización.
+                </p>
+              </div>
+            </article>
           </div>
         </section>
 
-        <section className="nationalQuote">
-          <h2>Solicita una cotización para transporte nacional.</h2>
+        <section className="processSection">
+          <div className="nationalContainer">
+            <div className="processHeader">
+              <span className="sectionEyebrow">Proceso de atención</span>
 
-          <p>
-            Compártenos los datos de tu operación y revisaremos la mejor forma
-            de coordinar el movimiento local en Manzanillo y el traslado
-            nacional de tu contenedor o ISO tanque.
-          </p>
+              <h2>Así coordinamos tu servicio nacional.</h2>
+            </div>
 
-          <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-            Cotizar por WhatsApp →
-          </a>
+            <div className="processSteps">
+              <div>
+                <span>01</span>
+                <h3>Recibimos tu solicitud</h3>
+                <p>
+                  Nos compartes origen, destino, tipo de contenedor, peso,
+                  fecha estimada y datos generales de la operación.
+                </p>
+              </div>
+
+              <div>
+                <span>02</span>
+                <h3>Revisamos disponibilidad</h3>
+                <p>
+                  Analizamos ruta, unidad requerida, condiciones operativas,
+                  documentación y viabilidad del servicio.
+                </p>
+              </div>
+
+              <div>
+                <span>03</span>
+                <h3>Emitimos cotización</h3>
+                <p>
+                  Presentamos una propuesta clara considerando el alcance del
+                  servicio, tiempos, condiciones y costos aplicables.
+                </p>
+              </div>
+
+              <div>
+                <span>04</span>
+                <h3>Coordinamos la operación</h3>
+                <p>
+                  Damos seguimiento al movimiento y mantenemos comunicación
+                  durante las etapas principales del servicio.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="quoteBand">
+          <div className="nationalContainer quoteBandContent">
+            <div>
+              <span className="sectionEyebrow light">Cotización nacional</span>
+
+              <h2>¿Necesitas mover un contenedor desde Manzanillo?</h2>
+
+              <p>
+                Envíanos los datos de tu operación y revisaremos disponibilidad,
+                ruta, condiciones, maniobras y costos aplicables.
+              </p>
+            </div>
+
+            <a
+              href="https://wa.me/522224556651?text=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20para%20transporte%20nacional%20de%20contenedores%20desde%20Manzanillo.%20Mis%20datos%20son%3A"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Cotizar por WhatsApp
+            </a>
+          </div>
         </section>
       </main>
 
@@ -223,371 +246,456 @@ export default function TransporteNacionalPage() {
       <WhatsAppButton />
 
       <style>{`
-        .nationalPage {
-          background: #f5f6f7;
-          color: #0a1d36;
-        }
-
         .nationalHero {
+          position: relative;
           min-height: 760px;
-          padding: 160px 7% 110px;
           display: flex;
           align-items: center;
-          background:
-            linear-gradient(135deg, rgba(10, 29, 54, 0.98), rgba(15, 45, 82, 0.92)),
-            url("https://images.unsplash.com/photo-1494412685616-a5d310fbb07d?auto=format&fit=crop&w=1800&q=85");
+          background-image: url("/images/transporte-nacional-zusasa-2.jpeg");
           background-size: cover;
           background-position: center;
-          color: #ffffff;
+          overflow: hidden;
+        }
+
+        .nationalHeroOverlay {
+          position: absolute;
+          inset: 0;
+          background:
+            linear-gradient(
+              90deg,
+              rgba(5, 22, 45, 0.94) 0%,
+              rgba(5, 22, 45, 0.86) 42%,
+              rgba(5, 22, 45, 0.58) 68%,
+              rgba(5, 22, 45, 0.36) 100%
+            );
         }
 
         .nationalHeroContent {
-          max-width: 1040px;
+          position: relative;
+          z-index: 2;
+          width: min(1180px, 88%);
+          margin: 0 auto;
+          padding: 120px 0 90px;
         }
 
-        .nationalHero span,
-        .nationalIntroText span,
-        .sectionHeader span,
-        .nationalNotice span {
+        .nationalHeroContent span,
+        .sectionEyebrow {
           display: inline-block;
           color: #f26522;
           text-transform: uppercase;
           letter-spacing: 1.2px;
           font-size: 14px;
           font-weight: 900;
-          margin-bottom: 18px;
+          margin-bottom: 20px;
         }
 
-        .nationalHero h1 {
-          max-width: 1050px;
-          margin: 0 0 26px;
+        .nationalHeroContent h1 {
+          max-width: 980px;
+          margin: 0 0 30px;
           color: #ffffff;
-          font-size: clamp(44px, 7vw, 86px);
+          font-size: clamp(52px, 8vw, 112px);
           line-height: 0.98;
-          letter-spacing: -2.4px;
+          letter-spacing: -3px;
           font-weight: 900;
         }
 
-        .nationalHero p {
-          max-width: 900px;
+        .nationalHeroContent p {
+          max-width: 880px;
           margin: 0;
-          color: rgba(255, 255, 255, 0.84);
-          font-size: 20px;
-          line-height: 1.7;
+          color: rgba(255, 255, 255, 0.88);
+          font-size: 22px;
+          line-height: 1.55;
         }
 
-        .nationalActions {
+        .nationalHeroActions {
           display: flex;
           flex-wrap: wrap;
-          gap: 16px;
-          margin-top: 38px;
+          gap: 18px;
+          margin-top: 42px;
         }
 
-        .nationalActions a,
-        .nationalQuote a {
-          min-height: 58px;
-          padding: 0 30px;
-          border-radius: 999px;
+        .primaryButton,
+        .secondaryButton {
           display: inline-flex;
           align-items: center;
           justify-content: center;
-          text-decoration: none;
+          min-height: 58px;
+          padding: 0 34px;
+          border-radius: 999px;
+          font-size: 17px;
           font-weight: 900;
-          font-size: 16px;
+          text-decoration: none;
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
 
-        .nationalActions a:first-child,
-        .nationalQuote a {
+        .primaryButton {
+          color: #ffffff;
           background: #f26522;
-          color: #ffffff;
-          box-shadow: 0 18px 40px rgba(242, 101, 34, 0.28);
+          box-shadow: 0 18px 42px rgba(242, 101, 34, 0.28);
         }
 
-        .nationalActions a:last-child {
+        .secondaryButton {
           color: #ffffff;
-          border: 1px solid rgba(255, 255, 255, 0.22);
-          background: rgba(255, 255, 255, 0.08);
+          background: rgba(255, 255, 255, 0.09);
+          border: 1px solid rgba(255, 255, 255, 0.28);
         }
 
-        .nationalIntro {
-          margin: -70px 7% 110px;
-          padding: 50px;
-          border-radius: 38px;
+        .primaryButton:hover,
+        .secondaryButton:hover {
+          transform: translateY(-2px);
+        }
+
+        .nationalIntro,
+        .includedSection,
+        .photoSection,
+        .processSection {
+          padding: 95px 0;
+          background: #f5f6f8;
+        }
+
+        .nationalContainer {
+          width: min(1180px, 88%);
+          margin: 0 auto;
+        }
+
+        .introGrid {
+          display: grid;
+          grid-template-columns: 1.3fr 0.7fr;
+          gap: 46px;
+          align-items: stretch;
+        }
+
+        .nationalIntro h2,
+        .includedHeader h2,
+        .processHeader h2,
+        .quoteBand h2 {
+          margin: 0 0 24px;
+          color: #0a1d36;
+          font-size: clamp(38px, 5.3vw, 72px);
+          line-height: 1.02;
+          letter-spacing: -2px;
+          font-weight: 900;
+        }
+
+        .nationalIntro p,
+        .includedHeader p,
+        .quoteBand p {
+          margin: 0 0 22px;
+          color: #3b4a5a;
+          font-size: 19px;
+          line-height: 1.75;
+        }
+
+        .introCard {
           background: #ffffff;
+          border-radius: 34px;
+          padding: 38px;
+          box-shadow: 0 24px 65px rgba(10, 29, 54, 0.1);
+          border-bottom: 7px solid #f26522;
+        }
+
+        .introCard h3 {
+          margin: 0 0 18px;
+          color: #0a1d36;
+          font-size: 28px;
+          line-height: 1.12;
+          font-weight: 900;
+        }
+
+        .introCard p {
+          margin: 0;
+          font-size: 17px;
+          line-height: 1.65;
+        }
+
+        .includedSection {
+          background: #ffffff;
+        }
+
+        .includedHeader {
+          max-width: 920px;
+          margin-bottom: 44px;
+        }
+
+        .includedGrid {
+          display: grid;
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+          gap: 24px;
+        }
+
+        .includedGrid article,
+        .processSteps div {
+          background: #ffffff;
+          border-radius: 30px;
+          padding: 32px 28px;
+          box-shadow: 0 22px 60px rgba(10, 29, 54, 0.09);
+          border: 1px solid rgba(10, 29, 54, 0.08);
+          border-bottom: 7px solid #f26522;
+        }
+
+        .includedGrid article span,
+        .processSteps div span {
+          display: inline-block;
+          color: #f26522;
+          font-size: 22px;
+          font-weight: 900;
+          margin-bottom: 28px;
+        }
+
+        .includedGrid article h3,
+        .processSteps div h3 {
+          margin: 0 0 14px;
+          color: #0a1d36;
+          font-size: 25px;
+          line-height: 1.1;
+          font-weight: 900;
+        }
+
+        .includedGrid article p,
+        .processSteps div p {
+          margin: 0;
+          color: #3b4a5a;
+          font-size: 16px;
+          line-height: 1.6;
+        }
+
+        .photoSection {
+          background: #f5f6f8;
+        }
+
+        .photoGrid {
           display: grid;
           grid-template-columns: 1.2fr 0.8fr;
-          gap: 38px;
-          align-items: center;
-          box-shadow: 0 28px 75px rgba(8, 34, 74, 0.16);
+          gap: 28px;
+        }
+
+        .photoCard {
           position: relative;
+          min-height: 430px;
+          border-radius: 36px;
+          overflow: hidden;
+          background: #0a1d36;
+          box-shadow: 0 28px 70px rgba(10, 29, 54, 0.18);
+        }
+
+        .photoCard.large {
+          min-height: 520px;
+        }
+
+        .photoCard img {
+          width: 100%;
+          height: 100%;
+          min-height: inherit;
+          object-fit: cover;
+          display: block;
+        }
+
+        .photoCard::after {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(
+            180deg,
+            rgba(10, 29, 54, 0.02) 0%,
+            rgba(10, 29, 54, 0.48) 58%,
+            rgba(10, 29, 54, 0.9) 100%
+          );
+        }
+
+        .photoCard div {
+          position: absolute;
+          left: 32px;
+          right: 32px;
+          bottom: 32px;
           z-index: 2;
         }
 
-        .nationalIntroText h2,
-        .sectionHeader h2,
-        .nationalNotice h2,
-        .nationalQuote h2 {
-          margin: 0 0 22px;
-          color: #0a1d36;
-          font-size: clamp(38px, 5vw, 66px);
-          line-height: 1.04;
-          letter-spacing: -1.8px;
-          font-weight: 900;
-        }
-
-        .nationalIntroText p,
-        .sectionHeader p,
-        .nationalNotice p,
-        .nationalQuote p {
-          margin: 0 0 16px;
-          color: #3b4a5a;
-          font-size: 18px;
-          line-height: 1.7;
-        }
-
-        .nationalIntroCard {
-          padding: 36px 34px;
-          border-radius: 32px;
-          background: linear-gradient(135deg, #0a1d36, #0f2d52);
-          color: #ffffff;
-          border-left: 7px solid #f26522;
-        }
-
-        .nationalIntroCard strong {
-          display: block;
-          margin-bottom: 16px;
+        .photoCard h3 {
+          margin: 0 0 12px;
           color: #ffffff;
           font-size: 30px;
-          line-height: 1.12;
+          line-height: 1.08;
           font-weight: 900;
-          letter-spacing: -0.8px;
         }
 
-        .nationalIntroCard p {
+        .photoCard p {
           margin: 0;
-          color: rgba(255, 255, 255, 0.82);
-          font-size: 16px;
-          line-height: 1.65;
+          color: rgba(255, 255, 255, 0.9);
+          font-size: 16.5px;
+          line-height: 1.55;
         }
 
-        .nationalBenefits {
-          padding: 0 7% 110px;
-        }
-
-        .sectionHeader {
-          max-width: 980px;
-          margin-bottom: 54px;
-        }
-
-        .benefitsGrid {
-          display: grid;
-          grid-template-columns: repeat(4, minmax(0, 1fr));
-          gap: 24px;
-        }
-
-        .benefitCard {
-          min-height: 285px;
-          padding: 34px 30px;
-          border-radius: 30px;
+        .processSection {
           background: #ffffff;
-          border: 1px solid rgba(10, 29, 54, 0.08);
-          border-bottom: 7px solid #f26522;
-          box-shadow: 0 24px 65px rgba(10, 29, 54, 0.1);
         }
 
-        .benefitCard h3 {
-          margin: 0 0 16px;
-          color: #0a1d36;
-          font-size: 25px;
-          line-height: 1.14;
-          font-weight: 900;
+        .processHeader {
+          max-width: 880px;
+          margin-bottom: 44px;
         }
 
-        .benefitCard p {
-          margin: 0;
-          color: #3b4a5a;
-          font-size: 16px;
-          line-height: 1.65;
-        }
-
-        .nationalProcess {
-          padding: 110px 7%;
-          background: linear-gradient(135deg, #0a1d36, #0f2d52);
-          color: #ffffff;
-        }
-
-        .sectionHeader.white h2 {
-          color: #ffffff;
-        }
-
-        .sectionHeader.white p {
-          color: rgba(255, 255, 255, 0.82);
-        }
-
-        .processGrid {
+        .processSteps {
           display: grid;
           grid-template-columns: repeat(4, minmax(0, 1fr));
           gap: 24px;
         }
 
-        .processCard {
-          min-height: 315px;
-          padding: 34px 30px;
-          border-radius: 30px;
-          background: rgba(255, 255, 255, 0.08);
-          border: 1px solid rgba(255, 255, 255, 0.13);
-          border-bottom: 7px solid #f26522;
-          box-shadow: 0 24px 65px rgba(0, 0, 0, 0.14);
+        .quoteBand {
+          padding: 90px 0;
+          background: #0a1d36;
         }
 
-        .processCard strong {
-          display: block;
-          margin-bottom: 24px;
+        .quoteBandContent {
+          display: grid;
+          grid-template-columns: 1fr auto;
+          gap: 38px;
+          align-items: center;
+        }
+
+        .sectionEyebrow.light {
           color: #f26522;
-          font-size: 26px;
-          font-weight: 900;
         }
 
-        .processCard h3 {
-          margin: 0 0 16px;
+        .quoteBand h2 {
           color: #ffffff;
-          font-size: 25px;
-          line-height: 1.12;
-          font-weight: 900;
+          font-size: clamp(36px, 4.8vw, 62px);
         }
 
-        .processCard p {
-          margin: 0;
-          color: rgba(255, 255, 255, 0.78);
-          font-size: 16px;
-          line-height: 1.65;
-        }
-
-        .nationalNotice {
-          margin: 110px 7%;
-          padding: 50px;
-          border-radius: 36px;
-          background: #ffffff;
-          border-left: 8px solid #f26522;
-          box-shadow: 0 24px 65px rgba(10, 29, 54, 0.1);
-        }
-
-        .nationalNotice p {
-          max-width: 980px;
-        }
-
-        .nationalQuote {
-          margin: 0 7% 110px;
-          padding: 56px 48px;
-          border-radius: 38px;
-          background: linear-gradient(135deg, #0a1d36, #0f2d52);
-          color: #ffffff;
-          text-align: center;
-          box-shadow: 0 28px 75px rgba(8, 34, 74, 0.2);
-        }
-
-        .nationalQuote h2 {
-          color: #ffffff;
-        }
-
-        .nationalQuote p {
+        .quoteBand p {
           max-width: 820px;
-          margin: 0 auto 30px;
-          color: rgba(255, 255, 255, 0.82);
+          color: rgba(255, 255, 255, 0.84);
         }
 
-        @media (max-width: 1100px) {
-          .benefitsGrid,
-          .processGrid {
+        .quoteBand a {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          min-height: 60px;
+          padding: 0 34px;
+          border-radius: 999px;
+          color: #ffffff;
+          background: #f26522;
+          font-size: 17px;
+          font-weight: 900;
+          text-decoration: none;
+          white-space: nowrap;
+          box-shadow: 0 18px 42px rgba(242, 101, 34, 0.28);
+        }
+
+        @media (max-width: 1000px) {
+          .introGrid,
+          .photoGrid,
+          .quoteBandContent {
+            grid-template-columns: 1fr;
+          }
+
+          .includedGrid,
+          .processSteps {
             grid-template-columns: repeat(2, minmax(0, 1fr));
           }
 
-          .nationalIntro {
-            grid-template-columns: 1fr;
+          .nationalHero {
+            min-height: 720px;
+            background-position: center;
           }
         }
 
-        @media (max-width: 700px) {
+        @media (max-width: 650px) {
           .nationalHero {
-            min-height: auto;
-            padding: 140px 7% 110px;
+            min-height: 720px;
+            background-position: center;
           }
 
-          .nationalHero h1 {
-            font-size: clamp(38px, 12vw, 56px);
-            letter-spacing: -1.2px;
+          .nationalHeroContent {
+            width: min(92%, 1180px);
+            padding: 100px 0 70px;
           }
 
-          .nationalHero p {
+          .nationalHeroContent h1 {
+            font-size: clamp(42px, 14vw, 66px);
+            letter-spacing: -1.6px;
+          }
+
+          .nationalHeroContent p {
             font-size: 17px;
+            line-height: 1.6;
           }
 
-          .nationalActions a,
-          .nationalQuote a {
+          .nationalHeroActions {
+            gap: 14px;
+          }
+
+          .primaryButton,
+          .secondaryButton {
             width: 100%;
-            text-align: center;
+            min-height: 54px;
+            font-size: 15.5px;
+            padding: 0 24px;
           }
 
-          .nationalIntro {
-            margin: -50px 7% 84px;
-            padding: 32px 24px;
-            border-radius: 30px;
+          .nationalIntro,
+          .includedSection,
+          .photoSection,
+          .processSection,
+          .quoteBand {
+            padding: 72px 0;
           }
 
-          .nationalIntroText h2,
-          .sectionHeader h2,
-          .nationalNotice h2,
-          .nationalQuote h2 {
-            font-size: clamp(32px, 11vw, 48px);
+          .nationalContainer {
+            width: 92%;
+          }
+
+          .nationalIntro h2,
+          .includedHeader h2,
+          .processHeader h2,
+          .quoteBand h2 {
+            font-size: clamp(32px, 11vw, 50px);
             letter-spacing: -1px;
           }
 
-          .nationalIntroText p,
-          .sectionHeader p,
-          .nationalNotice p,
-          .nationalQuote p {
-            font-size: 16px;
+          .nationalIntro p,
+          .includedHeader p,
+          .quoteBand p {
+            font-size: 16.5px;
+            line-height: 1.65;
           }
 
-          .nationalIntroCard {
-            padding: 30px 24px;
-            border-radius: 26px;
-          }
-
-          .nationalIntroCard strong {
-            font-size: 25px;
-          }
-
-          .nationalBenefits {
-            padding: 0 7% 84px;
-          }
-
-          .benefitsGrid,
-          .processGrid {
+          .includedGrid,
+          .processSteps {
             grid-template-columns: 1fr;
           }
 
-          .benefitCard,
-          .processCard {
-            min-height: auto;
+          .introCard,
+          .includedGrid article,
+          .processSteps div {
+            border-radius: 28px;
             padding: 28px 24px;
-            border-radius: 26px;
           }
 
-          .nationalProcess {
-            padding: 84px 7%;
-          }
-
-          .nationalNotice {
-            margin: 84px 7%;
-            padding: 32px 24px;
+          .photoCard,
+          .photoCard.large {
+            min-height: 360px;
             border-radius: 28px;
           }
 
-          .nationalQuote {
-            margin: 0 7% 84px;
-            padding: 40px 24px;
-            border-radius: 30px;
+          .photoCard div {
+            left: 24px;
+            right: 24px;
+            bottom: 24px;
+          }
+
+          .photoCard h3 {
+            font-size: 25px;
+          }
+
+          .photoCard p {
+            font-size: 15.5px;
+          }
+
+          .quoteBand a {
+            width: 100%;
+            white-space: normal;
+            text-align: center;
           }
         }
       `}</style>
