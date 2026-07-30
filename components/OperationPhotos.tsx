@@ -2,8 +2,13 @@ export default function OperationPhotos() {
   const photos = [
     {
       title: "Transporte nacional de contenedores",
-      text: "Coordinación de unidades con contenedores para operaciones desde Manzanillo hacia destinos nacionales.",
-      image: "/images/operacion-camion-doble-zusasa.png.png",
+      text: "Coordinación de movimientos foráneos de carga contenerizada desde Manzanillo hacia distintos puntos del país mediante alianza comercial.",
+      image: "/images/transporte-nacional-zusasa-1.jpeg",
+    },
+    {
+      title: "Unidades aliadas para rutas nacionales",
+      text: "Unidades disponibles a través de transportistas especializados, sujetas a ruta, disponibilidad y condiciones operativas de cada servicio.",
+      image: "/images/transporte-nacional-zusasa-2.jpeg",
     },
     {
       title: "Movimiento de contenedores",
@@ -15,6 +20,11 @@ export default function OperationPhotos() {
       text: "Atención a servicios relacionados con ISO tanques, sujetos a revisión operativa y documental.",
       image: "/images/operacion-iso-tanques-zusasa.jpeg.jpeg",
     },
+    {
+      title: "Coordinación logística desde Manzanillo",
+      text: "Integramos movimiento local, resguardo, apoyo operativo y gestión de transporte nacional desde Manzanillo.",
+      image: "/images/operacion-camion-doble-zusasa.png.png",
+    },
   ];
 
   return (
@@ -23,12 +33,12 @@ export default function OperationPhotos() {
         <div className="operationPhotosHeader">
           <span>Operación en campo</span>
 
-          <h2>Imágenes reales de operación logística.</h2>
+          <h2>Presencia local y coordinación nacional desde Manzanillo.</h2>
 
           <p>
-            Integramos movimiento local, resguardo y transporte nacional de
-            contenedores e ISO tanques desde Manzanillo, con atención directa y
-            coordinación operativa.
+            Integramos movimiento local, resguardo en patio de maniobras,
+            apoyo operativo y coordinación de transporte nacional mediante
+            alianza comercial con transportistas especializados.
           </p>
         </div>
 
@@ -59,7 +69,7 @@ export default function OperationPhotos() {
         }
 
         .operationPhotosHeader {
-          max-width: 900px;
+          max-width: 950px;
           margin-bottom: 44px;
         }
 
@@ -84,7 +94,7 @@ export default function OperationPhotos() {
 
         .operationPhotosHeader p {
           margin: 0;
-          max-width: 850px;
+          max-width: 900px;
           color: #3b4a5a;
           font-size: 19px;
           line-height: 1.7;
