@@ -24,6 +24,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.transporteszusasa.com",
   },
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+  },
   openGraph: {
     title:
       "Transportes ZUSASA | Soluciones logísticas desde Manzanillo",
