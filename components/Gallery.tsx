@@ -13,6 +13,16 @@ export default function Gallery() {
       text: "Coordinación terrestre para atender traslados, resguardo y movimientos de carga contenerizada.",
       image: "/images/patio-maniobras-zusasa-1.jpg",
     },
+    {
+      title: "Transporte nacional",
+      text: "Coordinación de movimientos foráneos de carga contenerizada desde Manzanillo mediante alianza comercial con transportistas especializados.",
+      image: "/images/transporte-nacional-zusasa-1.jpeg",
+    },
+    {
+      title: "Unidades aliadas",
+      text: "Apoyo operativo con unidades aliadas para servicios nacionales, sujeto a disponibilidad, ruta y condiciones de cada operación.",
+      image: "/images/transporte-nacional-zusasa-2.jpeg",
+    },
   ];
 
   return (
