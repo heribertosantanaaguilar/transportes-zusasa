@@ -16,13 +16,13 @@ export default function Services() {
     },
     {
       title: "Transporte nacional de contenedores e ISO tanques",
-      text: "Gestión de traslado nacional desde Manzanillo hacia distintos destinos del país mediante alianza comercial.",
+      text: "Gestión del traslado nacional desde Manzanillo hacia distintos destinos del país mediante alianza comercial con transportista foráneo.",
       cta: "Conocer servicio",
       href: "/transporte-nacional-contenedores-iso-tanques",
     },
     {
       title: "Resguardo en patio de maniobras",
-      text: "Resguardo temporal de contenedores llenos o vacíos, sujeto a disponibilidad y condiciones del servicio.",
+      text: "Resguardo temporal de contenedores llenos o vacíos, sujeto a disponibilidad y condiciones operativas.",
       cta: "Conocer servicio",
       href: "/resguardo-de-contenedores-manzanillo",
     },
@@ -75,37 +75,13 @@ export default function Services() {
 
           <a href="/cotizacion">Solicitar cotización →</a>
         </div>
-
-        <div className="services-value-block">
-          <div className="value-item">
-            <span>Seguimiento</span>
-
-            <h3>Comunicación clara</h3>
-
-            <p>
-              Mantenemos contacto durante la solicitud, coordinación y cierre
-              del servicio para informar avances y revisar detalles operativos.
-            </p>
-          </div>
-
-          <div className="value-item">
-            <span>Revisión operativa</span>
-
-            <h3>Cada servicio se analiza por separado</h3>
-
-            <p>
-              Antes de confirmar una operación revisamos disponibilidad,
-              documentación, peso, tiempos, ruta y condiciones aplicables.
-            </p>
-          </div>
-        </div>
       </div>
 
       <style jsx>{`
-       .services-section {
-  background: #f5f6f8;
-  padding: 35px 0 90px;
-}
+        .services-section {
+          background: #f5f6f8;
+          padding: 35px 0 90px;
+        }
 
         .services-container {
           width: min(1180px, 92%);
@@ -225,8 +201,7 @@ export default function Services() {
           box-shadow: 0 28px 70px rgba(8, 34, 74, 0.18);
         }
 
-        .integral-block span,
-        .value-item span {
+        .integral-block span {
           display: inline-block;
           color: #f26522;
           text-transform: uppercase;
@@ -268,38 +243,6 @@ export default function Services() {
           box-shadow: 0 18px 40px rgba(242, 101, 34, 0.28);
         }
 
-        .services-value-block {
-          margin-top: 28px;
-          display: grid;
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-          gap: 26px;
-        }
-
-        .value-item {
-          background: #ffffff;
-          border-radius: 34px;
-          padding: 34px 32px;
-          color: #0a1d36;
-          border-left: 7px solid #f26522;
-          box-shadow: 0 24px 60px rgba(8, 34, 74, 0.1);
-        }
-
-        .value-item h3 {
-          margin: 0 0 14px;
-          color: #0a1d36;
-          font-size: 26px;
-          line-height: 1.1;
-          font-weight: 900;
-          letter-spacing: -0.5px;
-        }
-
-        .value-item p {
-          margin: 0;
-          color: #334a68;
-          font-size: 16px;
-          line-height: 1.65;
-        }
-
         @media (max-width: 1100px) {
           .services-grid {
             grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -314,15 +257,11 @@ export default function Services() {
           .integral-block a {
             width: 100%;
           }
-
-          .services-value-block {
-            grid-template-columns: 1fr;
-          }
         }
 
         @media (max-width: 768px) {
           .services-section {
-            padding: 84px 0;
+            padding: 60px 0 76px;
           }
 
           .services-header {
@@ -380,19 +319,6 @@ export default function Services() {
 
           .integral-block p {
             font-size: 15.8px;
-          }
-
-          .value-item {
-            padding: 30px 24px;
-            border-radius: 28px;
-          }
-
-          .value-item h3 {
-            font-size: 24px;
-          }
-
-          .value-item p {
-            font-size: 15.5px;
           }
         }
       `}</style>
