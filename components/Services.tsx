@@ -103,9 +103,9 @@ export default function Services() {
 
       <style jsx>{`
         .services-section {
-          background: #f5f6f8;
-          padding: 110px 0;
-        }
+  background: #f5f6f8;
+  padding: 45px 0 100px;
+}
 
         .services-container {
           width: min(1180px, 92%);
