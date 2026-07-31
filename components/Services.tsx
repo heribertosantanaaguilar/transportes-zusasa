@@ -102,9 +102,9 @@ export default function Services() {
       </div>
 
       <style jsx>{`
-        .services-section {
+       .services-section {
   background: #f5f6f8;
-  padding: 45px 0 100px;
+  padding: 35px 0 90px;
 }
 
         .services-container {
