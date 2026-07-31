@@ -3,8 +3,7 @@ import Footer from "../../components/Footer";
 import WhatsAppButton from "../../components/WhatsAppButton";
 
 export const metadata = {
-  title:
-    "Resguardo de contenedores en Manzanillo | Transportes ZUSASA",
+  title: "Resguardo de contenedores en Manzanillo | Transportes ZUSASA",
   description:
     "Resguardo temporal de contenedores en patio de maniobras en Manzanillo, integrado con movimiento local, apoyo operativo y gestión de transporte nacional de contenedores e ISO tanques.",
 };
@@ -17,7 +16,6 @@ export default function ResguardoContenedoresPage() {
     "- Resguardo en patio de maniobras:",
     "- Movimiento local previo en Manzanillo:",
     "- Transporte nacional de contenedores e ISO tanques:",
-    "- Apoyo operativo:",
     "",
     "Datos del servicio:",
     "- Empresa:",
@@ -31,7 +29,7 @@ export default function ResguardoContenedoresPage() {
     "- Peso aproximado:",
     "- Tiempo estimado de resguardo:",
     "- Requiere transporte nacional:",
-    "- Comentarios:",
+    "- Comentarios o necesidades operativas adicionales:",
   ].join("\n");
 
   const whatsappLink = `https://wa.me/522224556651?${new URLSearchParams({
@@ -258,10 +256,16 @@ export default function ResguardoContenedoresPage() {
           display: flex;
           align-items: center;
           background:
-            linear-gradient(135deg, rgba(10, 29, 54, 0.98), rgba(15, 45, 82, 0.92)),
+            linear-gradient(
+              90deg,
+              rgba(10, 29, 54, 0.88) 0%,
+              rgba(10, 29, 54, 0.72) 48%,
+              rgba(10, 29, 54, 0.48) 72%,
+              rgba(10, 29, 54, 0.28) 100%
+            ),
             url("/images/patio-maniobras-zusasa-1.jpg");
           background-size: cover;
-          background-position: center;
+          background-position: center center;
           color: #ffffff;
         }
 
@@ -296,7 +300,7 @@ export default function ResguardoContenedoresPage() {
         .storageHero p {
           max-width: 900px;
           margin: 0;
-          color: rgba(255, 255, 255, 0.84);
+          color: rgba(255, 255, 255, 0.9);
           font-size: 20px;
           line-height: 1.7;
         }
@@ -330,8 +334,8 @@ export default function ResguardoContenedoresPage() {
 
         .storageActions a:last-child {
           color: #ffffff;
-          border: 1px solid rgba(255, 255, 255, 0.22);
-          background: rgba(255, 255, 255, 0.08);
+          border: 1px solid rgba(255, 255, 255, 0.32);
+          background: rgba(255, 255, 255, 0.12);
         }
 
         .storageIntro {
@@ -558,6 +562,7 @@ export default function ResguardoContenedoresPage() {
           .storageHero {
             min-height: auto;
             padding: 140px 7% 110px;
+            background-position: center center;
           }
 
           .storageHero h1 {
