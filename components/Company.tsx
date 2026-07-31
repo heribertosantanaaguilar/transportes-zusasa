@@ -13,20 +13,6 @@ export default function Company() {
             logísticos relacionados con contenedores e ISO tanques en
             Manzanillo, Colima.
           </p>
-
-          <p>
-            Apoyamos operaciones de movimiento local, resguardo en patio de
-            maniobras y apoyo operativo. Además, mediante alianza comercial con
-            transportista foráneo, podemos gestionar transporte nacional de
-            contenedores e ISO tanques hacia distintos destinos del país.
-          </p>
-
-          <p>
-            Nuestro compromiso es ofrecer al cliente un solo punto de contacto
-            para revisar disponibilidad, coordinar la operación, dar seguimiento
-            al servicio y gestionar la cotización de acuerdo con las condiciones
-            reales de cada movimiento.
-          </p>
         </div>
 
         <div className="zusasaCompanyRight">
@@ -43,6 +29,22 @@ export default function Company() {
             </span>
           </div>
         </div>
+      </div>
+
+      <div className="zusasaCompanyFullText">
+        <p>
+          Apoyamos operaciones de movimiento local, resguardo en patio de
+          maniobras y apoyo operativo. Además, mediante alianza comercial con
+          transportista foráneo, podemos gestionar transporte nacional de
+          contenedores e ISO tanques hacia distintos destinos del país.
+        </p>
+
+        <p>
+          Nuestro compromiso es ofrecer al cliente un solo punto de contacto
+          para revisar disponibilidad, coordinar la operación, dar seguimiento
+          al servicio y gestionar la cotización de acuerdo con las condiciones
+          reales de cada movimiento.
+        </p>
       </div>
     </section>
   );
