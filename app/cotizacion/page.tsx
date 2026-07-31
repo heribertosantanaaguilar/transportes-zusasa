@@ -10,7 +10,6 @@ Servicio que necesito:
 - Movimiento local de ISO tanques:
 - Transporte nacional de contenedores e ISO tanques:
 - Resguardo en patio de maniobras:
-- Apoyo operativo:
 
 Datos del servicio:
 - Empresa:
@@ -24,7 +23,7 @@ Datos del servicio:
 - Peso aproximado:
 - Requiere movimiento local previo:
 - Requiere resguardo:
-- Comentarios:`;
+- Comentarios o necesidades operativas adicionales:`;
 
   const whatsappLink = `https://wa.me/522224556651?text=${encodeURIComponent(
     whatsappMessage
@@ -39,7 +38,6 @@ Servicio que necesito:
 - Movimiento local de ISO tanques:
 - Transporte nacional de contenedores e ISO tanques:
 - Resguardo en patio de maniobras:
-- Apoyo operativo:
 
 Datos del servicio:
 - Empresa:
@@ -53,7 +51,7 @@ Datos del servicio:
 - Peso aproximado:
 - Requiere movimiento local previo:
 - Requiere resguardo:
-- Comentarios:`;
+- Comentarios o necesidades operativas adicionales:`;
 
   const emailLink = `mailto:transportes.zusasa@gmail.com?subject=${encodeURIComponent(
     emailSubject
@@ -79,11 +77,6 @@ Datos del servicio:
       number: "04",
       title: "Resguardo en patio de maniobras",
       text: "Resguardo temporal de contenedores llenos o vacíos, sujeto a disponibilidad y condiciones operativas.",
-    },
-    {
-      number: "05",
-      title: "Apoyo operativo para contenedores",
-      text: "Coordinación de movimientos, maniobras y apoyo local para operaciones de carga contenerizada.",
     },
   ];
 
@@ -189,7 +182,7 @@ Datos del servicio:
 
             <article>
               <strong>02</strong>
-              <p>Resguardo y apoyo operativo</p>
+              <p>Resguardo en patio de maniobras</p>
             </article>
 
             <article>
@@ -236,14 +229,14 @@ Datos del servicio:
           </div>
 
           <div>
-            <span>Experiencia especializada</span>
+            <span>Revisión operativa</span>
 
-            <h2>Conocimiento operativo en ISO tanques.</h2>
+            <h2>Cada cotización se analiza por separado.</h2>
 
             <p>
-              Contamos con experiencia en operaciones relacionadas con ISO
-              tanques y con apoyo especializado para revisar requerimientos
-              particulares de este tipo de equipo.
+              Antes de confirmar una operación revisamos disponibilidad,
+              documentación, peso, tiempos, ruta, tipo de carga y condiciones
+              aplicables al servicio solicitado.
             </p>
           </div>
         </section>
@@ -272,30 +265,30 @@ Datos del servicio:
           color: #0a1d36;
         }
 
-      .quoteHero {
-  position: relative;
-  padding: 150px 7% 100px;
-  background:
-    linear-gradient(
-      90deg,
-      rgba(10, 29, 54, 0.96) 0%,
-      rgba(10, 29, 54, 0.88) 46%,
-      rgba(10, 29, 54, 0.66) 72%,
-      rgba(10, 29, 54, 0.48) 100%
-    ),
-    url("/images/transporte-nacional-zusasa-2.jpeg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  color: #ffffff;
-  overflow: hidden;
-}
+        .quoteHero {
+          position: relative;
+          padding: 150px 7% 100px;
+          background:
+            linear-gradient(
+              90deg,
+              rgba(10, 29, 54, 0.96) 0%,
+              rgba(10, 29, 54, 0.88) 46%,
+              rgba(10, 29, 54, 0.66) 72%,
+              rgba(10, 29, 54, 0.48) 100%
+            ),
+            url("/images/transporte-nacional-zusasa-2.jpeg");
+          background-size: cover;
+          background-position: center center;
+          background-repeat: no-repeat;
+          color: #ffffff;
+          overflow: hidden;
+        }
 
         .quoteHeroInner {
-  position: relative;
-  z-index: 2;
-  max-width: 980px;
-}
+          position: relative;
+          z-index: 2;
+          max-width: 980px;
+        }
 
         .quoteEyebrow,
         .sectionIntro span,
@@ -363,11 +356,12 @@ Datos del servicio:
         }
 
         .quoteServices {
-          padding: 110px 7%;
+          padding: 90px 7% 100px;
         }
 
         .sectionIntro {
-          max-width: 980px;
+          width: 100%;
+          max-width: none;
           margin-bottom: 56px;
         }
 
@@ -382,7 +376,8 @@ Datos del servicio:
         }
 
         .sectionIntro p {
-          max-width: 900px;
+          width: 100%;
+          max-width: none;
           margin: 0;
           color: #3b4a5a;
           font-size: 19px;
@@ -391,7 +386,7 @@ Datos del servicio:
 
         .quoteServicesGrid {
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          grid-template-columns: repeat(4, minmax(0, 1fr));
           gap: 24px;
         }
 
@@ -429,7 +424,7 @@ Datos del servicio:
         }
 
         .quoteIntegralBlock {
-          margin: 0 7% 110px;
+          margin: 0 7% 100px;
           padding: 48px;
           border-radius: 36px;
           background: linear-gradient(135deg, #0a1d36, #0f2d52);
@@ -486,7 +481,7 @@ Datos del servicio:
         }
 
         .quoteInfoBlock {
-          margin: 0 7% 110px;
+          margin: 0 7% 100px;
           padding: 48px;
           border-radius: 34px;
           background: #ffffff;
@@ -541,7 +536,7 @@ Datos del servicio:
         }
 
         .quoteValue {
-          margin: 0 7% 110px;
+          margin: 0 7% 100px;
           display: grid;
           grid-template-columns: repeat(2, minmax(0, 1fr));
           gap: 26px;
@@ -595,6 +590,12 @@ Datos del servicio:
           line-height: 1.65;
         }
 
+        @media (max-width: 1100px) {
+          .quoteServicesGrid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+          }
+        }
+
         @media (max-width: 900px) {
           .quoteIntegralBlock,
           .quoteInfoBlock,
@@ -603,11 +604,11 @@ Datos del servicio:
           }
         }
 
-       @media (max-width: 768px) {
-  .quoteHero {
-    padding: 130px 7% 78px;
-    background-position: center center;
-  }
+        @media (max-width: 768px) {
+          .quoteHero {
+            padding: 130px 7% 78px;
+            background-position: center center;
+          }
 
           .quoteHero h1 {
             font-size: clamp(36px, 12vw, 54px);
@@ -620,7 +621,15 @@ Datos del servicio:
           }
 
           .quoteServices {
-            padding: 84px 7%;
+            padding: 72px 7%;
+          }
+
+          .quoteServicesGrid {
+            grid-template-columns: 1fr;
+          }
+
+          .quoteServiceCard {
+            min-height: auto;
           }
 
           .quoteIntegralBlock,
@@ -633,21 +642,17 @@ Datos del servicio:
           }
 
           .quoteIntegralBlock,
-          .quoteInfoBlock {
-            padding: 32px 24px;
-          }
-
-          .quoteValue > div {
-            padding: 32px 24px;
-          }
-
+          .quoteInfoBlock,
           .quoteFinalCta {
-            padding: 40px 24px;
+            padding: 34px 26px;
+          }
+
+          .quoteActions {
+            flex-direction: column;
           }
 
           .primaryQuoteButton,
-          .secondaryQuoteButton,
-          .quoteFinalCta a {
+          .secondaryQuoteButton {
             width: 100%;
           }
         }
