@@ -31,7 +31,7 @@ export default function Value() {
 
       <style>{`
         .valueCleanSection {
-          padding: 110px 7%;
+          padding: 55px 7% 95px;
           background: linear-gradient(135deg, #0a1d36, #0f2d52);
           color: #ffffff;
           overflow: hidden;
@@ -92,7 +92,7 @@ export default function Value() {
 
         @media (max-width: 768px) {
           .valueCleanSection {
-            padding: 84px 7%;
+            padding: 48px 7% 72px;
           }
 
           .valueCleanContent h2 {
