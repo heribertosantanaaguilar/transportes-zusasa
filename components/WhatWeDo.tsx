@@ -19,10 +19,10 @@ export default function WhatWeDo() {
   ];
 
   return (
-   <section
+ <section
   id="operacion-logistica"
   style={{
-    padding: "48px 7% 90px",
+    padding: "48px 7% 45px",
     background: "#f5f6f7",
     overflow: "hidden",
   }}
