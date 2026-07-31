@@ -88,10 +88,11 @@ export default function Services() {
           margin: 0 auto;
         }
 
-        .services-header {
-          max-width: 940px;
-          margin-bottom: 48px;
-        }
+       .services-header {
+  width: 100%;
+  max-width: none;
+  margin-bottom: 48px;
+}
 
         .eyebrow-wrap {
           display: flex;
@@ -125,13 +126,14 @@ export default function Services() {
           font-weight: 900;
         }
 
-        .services-header p {
-          margin: 0;
-          max-width: 900px;
-          color: #334a68;
-          font-size: 20px;
-          line-height: 1.7;
-        }
+      .services-header p {
+  margin: 0;
+  width: 100%;
+  max-width: none;
+  color: #334a68;
+  font-size: 20px;
+  line-height: 1.7;
+}
 
         .services-grid {
           display: grid;
