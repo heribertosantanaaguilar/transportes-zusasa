@@ -8850,3 +8850,24 @@ body .heroShowcaseBar {
     padding-top: 45px !important;
   }
 }
+/* =========================================================
+   AJUSTE GENERAL ENTRE NOSOTROS Y LA SIGUIENTE SECCIÓN
+   ========================================================= */
+
+#nosotros {
+  padding-bottom: 55px !important;
+}
+
+#nosotros + section {
+  padding-top: 60px !important;
+}
+
+@media (max-width: 768px) {
+  #nosotros {
+    padding-bottom: 40px !important;
+  }
+
+  #nosotros + section {
+    padding-top: 45px !important;
+  }
+}
