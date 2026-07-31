@@ -8892,3 +8892,29 @@ body .heroShowcaseBar {
     padding-top: 42px !important;
   }
 }
+/* =========================================================
+   AJUSTE DE ESPACIO ENTRE SECTORES Y POR QUÉ ELEGIRNOS
+   ========================================================= */
+
+#sectores.zusasaSectors {
+  padding-bottom: 45px !important;
+}
+
+#sectores + section {
+  padding-top: 50px !important;
+}
+
+.zusasaValue {
+  padding-top: 50px !important;
+}
+
+@media (max-width: 768px) {
+  #sectores.zusasaSectors {
+    padding-bottom: 35px !important;
+  }
+
+  #sectores + section,
+  .zusasaValue {
+    padding-top: 40px !important;
+  }
+}
