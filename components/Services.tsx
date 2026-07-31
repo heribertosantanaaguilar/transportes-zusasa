@@ -3,15 +3,9 @@
 export default function Services() {
   const services = [
     {
-      title: "Movimiento local de contenedores",
-      text: "Traslados locales dentro de la zona portuaria y logística de Manzanillo.",
+      title: "Movimiento local de contenedores e ISO tanques",
+      text: "Traslados locales dentro de la zona portuaria y logística de Manzanillo, sujetos a tipo de carga, documentación, disponibilidad y condiciones operativas.",
       cta: "Solicitar cotización",
-      href: "/cotizacion",
-    },
-    {
-      title: "Movimiento local de ISO tanques",
-      text: "Traslado local de ISO tanques, sujeto a revisión del tipo de carga, documentación y condiciones operativas.",
-      cta: "Cotizar servicio",
       href: "/cotizacion",
     },
     {
@@ -42,7 +36,8 @@ export default function Services() {
           <p>
             Atendemos operaciones locales y nacionales relacionadas con
             contenedores e ISO tanques, revisando cada solicitud de acuerdo con
-            disponibilidad, ruta, tipo de carga y condiciones operativas.
+            disponibilidad, ruta, tipo de carga, documentación y condiciones
+            operativas.
           </p>
         </div>
 
@@ -88,11 +83,11 @@ export default function Services() {
           margin: 0 auto;
         }
 
-       .services-header {
-  width: 100%;
-  max-width: none;
-  margin-bottom: 48px;
-}
+        .services-header {
+          width: 100%;
+          max-width: none;
+          margin-bottom: 48px;
+        }
 
         .eyebrow-wrap {
           display: flex;
@@ -126,18 +121,18 @@ export default function Services() {
           font-weight: 900;
         }
 
-      .services-header p {
-  margin: 0;
-  width: 100%;
-  max-width: none;
-  color: #334a68;
-  font-size: 20px;
-  line-height: 1.7;
-}
+        .services-header p {
+          margin: 0;
+          width: 100%;
+          max-width: none;
+          color: #334a68;
+          font-size: 20px;
+          line-height: 1.7;
+        }
 
         .services-grid {
           display: grid;
-          grid-template-columns: repeat(4, minmax(0, 1fr));
+          grid-template-columns: repeat(3, minmax(0, 1fr));
           gap: 28px;
           align-items: stretch;
         }
@@ -156,7 +151,7 @@ export default function Services() {
         .service-card h3 {
           margin: 0 0 20px;
           color: #08224a;
-          font-size: 27px;
+          font-size: 30px;
           line-height: 1.1;
           font-weight: 900;
           letter-spacing: -0.5px;
@@ -165,7 +160,7 @@ export default function Services() {
         .service-card p {
           margin: 0;
           color: #334a68;
-          font-size: 16px;
+          font-size: 16.5px;
           line-height: 1.65;
         }
 
@@ -247,7 +242,7 @@ export default function Services() {
 
         @media (max-width: 1100px) {
           .services-grid {
-            grid-template-columns: repeat(2, minmax(0, 1fr));
+            grid-template-columns: 1fr;
           }
         }
 
