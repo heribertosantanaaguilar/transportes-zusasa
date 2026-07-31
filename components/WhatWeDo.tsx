@@ -19,14 +19,14 @@ export default function WhatWeDo() {
   ];
 
   return (
- <section
-  id="operacion-logistica"
-  style={{
-    padding: "48px 7% 45px",
-    background: "#f5f6f7",
-    overflow: "hidden",
-  }}
->
+    <section
+      id="operacion-logistica"
+      style={{
+        padding: "48px 7% 45px",
+        background: "#f5f6f7",
+        overflow: "hidden",
+      }}
+    >
       <div
         style={{
           maxWidth: "1180px",
@@ -35,7 +35,8 @@ export default function WhatWeDo() {
       >
         <div
           style={{
-            maxWidth: "920px",
+            width: "100%",
+            maxWidth: "none",
             marginBottom: "52px",
           }}
         >
@@ -69,7 +70,8 @@ export default function WhatWeDo() {
           <p
             style={{
               margin: 0,
-              maxWidth: "860px",
+              width: "100%",
+              maxWidth: "none",
               color: "#3b4a5a",
               fontSize: "20px",
               lineHeight: 1.7,
@@ -156,6 +158,14 @@ export default function WhatWeDo() {
         }
 
         @media (max-width: 650px) {
+          section#operacion-logistica {
+            padding: 42px 7% 40px !important;
+          }
+
+          .whatWeDoGrid {
+            gap: 22px;
+          }
+
           .whatWeDoImageWrap {
             height: 220px;
           }
