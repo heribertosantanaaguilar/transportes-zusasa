@@ -13,12 +13,12 @@ export default function OperationPhotos() {
     {
       title: "Movimiento de contenedores",
       text: "Apoyo operativo para carga contenerizada en rutas locales y nacionales.",
-      image: "/images/operacion-camiones-dobles-zusasa.jpeg.jpeg",
+      image: "/images/operacion-camiones-dobles-zusasa.jpeg.png",
     },
     {
       title: "Operación con ISO tanques",
       text: "Atención a servicios relacionados con ISO tanques, sujetos a revisión operativa y documental.",
-      image: "/images/operacion-iso-tanques-zusasa.jpeg.jpeg",
+      image: "/images/operacion-iso-tanques-zusasa.jpeg.png",
     },
     {
       title: "Coordinación logística desde Manzanillo",
