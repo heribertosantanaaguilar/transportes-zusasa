@@ -8769,3 +8769,61 @@ body .heroShowcaseBar {
     min-height: auto !important;
   }
 }
+/* =========================================================
+   NOSOTROS - PÁRRAFOS INFERIORES A ANCHO COMPLETO
+   ========================================================= */
+
+.zusasaCompanyBlock {
+  display: block !important;
+}
+
+.zusasaCompanyTop {
+  display: grid !important;
+  grid-template-columns: 1fr 0.95fr !important;
+  gap: 56px !important;
+  align-items: start !important;
+}
+
+.zusasaCompanyFullText {
+  width: 100% !important;
+  margin-top: 34px !important;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 34px !important;
+}
+
+.zusasaCompanyFullText p {
+  margin: 0 !important;
+  color: var(--gray) !important;
+  font-size: 18px !important;
+  line-height: 1.8 !important;
+  background: #f5f6f7 !important;
+  border-radius: 26px !important;
+  padding: 30px 32px !important;
+  border-left: 6px solid var(--orange) !important;
+  box-shadow: 0 20px 55px rgba(10, 29, 54, 0.08) !important;
+}
+
+@media (max-width: 1000px) {
+  .zusasaCompanyTop {
+    grid-template-columns: 1fr !important;
+  }
+
+  .zusasaCompanyFullText {
+    grid-template-columns: 1fr !important;
+    margin-top: 28px !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .zusasaCompanyFullText {
+    gap: 18px !important;
+  }
+
+  .zusasaCompanyFullText p {
+    font-size: 16px !important;
+    line-height: 1.65 !important;
+    padding: 24px 22px !important;
+    border-radius: 22px !important;
+  }
+}
