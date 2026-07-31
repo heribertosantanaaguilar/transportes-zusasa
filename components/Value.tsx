@@ -66,7 +66,8 @@ export default function Value() {
         }
 
         .valueCleanContent {
-          max-width: 1020px;
+          width: 100%;
+          max-width: none;
         }
 
         .valueCleanContent h2 {
@@ -76,10 +77,12 @@ export default function Value() {
           line-height: 1.02;
           letter-spacing: -2px;
           font-weight: 900;
+          max-width: 1120px;
         }
 
         .valueCleanContent p {
-          max-width: 940px;
+          width: 100%;
+          max-width: none;
           margin: 0 0 20px;
           color: rgba(255, 255, 255, 0.84);
           font-size: 20px;
