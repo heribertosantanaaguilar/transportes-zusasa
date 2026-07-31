@@ -39,7 +39,9 @@ export default function CoverageMap() {
             </p>
           </div>
 
-          <a href="/cotizacion">Solicitar cotización →</a>
+       <a href="/cotizacion" className="coverageQuoteButton">
+  Solicitar cotización →
+</a>
         </div>
       </div>
 
@@ -108,6 +110,8 @@ export default function CoverageMap() {
         }
 
         .coverageQuoteBox {
+          position: relative;
+          z-index: 5;
           margin-top: 30px;
           padding: 38px 40px;
           border-radius: 34px;
@@ -148,20 +152,30 @@ export default function CoverageMap() {
           line-height: 1.65;
         }
 
-        .coverageQuoteBox a {
-          min-height: 56px;
-          padding: 0 28px;
-          border-radius: 999px;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          background: #f26522;
-          color: #ffffff;
-          font-weight: 900;
-          text-decoration: none;
-          white-space: nowrap;
-          box-shadow: 0 18px 40px rgba(242, 101, 34, 0.28);
-        }
+      .coverageQuoteButton {
+  position: relative;
+  z-index: 10;
+  min-height: 56px;
+  padding: 0 28px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #f26522;
+  color: #ffffff;
+  font-weight: 900;
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: 0 18px 40px rgba(242, 101, 34, 0.28);
+  cursor: pointer;
+  pointer-events: auto;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.coverageQuoteButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 46px rgba(242, 101, 34, 0.34);
+}
 
         @media (max-width: 900px) {
           .coverageQuoteBox {
