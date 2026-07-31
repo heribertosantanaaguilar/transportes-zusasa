@@ -28,7 +28,7 @@ export default function Sectors() {
 
   return (
     <section id="sectores" className="zusasaSectors">
-      <div className="sectionHeader white">
+      <div className="sectionHeader white sectorsHeader">
         <span>Sectores que atendemos</span>
 
         <h2>Soluciones para quienes necesitan mover carga desde Manzanillo.</h2>
@@ -48,6 +48,18 @@ export default function Sectors() {
           </article>
         ))}
       </div>
+
+      <style>{`
+        .sectorsHeader {
+          width: 100%;
+          max-width: none;
+        }
+
+        .sectorsHeader p {
+          width: 100%;
+          max-width: none;
+        }
+      `}</style>
     </section>
   );
 }
