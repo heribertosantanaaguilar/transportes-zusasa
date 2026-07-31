@@ -272,16 +272,30 @@ Datos del servicio:
           color: #0a1d36;
         }
 
-        .quoteHero {
-          padding: 150px 7% 100px;
-          background:
-            linear-gradient(135deg, rgba(10, 29, 54, 0.97), rgba(15, 45, 82, 0.94));
-          color: #ffffff;
-        }
+      .quoteHero {
+  position: relative;
+  padding: 150px 7% 100px;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(10, 29, 54, 0.96) 0%,
+      rgba(10, 29, 54, 0.88) 46%,
+      rgba(10, 29, 54, 0.66) 72%,
+      rgba(10, 29, 54, 0.48) 100%
+    ),
+    url("/images/transporte-nacional-zusasa-2.jpeg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  overflow: hidden;
+}
 
         .quoteHeroInner {
-          max-width: 980px;
-        }
+  position: relative;
+  z-index: 2;
+  max-width: 980px;
+}
 
         .quoteEyebrow,
         .sectionIntro span,
@@ -589,10 +603,11 @@ Datos del servicio:
           }
         }
 
-        @media (max-width: 768px) {
-          .quoteHero {
-            padding: 130px 7% 78px;
-          }
+       @media (max-width: 768px) {
+  .quoteHero {
+    padding: 130px 7% 78px;
+    background-position: center center;
+  }
 
           .quoteHero h1 {
             font-size: clamp(36px, 12vw, 54px);
