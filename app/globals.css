@@ -8918,3 +8918,11 @@ body .heroShowcaseBar {
     padding-top: 40px !important;
   }
 }
+/* Ajuste fino entre Sectores y Servicios */
+#sectores {
+  padding-bottom: 35px !important;
+}
+
+#servicios {
+  padding-top: 35px !important;
+}
