@@ -19,15 +19,15 @@ export default function Process() {
   ];
 
   return (
-   <section
-  style={{
-    padding: "45px 7% 100px",
-    background:
-      "linear-gradient(135deg, rgba(10, 29, 54, 0.98), rgba(15, 45, 82, 0.96))",
-    color: "#ffffff",
-    overflow: "hidden",
-  }}
->
+    <section
+      style={{
+        padding: "45px 7% 100px",
+        background:
+          "linear-gradient(135deg, rgba(10, 29, 54, 0.98), rgba(15, 45, 82, 0.96))",
+        color: "#ffffff",
+        overflow: "hidden",
+      }}
+    >
       <div
         style={{
           maxWidth: "1180px",
@@ -36,7 +36,8 @@ export default function Process() {
       >
         <div
           style={{
-            maxWidth: "960px",
+            width: "100%",
+            maxWidth: "none",
             marginBottom: "56px",
           }}
         >
@@ -62,6 +63,7 @@ export default function Process() {
               lineHeight: 1.02,
               letterSpacing: "-2px",
               fontWeight: 900,
+              maxWidth: "1120px",
             }}
           >
             Coordinación clara para cada operación logística.
@@ -70,7 +72,8 @@ export default function Process() {
           <p
             style={{
               margin: 0,
-              maxWidth: "900px",
+              width: "100%",
+              maxWidth: "none",
               color: "rgba(255, 255, 255, 0.82)",
               fontSize: "20px",
               lineHeight: 1.7,
@@ -140,6 +143,10 @@ export default function Process() {
         }
 
         @media (max-width: 650px) {
+          section {
+            padding: 42px 7% 72px !important;
+          }
+
           .processGrid {
             grid-template-columns: 1fr;
             gap: 20px;
