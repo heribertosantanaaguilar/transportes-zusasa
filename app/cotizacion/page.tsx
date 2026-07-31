@@ -6,8 +6,7 @@ export default function CotizacionPage() {
   const whatsappMessage = `Hola, quiero solicitar una cotización con Transportes ZUSASA.
 
 Servicio que necesito:
-- Movimiento local de contenedores:
-- Movimiento local de ISO tanques:
+- Movimiento local de contenedores e ISO tanques:
 - Transporte nacional de contenedores e ISO tanques:
 - Resguardo en patio de maniobras:
 
@@ -34,8 +33,7 @@ Datos del servicio:
   const emailBody = `Hola, quiero solicitar una cotización con Transportes ZUSASA.
 
 Servicio que necesito:
-- Movimiento local de contenedores:
-- Movimiento local de ISO tanques:
+- Movimiento local de contenedores e ISO tanques:
 - Transporte nacional de contenedores e ISO tanques:
 - Resguardo en patio de maniobras:
 
@@ -60,21 +58,16 @@ Datos del servicio:
   const services = [
     {
       number: "01",
-      title: "Movimiento local de contenedores",
-      text: "Traslados locales de carga contenerizada dentro de la zona portuaria y logística de Manzanillo.",
+      title: "Movimiento local de contenedores e ISO tanques",
+      text: "Traslados locales dentro de la zona portuaria y logística de Manzanillo, sujetos a tipo de carga, documentación, disponibilidad y condiciones operativas.",
     },
     {
       number: "02",
-      title: "Movimiento local de ISO tanques",
-      text: "Traslado local de ISO tanques en Manzanillo, sujeto a revisión del tipo de carga, documentación, disponibilidad y condiciones operativas aplicables.",
-    },
-    {
-      number: "03",
       title: "Transporte nacional de contenedores e ISO tanques",
       text: "Gestión del traslado nacional de contenedores e ISO tanques desde Manzanillo hacia distintos destinos del país, mediante alianza comercial con transportista foráneo.",
     },
     {
-      number: "04",
+      number: "03",
       title: "Resguardo en patio de maniobras",
       text: "Resguardo temporal de contenedores llenos o vacíos, sujeto a disponibilidad y condiciones operativas.",
     },
@@ -369,7 +362,7 @@ Datos del servicio:
 
         .quoteServicesGrid {
           display: grid;
-          grid-template-columns: repeat(4, minmax(0, 1fr));
+          grid-template-columns: repeat(3, minmax(0, 1fr));
           gap: 24px;
         }
 
@@ -394,7 +387,7 @@ Datos del servicio:
         .quoteServiceCard h3 {
           margin: 0 0 18px;
           color: #0a1d36;
-          font-size: 25px;
+          font-size: 28px;
           line-height: 1.12;
           font-weight: 900;
         }
@@ -552,7 +545,7 @@ Datos del servicio:
 
         @media (max-width: 1100px) {
           .quoteServicesGrid {
-            grid-template-columns: repeat(2, minmax(0, 1fr));
+            grid-template-columns: 1fr;
           }
         }
 
