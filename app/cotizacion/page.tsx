@@ -155,7 +155,7 @@ Datos del servicio:
         </section>
 
         <section className="quoteIntegralBlock">
-          <div>
+          <div className="quoteIntegralText">
             <span>Solución logística integral</span>
 
             <h2>Del puerto interior en Manzanillo al destino nacional.</h2>
@@ -172,23 +172,6 @@ Datos del servicio:
               revisar disponibilidad, coordinar la operación, recibir
               seguimiento y gestionar la cotización del servicio.
             </p>
-          </div>
-
-          <div className="integralSteps">
-            <article>
-              <strong>01</strong>
-              <p>Movimiento local en Manzanillo</p>
-            </article>
-
-            <article>
-              <strong>02</strong>
-              <p>Resguardo en patio de maniobras</p>
-            </article>
-
-            <article>
-              <strong>03</strong>
-              <p>Gestión de transporte nacional</p>
-            </article>
           </div>
         </section>
 
@@ -425,59 +408,36 @@ Datos del servicio:
 
         .quoteIntegralBlock {
           margin: 0 7% 100px;
-          padding: 48px;
+          padding: 54px 56px;
           border-radius: 36px;
           background: linear-gradient(135deg, #0a1d36, #0f2d52);
           color: #ffffff;
-          display: grid;
-          grid-template-columns: 1.3fr 0.7fr;
-          gap: 38px;
-          align-items: center;
           box-shadow: 0 28px 70px rgba(8, 34, 74, 0.18);
           border-left: 8px solid #f26522;
         }
 
+        .quoteIntegralText {
+          max-width: 1060px;
+        }
+
         .quoteIntegralBlock h2 {
-          margin: 0 0 18px;
+          margin: 0 0 22px;
           color: #ffffff;
-          font-size: clamp(32px, 4vw, 52px);
-          line-height: 1.08;
+          font-size: clamp(36px, 5vw, 64px);
+          line-height: 1.05;
           font-weight: 900;
-          letter-spacing: -1px;
+          letter-spacing: -1.6px;
         }
 
         .quoteIntegralBlock p {
-          margin: 0 0 14px;
-          color: rgba(255, 255, 255, 0.84);
-          font-size: 17px;
-          line-height: 1.65;
+          margin: 0 0 16px;
+          color: rgba(255, 255, 255, 0.86);
+          font-size: 18px;
+          line-height: 1.7;
         }
 
-        .integralSteps {
-          display: grid;
-          gap: 18px;
-        }
-
-        .integralSteps article {
-          background: rgba(255, 255, 255, 0.08);
-          border: 1px solid rgba(255, 255, 255, 0.12);
-          border-radius: 24px;
-          padding: 22px 24px;
-        }
-
-        .integralSteps strong {
-          display: block;
-          color: #f26522;
-          font-size: 22px;
-          font-weight: 900;
-          margin-bottom: 8px;
-        }
-
-        .integralSteps p {
-          margin: 0;
-          color: #ffffff;
-          font-weight: 800;
-          line-height: 1.35;
+        .quoteIntegralBlock p:last-child {
+          margin-bottom: 0;
         }
 
         .quoteInfoBlock {
@@ -597,7 +557,6 @@ Datos del servicio:
         }
 
         @media (max-width: 900px) {
-          .quoteIntegralBlock,
           .quoteInfoBlock,
           .quoteValue {
             grid-template-columns: 1fr;
