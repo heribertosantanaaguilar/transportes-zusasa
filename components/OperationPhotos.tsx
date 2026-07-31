@@ -36,9 +36,9 @@ export default function OperationPhotos() {
           <h2>Presencia local y coordinación nacional desde Manzanillo.</h2>
 
           <p>
-            Integramos movimiento local, resguardo en patio de maniobras,
-            apoyo operativo y coordinación de transporte nacional mediante
-            alianza comercial con transportistas especializados.
+            Integramos movimiento local, resguardo en patio de maniobras, apoyo
+            operativo y coordinación de transporte nacional mediante alianza
+            comercial con transportistas especializados.
           </p>
         </div>
 
@@ -69,7 +69,8 @@ export default function OperationPhotos() {
         }
 
         .operationPhotosHeader {
-          max-width: 950px;
+          width: 100%;
+          max-width: none;
           margin-bottom: 44px;
         }
 
@@ -90,11 +91,13 @@ export default function OperationPhotos() {
           line-height: 1.04;
           letter-spacing: -1.8px;
           font-weight: 900;
+          max-width: 1050px;
         }
 
         .operationPhotosHeader p {
           margin: 0;
-          max-width: 900px;
+          width: 100%;
+          max-width: none;
           color: #3b4a5a;
           font-size: 19px;
           line-height: 1.7;
