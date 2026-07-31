@@ -8871,3 +8871,24 @@ body .heroShowcaseBar {
     padding-top: 45px !important;
   }
 }
+/* =========================================================
+   AJUSTE REAL ENTRE NOSOTROS Y OPERACIÓN LOGÍSTICA
+   ========================================================= */
+
+#nosotros.zusasaCompanyBlock {
+  padding-bottom: 28px !important;
+}
+
+#operacion-logistica {
+  padding-top: 48px !important;
+}
+
+@media (max-width: 768px) {
+  #nosotros.zusasaCompanyBlock {
+    padding-bottom: 24px !important;
+  }
+
+  #operacion-logistica {
+    padding-top: 42px !important;
+  }
+}
