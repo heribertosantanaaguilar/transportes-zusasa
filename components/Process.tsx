@@ -19,15 +19,15 @@ export default function Process() {
   ];
 
   return (
-    <section
-      style={{
-        padding: "110px 7%",
-        background:
-          "linear-gradient(135deg, rgba(10, 29, 54, 0.98), rgba(15, 45, 82, 0.96))",
-        color: "#ffffff",
-        overflow: "hidden",
-      }}
-    >
+   <section
+  style={{
+    padding: "45px 7% 100px",
+    background:
+      "linear-gradient(135deg, rgba(10, 29, 54, 0.98), rgba(15, 45, 82, 0.96))",
+    color: "#ffffff",
+    overflow: "hidden",
+  }}
+>
       <div
         style={{
           maxWidth: "1180px",
