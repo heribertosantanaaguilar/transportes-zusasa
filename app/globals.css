@@ -8827,3 +8827,26 @@ body .heroShowcaseBar {
     border-radius: 22px !important;
   }
 }
+/* =========================================================
+   AJUSTE DE ESPACIO ENTRE NOSOTROS Y OPERACIÓN LOGÍSTICA
+   ========================================================= */
+
+.zusasaCompanyBlock {
+  padding-bottom: 55px !important;
+}
+
+.whatWeDoSection,
+.operationLogisticsSection {
+  padding-top: 60px !important;
+}
+
+@media (max-width: 768px) {
+  .zusasaCompanyBlock {
+    padding-bottom: 40px !important;
+  }
+
+  .whatWeDoSection,
+  .operationLogisticsSection {
+    padding-top: 45px !important;
+  }
+}
