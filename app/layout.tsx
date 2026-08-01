@@ -24,17 +24,19 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.transporteszusasa.com",
   },
- icons: {
-  icon: [
-    { url: "/favicon.ico", sizes: "any" },
-    { url: "/favicon.png", type: "image/png" },
-  ],
-  shortcut: "/favicon.ico",
-  apple: "/apple-touch-icon.png",
-},
+  icons: {
+    icon: [
+      {
+        url: "/images/favicon-zusasa-rounded.png",
+        type: "image/png",
+        sizes: "512x512",
+      },
+    ],
+    shortcut: "/images/favicon-zusasa-rounded.png",
+    apple: "/images/favicon-zusasa-rounded.png",
+  },
   openGraph: {
-    title:
-      "Transportes ZUSASA | Soluciones logísticas desde Manzanillo",
+    title: "Transportes ZUSASA | Soluciones logísticas desde Manzanillo",
     description:
       "Movimiento local, resguardo, apoyo operativo y gestión de transporte nacional de contenedores e ISO tanques desde Manzanillo mediante alianza comercial.",
     url: "https://www.transporteszusasa.com",
@@ -52,8 +54,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title:
-      "Transportes ZUSASA | Soluciones logísticas desde Manzanillo",
+    title: "Transportes ZUSASA | Soluciones logísticas desde Manzanillo",
     description:
       "Movimiento local, resguardo, apoyo operativo y gestión de transporte nacional de contenedores e ISO tanques desde Manzanillo.",
     images: ["/images/logo-zusasa.png"],
