@@ -56,7 +56,7 @@ export default function Services() {
         </div>
 
         <div className="integral-block">
-          <div>
+          <div className="integral-content">
             <span>Solución integral</span>
 
             <h3>Un solo punto de contacto para coordinar tu operación.</h3>
@@ -186,16 +186,21 @@ export default function Services() {
 
         .integral-block {
           margin-top: 42px;
-          padding: 38px 40px;
+          padding: 42px 44px;
           border-radius: 34px;
           background: linear-gradient(135deg, #0a1d36, #0f2d52);
           color: #ffffff;
           display: grid;
           grid-template-columns: 1fr auto;
-          gap: 32px;
+          gap: 36px;
           align-items: center;
           border-left: 8px solid #f26522;
           box-shadow: 0 28px 70px rgba(8, 34, 74, 0.18);
+        }
+
+        .integral-content {
+          width: 100%;
+          max-width: none;
         }
 
         .integral-block span {
@@ -209,20 +214,24 @@ export default function Services() {
         }
 
         .integral-block h3 {
-          margin: 0 0 14px;
+          margin: 0 0 18px;
           color: #ffffff;
-          font-size: clamp(28px, 4vw, 42px);
+          font-size: clamp(30px, 4vw, 48px);
           line-height: 1.08;
           font-weight: 900;
           letter-spacing: -0.8px;
+          max-width: 900px;
         }
 
         .integral-block p {
           margin: 0;
-          max-width: 780px;
-          color: rgba(255, 255, 255, 0.84);
-          font-size: 17px;
-          line-height: 1.65;
+          width: 100%;
+          max-width: none;
+          color: rgba(255, 255, 255, 0.86);
+          font-size: 18px;
+          line-height: 1.7;
+          text-align: justify;
+          text-justify: inter-word;
         }
 
         .integral-block a {
@@ -316,6 +325,8 @@ export default function Services() {
 
           .integral-block p {
             font-size: 15.8px;
+            line-height: 1.65;
+            text-align: left;
           }
         }
       `}</style>
