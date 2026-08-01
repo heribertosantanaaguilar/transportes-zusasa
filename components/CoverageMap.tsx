@@ -1,29 +1,29 @@
 export default function CoverageMap() {
   return (
-    <section className="zusasaCoverageMap">
-      <div className="zusasaCoverageMapContainer">
-        <div className="zusasaCoverageMapHeader">
+    <section id="cobertura" className="coverageSection">
+      <div className="coverageContainer">
+        <div className="coverageHeader">
           <span>Cobertura nacional</span>
 
-          <h2>Coordinamos transporte nacional desde Manzanillo.</h2>
+          <h2>Rutas gestionadas desde Manzanillo.</h2>
 
           <p>
-            Además del movimiento local y resguardo en Manzanillo, en
-            Transportes ZUSASA coordinamos transporte nacional de contenedores e
-            ISO tanques mediante alianza comercial, brindando una solución
-            logística más completa para nuestros clientes.
+            Coordinamos soluciones logísticas desde el puerto de Manzanillo
+            hacia distintos destinos del país mediante alianza comercial con
+            transportistas especializados.
           </p>
         </div>
 
-        <div className="zusasaCoverageMapCard">
+        <div className="coverageMapFrame">
           <iframe
             src="/mapa-rutas-zusasa.html"
-            title="Mapa interactivo de rutas nacionales desde Manzanillo de Transportes ZUSASA"
+            title="Mapa de rutas nacionales Transportes ZUSASA"
+            loading="lazy"
           />
         </div>
 
         <div className="coverageQuoteBox">
-          <div>
+          <div className="coverageQuoteText">
             <span>Cotización nacional</span>
 
             <h3>
@@ -39,191 +39,221 @@ export default function CoverageMap() {
             </p>
           </div>
 
-       <a href="/cotizacion" className="coverageQuoteButton">
-  Solicitar cotización →
-</a>
+          <a href="/cotizacion" className="coverageQuoteButton">
+            Solicitar cotización →
+          </a>
         </div>
       </div>
 
       <style>{`
-        .zusasaCoverageMap {
-          padding: 90px 7%;
-          background: #f5f6f7;
-        }
-
-        .zusasaCoverageMapContainer {
-          max-width: 1240px;
-          margin: 0 auto;
-        }
-
-        .zusasaCoverageMapHeader {
-          max-width: 920px;
-          margin: 0 auto 40px;
-          text-align: center;
-        }
-
-        .zusasaCoverageMapHeader span {
-          display: inline-flex;
-          align-items: center;
-          gap: 12px;
-          color: #f26522;
-          font-size: 15px;
-          font-weight: 900;
-          text-transform: uppercase;
-          letter-spacing: 1px;
-          margin-bottom: 18px;
-        }
-
-        .zusasaCoverageMapHeader h2 {
-          margin: 0 0 20px;
-          color: #0a1d36;
-          font-size: clamp(34px, 5vw, 62px);
-          line-height: 1.05;
-          letter-spacing: -1.6px;
-          font-weight: 900;
-        }
-
-        .zusasaCoverageMapHeader p {
-          margin: 0 auto;
-          color: #3b4a5a;
-          font-size: 18px;
-          line-height: 1.75;
-          max-width: 860px;
-        }
-
-        .zusasaCoverageMapCard {
-          background: #ffffff;
-          border-radius: 34px;
-          padding: 18px;
-          border: 1px solid rgba(10, 29, 54, 0.08);
-          box-shadow: 0 28px 70px rgba(10, 29, 54, 0.1);
+        .coverageSection {
+          padding: 80px 7% 95px;
+          background: #f5f6f8;
           overflow: hidden;
         }
 
-        .zusasaCoverageMapCard iframe {
+        .coverageContainer {
+          max-width: 1180px;
+          margin: 0 auto;
+        }
+
+        .coverageHeader {
           width: 100%;
-          height: 680px;
-          display: block;
+          max-width: none;
+          margin-bottom: 44px;
+        }
+
+        .coverageHeader span {
+          display: inline-block;
+          color: #f26522;
+          text-transform: uppercase;
+          letter-spacing: 1.2px;
+          font-size: 14px;
+          font-weight: 900;
+          margin-bottom: 18px;
+        }
+
+        .coverageHeader h2 {
+          margin: 0 0 22px;
+          color: #0a1d36;
+          font-size: clamp(40px, 5vw, 72px);
+          line-height: 1.02;
+          letter-spacing: -2px;
+          font-weight: 900;
+        }
+
+        .coverageHeader p {
+          margin: 0;
+          width: 100%;
+          max-width: none;
+          color: #3b4a5a;
+          font-size: 20px;
+          line-height: 1.7;
+        }
+
+        .coverageMapFrame {
+          width: 100%;
+          height: 520px;
+          border-radius: 36px;
+          overflow: hidden;
+          background: #ffffff;
+          border: 2px dashed rgba(10, 29, 54, 0.14);
+          box-shadow: 0 28px 75px rgba(8, 34, 74, 0.13);
+          padding: 22px;
+        }
+
+        .coverageMapFrame iframe {
+          width: 100%;
+          height: 100%;
           border: 0;
-          border-radius: 24px;
-          background: #f5f6f7;
+          border-radius: 26px;
+          display: block;
+          background: #ffffff;
         }
 
         .coverageQuoteBox {
           position: relative;
           z-index: 5;
-          margin-top: 30px;
-          padding: 38px 40px;
+          margin-top: 34px;
+          padding: 46px 48px;
           border-radius: 34px;
           background: linear-gradient(135deg, #0a1d36, #0f2d52);
           color: #ffffff;
           border-left: 8px solid #f26522;
           box-shadow: 0 28px 70px rgba(8, 34, 74, 0.18);
-          display: grid;
-          grid-template-columns: 1fr auto;
-          gap: 30px;
-          align-items: center;
+          display: flex;
+          flex-direction: column;
+          align-items: stretch;
+          gap: 26px;
         }
 
-        .coverageQuoteBox span {
+        .coverageQuoteText {
+          width: 100%;
+          max-width: none;
+        }
+
+        .coverageQuoteText span {
           display: inline-block;
           color: #f26522;
           text-transform: uppercase;
-          letter-spacing: 1px;
-          font-size: 13px;
+          letter-spacing: 1.2px;
+          font-size: 14px;
           font-weight: 900;
-          margin-bottom: 14px;
+          margin-bottom: 18px;
         }
 
-        .coverageQuoteBox h3 {
-          margin: 0 0 14px;
+        .coverageQuoteText h3 {
+          margin: 0 0 22px;
           color: #ffffff;
-          font-size: clamp(28px, 4vw, 42px);
-          line-height: 1.08;
-          letter-spacing: -0.8px;
+          font-size: clamp(34px, 4.8vw, 58px);
+          line-height: 1.06;
+          letter-spacing: -1.6px;
           font-weight: 900;
+          max-width: 980px;
         }
 
-        .coverageQuoteBox p {
+        .coverageQuoteText p {
           margin: 0;
-          max-width: 820px;
-          color: rgba(255, 255, 255, 0.84);
-          font-size: 17px;
-          line-height: 1.65;
+          width: 100%;
+          max-width: none;
+          color: rgba(255, 255, 255, 0.86);
+          font-size: 19px;
+          line-height: 1.75;
+          text-align: justify;
+          text-justify: inter-word;
         }
 
-      .coverageQuoteButton {
-  position: relative;
-  z-index: 10;
-  min-height: 56px;
-  padding: 0 28px;
-  border-radius: 999px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: #f26522;
-  color: #ffffff;
-  font-weight: 900;
-  text-decoration: none;
-  white-space: nowrap;
-  box-shadow: 0 18px 40px rgba(242, 101, 34, 0.28);
-  cursor: pointer;
-  pointer-events: auto;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
+        .coverageQuoteButton {
+          align-self: flex-end;
+          position: relative;
+          z-index: 10;
+          min-height: 58px;
+          padding: 0 34px;
+          border-radius: 999px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          background: #f26522;
+          color: #ffffff;
+          font-weight: 900;
+          text-decoration: none;
+          white-space: nowrap;
+          box-shadow: 0 18px 40px rgba(242, 101, 34, 0.28);
+          cursor: pointer;
+          pointer-events: auto;
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
 
-.coverageQuoteButton:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 22px 46px rgba(242, 101, 34, 0.34);
-}
+        .coverageQuoteButton:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 22px 46px rgba(242, 101, 34, 0.34);
+        }
 
         @media (max-width: 900px) {
-          .coverageQuoteBox {
-            grid-template-columns: 1fr;
+          .coverageMapFrame {
+            height: 460px;
           }
 
-          .coverageQuoteBox a {
+          .coverageQuoteBox {
+            padding: 38px 32px;
+          }
+
+          .coverageQuoteButton {
+            align-self: stretch;
             width: 100%;
           }
         }
 
-        @media (max-width: 768px) {
-          .zusasaCoverageMap {
-            padding: 72px 7%;
+        @media (max-width: 650px) {
+          .coverageSection {
+            padding: 64px 7% 76px;
           }
 
-          .zusasaCoverageMapHeader {
-            text-align: left;
-            margin-bottom: 28px;
+          .coverageHeader {
+            margin-bottom: 32px;
           }
 
-          .zusasaCoverageMapHeader p {
-            font-size: 16.5px;
-            line-height: 1.7;
+          .coverageHeader h2 {
+            font-size: clamp(34px, 11vw, 52px);
+            letter-spacing: -1.2px;
           }
 
-          .zusasaCoverageMapCard {
-            padding: 10px;
-            border-radius: 24px;
+          .coverageHeader p {
+            font-size: 17px;
+            line-height: 1.65;
           }
 
-          .zusasaCoverageMapCard iframe {
-            height: 560px;
-            border-radius: 16px;
+          .coverageMapFrame {
+            height: 420px;
+            border-radius: 28px;
+            padding: 14px;
+          }
+
+          .coverageMapFrame iframe {
+            border-radius: 20px;
           }
 
           .coverageQuoteBox {
-            margin-top: 24px;
+            margin-top: 28px;
             padding: 32px 24px;
             border-radius: 28px;
           }
 
-          .coverageQuoteBox h3 {
-            font-size: 28px;
+          .coverageQuoteText h3 {
+            font-size: clamp(28px, 10vw, 42px);
+            letter-spacing: -1px;
           }
 
-          .coverageQuoteBox p {
-            font-size: 15.8px;
+          .coverageQuoteText p {
+            font-size: 16px;
+            line-height: 1.65;
+            text-align: left;
+          }
+
+          .coverageQuoteButton {
+            min-height: 54px;
+            padding: 0 24px;
+            font-size: 15px;
           }
         }
       `}</style>
