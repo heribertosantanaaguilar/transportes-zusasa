@@ -126,20 +126,23 @@ export default function Stats() {
           display: flex;
           flex-direction: column;
           justify-content: flex-start;
+          align-items: center;
+          text-align: center;
           overflow: hidden;
         }
 
         .zusasaStatCard strong {
           display: block;
+          width: 100%;
           color: #f26522;
-          font-size: clamp(34px, 3.1vw, 46px);
+          font-size: clamp(34px, 2.55vw, 40px);
           line-height: 1;
           font-weight: 900;
           margin-bottom: 22px;
-          max-width: 100%;
-          white-space: normal;
-          overflow-wrap: anywhere;
-          word-break: normal;
+          white-space: nowrap;
+          overflow: visible;
+          text-align: center;
+          letter-spacing: -0.8px;
         }
 
         .zusasaStatCard h3 {
@@ -148,6 +151,7 @@ export default function Stats() {
           line-height: 1.15;
           margin: 0 0 14px;
           font-weight: 900;
+          text-align: center;
         }
 
         .zusasaStatCard p {
@@ -155,6 +159,7 @@ export default function Stats() {
           font-size: 15.8px;
           line-height: 1.6;
           margin: 0;
+          text-align: center;
         }
 
         @media (max-width: 1100px) {
@@ -163,7 +168,7 @@ export default function Stats() {
           }
 
           .zusasaStatCard strong {
-            font-size: 44px;
+            font-size: 40px;
           }
         }
 
