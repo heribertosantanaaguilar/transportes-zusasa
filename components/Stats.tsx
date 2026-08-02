@@ -19,6 +19,7 @@ export default function Stats() {
       number: "Confiable",
       label: "Servicio con claridad",
       text: "Revisamos cada operación antes de confirmar condiciones.",
+      compact: true,
     },
   ];
 
@@ -42,7 +43,9 @@ export default function Stats() {
         <div className="zusasaStatsGrid">
           {stats.map((item) => (
             <article className="zusasaStatCard" key={item.label}>
-              <strong>{item.number}</strong>
+              <strong className={item.compact ? "compactWord" : ""}>
+                {item.number}
+              </strong>
 
               <h3>{item.label}</h3>
 
@@ -145,6 +148,11 @@ export default function Stats() {
           letter-spacing: -0.8px;
         }
 
+        .zusasaStatCard strong.compactWord {
+          font-size: clamp(30px, 2.25vw, 36px);
+          letter-spacing: -1px;
+        }
+
         .zusasaStatCard h3 {
           color: #0a1d36;
           font-size: 22px;
@@ -169,6 +177,10 @@ export default function Stats() {
 
           .zusasaStatCard strong {
             font-size: 40px;
+          }
+
+          .zusasaStatCard strong.compactWord {
+            font-size: 38px;
           }
         }
 
@@ -205,6 +217,10 @@ export default function Stats() {
           .zusasaStatCard strong {
             font-size: 38px;
             margin-bottom: 18px;
+          }
+
+          .zusasaStatCard strong.compactWord {
+            font-size: 36px;
           }
 
           .zusasaStatCard h3 {
