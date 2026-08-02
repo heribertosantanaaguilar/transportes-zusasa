@@ -23,146 +23,194 @@ export default function Stats() {
   ];
 
   return (
-    <section
-      className="zusasaStats"
-      style={{
-        padding: "100px 7%",
-        background: "#f5f6f7",
-      }}
-    >
-      <div
-        className="zusasaStatsContainer"
-        style={{
-          maxWidth: "1180px",
-          margin: "0 auto",
-        }}
-      >
-        <div
-          className="zusasaStatsHeader"
-          style={{
-            width: "100%",
-            maxWidth: "none",
-            marginBottom: "46px",
-          }}
-        >
-          <span
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "14px",
-              color: "#f26522",
-              fontWeight: 900,
-              textTransform: "uppercase",
-              letterSpacing: "1.2px",
-              fontSize: "15px",
-              marginBottom: "22px",
-            }}
-          >
-            <span
-              style={{
-                width: "48px",
-                height: "4px",
-                background: "#f26522",
-                borderRadius: "999px",
-                display: "inline-block",
-              }}
-            />
+    <section className="zusasaStats">
+      <div className="zusasaStatsContainer">
+        <div className="zusasaStatsHeader">
+          <span className="zusasaStatsEyebrow">
+            <span />
             Nuestra forma de trabajo
           </span>
 
-          <h2
-            style={{
-              maxWidth: "980px",
-              color: "#0a1d36",
-              fontSize: "clamp(38px, 5vw, 64px)",
-              lineHeight: 1.04,
-              letterSpacing: "-1.8px",
-              margin: "0 0 22px",
-              fontWeight: 900,
-            }}
-          >
-            Atención directa y coordinación clara.
-          </h2>
+          <h2>Atención directa y coordinación clara.</h2>
 
-          <p
-            style={{
-              width: "100%",
-              maxWidth: "none",
-              color: "#3b4a5a",
-              fontSize: "19px",
-              lineHeight: 1.7,
-              margin: 0,
-            }}
-          >
+          <p>
             Trabajamos cada solicitud con seriedad, revisando disponibilidad,
             condiciones operativas y necesidades reales del servicio.
           </p>
         </div>
 
-        <div
-          className="zusasaStatsGrid"
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(230px, 1fr))",
-            gap: "22px",
-          }}
-        >
+        <div className="zusasaStatsGrid">
           {stats.map((item) => (
-            <article
-              className="zusasaStatCard"
-              key={item.label}
-              style={{
-                minHeight: "230px",
-                padding: "30px 28px",
-                borderRadius: "28px",
-                background: "#ffffff",
-                border: "1px solid rgba(10, 29, 54, 0.08)",
-                borderTop: "6px solid #f26522",
-                boxShadow: "0 20px 55px rgba(10, 29, 54, 0.09)",
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "flex-start",
-              }}
-            >
-              <strong
-                style={{
-                  display: "block",
-                  color: "#f26522",
-                  fontSize: "36px",
-                  lineHeight: 1,
-                  fontWeight: 900,
-                  marginBottom: "20px",
-                }}
-              >
-                {item.number}
-              </strong>
+            <article className="zusasaStatCard" key={item.label}>
+              <strong>{item.number}</strong>
 
-              <h3
-                style={{
-                  color: "#0a1d36",
-                  fontSize: "23px",
-                  lineHeight: 1.15,
-                  margin: "0 0 14px",
-                  fontWeight: 900,
-                }}
-              >
-                {item.label}
-              </h3>
+              <h3>{item.label}</h3>
 
-              <p
-                style={{
-                  color: "#3b4a5a",
-                  fontSize: "15.8px",
-                  lineHeight: 1.6,
-                  margin: 0,
-                }}
-              >
-                {item.text}
-              </p>
+              <p>{item.text}</p>
             </article>
           ))}
         </div>
       </div>
+
+      <style>{`
+        .zusasaStats {
+          padding: 100px 7%;
+          background: #f5f6f7;
+          overflow: hidden;
+        }
+
+        .zusasaStatsContainer {
+          max-width: 1180px;
+          margin: 0 auto;
+        }
+
+        .zusasaStatsHeader {
+          width: 100%;
+          max-width: none;
+          margin-bottom: 46px;
+        }
+
+        .zusasaStatsEyebrow {
+          display: inline-flex;
+          align-items: center;
+          gap: 14px;
+          color: #f26522;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 1.2px;
+          font-size: 15px;
+          margin-bottom: 22px;
+        }
+
+        .zusasaStatsEyebrow span {
+          width: 48px;
+          height: 4px;
+          background: #f26522;
+          border-radius: 999px;
+          display: inline-block;
+        }
+
+        .zusasaStatsHeader h2 {
+          max-width: 980px;
+          color: #0a1d36;
+          font-size: clamp(38px, 5vw, 64px);
+          line-height: 1.04;
+          letter-spacing: -1.8px;
+          margin: 0 0 22px;
+          font-weight: 900;
+        }
+
+        .zusasaStatsHeader p {
+          width: 100%;
+          max-width: none;
+          color: #3b4a5a;
+          font-size: 19px;
+          line-height: 1.7;
+          margin: 0;
+        }
+
+        .zusasaStatsGrid {
+          display: grid;
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+          gap: 22px;
+        }
+
+        .zusasaStatCard {
+          min-height: 230px;
+          padding: 30px 24px;
+          border-radius: 28px;
+          background: #ffffff;
+          border: 1px solid rgba(10, 29, 54, 0.08);
+          border-top: 6px solid #f26522;
+          box-shadow: 0 20px 55px rgba(10, 29, 54, 0.09);
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          overflow: hidden;
+        }
+
+        .zusasaStatCard strong {
+          display: block;
+          color: #f26522;
+          font-size: clamp(34px, 3.1vw, 46px);
+          line-height: 1;
+          font-weight: 900;
+          margin-bottom: 22px;
+          max-width: 100%;
+          white-space: normal;
+          overflow-wrap: anywhere;
+          word-break: normal;
+        }
+
+        .zusasaStatCard h3 {
+          color: #0a1d36;
+          font-size: 22px;
+          line-height: 1.15;
+          margin: 0 0 14px;
+          font-weight: 900;
+        }
+
+        .zusasaStatCard p {
+          color: #3b4a5a;
+          font-size: 15.8px;
+          line-height: 1.6;
+          margin: 0;
+        }
+
+        @media (max-width: 1100px) {
+          .zusasaStatsGrid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+          }
+
+          .zusasaStatCard strong {
+            font-size: 44px;
+          }
+        }
+
+        @media (max-width: 650px) {
+          .zusasaStats {
+            padding: 72px 7%;
+          }
+
+          .zusasaStatsHeader {
+            margin-bottom: 34px;
+          }
+
+          .zusasaStatsHeader h2 {
+            font-size: clamp(34px, 12vw, 54px);
+            letter-spacing: -1.2px;
+          }
+
+          .zusasaStatsHeader p {
+            font-size: 17px;
+            line-height: 1.65;
+          }
+
+          .zusasaStatsGrid {
+            grid-template-columns: 1fr;
+            gap: 20px;
+          }
+
+          .zusasaStatCard {
+            min-height: auto;
+            padding: 28px 24px;
+            border-radius: 26px;
+          }
+
+          .zusasaStatCard strong {
+            font-size: 38px;
+            margin-bottom: 18px;
+          }
+
+          .zusasaStatCard h3 {
+            font-size: 21px;
+          }
+
+          .zusasaStatCard p {
+            font-size: 15.5px;
+          }
+        }
+      `}</style>
     </section>
   );
 }
