@@ -149,14 +149,14 @@ export default function Stats() {
         }
 
         .zusasaStatCard strong.compactWord {
-          font-size: clamp(26px, 1.9vw, 31px) !important;
-          letter-spacing: -1.2px !important;
+          font-size: clamp(31px, 2.15vw, 36px) !important;
+          letter-spacing: -1.6px !important;
           white-space: nowrap !important;
         }
 
         .zusasaStatsGrid .zusasaStatCard:nth-child(4) strong {
-          font-size: clamp(26px, 1.9vw, 31px) !important;
-          letter-spacing: -1.2px !important;
+          font-size: clamp(31px, 2.15vw, 36px) !important;
+          letter-spacing: -1.6px !important;
           white-space: nowrap !important;
         }
 
@@ -192,7 +192,8 @@ export default function Stats() {
 
           .zusasaStatCard strong.compactWord,
           .zusasaStatsGrid .zusasaStatCard:nth-child(4) strong {
-            font-size: 38px !important;
+            font-size: 40px !important;
+            letter-spacing: -1.2px !important;
           }
         }
 
@@ -233,7 +234,8 @@ export default function Stats() {
 
           .zusasaStatCard strong.compactWord,
           .zusasaStatsGrid .zusasaStatCard:nth-child(4) strong {
-            font-size: 36px !important;
+            font-size: 38px !important;
+            letter-spacing: -1px !important;
           }
 
           .zusasaStatCard h3 {
