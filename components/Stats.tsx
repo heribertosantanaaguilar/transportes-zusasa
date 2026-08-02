@@ -120,7 +120,7 @@ export default function Stats() {
 
         .zusasaStatCard {
           min-height: 230px;
-          padding: 30px 24px;
+          padding: 30px 18px;
           border-radius: 28px;
           background: #ffffff;
           border: 1px solid rgba(10, 29, 54, 0.08);
@@ -138,19 +138,26 @@ export default function Stats() {
           display: block;
           width: 100%;
           color: #f26522;
-          font-size: clamp(34px, 2.55vw, 40px);
+          font-size: clamp(32px, 2.35vw, 38px);
           line-height: 1;
           font-weight: 900;
           margin-bottom: 22px;
           white-space: nowrap;
           overflow: visible;
           text-align: center;
-          letter-spacing: -0.8px;
+          letter-spacing: -1px;
         }
 
         .zusasaStatCard strong.compactWord {
-          font-size: clamp(30px, 2.25vw, 36px);
-          letter-spacing: -1px;
+          font-size: clamp(26px, 1.9vw, 31px) !important;
+          letter-spacing: -1.2px !important;
+          white-space: nowrap !important;
+        }
+
+        .zusasaStatsGrid .zusasaStatCard:nth-child(4) strong {
+          font-size: clamp(26px, 1.9vw, 31px) !important;
+          letter-spacing: -1.2px !important;
+          white-space: nowrap !important;
         }
 
         .zusasaStatCard h3 {
@@ -175,12 +182,17 @@ export default function Stats() {
             grid-template-columns: repeat(2, minmax(0, 1fr));
           }
 
+          .zusasaStatCard {
+            padding: 30px 24px;
+          }
+
           .zusasaStatCard strong {
             font-size: 40px;
           }
 
-          .zusasaStatCard strong.compactWord {
-            font-size: 38px;
+          .zusasaStatCard strong.compactWord,
+          .zusasaStatsGrid .zusasaStatCard:nth-child(4) strong {
+            font-size: 38px !important;
           }
         }
 
@@ -219,8 +231,9 @@ export default function Stats() {
             margin-bottom: 18px;
           }
 
-          .zusasaStatCard strong.compactWord {
-            font-size: 36px;
+          .zusasaStatCard strong.compactWord,
+          .zusasaStatsGrid .zusasaStatCard:nth-child(4) strong {
+            font-size: 36px !important;
           }
 
           .zusasaStatCard h3 {
