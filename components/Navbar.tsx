@@ -5,11 +5,13 @@ export default function Navbar() {
     <header className="zusasaNavbar">
       <div className="zusasaNavbarInner">
         <a href="/#inicio" className="zusasaBrand" aria-label="Transportes ZUSASA">
-          <img
-            src="/images/logo-zusasa.png"
-            alt="Transportes ZUSASA"
-            className="zusasaBrandLogo"
-          />
+          <div className="zusasaBrandLogoBox">
+            <img
+              src="/images/logo-zusasa.png"
+              alt="Transportes ZUSASA"
+              className="zusasaBrandLogo"
+            />
+          </div>
 
           <div className="zusasaBrandText">
             <span>TRANSPORTES</span>
@@ -60,14 +62,23 @@ export default function Navbar() {
           flex: 0 0 auto;
         }
 
-        .zusasaBrandLogo {
-          width: 86px;
-          height: 86px;
+        .zusasaBrandLogoBox {
+          width: 92px;
+          height: 92px;
           border-radius: 22px;
-          object-fit: contain;
           background: #ffffff;
-          padding: 9px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
           box-shadow: 0 14px 34px rgba(0, 0, 0, 0.18);
+          overflow: hidden;
+          flex: 0 0 auto;
+        }
+
+        .zusasaBrandLogo {
+          width: 82px;
+          height: 82px;
+          object-fit: contain;
           display: block;
         }
 
@@ -179,10 +190,6 @@ export default function Navbar() {
         }
 
         @media (max-width: 768px) {
-          .zusasaNavbar {
-            overflow: hidden;
-          }
-
           .zusasaNavbarInner {
             padding: 16px 6%;
           }
@@ -192,10 +199,15 @@ export default function Navbar() {
             justify-content: center;
           }
 
+          .zusasaBrandLogoBox {
+            width: 92px;
+            height: 92px;
+            border-radius: 22px;
+          }
+
           .zusasaBrandLogo {
-            width: 88px;
-            height: 88px;
-            border-radius: 20px;
+            width: 84px;
+            height: 84px;
           }
 
           .zusasaBrandText span {
@@ -229,6 +241,11 @@ export default function Navbar() {
         }
 
         @media (max-width: 420px) {
+          .zusasaBrandLogoBox {
+            width: 84px;
+            height: 84px;
+          }
+
           .zusasaBrandLogo {
             width: 78px;
             height: 78px;
