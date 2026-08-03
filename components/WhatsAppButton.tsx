@@ -18,19 +18,17 @@ export default function WhatsAppButton() {
 
       <style>{`
         .whatsappFloatButton {
-          position: fixed;
-          right: 28px;
-          bottom: 28px;
-          z-index: 9999;
-          width: auto;
-          max-width: calc(100vw - 56px);
-          min-width: 148px;
+          position: fixed !important;
+          right: 28px !important;
+          bottom: 28px !important;
+          left: auto !important;
+          z-index: 99999;
+          width: 150px;
           height: 58px;
-          padding: 0 26px;
           border-radius: 999px;
           background: #25d366;
           color: #ffffff;
-          display: inline-flex;
+          display: flex;
           align-items: center;
           justify-content: center;
           font-family: inherit;
@@ -41,36 +39,33 @@ export default function WhatsAppButton() {
           white-space: nowrap;
           box-sizing: border-box;
           box-shadow: 0 18px 42px rgba(37, 211, 102, 0.32);
-          transform: translateZ(0);
           overflow: hidden;
+          transform: none !important;
         }
 
         .whatsappFloatButton:hover {
-          transform: translateY(-2px);
           box-shadow: 0 22px 48px rgba(37, 211, 102, 0.38);
         }
 
         @media (max-width: 768px) {
           .whatsappFloatButton {
-            right: 18px;
-            bottom: 18px;
-            min-width: 122px;
-            height: 50px;
-            padding: 0 17px;
-            font-size: 15px;
-            max-width: calc(100vw - 36px);
+            right: 12px !important;
+            bottom: 16px !important;
+            width: 124px !important;
+            height: 50px !important;
+            padding: 0 !important;
+            font-size: 15px !important;
+            max-width: calc(100vw - 24px) !important;
           }
         }
 
         @media (max-width: 380px) {
           .whatsappFloatButton {
-            right: 16px;
-            bottom: 16px;
-            min-width: 116px;
-            height: 48px;
-            padding: 0 15px;
-            font-size: 14.5px;
-            max-width: calc(100vw - 32px);
+            right: 10px !important;
+            bottom: 14px !important;
+            width: 118px !important;
+            height: 48px !important;
+            font-size: 14px !important;
           }
         }
       `}</style>
