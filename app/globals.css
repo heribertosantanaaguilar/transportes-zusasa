@@ -9002,3 +9002,16 @@ video,
 iframe {
   max-width: 100%;
 }
+.zusasaBrandLogoBox {
+  width: 92px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.zusasaBrandLogo {
+  width: 82px;
+  height: 82px;
+  object-fit: contain;
+}
