@@ -15,6 +15,7 @@ export default function WhatsAppButton() {
       aria-label="Contactar por WhatsApp"
     >
       WhatsApp
+
       <style>{`
         .whatsappFloatButton {
           position: fixed;
@@ -41,24 +42,7 @@ export default function WhatsAppButton() {
           overflow: hidden;
         }
 
-        .whatsappFloatButton:hover {
-          transform: translateY(-2px);
-          box-shadow: 0 22px 48px rgba(37, 211, 102, 0.38);
-        }
-
         @media (max-width: 768px) {
-          .whatsappFloatButton {
-            right: 16px;
-            bottom: 18px;
-            min-width: 132px;
-            height: 54px;
-            padding: 0 20px;
-            font-size: 16px;
-            max-width: calc(100vw - 32px);
-          }
-        }
-
-        @media (max-width: 420px) {
           .whatsappFloatButton {
             right: 14px;
             bottom: 16px;
@@ -66,6 +50,7 @@ export default function WhatsAppButton() {
             height: 52px;
             padding: 0 18px;
             font-size: 15.5px;
+            max-width: calc(100vw - 28px);
           }
         }
       `}</style>
