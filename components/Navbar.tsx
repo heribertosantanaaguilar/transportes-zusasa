@@ -63,9 +63,9 @@ export default function Navbar() {
         }
 
         .zusasaBrandLogoBox {
-          width: 92px;
-          height: 92px;
-          border-radius: 22px;
+          width: 96px;
+          height: 96px;
+          border-radius: 24px;
           background: #ffffff;
           display: flex;
           align-items: center;
@@ -76,10 +76,12 @@ export default function Navbar() {
         }
 
         .zusasaBrandLogo {
-          width: 82px;
-          height: 82px;
+          width: 96px;
+          height: 96px;
           object-fit: contain;
           display: block;
+          transform: scale(1.55);
+          transform-origin: center;
         }
 
         .zusasaBrandText {
@@ -206,8 +208,9 @@ export default function Navbar() {
           }
 
           .zusasaBrandLogo {
-            width: 84px;
-            height: 84px;
+            width: 92px;
+            height: 92px;
+            transform: scale(1.55);
           }
 
           .zusasaBrandText span {
@@ -244,11 +247,13 @@ export default function Navbar() {
           .zusasaBrandLogoBox {
             width: 84px;
             height: 84px;
+            border-radius: 20px;
           }
 
           .zusasaBrandLogo {
-            width: 78px;
-            height: 78px;
+            width: 84px;
+            height: 84px;
+            transform: scale(1.55);
           }
 
           .zusasaBrandText strong {
