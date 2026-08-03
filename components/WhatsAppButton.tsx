@@ -20,8 +20,8 @@ export default function WhatsAppButton() {
         .whatsappFloatButton {
           position: fixed !important;
           right: 28px !important;
-          bottom: 28px !important;
           left: auto !important;
+          bottom: 28px !important;
           z-index: 99999;
           width: 150px;
           height: 58px;
@@ -40,30 +40,25 @@ export default function WhatsAppButton() {
           box-sizing: border-box;
           box-shadow: 0 18px 42px rgba(37, 211, 102, 0.32);
           overflow: hidden;
-          transform: none !important;
-        }
-
-        .whatsappFloatButton:hover {
-          box-shadow: 0 22px 48px rgba(37, 211, 102, 0.38);
         }
 
         @media (max-width: 768px) {
           .whatsappFloatButton {
-            right: 12px !important;
+            left: 50% !important;
+            right: auto !important;
             bottom: 16px !important;
-            width: 124px !important;
+            transform: translateX(-50%) !important;
+            width: 136px !important;
             height: 50px !important;
             padding: 0 !important;
             font-size: 15px !important;
-            max-width: calc(100vw - 24px) !important;
+            max-width: calc(100vw - 32px) !important;
           }
         }
 
         @media (max-width: 380px) {
           .whatsappFloatButton {
-            right: 10px !important;
-            bottom: 14px !important;
-            width: 118px !important;
+            width: 126px !important;
             height: 48px !important;
             font-size: 14px !important;
           }
