@@ -8926,3 +8926,51 @@ body .heroShowcaseBar {
 #servicios {
   padding-top: 35px !important;
 }
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main,
+section,
+header,
+footer {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img,
+video,
+iframe {
+  max-width: 100%;
+}
+  @media (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden !important;
+  }
+
+  .heroSection,
+  .hero,
+  .heroContent,
+  .heroCard,
+  .heroImage,
+  .heroImageCard {
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+  }
+
+  section {
+    max-width: 100vw !important;
+  }
+}
