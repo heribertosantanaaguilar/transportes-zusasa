@@ -117,7 +117,7 @@ export default function Stats() {
 
         .zusasaStatCard {
           min-height: 230px;
-          padding: 30px 14px;
+          padding: 30px 18px;
           border-radius: 28px;
           background: #ffffff;
           border: 1px solid rgba(10, 29, 54, 0.08);
@@ -135,14 +135,14 @@ export default function Stats() {
           display: block;
           width: 100%;
           color: #f26522;
-          font-size: clamp(28px, 2vw, 32px);
+          font-size: 32px !important;
           line-height: 1;
           font-weight: 900;
           margin-bottom: 24px;
-          white-space: nowrap;
+          white-space: nowrap !important;
           overflow: visible;
           text-align: center;
-          letter-spacing: -0.8px;
+          letter-spacing: -0.6px;
         }
 
         .zusasaStatCard h3 {
@@ -172,7 +172,7 @@ export default function Stats() {
           }
 
           .zusasaStatCard strong {
-            font-size: 38px;
+            font-size: 38px !important;
             letter-spacing: -1px;
           }
         }
@@ -208,7 +208,7 @@ export default function Stats() {
           }
 
           .zusasaStatCard strong {
-            font-size: 38px;
+            font-size: 38px !important;
             margin-bottom: 18px;
             letter-spacing: -1px;
           }
