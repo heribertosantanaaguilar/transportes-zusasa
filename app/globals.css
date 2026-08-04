@@ -9332,3 +9332,12 @@ body {
     transform: none !important;
   }
 }
+@media (max-width: 768px) {
+  .hero {
+    background-color: #0a1d36 !important;
+  }
+
+  .zusasaNavbar {
+    background-color: #0a1d36 !important;
+  }
+}
