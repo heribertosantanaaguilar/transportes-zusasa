@@ -8,27 +8,27 @@ export default function Contact() {
           <h2>Solicita tu cotización y coordinemos tu operación.</h2>
 
           <p>
-            Cuéntanos qué tipo de contenedor necesitas mover, el origen, el
-            destino y la fecha estimada del servicio. En Transportes ZUSASA te
-            brindaremos atención directa para revisar tu operación y darte una
-            respuesta clara.
+            Cuéntanos qué tipo de servicio necesitas, el origen, el destino y la
+            fecha estimada de tu operación. En Transportes ZUSASA te brindaremos
+            atención directa para revisar tu solicitud y darte una respuesta
+            clara.
           </p>
 
           <div className="contactActions">
             <a
-              href="https://wa.me/522224556651?text=Hola,%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20con%20Transportes%20ZUSASA."
+              href="mailto:cotizaciones@transporteszusasa.com?subject=Solicitud%20de%20cotizaci%C3%B3n%20-%20Transportes%20ZUSASA&body=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20para%20un%20servicio%20de%20Transportes%20ZUSASA.%0A%0ATipo%20de%20servicio%3A%0AOrigen%3A%0ADestino%3A%0AFecha%20estimada%3A%0AComentarios%20adicionales%3A"
+              className="contactQuote"
+            >
+              Solicitar cotización
+            </a>
+
+            <a
+              href="https://wa.me/522224556651?text=Hola,%20quiero%20solicitar%20informaci%C3%B3n%20sobre%20los%20servicios%20de%20Transportes%20ZUSASA."
               target="_blank"
               rel="noopener noreferrer"
               className="contactWhatsApp"
             >
-              Cotizar por WhatsApp
-            </a>
-
-            <a
-              href="mailto:transportes.zusasa@gmail.com"
-              className="contactMail"
-            >
-              Enviar correo
+              Contactar por WhatsApp
             </a>
           </div>
         </div>
@@ -40,26 +40,35 @@ export default function Contact() {
             <strong>José Alberto Zúñiga Ramos</strong>
             <span>Gerente General</span>
             <a href="tel:+522224556651">222 455 6651</a>
+            <a href="mailto:jzuniga@transporteszusasa.com">
+              jzuniga@transporteszusasa.com
+            </a>
           </div>
 
           <div className="contactItem">
             <strong>Sergio Sanmiguel Celis</strong>
             <span>Dirección de Administración y Finanzas</span>
             <a href="tel:+523141069165">314 106 9165</a>
+            <a href="mailto:sergio.sanmiguel@transporteszusasa.com">
+              sergio.sanmiguel@transporteszusasa.com
+            </a>
           </div>
 
           <div className="contactItem">
             <strong>Heriberto Santana Aguilar</strong>
             <span>Coordinación de Logística</span>
             <a href="tel:+523148721897">314 872 1897</a>
+            <a href="mailto:heriberto.santana@transporteszusasa.com">
+              heriberto.santana@transporteszusasa.com
+            </a>
           </div>
 
           <div className="contactDivider" />
 
           <div className="contactItem">
-            <strong>Correo</strong>
-            <a href="mailto:transportes.zusasa@gmail.com">
-              transportes.zusasa@gmail.com
+            <strong>Cotizaciones</strong>
+            <a href="mailto:cotizaciones@transporteszusasa.com">
+              cotizaciones@transporteszusasa.com
             </a>
           </div>
 
@@ -75,9 +84,7 @@ export default function Contact() {
           width: 100%;
           max-width: 100%;
           padding: 110px 7%;
-          background:
-            radial-gradient(circle at top left, rgba(242, 101, 34, 0.12), transparent 32%),
-            #f5f6f8;
+          background: radial-gradient(circle at top left, rgba(242, 101, 34, 0.12), transparent 32%), #f5f6f8;
           color: #0a1d36;
           overflow: hidden;
         }
@@ -153,13 +160,13 @@ export default function Contact() {
           text-align: center;
         }
 
-        .contactWhatsApp {
+        .contactQuote {
           background: #f26522;
           color: #ffffff;
           box-shadow: 0 18px 40px rgba(242, 101, 34, 0.28);
         }
 
-        .contactMail {
+        .contactWhatsApp {
           background: #ffffff;
           color: #0a1d36;
           border: 2px solid #0a1d36;
@@ -204,7 +211,7 @@ export default function Contact() {
 
         .contactItem a {
           color: #f26522;
-          font-size: 17px;
+          font-size: 16.5px;
           line-height: 1.45;
           font-weight: 900;
           text-decoration: none;
