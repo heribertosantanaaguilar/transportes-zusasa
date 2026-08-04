@@ -1,3 +1,6 @@
+const quoteEmailLink =
+  "mailto:cotizaciones@transporteszusasa.com?subject=Solicitud%20de%20cotizaci%C3%B3n%20-%20Transportes%20ZUSASA&body=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20para%20un%20servicio%20de%20Transportes%20ZUSASA.%0A%0AServicio%20que%20necesito%3A%0A-%20Movimiento%20local%20de%20contenedores%3A%0A-%20Movimiento%20local%20de%20ISO%20tanques%3A%0A-%20Transporte%20nacional%20de%20contenedores%20e%20ISO%20tanques%3A%0A-%20Resguardo%20en%20patio%20de%20maniobras%3A%0A-%20Apoyo%20operativo%3A%0A%0ADatos%20del%20servicio%3A%0A-%20Empresa%3A%0A-%20Nombre%20de%20contacto%3A%0A-%20Tel%C3%A9fono%3A%0A-%20Tipo%20de%20contenedor%20o%20ISO%20tanque%3A%0A-%20Origen%3A%0A-%20Destino%20local%3A%0A-%20Destino%20nacional%3A%0A-%20Fecha%20estimada%3A%0A-%20Peso%20aproximado%3A%0A-%20Requiere%20movimiento%20local%20previo%3A%0A-%20Requiere%20resguardo%3A%0A-%20Comentarios%3A";
+
 export default function Quote() {
   return (
     <section className="quoteSection" id="cotizacion-inmediata">
@@ -5,13 +8,17 @@ export default function Quote() {
         <div className="quoteHeader">
           <span>Cotización inmediata</span>
 
-          <h2>Solicita una cotización para tu movimiento local en Manzanillo.</h2>
+          <h2>
+            Solicita una cotización para tu operación logística desde
+            Manzanillo.
+          </h2>
 
           <p>
-            Cuéntanos qué tipo de contenedor necesitas mover, el origen, el
-            destino y la fecha estimada del servicio. Nuestro equipo revisará la
-            información y te dará una respuesta clara para coordinar tu
-            operación.
+            Cuéntanos qué tipo de servicio necesitas, el origen, el destino y la
+            fecha estimada de tu operación. Nuestro equipo revisará la
+            información y te dará una respuesta clara para coordinar movimiento
+            local, resguardo o transporte nacional de contenedores e ISO
+            tanques.
           </p>
         </div>
 
@@ -41,26 +48,23 @@ export default function Quote() {
             </p>
 
             <ul>
-              <li>Tipo de contenedor</li>
+              <li>Tipo de servicio requerido</li>
+              <li>Tipo de contenedor o ISO tanque</li>
               <li>Origen del movimiento</li>
-              <li>Destino del movimiento</li>
+              <li>Destino local o nacional</li>
               <li>Fecha estimada del servicio</li>
+              <li>Peso aproximado de la carga</li>
               <li>Datos o requerimientos especiales</li>
             </ul>
           </div>
 
           <div className="quoteActions">
-            <a href="/cotizacion" className="quotePrimary">
-              Ver página de cotización
+            <a href={quoteEmailLink} className="quotePrimary">
+              Solicitar cotización por correo
             </a>
 
-            <a
-              href="https://wa.me/522224556651?text=Hola,%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20para%20un%20servicio%20de%20Transportes%20ZUSASA."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="quoteSecondary"
-            >
-              Cotizar por WhatsApp
+            <a href={quoteEmailLink} className="quoteSecondary">
+              Enviar datos de mi operación
             </a>
           </div>
         </div>
