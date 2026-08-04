@@ -54,7 +54,6 @@ export default function Navbar() {
           justify-content: space-between;
           gap: 34px;
           box-sizing: border-box;
-          overflow: hidden;
         }
 
         .zusasaBrand {
@@ -179,22 +178,26 @@ export default function Navbar() {
             order: 3;
             width: 100%;
             max-width: 100%;
-            display: grid;
-            grid-template-columns: repeat(5, minmax(0, 1fr));
-            gap: 10px;
-            overflow: hidden;
+            justify-content: flex-start;
+            gap: 12px;
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 4px 0 6px;
+            scrollbar-width: none;
+            overscroll-behavior-x: contain;
+            -webkit-overflow-scrolling: touch;
+          }
+
+          .zusasaNavLinks::-webkit-scrollbar {
+            display: none;
           }
 
           .zusasaNavLinks a {
-            width: 100%;
-            min-width: 0;
-            padding: 14px 10px;
+            flex: 0 0 auto;
+            padding: 14px 20px;
             border-radius: 999px;
             background: rgba(255, 255, 255, 0.08);
             border: 1px solid rgba(255, 255, 255, 0.12);
-            text-align: center;
-            overflow: hidden;
-            text-overflow: ellipsis;
           }
 
           .zusasaNavLinks a::after {
@@ -205,13 +208,13 @@ export default function Navbar() {
         @media (max-width: 768px) {
           .zusasaNavbar {
             width: 100%;
-            max-width: 100vw;
+            max-width: 100%;
             overflow: hidden;
           }
 
           .zusasaNavbarInner {
             width: 100%;
-            max-width: 100vw;
+            max-width: 100%;
             padding: 16px 6%;
             overflow: hidden;
           }
@@ -251,21 +254,27 @@ export default function Navbar() {
           .zusasaNavLinks {
             width: 100%;
             max-width: 100%;
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 10px;
-            overflow: hidden;
-            padding: 4px 0 6px;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            gap: 12px;
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 6px 0 8px;
+            scrollbar-width: none;
+            overscroll-behavior-x: contain;
+            -webkit-overflow-scrolling: touch;
+          }
+
+          .zusasaNavLinks::-webkit-scrollbar {
+            display: none;
           }
 
           .zusasaNavLinks a {
-            width: 100%;
-            min-width: 0;
-            font-size: 14.5px;
-            padding: 13px 8px;
-            text-align: center;
-            overflow: hidden;
-            text-overflow: ellipsis;
+            flex: 0 0 auto;
+            font-size: 15px;
+            padding: 13px 22px;
+            border-radius: 999px;
             white-space: nowrap;
           }
         }
@@ -300,14 +309,9 @@ export default function Navbar() {
             letter-spacing: 4px;
           }
 
-          .zusasaNavLinks {
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 9px;
-          }
-
           .zusasaNavLinks a {
-            font-size: 14px;
-            padding: 12px 8px;
+            font-size: 14.5px;
+            padding: 12px 20px;
           }
         }
       `}</style>
