@@ -9279,3 +9279,56 @@ body {
     transform: none !important;
   }
 }
+@media (max-width: 768px) {
+  html,
+  body {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+    background: #0a1d36;
+  }
+
+  body > * {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  main,
+  section,
+  header,
+  footer {
+    width: 100dvw !important;
+    max-width: 100dvw !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    overflow-x: hidden !important;
+  }
+
+  .zusasaNavbar,
+  .zusasaNavbarInner,
+  .hero,
+  .heroSection {
+    width: 100dvw !important;
+    max-width: 100dvw !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .zusasaNavbar {
+    left: 0 !important;
+    right: 0 !important;
+  }
+
+  .zusasaNavbarInner {
+    box-sizing: border-box !important;
+  }
+
+  .whatsappFloatButton {
+    right: 18px !important;
+    left: auto !important;
+    transform: none !important;
+  }
+}
