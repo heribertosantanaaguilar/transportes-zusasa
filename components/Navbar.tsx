@@ -35,6 +35,7 @@ export default function Navbar() {
       <style>{`
         .zusasaNavbar {
           width: 100%;
+          max-width: 100%;
           position: sticky;
           top: 0;
           z-index: 9998;
@@ -52,6 +53,8 @@ export default function Navbar() {
           align-items: center;
           justify-content: space-between;
           gap: 34px;
+          box-sizing: border-box;
+          overflow: hidden;
         }
 
         .zusasaBrand {
@@ -60,6 +63,7 @@ export default function Navbar() {
           gap: 16px;
           text-decoration: none;
           flex: 0 0 auto;
+          min-width: 0;
         }
 
         .zusasaBrandLogoBox {
@@ -88,6 +92,7 @@ export default function Navbar() {
           display: flex;
           flex-direction: column;
           line-height: 1;
+          min-width: 0;
         }
 
         .zusasaBrandText span {
@@ -96,6 +101,7 @@ export default function Navbar() {
           font-weight: 700;
           letter-spacing: 6px;
           margin-bottom: 8px;
+          white-space: nowrap;
         }
 
         .zusasaBrandText strong {
@@ -103,6 +109,7 @@ export default function Navbar() {
           font-size: 42px;
           font-weight: 900;
           letter-spacing: 1px;
+          white-space: nowrap;
         }
 
         .zusasaNavLinks {
@@ -111,6 +118,9 @@ export default function Navbar() {
           justify-content: center;
           gap: 34px;
           flex: 1 1 auto;
+          min-width: 0;
+          max-width: 100%;
+          overflow: hidden;
         }
 
         .zusasaNavLinks a {
@@ -168,22 +178,23 @@ export default function Navbar() {
           .zusasaNavLinks {
             order: 3;
             width: 100%;
-            justify-content: flex-start;
-            overflow-x: auto;
-            gap: 12px;
-            padding: 4px 0 6px;
-            scrollbar-width: none;
-          }
-
-          .zusasaNavLinks::-webkit-scrollbar {
-            display: none;
+            max-width: 100%;
+            display: grid;
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            gap: 10px;
+            overflow: hidden;
           }
 
           .zusasaNavLinks a {
-            padding: 14px 20px;
+            width: 100%;
+            min-width: 0;
+            padding: 14px 10px;
             border-radius: 999px;
             background: rgba(255, 255, 255, 0.08);
             border: 1px solid rgba(255, 255, 255, 0.12);
+            text-align: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
           }
 
           .zusasaNavLinks a::after {
@@ -192,13 +203,24 @@ export default function Navbar() {
         }
 
         @media (max-width: 768px) {
+          .zusasaNavbar {
+            width: 100%;
+            max-width: 100vw;
+            overflow: hidden;
+          }
+
           .zusasaNavbarInner {
+            width: 100%;
+            max-width: 100vw;
             padding: 16px 6%;
+            overflow: hidden;
           }
 
           .zusasaBrand {
             width: 100%;
+            max-width: 100%;
             justify-content: center;
+            overflow: hidden;
           }
 
           .zusasaBrandLogoBox {
@@ -229,21 +251,34 @@ export default function Navbar() {
           .zusasaNavLinks {
             width: 100%;
             max-width: 100%;
-            overflow-x: auto;
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: flex-start;
-            padding: 6px 0 8px;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 10px;
+            overflow: hidden;
+            padding: 4px 0 6px;
           }
 
           .zusasaNavLinks a {
-            flex: 0 0 auto;
-            font-size: 16px;
-            padding: 13px 20px;
+            width: 100%;
+            min-width: 0;
+            font-size: 14.5px;
+            padding: 13px 8px;
+            text-align: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
           }
         }
 
         @media (max-width: 420px) {
+          .zusasaNavbarInner {
+            padding: 14px 5%;
+          }
+
+          .zusasaBrand {
+            gap: 12px;
+          }
+
           .zusasaBrandLogoBox {
             width: 84px;
             height: 84px;
@@ -257,17 +292,22 @@ export default function Navbar() {
           }
 
           .zusasaBrandText strong {
-            font-size: 34px;
+            font-size: 32px;
           }
 
           .zusasaBrandText span {
-            font-size: 11px;
+            font-size: 10.5px;
             letter-spacing: 4px;
           }
 
+          .zusasaNavLinks {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 9px;
+          }
+
           .zusasaNavLinks a {
-            font-size: 15px;
-            padding: 12px 18px;
+            font-size: 14px;
+            padding: 12px 8px;
           }
         }
       `}</style>
