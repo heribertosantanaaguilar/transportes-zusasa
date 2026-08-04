@@ -1,3 +1,6 @@
+const quoteEmailLink =
+  "mailto:cotizaciones@transporteszusasa.com?subject=Solicitud%20de%20cotizaci%C3%B3n%20-%20Transportes%20ZUSASA&body=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20para%20un%20servicio%20de%20Transportes%20ZUSASA.%0A%0AServicio%20que%20necesito%3A%0A-%20Movimiento%20local%20de%20contenedores%20e%20ISO%20tanques%3A%0A-%20Transporte%20nacional%20de%20contenedores%20e%20ISO%20tanques%3A%0A-%20Resguardo%20en%20patio%20de%20maniobras%3A%0A%0ADatos%20del%20servicio%3A%0A-%20Empresa%3A%0A-%20Nombre%20de%20contacto%3A%0A-%20Tel%C3%A9fono%3A%0A-%20Tipo%20de%20contenedor%20o%20ISO%20tanque%3A%0A-%20Origen%3A%0A-%20Destino%20local%3A%0A-%20Destino%20nacional%3A%0A-%20Fecha%20estimada%3A%0A-%20Peso%20aproximado%3A%0A-%20Requiere%20movimiento%20local%20previo%3A%0A-%20Requiere%20resguardo%3A%0A-%20Comentarios%20o%20necesidades%20operativas%20adicionales%3A";
+
 export default function Contact() {
   return (
     <section className="contactSection" id="contacto">
@@ -15,10 +18,7 @@ export default function Contact() {
           </p>
 
           <div className="contactActions">
-            <a
-              href="mailto:cotizaciones@transporteszusasa.com?subject=Solicitud%20de%20cotizaci%C3%B3n%20-%20Transportes%20ZUSASA&body=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20para%20un%20servicio%20de%20Transportes%20ZUSASA.%0A%0ATipo%20de%20servicio%3A%0AOrigen%3A%0ADestino%3A%0AFecha%20estimada%3A%0AComentarios%20adicionales%3A"
-              className="contactQuote"
-            >
+            <a href={quoteEmailLink} className="contactQuote">
               Solicitar cotización
             </a>
 
