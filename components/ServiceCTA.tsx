@@ -1,33 +1,7 @@
+const quoteEmailLink =
+  "mailto:cotizaciones@transporteszusasa.com?subject=Solicitud%20de%20cotizaci%C3%B3n%20-%20Transportes%20ZUSASA&body=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20para%20un%20servicio%20de%20Transportes%20ZUSASA.%0A%0AServicio%20que%20necesito%3A%0A-%20Movimiento%20local%20de%20contenedores%3A%0A-%20Movimiento%20local%20de%20ISO%20tanques%3A%0A-%20Transporte%20nacional%20de%20contenedores%20e%20ISO%20tanques%3A%0A-%20Resguardo%20en%20patio%20de%20maniobras%3A%0A-%20Apoyo%20operativo%3A%0A%0ADatos%20del%20servicio%3A%0A-%20Empresa%3A%0A-%20Nombre%20de%20contacto%3A%0A-%20Tel%C3%A9fono%3A%0A-%20Tipo%20de%20contenedor%20o%20ISO%20tanque%3A%0A-%20Origen%3A%0A-%20Destino%20local%3A%0A-%20Destino%20nacional%3A%0A-%20Fecha%20estimada%3A%0A-%20Peso%20aproximado%3A%0A-%20Requiere%20movimiento%20local%20previo%3A%0A-%20Requiere%20resguardo%3A%0A-%20Comentarios%3A";
+
 export default function ServiceCTA() {
-  const whatsappMessage = [
-    "Hola, quiero solicitar informacion o una cotizacion con Transportes ZUSASA.",
-    "",
-    "Servicio que necesito:",
-    "- Movimiento local de contenedores:",
-    "- Movimiento local de ISO tanques:",
-    "- Transporte nacional de contenedores e ISO tanques:",
-    "- Resguardo en patio de maniobras:",
-    "- Apoyo operativo:",
-    "",
-    "Datos del servicio:",
-    "- Empresa:",
-    "- Nombre de contacto:",
-    "- Telefono:",
-    "- Tipo de contenedor o ISO tanque:",
-    "- Origen:",
-    "- Destino local:",
-    "- Destino nacional:",
-    "- Fecha estimada:",
-    "- Peso aproximado:",
-    "- Requiere movimiento local previo:",
-    "- Requiere resguardo:",
-    "- Comentarios:",
-  ].join("\n");
-
-  const whatsappLink = `https://wa.me/522224556651?${new URLSearchParams({
-    text: whatsappMessage,
-  }).toString()}`;
-
   return (
     <section className="serviceCtaBlock">
       <div className="serviceCtaContent">
@@ -50,8 +24,8 @@ export default function ServiceCTA() {
             disponibilidad, condiciones operativas y opciones de coordinación.
           </p>
 
-          <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-            Solicitar información por WhatsApp →
+          <a href={quoteEmailLink}>
+            Solicitar cotización por correo →
           </a>
         </div>
       </div>
