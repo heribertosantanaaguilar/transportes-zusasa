@@ -196,3 +196,596 @@ nav {
     font-size: 14px !important;
   }
 }
+/* =========================================================
+   RESTAURACIÓN VISUAL ZUSASA - HOME
+   Mantiene corregido el ancho móvil y recupera estilos perdidos
+   ========================================================= */
+
+/* ETIQUETAS / EYEBROWS GENERALES */
+
+.sectionHeader span,
+.zusasaMiniTitle,
+.zusasaCompanyLabel,
+.zusasaProcessEyebrow,
+.zusasaFlowHeader span,
+.zusasaContactContent span,
+.zusasaQuoteEyebrow,
+.quoteEyebrow,
+#nosotros span:first-child,
+#sectores span:first-child,
+#contacto span:first-child {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+  color: var(--orange) !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.2px !important;
+  font-size: 15px !important;
+  margin-bottom: 20px !important;
+}
+
+.sectionHeader span::before,
+.zusasaMiniTitle::before,
+.zusasaCompanyLabel::before,
+.zusasaContactContent span::before,
+.zusasaQuoteEyebrow::before,
+.quoteEyebrow::before,
+#sectores span:first-child::before,
+#contacto span:first-child::before {
+  content: "" !important;
+  width: 44px !important;
+  height: 4px !important;
+  background: var(--orange) !important;
+  border-radius: 999px !important;
+  display: inline-block !important;
+  flex: 0 0 auto !important;
+}
+
+/* =========================================================
+   NOSOTROS
+   ========================================================= */
+
+#nosotros,
+.zusasaCompanyBlock,
+.zusasaCompanySection {
+  width: 100% !important;
+  max-width: 100% !important;
+  background: #ffffff !important;
+  color: var(--navy) !important;
+  padding: 90px 7% 55px !important;
+  overflow-x: hidden !important;
+}
+
+.zusasaCompanyBlock {
+  display: block !important;
+}
+
+.zusasaCompanyTop {
+  display: grid !important;
+  grid-template-columns: 1fr 0.95fr !important;
+  gap: 56px !important;
+  align-items: start !important;
+}
+
+.zusasaCompanyLeft h2,
+.zusasaCompanyText h2,
+#nosotros h2 {
+  color: var(--navy) !important;
+  font-size: clamp(38px, 4.8vw, 68px) !important;
+  line-height: 1.03 !important;
+  letter-spacing: -1.6px !important;
+  font-weight: 900 !important;
+  margin: 0 0 28px !important;
+}
+
+.zusasaCompanyLeft > p,
+.zusasaCompanyText p,
+#nosotros p {
+  color: var(--gray) !important;
+  font-size: 18px !important;
+  line-height: 1.78 !important;
+}
+
+.zusasaCompanyRight {
+  position: relative !important;
+}
+
+.zusasaCompanyRight img,
+.zusasaCompanyVisual img {
+  width: 100% !important;
+  height: 520px !important;
+  object-fit: cover !important;
+  object-position: center bottom !important;
+  border-radius: 32px !important;
+  box-shadow: 0 34px 95px rgba(10, 29, 54, 0.25) !important;
+}
+
+.zusasaFloatingCard,
+.zusasaCompanyCard {
+  position: absolute !important;
+  left: -28px !important;
+  bottom: 28px !important;
+  max-width: 340px !important;
+  background: var(--orange) !important;
+  color: #ffffff !important;
+  padding: 28px !important;
+  border-radius: 24px !important;
+  box-shadow: 0 28px 75px rgba(242, 101, 34, 0.36) !important;
+}
+
+.zusasaFloatingCard strong,
+.zusasaCompanyCard strong {
+  display: block !important;
+  color: #ffffff !important;
+  font-size: 28px !important;
+  line-height: 1.05 !important;
+  margin-bottom: 10px !important;
+}
+
+.zusasaFloatingCard span,
+.zusasaCompanyCard span {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  line-height: 1.5 !important;
+}
+
+.zusasaCompanyPoints,
+.zusasaCompanyFeatures {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 20px !important;
+  margin-top: 38px !important;
+}
+
+.zusasaCompanyPoints article,
+.zusasaCompanyFeatures article {
+  background: #f5f6f7 !important;
+  padding: 26px !important;
+  border-radius: 22px !important;
+  border-left: 6px solid var(--orange) !important;
+  box-shadow: 0 20px 55px rgba(10, 29, 54, 0.09) !important;
+}
+
+.zusasaCompanyPoints strong,
+.zusasaCompanyFeatures strong {
+  display: block !important;
+  color: var(--orange) !important;
+  font-size: 20px !important;
+  font-weight: 900 !important;
+  margin-bottom: 12px !important;
+}
+
+.zusasaCompanyPoints h3,
+.zusasaCompanyFeatures h3 {
+  color: var(--navy) !important;
+  font-size: 20px !important;
+  margin: 0 0 10px !important;
+}
+
+.zusasaCompanyPoints p,
+.zusasaCompanyFeatures p {
+  color: var(--gray) !important;
+  font-size: 14.5px !important;
+  line-height: 1.6 !important;
+  margin: 0 !important;
+}
+
+.zusasaCompanyFullText {
+  width: 100% !important;
+  margin-top: 34px !important;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 34px !important;
+}
+
+.zusasaCompanyFullText p {
+  margin: 0 !important;
+  color: var(--gray) !important;
+  font-size: 18px !important;
+  line-height: 1.8 !important;
+  background: #f5f6f7 !important;
+  border-radius: 26px !important;
+  padding: 30px 32px !important;
+  border-left: 6px solid var(--orange) !important;
+  box-shadow: 0 20px 55px rgba(10, 29, 54, 0.08) !important;
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+#inicio,
+.hero,
+.heroSection {
+  position: relative !important;
+  overflow-x: hidden !important;
+}
+
+/* =========================================================
+   SECTORES
+   ========================================================= */
+
+#sectores,
+.zusasaSectors {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 90px 7% 70px !important;
+  background:
+    linear-gradient(rgba(5, 24, 46, 0.9), rgba(5, 24, 46, 0.9)),
+    url("/images/transporte-contenedores-zusasa-sin-texto.png") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  color: #ffffff !important;
+  overflow-x: hidden !important;
+}
+
+#sectores h2,
+.zusasaSectors h2,
+.zusasaSectors .sectionHeader h2 {
+  color: #ffffff !important;
+  font-size: clamp(38px, 5.5vw, 76px) !important;
+  line-height: 1.04 !important;
+  letter-spacing: -1.8px !important;
+  font-weight: 900 !important;
+  max-width: 980px !important;
+  margin: 0 0 24px !important;
+}
+
+#sectores p,
+.zusasaSectors .sectionHeader p {
+  color: rgba(255, 255, 255, 0.84) !important;
+  font-size: 18px !important;
+  line-height: 1.75 !important;
+  max-width: 980px !important;
+}
+
+.zusasaSectorsGrid,
+#sectores .sectorGrid,
+#sectores .zusasaSectorsGrid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 26px !important;
+  margin-top: 48px !important;
+}
+
+.zusasaSectorCard,
+#sectores article {
+  background: rgba(255, 255, 255, 0.96) !important;
+  color: var(--navy) !important;
+  padding: 34px !important;
+  border-radius: 24px !important;
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.22) !important;
+  border-top: 6px solid var(--orange) !important;
+}
+
+.zusasaSectorCard h3,
+#sectores article h3 {
+  color: var(--navy) !important;
+  font-size: 24px !important;
+  line-height: 1.15 !important;
+  margin: 0 0 14px !important;
+  font-weight: 900 !important;
+}
+
+.zusasaSectorCard p,
+#sectores article p {
+  color: var(--gray) !important;
+  font-size: 16px !important;
+  line-height: 1.7 !important;
+  margin: 0 !important;
+}
+
+/* =========================================================
+   COTIZACIÓN INMEDIATA
+   ========================================================= */
+
+.zusasaQuote,
+.zusasaQuoteFinal,
+.zusasaQuoteSection,
+.quoteSection,
+.quotePremium,
+.quoteCleanSection {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 100px 7% !important;
+  background: #f5f6f7 !important;
+  color: var(--navy) !important;
+  overflow-x: hidden !important;
+}
+
+.zusasaQuote h2,
+.zusasaQuoteFinal h2,
+.zusasaQuoteSection h2,
+.quoteSection h2,
+.quotePremium h2,
+.quoteCleanSection h2 {
+  color: var(--navy) !important;
+  font-size: clamp(38px, 5vw, 68px) !important;
+  line-height: 1.04 !important;
+  letter-spacing: -1.5px !important;
+  font-weight: 900 !important;
+  max-width: 960px !important;
+  margin: 0 0 24px !important;
+}
+
+.zusasaQuote p,
+.zusasaQuoteFinal p,
+.zusasaQuoteSection p,
+.quoteSection p,
+.quotePremium p,
+.quoteCleanSection p {
+  color: var(--gray) !important;
+  font-size: 18px !important;
+  line-height: 1.75 !important;
+  max-width: 900px !important;
+}
+
+.zusasaQuoteGrid,
+.zusasaQuoteCards,
+.quoteCards,
+.quoteFeatures,
+.quoteBenefits {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 22px !important;
+  margin-top: 38px !important;
+}
+
+.zusasaQuoteGrid article,
+.zusasaQuoteCards article,
+.quoteCards article,
+.quoteFeatures article,
+.quoteBenefits article {
+  background: #ffffff !important;
+  border-radius: 22px !important;
+  padding: 28px !important;
+  border-left: 6px solid var(--orange) !important;
+  box-shadow: 0 22px 60px rgba(10, 29, 54, 0.1) !important;
+}
+
+.zusasaQuoteGrid article h3,
+.zusasaQuoteCards article h3,
+.quoteCards article h3,
+.quoteFeatures article h3,
+.quoteBenefits article h3 {
+  color: var(--navy) !important;
+  font-size: 22px !important;
+  line-height: 1.15 !important;
+  margin: 0 0 10px !important;
+  font-weight: 900 !important;
+}
+
+.zusasaQuoteGrid article p,
+.zusasaQuoteCards article p,
+.quoteCards article p,
+.quoteFeatures article p,
+.quoteBenefits article p {
+  color: var(--gray) !important;
+  font-size: 15.5px !important;
+  line-height: 1.65 !important;
+  margin: 0 !important;
+}
+
+.zusasaQuoteList {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 24px 0 30px !important;
+  display: grid !important;
+  gap: 12px !important;
+}
+
+.zusasaQuoteList li {
+  position: relative !important;
+  padding-left: 30px !important;
+  color: var(--gray) !important;
+  font-weight: 700 !important;
+  line-height: 1.5 !important;
+}
+
+.zusasaQuoteList li::before {
+  content: "✓" !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  color: var(--orange) !important;
+  font-weight: 900 !important;
+}
+
+/* =========================================================
+   CONTACTO
+   ========================================================= */
+
+#contacto,
+.zusasaContactFinal,
+.contactPremium,
+.contact {
+  width: 100% !important;
+  max-width: 100% !important;
+  display: grid !important;
+  grid-template-columns: 0.9fr 1.1fr !important;
+  gap: 70px !important;
+  align-items: center !important;
+  padding: 110px 7% !important;
+  background:
+    radial-gradient(circle at top left, rgba(242, 101, 34, 0.1), transparent 30%),
+    #f5f6f7 !important;
+  overflow-x: hidden !important;
+}
+
+#contacto h2,
+.zusasaContactFinal h2,
+.contactPremium h2,
+.contact h2 {
+  color: var(--navy) !important;
+  font-size: clamp(38px, 5vw, 68px) !important;
+  line-height: 1.04 !important;
+  letter-spacing: -1.5px !important;
+  font-weight: 900 !important;
+  margin: 0 0 24px !important;
+}
+
+#contacto p,
+.zusasaContactFinal p,
+.contactPremium p,
+.contact p {
+  color: var(--gray) !important;
+  font-size: 18px !important;
+  line-height: 1.75 !important;
+}
+
+.contactActions,
+.zusasaContactActions,
+#contacto .contactActions {
+  display: flex !important;
+  gap: 16px !important;
+  flex-wrap: wrap !important;
+  margin-top: 28px !important;
+}
+
+.contactActions a,
+.zusasaContactActions a,
+#contacto a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 58px !important;
+  padding: 0 28px !important;
+  border-radius: 12px !important;
+  font-weight: 900 !important;
+  text-decoration: none !important;
+}
+
+.contactActions a:first-child,
+.zusasaContactActions a:first-child,
+#contacto a[href*="wa.me"] {
+  background: var(--orange) !important;
+  color: #ffffff !important;
+  box-shadow: 0 18px 40px rgba(242, 101, 34, 0.28) !important;
+}
+
+.contactActions a:last-child,
+.zusasaContactActions a:last-child,
+#contacto a[href^="mailto"] {
+  background: #ffffff !important;
+  color: var(--navy) !important;
+  border: 2px solid var(--navy) !important;
+}
+
+.contactCard,
+.zusasaContactCard,
+#contacto .contactCard {
+  background: #ffffff !important;
+  padding: 40px !important;
+  border-radius: 28px !important;
+  box-shadow: 0 28px 80px rgba(10, 29, 54, 0.14) !important;
+  border-top: 6px solid var(--orange) !important;
+}
+
+.contactCard h3,
+.zusasaContactCard h3,
+#contacto h3 {
+  color: var(--navy) !important;
+  font-size: 28px !important;
+  line-height: 1.15 !important;
+  margin: 0 0 24px !important;
+  font-weight: 900 !important;
+}
+
+/* =========================================================
+   RESPONSIVE RESTAURACIÓN
+   ========================================================= */
+
+@media (max-width: 1000px) {
+  .zusasaCompanyTop,
+  #contacto,
+  .zusasaContactFinal,
+  .contactPremium,
+  .contact {
+    grid-template-columns: 1fr !important;
+  }
+
+  .zusasaSectorsGrid,
+  #sectores .sectorGrid,
+  #sectores .zusasaSectorsGrid,
+  .zusasaQuoteGrid,
+  .zusasaQuoteCards,
+  .quoteCards,
+  .quoteFeatures,
+  .quoteBenefits {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 650px) {
+  #nosotros,
+  .zusasaCompanyBlock,
+  .zusasaCompanySection,
+  #sectores,
+  .zusasaSectors,
+  .zusasaQuote,
+  .zusasaQuoteFinal,
+  .zusasaQuoteSection,
+  .quoteSection,
+  .quotePremium,
+  .quoteCleanSection,
+  #contacto,
+  .zusasaContactFinal,
+  .contactPremium,
+  .contact {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    overflow-x: hidden !important;
+  }
+
+  .zusasaCompanyTop,
+  .zusasaCompanyPoints,
+  .zusasaCompanyFeatures,
+  .zusasaCompanyFullText,
+  .zusasaSectorsGrid,
+  #sectores .sectorGrid,
+  #sectores .zusasaSectorsGrid,
+  .zusasaQuoteGrid,
+  .zusasaQuoteCards,
+  .quoteCards,
+  .quoteFeatures,
+  .quoteBenefits {
+    grid-template-columns: 1fr !important;
+  }
+
+  .zusasaCompanyRight img,
+  .zusasaCompanyVisual img {
+    height: 340px !important;
+  }
+
+  .zusasaFloatingCard,
+  .zusasaCompanyCard {
+    position: relative !important;
+    left: auto !important;
+    bottom: auto !important;
+    max-width: none !important;
+    margin: -42px 22px 0 !important;
+  }
+
+  #nosotros h2,
+  #sectores h2,
+  #contacto h2,
+  .zusasaQuote h2,
+  .zusasaQuoteFinal h2,
+  .zusasaQuoteSection h2,
+  .quoteSection h2,
+  .quotePremium h2,
+  .quoteCleanSection h2 {
+    font-size: clamp(34px, 11vw, 50px) !important;
+    letter-spacing: -1.2px !important;
+  }
+
+  .contactActions a,
+  .zusasaContactActions a,
+  #contacto a[href*="wa.me"],
+  #contacto a[href^="mailto"] {
+    width: 100% !important;
+  }
+}
