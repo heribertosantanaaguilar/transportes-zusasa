@@ -1,275 +1,267 @@
 export default function Contact() {
- const whatsappMessage = [
-  "Hola, quiero solicitar informacion o una cotizacion con Transportes ZUSASA.",
-  "",
-  "Servicio que necesito:",
-  "- Movimiento local de contenedores:",
-  "- Movimiento local de ISO tanques:",
-  "- Transporte nacional de contenedores e ISO tanques:",
-  "- Resguardo en patio de maniobras:",
-  "- Apoyo operativo:",
-  "",
-  "Datos del servicio:",
-  "- Empresa:",
-  "- Nombre de contacto:",
-  "- Telefono:",
-  "- Tipo de contenedor o ISO tanque:",
-  "- Origen:",
-  "- Destino local:",
-  "- Destino nacional:",
-  "- Fecha estimada:",
-  "- Peso aproximado:",
-  "- Requiere movimiento local previo:",
-  "- Requiere resguardo:",
-  "- Comentarios:",
-].join("\n");
-
-const whatsappLink = `https://wa.me/522224556651?${new URLSearchParams({
-  text: whatsappMessage,
-}).toString()}`;
-
-  const orangeIconStyle = {
-    width: "44px",
-    height: "44px",
-    minWidth: "44px",
-    maxWidth: "44px",
-    borderRadius: "999px",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    background: "#f26522",
-    color: "#ffffff",
-    fontSize: "20px",
-    fontWeight: 900,
-    flex: "0 0 44px",
-  };
-
-  const itemStyle = {
-    display: "flex",
-    alignItems: "flex-start",
-    gap: "18px",
-  };
-
-  const textBoxStyle = {
-    display: "flex",
-    flexDirection: "column" as const,
-    gap: "10px",
-    minWidth: 0,
-  };
-
-  const titleStyle = {
-    display: "block",
-    color: "#0a1d36",
-    fontSize: "22px",
-    fontWeight: 900,
-    lineHeight: 1.15,
-  };
-
-  const textStyle = {
-    display: "block",
-    color: "#3b4a5a",
-    fontSize: "19px",
-    lineHeight: 1.45,
-    textDecoration: "none",
-  };
-
-  const emailTextStyle = {
-    display: "block",
-    color: "#3b4a5a",
-    fontSize: "20px",
-    lineHeight: 1.45,
-    textDecoration: "none",
-    whiteSpace: "nowrap" as const,
-    wordBreak: "normal" as const,
-    overflowWrap: "normal" as const,
-  };
-
   return (
-    <section id="contacto" className="zusasaContactFinal">
-      <div className="zusasaContactContent">
-        <span>Contacto</span>
+    <section className="contactSection" id="contacto">
+      <div className="contactContainer">
+        <div className="contactContent">
+          <span>Contacto</span>
 
-        <h2>Solicita tu cotización y coordinemos tu operación.</h2>
+          <h2>Solicita tu cotización y coordinemos tu operación.</h2>
 
-      <p>
-  Cuéntanos qué servicio necesitas: movimiento local de contenedores,
-  movimiento local de ISO tanques, transporte nacional de contenedores e ISO
-  tanques, resguardo en patio de maniobras o apoyo operativo. Revisaremos tu
-  solicitud para darte una respuesta clara y personalizada.
-</p>
+          <p>
+            Cuéntanos qué tipo de contenedor necesitas mover, el origen, el
+            destino y la fecha estimada del servicio. En Transportes ZUSASA te
+            brindaremos atención directa para revisar tu operación y darte una
+            respuesta clara.
+          </p>
 
-        <div className="zusasaContactActions">
-          <a
-            className="contactWhatsapp"
-            href={whatsappMessage}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Cotizar por WhatsApp
-          </a>
+          <div className="contactActions">
+            <a
+              href="https://wa.me/522224556651?text=Hola,%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20con%20Transportes%20ZUSASA."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="contactWhatsApp"
+            >
+              Cotizar por WhatsApp
+            </a>
 
-          <a
-            className="contactEmail"
-            href="mailto:transportes.zusasa@gmail.com?subject=Solicitud%20de%20cotizaci%C3%B3n%20-%20Transportes%20ZUSASA&body=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20con%20Transportes%20ZUSASA.%0A%0ADatos%20del%20servicio%3A%0A-%20Empresa%3A%0A-%20Nombre%20de%20contacto%3A%0A-%20Tel%C3%A9fono%3A%0A-%20Tipo%20de%20servicio%3A%0A-%20Tipo%20de%20contenedor%3A%0A-%20Origen%3A%0A-%20Destino%3A%0A-%20Fecha%20estimada%3A%0A-%20Comentarios%3A"
-          >
-            Enviar correo
-          </a>
+            <a
+              href="mailto:transportes.zusasa@gmail.com"
+              className="contactMail"
+            >
+              Enviar correo
+            </a>
+          </div>
+        </div>
+
+        <div className="contactCard">
+          <h3>Datos de contacto</h3>
+
+          <div className="contactItem">
+            <strong>José Alberto Zúñiga Ramos</strong>
+            <span>Gerente General</span>
+            <a href="tel:+522224556651">222 455 6651</a>
+          </div>
+
+          <div className="contactItem">
+            <strong>Sergio Sanmiguel Celis</strong>
+            <span>Dirección de Administración y Finanzas</span>
+            <a href="tel:+523141069165">314 106 9165</a>
+          </div>
+
+          <div className="contactItem">
+            <strong>Heriberto Santana Aguilar</strong>
+            <span>Coordinación de Logística</span>
+            <a href="tel:+523148721897">314 872 1897</a>
+          </div>
+
+          <div className="contactDivider" />
+
+          <div className="contactItem">
+            <strong>Correo</strong>
+            <a href="mailto:transportes.zusasa@gmail.com">
+              transportes.zusasa@gmail.com
+            </a>
+          </div>
+
+          <div className="contactItem">
+            <strong>Ubicación</strong>
+            <span>Manzanillo, Colima, México</span>
+          </div>
         </div>
       </div>
 
-      <div className="zusasaContactPanel">
-        <h3>Datos de contacto</h3>
+      <style>{`
+        .contactSection {
+          width: 100%;
+          max-width: 100%;
+          padding: 110px 7%;
+          background:
+            radial-gradient(circle at top left, rgba(242, 101, 34, 0.12), transparent 32%),
+            #f5f6f8;
+          color: #0a1d36;
+          overflow: hidden;
+        }
 
-        <div id="gerencia-general" className="contactPerson">
-          <strong>José Alberto Zúñiga Ramos</strong>
-          <span>Gerente General</span>
-          <a href="tel:2224556651">222 455 6651</a>
-        </div>
+        .contactContainer {
+          width: 100%;
+          max-width: 1180px;
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: 0.9fr 1.1fr;
+          gap: 68px;
+          align-items: center;
+        }
 
-        <div id="administracion-finanzas" className="contactPerson">
-          <strong>Sergio Sanmiguel Celis</strong>
-          <span>Dirección de Administración y Finanzas</span>
-          <a href="tel:3141069165">314 106 9165</a>
-        </div>
+        .contactContent {
+          min-width: 0;
+        }
 
-        <div id="coordinacion-logistica" className="contactPerson">
-          <strong>Heriberto Santana Aguilar</strong>
-          <span>Coordinación de Logística</span>
-          <a href="tel:3148721897">314 872 1897</a>
-        </div>
+        .contactContent span {
+          display: inline-flex;
+          align-items: center;
+          gap: 14px;
+          color: #f26522;
+          font-size: 15px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 1.2px;
+          margin-bottom: 20px;
+        }
 
-        <div
-          className="contactInfoBox"
-          style={{
-            rowGap: "18px",
-          }}
-        >
-          <div
-            className="contactInfoItem"
-            style={{
-              ...itemStyle,
-              gridColumn: "1 / -1",
-              minHeight: "auto",
-              paddingTop: "22px",
-              paddingBottom: "22px",
-              alignItems: "center",
-            }}
-          >
-            <div className="contactInfoIcon" style={orangeIconStyle}>
-              ✉
-            </div>
+        .contactContent span::before {
+          content: "";
+          width: 48px;
+          height: 4px;
+          background: #f26522;
+          border-radius: 999px;
+          display: inline-block;
+        }
 
-            <div style={textBoxStyle}>
-              <strong style={titleStyle}>Correo</strong>
+        .contactContent h2 {
+          margin: 0 0 26px;
+          color: #0a1d36;
+          font-size: clamp(40px, 5vw, 72px);
+          line-height: 1.04;
+          letter-spacing: -1.8px;
+          font-weight: 900;
+        }
 
-              <a
-                href="mailto:transportes.zusasa@gmail.com"
-                style={emailTextStyle}
-              >
-                transportes.zusasa@gmail.com
-              </a>
-            </div>
-          </div>
+        .contactContent p {
+          margin: 0;
+          color: #3b4a5a;
+          font-size: 19px;
+          line-height: 1.75;
+        }
 
-          <div className="contactInfoItem" style={itemStyle}>
-            <div className="contactInfoIcon" style={orangeIconStyle}>
-              📍
-            </div>
+        .contactActions {
+          margin-top: 34px;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 16px;
+        }
 
-            <div style={textBoxStyle}>
-              <strong style={titleStyle}>Ubicación</strong>
+        .contactActions a {
+          min-height: 60px;
+          border-radius: 14px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0 30px;
+          font-size: 17px;
+          font-weight: 900;
+          text-decoration: none;
+          text-align: center;
+        }
 
-              <span style={textStyle}>Manzanillo, Colima, México</span>
-            </div>
-          </div>
+        .contactWhatsApp {
+          background: #f26522;
+          color: #ffffff;
+          box-shadow: 0 18px 40px rgba(242, 101, 34, 0.28);
+        }
 
-          <div className="contactInfoItem" style={itemStyle}>
-            <div
-              style={{
-                width: "44px",
-                height: "44px",
-                minWidth: "44px",
-                maxWidth: "44px",
-                minHeight: "44px",
-                maxHeight: "44px",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                overflow: "hidden",
-                borderRadius: "8px",
-                flex: "0 0 44px",
-              }}
-            >
-              <img
-                src="/images/logo-linkedin.png.webp"
-                alt="LinkedIn"
-                width={44}
-                height={44}
-                style={{
-                  width: "44px",
-                  height: "44px",
-                  maxWidth: "44px",
-                  maxHeight: "44px",
-                  objectFit: "contain",
-                  display: "block",
-                }}
-              />
-            </div>
+        .contactMail {
+          background: #ffffff;
+          color: #0a1d36;
+          border: 2px solid #0a1d36;
+        }
 
-            <div style={textBoxStyle}>
-              <strong style={titleStyle}>LinkedIn</strong>
+        .contactCard {
+          background: #ffffff;
+          padding: 42px;
+          border-radius: 34px;
+          box-shadow: 0 28px 80px rgba(10, 29, 54, 0.14);
+          border-top: 7px solid #f26522;
+          min-width: 0;
+        }
 
-              <a
-                href="https://www.linkedin.com/company/transportes-zusasa/"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={textStyle}
-              >
-                Transportes ZUSASA
-              </a>
-            </div>
-          </div>
+        .contactCard h3 {
+          margin: 0 0 28px;
+          color: #0a1d36;
+          font-size: 34px;
+          line-height: 1.1;
+          font-weight: 900;
+          letter-spacing: -0.6px;
+        }
 
-          <div className="contactInfoItem" style={itemStyle}>
-            <div
-              style={{
-                width: "44px",
-                height: "44px",
-                minWidth: "44px",
-                maxWidth: "44px",
-                minHeight: "44px",
-                maxHeight: "44px",
-                borderRadius: "999px",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                background: "#1877f2",
-                color: "#ffffff",
-                fontSize: "30px",
-                fontWeight: 900,
-                fontFamily: "Arial, sans-serif",
-                flex: "0 0 44px",
-                lineHeight: 1,
-              }}
-            >
-              f
-            </div>
+        .contactItem {
+          display: grid;
+          gap: 6px;
+          margin-bottom: 22px;
+        }
 
-            <div style={textBoxStyle}>
-              <strong style={titleStyle}>Facebook</strong>
+        .contactItem strong {
+          color: #0a1d36;
+          font-size: 19px;
+          line-height: 1.25;
+          font-weight: 900;
+        }
 
-              <a
-                href="https://www.facebook.com/profile.php?id=61591897865110"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={textStyle}
-              >
-                Transportes ZUSASA
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+        .contactItem span {
+          color: #3b4a5a;
+          font-size: 15.5px;
+          line-height: 1.45;
+        }
+
+        .contactItem a {
+          color: #f26522;
+          font-size: 17px;
+          line-height: 1.45;
+          font-weight: 900;
+          text-decoration: none;
+          overflow-wrap: anywhere;
+        }
+
+        .contactDivider {
+          width: 100%;
+          height: 1px;
+          background: rgba(10, 29, 54, 0.12);
+          margin: 8px 0 22px;
+        }
+
+        @media (max-width: 950px) {
+          .contactContainer {
+            grid-template-columns: 1fr;
+          }
+        }
+
+        @media (max-width: 650px) {
+          .contactSection {
+            padding: 76px 24px;
+          }
+
+          .contactContainer {
+            gap: 34px;
+          }
+
+          .contactContent h2 {
+            font-size: clamp(34px, 11vw, 48px);
+            letter-spacing: -1.1px;
+          }
+
+          .contactContent p {
+            font-size: 17px;
+            line-height: 1.7;
+          }
+
+          .contactActions {
+            display: grid;
+            grid-template-columns: 1fr;
+          }
+
+          .contactActions a {
+            width: 100%;
+          }
+
+          .contactCard {
+            padding: 30px 24px;
+            border-radius: 28px;
+          }
+
+          .contactCard h3 {
+            font-size: 30px;
+          }
+        }
+      `}</style>
     </section>
   );
 }
