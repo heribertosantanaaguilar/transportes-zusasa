@@ -3,31 +3,6 @@ import Footer from "../../components/Footer";
 import WhatsAppButton from "../../components/WhatsAppButton";
 
 export default function CotizacionPage() {
-  const whatsappMessage = `Hola, quiero solicitar una cotización con Transportes ZUSASA.
-
-Servicio que necesito:
-- Movimiento local de contenedores e ISO tanques:
-- Transporte nacional de contenedores e ISO tanques:
-- Resguardo en patio de maniobras:
-
-Datos del servicio:
-- Empresa:
-- Nombre de contacto:
-- Teléfono:
-- Tipo de contenedor o ISO tanque:
-- Origen:
-- Destino local:
-- Destino nacional:
-- Fecha estimada:
-- Peso aproximado:
-- Requiere movimiento local previo:
-- Requiere resguardo:
-- Comentarios o necesidades operativas adicionales:`;
-
-  const whatsappLink = `https://wa.me/522224556651?text=${encodeURIComponent(
-    whatsappMessage
-  )}`;
-
   const emailSubject = "Solicitud de cotización - Transportes ZUSASA";
 
   const emailBody = `Hola, quiero solicitar una cotización con Transportes ZUSASA.
@@ -51,7 +26,7 @@ Datos del servicio:
 - Requiere resguardo:
 - Comentarios o necesidades operativas adicionales:`;
 
-  const emailLink = `mailto:transportes.zusasa@gmail.com?subject=${encodeURIComponent(
+  const emailLink = `mailto:cotizaciones@transporteszusasa.com?subject=${encodeURIComponent(
     emailSubject
   )}&body=${encodeURIComponent(emailBody)}`;
 
@@ -104,17 +79,12 @@ Datos del servicio:
             </p>
 
             <div className="quoteActions">
-              <a
-                className="primaryQuoteButton"
-                href={whatsappLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Cotizar por WhatsApp →
+              <a className="primaryQuoteButton" href={emailLink}>
+                Solicitar cotización por correo →
               </a>
 
               <a className="secondaryQuoteButton" href={emailLink}>
-                Enviar correo
+                Enviar datos de mi operación
               </a>
             </div>
           </div>
@@ -226,8 +196,8 @@ Datos del servicio:
             de coordinación local o nacional.
           </p>
 
-          <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-            Iniciar cotización por WhatsApp →
+          <a href={emailLink}>
+            Iniciar cotización por correo →
           </a>
         </section>
       </main>
