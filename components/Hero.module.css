@@ -1,4 +1,6 @@
 .hero {
+  width: 100%;
+  max-width: 100%;
   min-height: 780px;
   padding: 90px 7% 0;
   color: #ffffff;
@@ -19,6 +21,7 @@
 }
 
 .content {
+  width: 100%;
   max-width: 760px;
   position: relative;
   z-index: 3;
@@ -42,6 +45,7 @@
   height: 4px;
   background: #f26522;
   border-radius: 999px;
+  flex: 0 0 auto;
 }
 
 .mobileTruckImage {
@@ -85,6 +89,7 @@
   border-radius: 10px;
   font-weight: 900;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 .mainCta {
@@ -136,8 +141,11 @@
 
 @media (max-width: 650px) {
   .hero {
+    width: 100%;
+    max-width: 100%;
     min-height: auto;
-    padding: 34px 24px 46px;
+    padding: 34px 7% 46px;
+    overflow-x: hidden;
     background:
       linear-gradient(
         180deg,
@@ -151,13 +159,29 @@
     background-repeat: no-repeat;
   }
 
+  .content {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   .line {
+    width: 100%;
+    max-width: 100%;
     margin-bottom: 18px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    overflow: hidden;
+  }
+
+  .line::before {
+    width: 42px;
   }
 
   .mobileTruckImage {
     display: block;
     width: 100%;
+    max-width: 100%;
     height: 360px;
     margin: 0 0 -330px;
     border-radius: 26px;
@@ -172,38 +196,61 @@
     background-position: center center;
     background-repeat: no-repeat;
     box-shadow: 0 24px 60px rgba(0, 0, 0, 0.22);
+    overflow: hidden;
   }
 
   .content h1 {
+    width: 100%;
+    max-width: 100%;
     position: relative;
     z-index: 4;
-    font-size: 43px;
+    font-size: clamp(36px, 11vw, 43px);
     line-height: 1.04;
-    letter-spacing: -1.5px;
+    letter-spacing: -1.2px;
     margin: 0 0 118px;
     padding-top: 42px;
     text-shadow: 0 5px 24px rgba(0, 0, 0, 0.78);
+    overflow-wrap: normal;
+    word-break: normal;
   }
 
   .content p {
+    width: 100%;
+    max-width: 100%;
     position: relative;
     z-index: 4;
     font-size: 17px;
     line-height: 1.55;
+    overflow-wrap: normal;
+    word-break: normal;
   }
 
   .actions {
+    width: 100%;
+    max-width: 100%;
     position: relative;
     z-index: 4;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    overflow-x: hidden;
   }
 
   .mainCta,
   .ghostCta {
     width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    min-height: 56px;
+    padding: 0 16px;
+    border-radius: 10px;
+    text-align: center;
+    white-space: normal;
   }
 
   .infoBar {
+    width: 100%;
+    max-width: 100%;
     position: relative;
     z-index: 4;
     grid-template-columns: 1fr;
@@ -213,6 +260,8 @@
   }
 
   .infoBar article {
+    width: 100%;
+    max-width: 100%;
     border-right: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.12);
     padding: 26px 24px;
@@ -222,4 +271,3 @@
     border-bottom: none;
   }
 }
-
