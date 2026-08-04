@@ -196,6 +196,7 @@ nav {
     font-size: 14px !important;
   }
 }
+
 /* =========================================================
    RESTAURACIÓN VISUAL ZUSASA - HOME
    Mantiene corregido el ancho móvil y recupera estilos perdidos
@@ -208,12 +209,10 @@ nav {
 .zusasaCompanyLabel,
 .zusasaProcessEyebrow,
 .zusasaFlowHeader span,
-.zusasaContactContent span,
 .zusasaQuoteEyebrow,
 .quoteEyebrow,
 #nosotros span:first-child,
-#sectores span:first-child,
-#contacto span:first-child {
+#sectores span:first-child {
   display: inline-flex !important;
   align-items: center !important;
   gap: 14px !important;
@@ -228,11 +227,9 @@ nav {
 .sectionHeader span::before,
 .zusasaMiniTitle::before,
 .zusasaCompanyLabel::before,
-.zusasaContactContent span::before,
 .zusasaQuoteEyebrow::before,
 .quoteEyebrow::before,
-#sectores span:first-child::before,
-#contacto span:first-child::before {
+#sectores span:first-child::before {
   content: "" !important;
   width: 44px !important;
   height: 4px !important;
@@ -477,242 +474,17 @@ nav {
 }
 
 /* =========================================================
-   COTIZACIÓN INMEDIATA
-   ========================================================= */
-
-.zusasaQuote,
-.zusasaQuoteFinal,
-.zusasaQuoteSection,
-.quoteSection,
-.quotePremium,
-.quoteCleanSection {
-  width: 100% !important;
-  max-width: 100% !important;
-  padding: 100px 7% !important;
-  background: #f5f6f7 !important;
-  color: var(--navy) !important;
-  overflow-x: hidden !important;
-}
-
-.zusasaQuote h2,
-.zusasaQuoteFinal h2,
-.zusasaQuoteSection h2,
-.quoteSection h2,
-.quotePremium h2,
-.quoteCleanSection h2 {
-  color: var(--navy) !important;
-  font-size: clamp(38px, 5vw, 68px) !important;
-  line-height: 1.04 !important;
-  letter-spacing: -1.5px !important;
-  font-weight: 900 !important;
-  max-width: 960px !important;
-  margin: 0 0 24px !important;
-}
-
-.zusasaQuote p,
-.zusasaQuoteFinal p,
-.zusasaQuoteSection p,
-.quoteSection p,
-.quotePremium p,
-.quoteCleanSection p {
-  color: var(--gray) !important;
-  font-size: 18px !important;
-  line-height: 1.75 !important;
-  max-width: 900px !important;
-}
-
-.zusasaQuoteGrid,
-.zusasaQuoteCards,
-.quoteCards,
-.quoteFeatures,
-.quoteBenefits {
-  display: grid !important;
-  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-  gap: 22px !important;
-  margin-top: 38px !important;
-}
-
-.zusasaQuoteGrid article,
-.zusasaQuoteCards article,
-.quoteCards article,
-.quoteFeatures article,
-.quoteBenefits article {
-  background: #ffffff !important;
-  border-radius: 22px !important;
-  padding: 28px !important;
-  border-left: 6px solid var(--orange) !important;
-  box-shadow: 0 22px 60px rgba(10, 29, 54, 0.1) !important;
-}
-
-.zusasaQuoteGrid article h3,
-.zusasaQuoteCards article h3,
-.quoteCards article h3,
-.quoteFeatures article h3,
-.quoteBenefits article h3 {
-  color: var(--navy) !important;
-  font-size: 22px !important;
-  line-height: 1.15 !important;
-  margin: 0 0 10px !important;
-  font-weight: 900 !important;
-}
-
-.zusasaQuoteGrid article p,
-.zusasaQuoteCards article p,
-.quoteCards article p,
-.quoteFeatures article p,
-.quoteBenefits article p {
-  color: var(--gray) !important;
-  font-size: 15.5px !important;
-  line-height: 1.65 !important;
-  margin: 0 !important;
-}
-
-.zusasaQuoteList {
-  list-style: none !important;
-  padding: 0 !important;
-  margin: 24px 0 30px !important;
-  display: grid !important;
-  gap: 12px !important;
-}
-
-.zusasaQuoteList li {
-  position: relative !important;
-  padding-left: 30px !important;
-  color: var(--gray) !important;
-  font-weight: 700 !important;
-  line-height: 1.5 !important;
-}
-
-.zusasaQuoteList li::before {
-  content: "✓" !important;
-  position: absolute !important;
-  left: 0 !important;
-  top: 0 !important;
-  color: var(--orange) !important;
-  font-weight: 900 !important;
-}
-
-/* =========================================================
-   CONTACTO
-   ========================================================= */
-
-#contacto,
-.zusasaContactFinal,
-.contactPremium,
-.contact {
-  width: 100% !important;
-  max-width: 100% !important;
-  display: grid !important;
-  grid-template-columns: 0.9fr 1.1fr !important;
-  gap: 70px !important;
-  align-items: center !important;
-  padding: 110px 7% !important;
-  background:
-    radial-gradient(circle at top left, rgba(242, 101, 34, 0.1), transparent 30%),
-    #f5f6f7 !important;
-  overflow-x: hidden !important;
-}
-
-#contacto h2,
-.zusasaContactFinal h2,
-.contactPremium h2,
-.contact h2 {
-  color: var(--navy) !important;
-  font-size: clamp(38px, 5vw, 68px) !important;
-  line-height: 1.04 !important;
-  letter-spacing: -1.5px !important;
-  font-weight: 900 !important;
-  margin: 0 0 24px !important;
-}
-
-#contacto p,
-.zusasaContactFinal p,
-.contactPremium p,
-.contact p {
-  color: var(--gray) !important;
-  font-size: 18px !important;
-  line-height: 1.75 !important;
-}
-
-.contactActions,
-.zusasaContactActions,
-#contacto .contactActions {
-  display: flex !important;
-  gap: 16px !important;
-  flex-wrap: wrap !important;
-  margin-top: 28px !important;
-}
-
-.contactActions a,
-.zusasaContactActions a,
-#contacto a {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  min-height: 58px !important;
-  padding: 0 28px !important;
-  border-radius: 12px !important;
-  font-weight: 900 !important;
-  text-decoration: none !important;
-}
-
-.contactActions a:first-child,
-.zusasaContactActions a:first-child,
-#contacto a[href*="wa.me"] {
-  background: var(--orange) !important;
-  color: #ffffff !important;
-  box-shadow: 0 18px 40px rgba(242, 101, 34, 0.28) !important;
-}
-
-.contactActions a:last-child,
-.zusasaContactActions a:last-child,
-#contacto a[href^="mailto"] {
-  background: #ffffff !important;
-  color: var(--navy) !important;
-  border: 2px solid var(--navy) !important;
-}
-
-.contactCard,
-.zusasaContactCard,
-#contacto .contactCard {
-  background: #ffffff !important;
-  padding: 40px !important;
-  border-radius: 28px !important;
-  box-shadow: 0 28px 80px rgba(10, 29, 54, 0.14) !important;
-  border-top: 6px solid var(--orange) !important;
-}
-
-.contactCard h3,
-.zusasaContactCard h3,
-#contacto h3 {
-  color: var(--navy) !important;
-  font-size: 28px !important;
-  line-height: 1.15 !important;
-  margin: 0 0 24px !important;
-  font-weight: 900 !important;
-}
-
-/* =========================================================
    RESPONSIVE RESTAURACIÓN
    ========================================================= */
 
 @media (max-width: 1000px) {
-  .zusasaCompanyTop,
-  #contacto,
-  .zusasaContactFinal,
-  .contactPremium,
-  .contact {
+  .zusasaCompanyTop {
     grid-template-columns: 1fr !important;
   }
 
   .zusasaSectorsGrid,
   #sectores .sectorGrid,
-  #sectores .zusasaSectorsGrid,
-  .zusasaQuoteGrid,
-  .zusasaQuoteCards,
-  .quoteCards,
-  .quoteFeatures,
-  .quoteBenefits {
+  #sectores .zusasaSectorsGrid {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
 }
@@ -722,17 +494,7 @@ nav {
   .zusasaCompanyBlock,
   .zusasaCompanySection,
   #sectores,
-  .zusasaSectors,
-  .zusasaQuote,
-  .zusasaQuoteFinal,
-  .zusasaQuoteSection,
-  .quoteSection,
-  .quotePremium,
-  .quoteCleanSection,
-  #contacto,
-  .zusasaContactFinal,
-  .contactPremium,
-  .contact {
+  .zusasaSectors {
     width: 100% !important;
     max-width: 100% !important;
     padding-left: 24px !important;
@@ -746,12 +508,7 @@ nav {
   .zusasaCompanyFullText,
   .zusasaSectorsGrid,
   #sectores .sectorGrid,
-  #sectores .zusasaSectorsGrid,
-  .zusasaQuoteGrid,
-  .zusasaQuoteCards,
-  .quoteCards,
-  .quoteFeatures,
-  .quoteBenefits {
+  #sectores .zusasaSectorsGrid {
     grid-template-columns: 1fr !important;
   }
 
@@ -770,22 +527,8 @@ nav {
   }
 
   #nosotros h2,
-  #sectores h2,
-  #contacto h2,
-  .zusasaQuote h2,
-  .zusasaQuoteFinal h2,
-  .zusasaQuoteSection h2,
-  .quoteSection h2,
-  .quotePremium h2,
-  .quoteCleanSection h2 {
+  #sectores h2 {
     font-size: clamp(34px, 11vw, 50px) !important;
     letter-spacing: -1.2px !important;
-  }
-
-  .contactActions a,
-  .zusasaContactActions a,
-  #contacto a[href*="wa.me"],
-  #contacto a[href^="mailto"] {
-    width: 100% !important;
   }
 }
