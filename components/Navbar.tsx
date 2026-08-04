@@ -1,5 +1,8 @@
 "use client";
 
+const quoteEmailLink =
+  "mailto:cotizaciones@transporteszusasa.com?subject=Solicitud%20de%20cotizaci%C3%B3n%20-%20Transportes%20ZUSASA&body=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20para%20un%20servicio%20de%20Transportes%20ZUSASA.%0A%0ATipo%20de%20servicio%3A%0AOrigen%3A%0ADestino%3A%0AFecha%20estimada%3A%0AComentarios%20adicionales%3A";
+
 export default function Navbar() {
   return (
     <>
@@ -28,7 +31,7 @@ export default function Navbar() {
             <a href="/#contacto">Contacto</a>
           </nav>
 
-          <a href="/cotizacion" className="zusasaQuoteButton">
+          <a href={quoteEmailLink} className="zusasaQuoteButton">
             Cotizar ahora
           </a>
         </div>
