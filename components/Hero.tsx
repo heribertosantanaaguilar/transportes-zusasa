@@ -1,5 +1,8 @@
 import styles from "./Hero.module.css";
 
+const quoteEmailLink =
+  "mailto:cotizaciones@transporteszusasa.com?subject=Solicitud%20de%20cotizaci%C3%B3n%20-%20Transportes%20ZUSASA&body=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20para%20un%20servicio%20de%20Transportes%20ZUSASA.%0A%0ATipo%20de%20servicio%3A%0AOrigen%3A%0ADestino%3A%0AFecha%20estimada%3A%0AComentarios%20adicionales%3A";
+
 export default function Hero() {
   return (
     <section id="inicio" className={styles.hero}>
@@ -19,7 +22,7 @@ export default function Hero() {
         </p>
 
         <div className={styles.actions}>
-          <a className={styles.mainCta} href="/cotizacion">
+          <a className={styles.mainCta} href={quoteEmailLink}>
             Solicitar cotización
           </a>
 
