@@ -4,6 +4,7 @@ import Company from "../components/Company";
 import WhatWeDo from "../components/WhatWeDo";
 import Services from "../components/Services";
 import CoverageMap from "../components/CoverageMap";
+import RutasNacionales from "../components/RutasNacionales";
 import OperationPhotos from "../components/OperationPhotos";
 import ServiceCTA from "../components/ServiceCTA";
 import Sectors from "../components/Sectors";
@@ -25,6 +26,7 @@ export default function Home() {
       <WhatWeDo />
       <Services />
       <CoverageMap />
+      <RutasNacionales />
       <OperationPhotos />
       <ServiceCTA />
       <Sectors />
