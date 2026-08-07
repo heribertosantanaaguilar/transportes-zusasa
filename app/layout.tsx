@@ -5,21 +5,35 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.transporteszusasa.com"),
   title: {
     default:
-      "Transportes ZUSASA | Soluciones logísticas para contenedores e ISO tanques en Manzanillo",
+      "Transportes ZUSASA | Transporte nacional de contenedores desde Manzanillo",
     template: "%s | Transportes ZUSASA",
   },
   description:
-    "Transportes ZUSASA coordina soluciones logísticas para contenedores e ISO tanques desde Manzanillo, integrando movimiento local, resguardo en patio de maniobras, apoyo operativo y gestión de transporte nacional mediante alianza comercial.",
+    "Transportes ZUSASA coordina transporte nacional de contenedores e ISO tanques desde Manzanillo hacia Guadalajara, Monterrey, Apodaca, Querétaro, Bajío, CDMX, Toluca y Puebla. Integramos movimiento local, resguardo en patio de maniobras, apoyo operativo y seguimiento logístico.",
   keywords: [
     "Transportes ZUSASA",
-    "transporte de contenedores Manzanillo",
-    "movimiento local de contenedores Manzanillo",
     "transporte nacional de contenedores",
+    "transporte de contenedores Manzanillo",
+    "transporte de contenedores desde Manzanillo",
+    "flete contenedor Manzanillo Guadalajara",
+    "flete contenedor Manzanillo Monterrey",
+    "flete contenedor Manzanillo Querétaro",
+    "transporte Manzanillo Guadalajara",
+    "transporte Manzanillo Monterrey",
+    "transporte Manzanillo Apodaca",
+    "transporte Manzanillo Querétaro",
+    "transporte Manzanillo Bajío",
+    "transporte Manzanillo CDMX",
+    "transporte Manzanillo Toluca",
+    "transporte Manzanillo Puebla",
     "transporte de ISO tanques",
+    "transporte de ISO tanques Manzanillo",
+    "movimiento local de contenedores Manzanillo",
     "resguardo de contenedores Manzanillo",
     "patio de maniobras Manzanillo",
     "logística Manzanillo",
     "Puerto de Manzanillo",
+    "carga contenerizada Manzanillo",
   ],
   alternates: {
     canonical: "https://www.transporteszusasa.com",
@@ -36,9 +50,10 @@ export const metadata: Metadata = {
     apple: "/images/favicon-zusasa-rounded.png",
   },
   openGraph: {
-    title: "Transportes ZUSASA | Soluciones logísticas desde Manzanillo",
+    title:
+      "Transportes ZUSASA | Transporte nacional de contenedores desde Manzanillo",
     description:
-      "Movimiento local, resguardo, apoyo operativo y gestión de transporte nacional de contenedores e ISO tanques desde Manzanillo mediante alianza comercial.",
+      "Transporte nacional de contenedores e ISO tanques desde Manzanillo hacia Guadalajara, Monterrey, Apodaca, Querétaro, Bajío, CDMX, Toluca y Puebla. Movimiento local, resguardo y seguimiento operativo.",
     url: "https://www.transporteszusasa.com",
     siteName: "Transportes ZUSASA",
     locale: "es_MX",
@@ -48,15 +63,16 @@ export const metadata: Metadata = {
         url: "/images/logo-zusasa.png",
         width: 1200,
         height: 630,
-        alt: "Transportes ZUSASA",
+        alt: "Transportes ZUSASA - Transporte nacional de contenedores desde Manzanillo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Transportes ZUSASA | Soluciones logísticas desde Manzanillo",
+    title:
+      "Transportes ZUSASA | Transporte nacional de contenedores desde Manzanillo",
     description:
-      "Movimiento local, resguardo, apoyo operativo y gestión de transporte nacional de contenedores e ISO tanques desde Manzanillo.",
+      "Coordinamos transporte nacional de contenedores e ISO tanques desde Manzanillo hacia Guadalajara, Monterrey, Querétaro, Bajío, CDMX, Toluca y Puebla.",
     images: ["/images/logo-zusasa.png"],
   },
   robots: {
