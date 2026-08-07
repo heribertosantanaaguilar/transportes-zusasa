@@ -15,19 +15,29 @@ const rutas = [
     href: "/transporte-contenedores-manzanillo-queretaro",
   },
   {
+    title: "Manzanillo → Bajío",
+    text: "Transporte de contenedores desde Manzanillo hacia León, Silao, Irapuato, Celaya, Salamanca y corredores industriales del Bajío.",
+    href: "/transporte-contenedores-manzanillo-bajio",
+  },
+  {
     title: "Manzanillo → CDMX / Estado de México",
     text: "Transporte de contenedores desde Manzanillo hacia CDMX, Cuautitlán, Tultitlán, Naucalpan y zonas industriales del Estado de México.",
-    href: "/transporte-nacional-contenedores-iso-tanques",
+    href: "/transporte-contenedores-manzanillo-cdmx",
   },
   {
     title: "Manzanillo → Toluca / Lerma",
     text: "Coordinación de carga contenerizada desde Manzanillo hacia Toluca, Lerma y corredores industriales del centro del país.",
-    href: "/transporte-nacional-contenedores-iso-tanques",
+    href: "/transporte-contenedores-manzanillo-toluca",
   },
   {
     title: "Manzanillo → Puebla",
     text: "Transporte nacional desde Manzanillo hacia Puebla, Huejotzingo, San Martín Texmelucan y zonas industriales cercanas.",
-    href: "/transporte-nacional-contenedores-iso-tanques",
+    href: "/transporte-contenedores-manzanillo-puebla",
+  },
+  {
+    title: "ISO tanques desde Manzanillo",
+    text: "Coordinación de transporte nacional de ISO tanques desde Manzanillo hacia destinos industriales del país.",
+    href: "/transporte-iso-tanques-manzanillo",
   },
 ];
 
@@ -37,7 +47,10 @@ export default function RutasNacionales() {
       <div className="rutasNacionalesHeader">
         <span>Rutas nacionales</span>
 
-        <h2>Transporte de contenedores desde Manzanillo hacia zonas industriales del país.</h2>
+        <h2>
+          Transporte de contenedores desde Manzanillo hacia zonas industriales
+          del país.
+        </h2>
 
         <p>
           Coordinamos transporte nacional de contenedores e ISO tanques desde
@@ -112,7 +125,7 @@ export default function RutasNacionales() {
 
         .rutasNacionalesGrid {
           display: grid;
-          grid-template-columns: repeat(3, minmax(0, 1fr));
+          grid-template-columns: repeat(4, minmax(0, 1fr));
           gap: 24px;
         }
 
@@ -139,7 +152,7 @@ export default function RutasNacionales() {
         .rutaNacionalCard strong {
           display: block;
           color: #0a1d36;
-          font-size: 24px;
+          font-size: 23px;
           line-height: 1.15;
           font-weight: 900;
           margin-bottom: 16px;
@@ -147,7 +160,7 @@ export default function RutasNacionales() {
 
         .rutaNacionalCard p {
           color: #3b4a5a;
-          font-size: 16px;
+          font-size: 15.5px;
           line-height: 1.65;
           margin: 0 0 24px;
         }
@@ -158,7 +171,13 @@ export default function RutasNacionales() {
           font-weight: 900;
         }
 
-        @media (max-width: 1050px) {
+        @media (max-width: 1200px) {
+          .rutasNacionalesGrid {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+          }
+        }
+
+        @media (max-width: 900px) {
           .rutasNacionalesGrid {
             grid-template-columns: repeat(2, minmax(0, 1fr));
           }
