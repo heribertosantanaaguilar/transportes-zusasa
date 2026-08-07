@@ -1,3 +1,4 @@
+import StructuredData from "../components/StructuredData";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Company from "../components/Company";
@@ -20,6 +21,7 @@ import WhatsAppButton from "../components/WhatsAppButton";
 export default function Home() {
   return (
     <>
+      <StructuredData />
       <Navbar />
       <Hero />
       <Company />
