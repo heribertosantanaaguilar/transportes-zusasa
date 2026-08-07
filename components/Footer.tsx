@@ -1,32 +1,30 @@
 export default function Footer() {
-  const whatsappMessage = [
-    "Hola, quiero solicitar informacion o una cotizacion con Transportes ZUSASA.",
-    "",
-    "Servicio que necesito:",
-    "- Movimiento local de contenedores:",
-    "- Movimiento local de ISO tanques:",
-    "- Transporte nacional de contenedores e ISO tanques:",
-    "- Resguardo en patio de maniobras:",
-    "- Apoyo operativo:",
-    "",
-    "Datos del servicio:",
-    "- Empresa:",
-    "- Nombre de contacto:",
-    "- Telefono:",
-    "- Tipo de contenedor o ISO tanque:",
-    "- Origen:",
-    "- Destino local:",
-    "- Destino nacional:",
-    "- Fecha estimada:",
-    "- Peso aproximado:",
-    "- Requiere movimiento local previo:",
-    "- Requiere resguardo:",
-    "- Comentarios:",
-  ].join("\n");
+  const quoteEmailSubject = "Solicitud de cotización - Transportes ZUSASA";
 
-  const whatsappLink = `https://wa.me/522224556651?${new URLSearchParams({
-    text: whatsappMessage,
-  }).toString()}`;
+  const quoteEmailBody = `Hola, quiero solicitar una cotización con Transportes ZUSASA.
+
+Servicio que necesito:
+- Movimiento local de contenedores e ISO tanques:
+- Transporte nacional de contenedores e ISO tanques:
+- Resguardo en patio de maniobras:
+
+Datos del servicio:
+- Empresa:
+- Nombre de contacto:
+- Teléfono:
+- Tipo de contenedor o ISO tanque:
+- Origen:
+- Destino local:
+- Destino nacional:
+- Fecha estimada:
+- Peso aproximado:
+- Requiere movimiento local previo:
+- Requiere resguardo:
+- Comentarios o necesidades operativas adicionales:`;
+
+  const quoteEmailLink = `mailto:cotizaciones@transporteszusasa.com?subject=${encodeURIComponent(
+    quoteEmailSubject
+  )}&body=${encodeURIComponent(quoteEmailBody)}`;
 
   return (
     <footer className="zusasaFooter">
@@ -83,18 +81,13 @@ export default function Footer() {
             <p>
               <strong>Correo:</strong>
               <br />
-              <a href="mailto:transportes.zusasa@gmail.com">
-                transportes.zusasa@gmail.com
+              <a href="mailto:cotizaciones@transporteszusasa.com">
+                cotizaciones@transporteszusasa.com
               </a>
             </p>
 
-            <a
-              className="footerWhatsApp"
-              href={whatsappLink}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Cotizar por WhatsApp →
+            <a className="footerWhatsApp" href={quoteEmailLink}>
+              Solicitar cotización →
             </a>
           </div>
 
