@@ -5,23 +5,19 @@ export default function OperationVideo() {
         <div className="operationVideoText">
           <span>Evidencia operativa real</span>
 
-          <h2>Movimiento de doble contenedor en patio de maniobras.</h2>
+          <h2>Movimiento real de doble contenedor en patio de maniobras.</h2>
 
           <p>
-            Incorporamos evidencia real de nuestras operaciones para mostrar la
+            Compartimos evidencia real de nuestras operaciones para mostrar la
             coordinación, capacidad operativa y experiencia en el manejo de
             carga contenerizada desde Manzanillo.
           </p>
         </div>
 
         <div className="operationVideoFrame">
-          <video
-            controls
-            preload="metadata"
-            playsInline
-          >
+          <video controls preload="metadata" playsInline>
             <source
-src="/public/videos/camion-doble-contenedor-patio-zusasa_sin-audio.mp4"
+              src="/videos/camion-doble-contenedor-patio-zusasa_sin-audio.mp4"
               type="video/mp4"
             />
             Tu navegador no puede reproducir este video.
