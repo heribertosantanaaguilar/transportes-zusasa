@@ -19,7 +19,6 @@ export default function OperationVideo() {
             controls
             preload="metadata"
             playsInline
-            poster="/images/operacion-camion-doble-zusasa.png.png"
           >
             <source
               src="/videos/camion-doble-contenedor-patio-zusasa_sin-audio.mp4"
