@@ -1,3 +1,4 @@
+import OperationVideo from "../components/OperationVideo";
 import StructuredData from "../components/StructuredData";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
@@ -30,6 +31,7 @@ export default function Home() {
       <CoverageMap />
       <RutasNacionales />
       <OperationPhotos />
+      <OperationVideo />
       <ServiceCTA />
       <Sectors />
       <Value />
