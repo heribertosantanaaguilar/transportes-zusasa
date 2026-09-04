@@ -21,7 +21,7 @@ export default function OperationVideo() {
             playsInline
           >
             <source
-              src="/videos/camion-doble-contenedor-patio-zusasa_sin-audio.mp4"
+src="/public/videos/camion-doble-contenedor-patio-zusasa_sin-audio.mp4"
               type="video/mp4"
             />
             Tu navegador no puede reproducir este video.
