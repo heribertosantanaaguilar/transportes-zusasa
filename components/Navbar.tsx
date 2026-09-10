@@ -1,14 +1,28 @@
 "use client";
 
-const quoteEmailLink =
+import { usePathname } from "next/navigation";
+
+const quoteEmailLinkEs =
   "mailto:cotizaciones@transporteszusasa.com?subject=Solicitud%20de%20cotizaci%C3%B3n%20-%20Transportes%20ZUSASA&body=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20para%20un%20servicio%20de%20Transportes%20ZUSASA.%0A%0ATipo%20de%20servicio%3A%0AOrigen%3A%0ADestino%3A%0AFecha%20estimada%3A%0AComentarios%20adicionales%3A";
 
+const quoteEmailLinkEn =
+  "mailto:cotizaciones@transporteszusasa.com?subject=Quote%20request%20-%20Transportes%20ZUSASA&body=Hello%2C%20I%20would%20like%20to%20request%20a%20quote%20for%20a%20Transportes%20ZUSASA%20service.%0A%0AService%20needed%3A%0AOrigin%3A%0ADestination%3A%0AEstimated%20date%3A%0AContainer%20or%20ISO%20tank%20type%3A%0AApproximate%20weight%3A%0AAdditional%20comments%3A";
+
 export default function Navbar() {
+  const pathname = usePathname();
+  const isEnglish = pathname?.startsWith("/en");
+
+  const homeHref = isEnglish ? "/en#home" : "/#inicio";
+  const aboutHref = isEnglish ? "/en#about" : "/#nosotros";
+  const servicesHref = isEnglish ? "/en#services" : "/#servicios";
+  const routesHref = isEnglish ? "/en#routes" : "/#rutas-nacionales";
+  const contactHref = isEnglish ? "/en#contact" : "/#contacto";
+
   return (
     <>
       <header className="zusasaNavbar">
         <div className="zusasaNavbarInner">
-          <a href="/#inicio" className="zusasaBrand" aria-label="Transportes ZUSASA">
+          <a href={homeHref} className="zusasaBrand" aria-label="Transportes ZUSASA">
             <div className="zusasaBrandLogoBox">
               <img
                 src="/images/logo-zusasa.png"
@@ -24,16 +38,31 @@ export default function Navbar() {
           </a>
 
           <nav className="zusasaNavLinks" aria-label="Navegación principal">
-            <a href="/#inicio">Inicio</a>
-            <a href="/#nosotros">Nosotros</a>
-            <a href="/#servicios">Servicios</a>
-            <a href="/#sectores">Sectores</a>
-            <a href="/#contacto">Contacto</a>
+            <a href={homeHref}>{isEnglish ? "Home" : "Inicio"}</a>
+            <a href={aboutHref}>{isEnglish ? "About us" : "Nosotros"}</a>
+            <a href={servicesHref}>{isEnglish ? "Services" : "Servicios"}</a>
+            <a href={routesHref}>{isEnglish ? "Routes" : "Rutas"}</a>
+            <a href={contactHref}>{isEnglish ? "Contact" : "Contacto"}</a>
           </nav>
 
-          <a href={quoteEmailLink} className="zusasaQuoteButton">
-            Cotizar ahora
-          </a>
+          <div className="zusasaRightActions">
+            <div className="languageSwitch" aria-label="Selector de idioma">
+              <a className={!isEnglish ? "activeLanguage" : ""} href="/">
+                ES
+              </a>
+              <span>|</span>
+              <a className={isEnglish ? "activeLanguage" : ""} href="/en">
+                EN
+              </a>
+            </div>
+
+            <a
+              href={isEnglish ? quoteEmailLinkEn : quoteEmailLinkEs}
+              className="zusasaQuoteButton"
+            >
+              {isEnglish ? "Request a quote" : "Cotizar ahora"}
+            </a>
+          </div>
         </div>
 
         <style>{`
@@ -64,7 +93,7 @@ export default function Navbar() {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 34px;
+            gap: 26px;
             box-sizing: border-box;
           }
 
@@ -127,7 +156,7 @@ export default function Navbar() {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 34px;
+            gap: 28px;
             flex: 1 1 auto;
             min-width: 0;
             max-width: 100%;
@@ -137,7 +166,7 @@ export default function Navbar() {
           .zusasaNavLinks a {
             color: #ffffff;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 17px;
             font-weight: 900;
             line-height: 1;
             position: relative;
@@ -163,9 +192,39 @@ export default function Navbar() {
             transform: scaleX(1);
           }
 
+          .zusasaRightActions {
+            display: inline-flex;
+            align-items: center;
+            gap: 14px;
+            flex: 0 0 auto;
+          }
+
+          .languageSwitch {
+            min-height: 42px;
+            padding: 0 12px;
+            border-radius: 999px;
+            border: 1px solid rgba(255, 255, 255, 0.22);
+            background: rgba(255, 255, 255, 0.08);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+            font-weight: 900;
+          }
+
+          .languageSwitch a {
+            color: rgba(255, 255, 255, 0.72);
+            text-decoration: none;
+          }
+
+          .languageSwitch a.activeLanguage {
+            color: #f26522;
+          }
+
           .zusasaQuoteButton {
             min-height: 64px;
-            padding: 0 34px;
+            padding: 0 30px;
             border-radius: 10px;
             background: #f26522;
             color: #ffffff;
@@ -173,11 +232,26 @@ export default function Navbar() {
             align-items: center;
             justify-content: center;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 17px;
             font-weight: 900;
             white-space: nowrap;
             box-shadow: 0 20px 42px rgba(242, 101, 34, 0.32);
             flex: 0 0 auto;
+          }
+
+          @media (max-width: 1200px) {
+            .zusasaNavbarInner {
+              gap: 18px;
+            }
+
+            .zusasaNavLinks {
+              gap: 20px;
+            }
+
+            .zusasaQuoteButton {
+              padding: 0 24px;
+              font-size: 16px;
+            }
           }
 
           @media (max-width: 1100px) {
@@ -267,6 +341,11 @@ export default function Navbar() {
               font-size: 38px;
             }
 
+            .zusasaRightActions {
+              width: 100%;
+              justify-content: center;
+            }
+
             .zusasaQuoteButton {
               display: none;
             }
@@ -296,6 +375,11 @@ export default function Navbar() {
               padding: 13px 22px;
               border-radius: 999px;
               white-space: nowrap;
+            }
+
+            .languageSwitch {
+              min-height: 40px;
+              font-size: 13px;
             }
           }
 
