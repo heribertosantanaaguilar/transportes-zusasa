@@ -55,8 +55,8 @@ const services = [
   },
   {
     title: "Container storage yard",
-    text: "Temporary container storage in a maneuvering yard, subject to availability and operating conditions.",
-    href: "/en#contact",
+    text: "Temporary container and ISO tank storage support in a maneuvering yard in Manzanillo.",
+    href: "/en/container-storage-yard-manzanillo",
   },
 ];
 
@@ -77,17 +77,30 @@ const routes = [
     href: "/en/container-transport-manzanillo-queretaro",
   },
   {
+    title: "Manzanillo → Bajío",
+    text: "Container and ISO tank transport from Manzanillo to León, Silao, Irapuato, Celaya, Salamanca and Bajío industrial corridors.",
+    href: "/en/container-transport-manzanillo-bajio",
+  },
+  {
+    title: "Manzanillo → Mexico City / State of Mexico",
+    text: "Container and ISO tank transport from Manzanillo to Mexico City, State of Mexico and nearby logistics areas.",
+    href: "/en/container-transport-manzanillo-mexico-city",
+  },
+  {
+    title: "Manzanillo → Toluca / Lerma",
+    text: "Container and ISO tank transport from Manzanillo to Toluca, Lerma and central Mexico industrial corridors.",
+    href: "/en/container-transport-manzanillo-toluca",
+  },
+  {
+    title: "Manzanillo → Puebla",
+    text: "Container and ISO tank transport from Manzanillo to Puebla, Huejotzingo, San Martín Texmelucan and nearby industrial areas.",
+    href: "/en/container-transport-manzanillo-puebla",
+  },
+  {
     title: "ISO tank transport from Manzanillo",
     text: "ISO tank transport coordination from Manzanillo to national industrial destinations in Mexico.",
     href: "/en/iso-tank-transport-manzanillo",
   },
-];
-
-const otherRoutes = [
-  "Manzanillo → Mexico City / State of Mexico",
-  "Manzanillo → Toluca / Lerma",
-  "Manzanillo → Puebla",
-  "Manzanillo → Bajío industrial corridor",
 ];
 
 const sectors = [
@@ -190,18 +203,6 @@ export default function EnglishHomePage() {
                 <span>View route →</span>
               </a>
             ))}
-          </div>
-
-          <div className="englishOtherRoutes">
-            <h3>Other national destinations</h3>
-
-            <div>
-              {otherRoutes.map((route) => (
-                <p key={route}>{route}</p>
-              ))}
-            </div>
-
-            <a href={quoteEmailLink}>Request a route quote →</a>
           </div>
         </section>
 
@@ -549,59 +550,6 @@ export default function EnglishHomePage() {
           font-weight: 900;
         }
 
-        .englishOtherRoutes {
-          margin-top: 34px;
-          padding: 34px;
-          border-radius: 30px;
-          background: linear-gradient(135deg, #0a1d36, #0f2d52);
-          color: #ffffff;
-          display: grid;
-          grid-template-columns: 0.8fr 1.2fr auto;
-          gap: 24px;
-          align-items: center;
-          border-left: 7px solid #f26522;
-        }
-
-        .englishOtherRoutes h3 {
-          margin: 0;
-          color: #ffffff;
-          font-size: 26px;
-          line-height: 1.15;
-          font-weight: 900;
-        }
-
-        .englishOtherRoutes div {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 10px;
-        }
-
-        .englishOtherRoutes p {
-          margin: 0;
-          padding: 10px 14px;
-          border-radius: 999px;
-          background: rgba(255, 255, 255, 0.09);
-          color: rgba(255, 255, 255, 0.88);
-          font-size: 14px;
-          line-height: 1.3;
-          font-weight: 800;
-        }
-
-        .englishOtherRoutes a {
-          min-height: 52px;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          padding: 0 22px;
-          border-radius: 999px;
-          background: #f26522;
-          color: #ffffff;
-          text-decoration: none;
-          font-size: 15px;
-          font-weight: 900;
-          white-space: nowrap;
-        }
-
         .englishVideoBlock {
           padding: 90px 7%;
           background: #f5f6f8;
@@ -757,14 +705,6 @@ export default function EnglishHomePage() {
           .englishSectorsGrid {
             grid-template-columns: repeat(2, minmax(0, 1fr));
           }
-
-          .englishOtherRoutes {
-            grid-template-columns: 1fr;
-          }
-
-          .englishOtherRoutes a {
-            justify-self: start;
-          }
         }
 
         @media (max-width: 900px) {
@@ -836,19 +776,6 @@ export default function EnglishHomePage() {
             min-height: auto;
             padding: 28px 24px;
             border-radius: 24px;
-          }
-
-          .englishOtherRoutes {
-            padding: 28px 24px;
-            border-radius: 26px;
-          }
-
-          .englishOtherRoutes h3 {
-            font-size: 24px;
-          }
-
-          .englishOtherRoutes a {
-            width: 100%;
           }
 
           .englishQuoteBlock {
