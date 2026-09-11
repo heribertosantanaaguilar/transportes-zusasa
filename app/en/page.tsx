@@ -4,16 +4,19 @@ import WhatsAppButton from "../../components/WhatsAppButton";
 import StructuredData from "../../components/StructuredData";
 
 export const metadata: Metadata = {
-  title:
-    "Transportes ZUSASA | National container transport from Manzanillo",
+  title: "Transportes ZUSASA | National container transport from Manzanillo",
   description:
     "Transportes ZUSASA coordinates national container and ISO tank transport from Manzanillo to Guadalajara, Monterrey, Apodaca, Querétaro, Bajío, Mexico City, Toluca and Puebla. Drayage, container storage yard and operational follow-up.",
   alternates: {
     canonical: "https://www.transporteszusasa.com/en",
+    languages: {
+      "es-MX": "https://www.transporteszusasa.com",
+      "en-US": "https://www.transporteszusasa.com/en",
+      "x-default": "https://www.transporteszusasa.com",
+    },
   },
   openGraph: {
-    title:
-      "Transportes ZUSASA | National container transport from Manzanillo",
+    title: "Transportes ZUSASA | National container transport from Manzanillo",
     description:
       "National container and ISO tank transport from Manzanillo to key industrial destinations in Mexico.",
     url: "https://www.transporteszusasa.com/en",
@@ -38,28 +41,53 @@ const services = [
   {
     title: "National container transport",
     text: "Coordination of national container trucking from Manzanillo to key industrial destinations in Mexico.",
+    href: "/en/national-container-transport-from-manzanillo",
   },
   {
     title: "ISO tank transport",
     text: "Logistics coordination for ISO tank movements from Manzanillo to industrial areas across the country.",
+    href: "/en/iso-tank-transport-manzanillo",
   },
   {
     title: "Drayage in Manzanillo",
     text: "Local container and ISO tank movements within the port and logistics area of Manzanillo.",
+    href: "/en#contact",
   },
   {
     title: "Container storage yard",
     text: "Temporary container storage in a maneuvering yard, subject to availability and operating conditions.",
+    href: "/en#contact",
   },
 ];
 
 const routes = [
-  "Manzanillo → Guadalajara / El Salto",
-  "Manzanillo → Monterrey / Apodaca",
-  "Manzanillo → Querétaro / Bajío",
+  {
+    title: "Manzanillo → Guadalajara / El Salto",
+    text: "Container and ISO tank transport from Manzanillo to Guadalajara, El Salto, Zapopan and the Jalisco metropolitan industrial area.",
+    href: "/en/container-transport-manzanillo-guadalajara",
+  },
+  {
+    title: "Manzanillo → Monterrey / Apodaca",
+    text: "Container and ISO tank transport from Manzanillo to Monterrey, Apodaca, Santa Catarina and industrial areas in Nuevo León.",
+    href: "/en/container-transport-manzanillo-monterrey",
+  },
+  {
+    title: "Manzanillo → Querétaro / Bajío",
+    text: "Container and ISO tank transport from Manzanillo to Querétaro, San Juan del Río and Bajío industrial areas.",
+    href: "/en/container-transport-manzanillo-queretaro",
+  },
+  {
+    title: "ISO tank transport from Manzanillo",
+    text: "ISO tank transport coordination from Manzanillo to national industrial destinations in Mexico.",
+    href: "/en/iso-tank-transport-manzanillo",
+  },
+];
+
+const otherRoutes = [
   "Manzanillo → Mexico City / State of Mexico",
   "Manzanillo → Toluca / Lerma",
   "Manzanillo → Puebla",
+  "Manzanillo → Bajío industrial corridor",
 ];
 
 const sectors = [
@@ -85,8 +113,7 @@ export default function EnglishHomePage() {
             <span>Port of Manzanillo</span>
 
             <h1>
-              National container transport from{" "}
-              <strong>Manzanillo</strong>.
+              National container transport from <strong>Manzanillo</strong>.
             </h1>
 
             <p>
@@ -135,10 +162,11 @@ export default function EnglishHomePage() {
 
           <div className="englishServicesGrid">
             {services.map((service) => (
-              <article key={service.title}>
+              <a href={service.href} key={service.title}>
                 <h3>{service.title}</h3>
                 <p>{service.text}</p>
-              </article>
+                <strong>Learn more →</strong>
+              </a>
             ))}
           </div>
         </section>
@@ -156,14 +184,24 @@ export default function EnglishHomePage() {
 
           <div className="englishRoutesGrid">
             {routes.map((route) => (
-              <article key={route}>
-                <strong>{route}</strong>
-                <p>
-                  Request a quote for container or ISO tank transport on this
-                  route.
-                </p>
-              </article>
+              <a href={route.href} key={route.title}>
+                <strong>{route.title}</strong>
+                <p>{route.text}</p>
+                <span>View route →</span>
+              </a>
             ))}
+          </div>
+
+          <div className="englishOtherRoutes">
+            <h3>Other national destinations</h3>
+
+            <div>
+              {otherRoutes.map((route) => (
+                <p key={route}>{route}</p>
+              ))}
+            </div>
+
+            <a href={quoteEmailLink}>Request a route quote →</a>
           </div>
         </section>
 
@@ -193,9 +231,9 @@ export default function EnglishHomePage() {
             <span>Potential clients</span>
             <h2>Designed for companies with recurring logistics needs.</h2>
             <p>
-              Our services may be useful for importers, manufacturers,
-              logistics operators and companies that receive containerized cargo
-              through Manzanillo.
+              Our services may be useful for importers, manufacturers, logistics
+              operators and companies that receive containerized cargo through
+              Manzanillo.
             </p>
           </div>
 
@@ -459,16 +497,28 @@ export default function EnglishHomePage() {
           gap: 24px;
         }
 
-        .englishServicesGrid article,
-        .englishRoutesGrid article {
+        .englishServicesGrid a,
+        .englishRoutesGrid a {
           background: #ffffff;
           border-radius: 28px;
           padding: 30px 28px;
           border-top: 7px solid #f26522;
           box-shadow: 0 24px 65px rgba(10, 29, 54, 0.08);
+          text-decoration: none;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          min-height: 255px;
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
 
-        .englishRoutesGrid article {
+        .englishServicesGrid a:hover,
+        .englishRoutesGrid a:hover {
+          transform: translateY(-4px);
+          box-shadow: 0 30px 80px rgba(10, 29, 54, 0.14);
+        }
+
+        .englishRoutesGrid a {
           background: #f5f6f8;
         }
 
@@ -485,10 +535,71 @@ export default function EnglishHomePage() {
 
         .englishServicesGrid p,
         .englishRoutesGrid p {
-          margin: 0;
+          margin: 0 0 24px;
           color: #3b4a5a;
           font-size: 15.5px;
           line-height: 1.65;
+        }
+
+        .englishServicesGrid strong,
+        .englishRoutesGrid span {
+          color: #f26522;
+          font-size: 16px;
+          line-height: 1.3;
+          font-weight: 900;
+        }
+
+        .englishOtherRoutes {
+          margin-top: 34px;
+          padding: 34px;
+          border-radius: 30px;
+          background: linear-gradient(135deg, #0a1d36, #0f2d52);
+          color: #ffffff;
+          display: grid;
+          grid-template-columns: 0.8fr 1.2fr auto;
+          gap: 24px;
+          align-items: center;
+          border-left: 7px solid #f26522;
+        }
+
+        .englishOtherRoutes h3 {
+          margin: 0;
+          color: #ffffff;
+          font-size: 26px;
+          line-height: 1.15;
+          font-weight: 900;
+        }
+
+        .englishOtherRoutes div {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+
+        .englishOtherRoutes p {
+          margin: 0;
+          padding: 10px 14px;
+          border-radius: 999px;
+          background: rgba(255, 255, 255, 0.09);
+          color: rgba(255, 255, 255, 0.88);
+          font-size: 14px;
+          line-height: 1.3;
+          font-weight: 800;
+        }
+
+        .englishOtherRoutes a {
+          min-height: 52px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0 22px;
+          border-radius: 999px;
+          background: #f26522;
+          color: #ffffff;
+          text-decoration: none;
+          font-size: 15px;
+          font-weight: 900;
+          white-space: nowrap;
         }
 
         .englishVideoBlock {
@@ -646,6 +757,14 @@ export default function EnglishHomePage() {
           .englishSectorsGrid {
             grid-template-columns: repeat(2, minmax(0, 1fr));
           }
+
+          .englishOtherRoutes {
+            grid-template-columns: 1fr;
+          }
+
+          .englishOtherRoutes a {
+            justify-self: start;
+          }
         }
 
         @media (max-width: 900px) {
@@ -710,6 +829,26 @@ export default function EnglishHomePage() {
           .englishRoutesGrid,
           .englishSectorsGrid {
             grid-template-columns: 1fr;
+          }
+
+          .englishServicesGrid a,
+          .englishRoutesGrid a {
+            min-height: auto;
+            padding: 28px 24px;
+            border-radius: 24px;
+          }
+
+          .englishOtherRoutes {
+            padding: 28px 24px;
+            border-radius: 26px;
+          }
+
+          .englishOtherRoutes h3 {
+            font-size: 24px;
+          }
+
+          .englishOtherRoutes a {
+            width: 100%;
           }
 
           .englishQuoteBlock {
