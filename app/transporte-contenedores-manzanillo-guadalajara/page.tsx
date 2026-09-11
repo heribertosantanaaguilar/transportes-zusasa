@@ -2,57 +2,54 @@ import type { Metadata } from "next";
 import RutaLanding from "../../components/RutaLanding";
 
 export const metadata: Metadata = {
-  title:
-    "Transporte de contenedores Manzanillo a Guadalajara | Transportes ZUSASA",
+  title: "Transporte de contenedores Manzanillo Guadalajara",
   description:
-    "Cotiza transporte nacional de contenedores e ISO tanques desde Manzanillo hacia Guadalajara, El Salto, Zapopan, Tlajomulco y zona metropolitana. Servicio coordinado por Transportes ZUSASA.",
+    "Transporte de contenedores e ISO tanques desde Manzanillo hacia Guadalajara, El Salto, Zapopan y zona metropolitana de Jalisco.",
   alternates: {
     canonical:
       "https://www.transporteszusasa.com/transporte-contenedores-manzanillo-guadalajara",
-  },
-  openGraph: {
-    title:
-      "Transporte de contenedores Manzanillo a Guadalajara | Transportes ZUSASA",
-    description:
-      "Coordinación de transporte nacional de contenedores e ISO tanques desde Manzanillo hacia Guadalajara, El Salto y zonas industriales de Jalisco.",
-    url: "https://www.transporteszusasa.com/transporte-contenedores-manzanillo-guadalajara",
-    siteName: "Transportes ZUSASA",
-    locale: "es_MX",
-    type: "website",
+    languages: {
+      "es-MX":
+        "https://www.transporteszusasa.com/transporte-contenedores-manzanillo-guadalajara",
+      "en-US":
+        "https://www.transporteszusasa.com/en/container-transport-manzanillo-guadalajara",
+      "x-default":
+        "https://www.transporteszusasa.com/transporte-contenedores-manzanillo-guadalajara",
+    },
   },
 };
 
 export default function TransporteContenedoresManzanilloGuadalajaraPage() {
   return (
     <RutaLanding
-      eyebrow="Ruta Manzanillo a Guadalajara"
-      title="Transporte de contenedores de Manzanillo a Guadalajara."
-      description="Coordinamos transporte nacional de contenedores e ISO tanques desde Manzanillo hacia Guadalajara, El Salto, Zapopan, Tlajomulco y zona metropolitana, integrando movimiento local, resguardo en patio de maniobras y seguimiento operativo."
-      rutaPrincipal="Manzanillo, Colima → Guadalajara / El Salto, Jalisco"
+      eyebrow="Manzanillo a Guadalajara"
+      title="Transporte de contenedores desde Manzanillo hacia Guadalajara y El Salto."
+      description="Transportes ZUSASA apoya a empresas que requieren transporte de contenedores o ISO tanques desde Manzanillo hacia Guadalajara, El Salto, Zapopan y la zona metropolitana industrial de Jalisco."
+      rutaPrincipal="Manzanillo a Guadalajara / El Salto"
       zonas={[
         "Guadalajara, Jalisco",
         "El Salto, Jalisco",
         "Zapopan, Jalisco",
-        "Tlajomulco, Jalisco",
         "Tlaquepaque, Jalisco",
-        "Zona Metropolitana de Guadalajara",
+        "Tlajomulco, Jalisco",
+        "Corredores industriales y logísticos de Jalisco",
       ]}
       servicios={[
-        "Transporte nacional de contenedores desde Manzanillo",
-        "Transporte nacional de ISO tanques desde Manzanillo",
+        "Transporte de contenedores de Manzanillo a Guadalajara",
+        "Transporte de ISO tanques de Manzanillo a Jalisco",
         "Movimiento local previo en Manzanillo",
         "Resguardo en patio de maniobras",
-        "Seguimiento operativo durante la coordinación del servicio",
+        "Seguimiento operativo y coordinación logística",
       ]}
       sectores={[
         "Importadores",
         "Manufactura",
-        "Autopartes",
-        "Plásticos y empaques",
-        "CEDIS",
+        "Electrónica",
+        "Proveedores automotrices",
+        "Plásticos y empaque",
+        "Centros de distribución",
         "Operadores logísticos",
         "Comercializadoras",
-        "Agencias aduanales",
       ]}
     />
   );
