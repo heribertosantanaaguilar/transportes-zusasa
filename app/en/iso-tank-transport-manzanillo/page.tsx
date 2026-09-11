@@ -8,6 +8,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical:
       "https://www.transporteszusasa.com/en/iso-tank-transport-manzanillo",
+    languages: {
+      "es-MX":
+        "https://www.transporteszusasa.com/transporte-iso-tanques-manzanillo",
+      "en-US":
+        "https://www.transporteszusasa.com/en/iso-tank-transport-manzanillo",
+      "x-default":
+        "https://www.transporteszusasa.com/transporte-iso-tanques-manzanillo",
+    },
   },
 };
 
