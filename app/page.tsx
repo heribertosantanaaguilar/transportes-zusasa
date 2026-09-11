@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import StructuredData from "../components/StructuredData";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
@@ -18,6 +19,21 @@ import FAQ from "../components/FAQ";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import WhatsAppButton from "../components/WhatsAppButton";
+
+export const metadata: Metadata = {
+  title:
+    "Transportes ZUSASA | Transporte nacional de contenedores desde Manzanillo",
+  description:
+    "Transportes ZUSASA coordina transporte nacional de contenedores e ISO tanques desde Manzanillo hacia Guadalajara, Monterrey, Apodaca, Querétaro, Bajío, CDMX, Toluca y Puebla. Integramos movimiento local, resguardo en patio de maniobras, apoyo operativo y seguimiento logístico.",
+  alternates: {
+    canonical: "https://www.transporteszusasa.com",
+    languages: {
+      "es-MX": "https://www.transporteszusasa.com",
+      "en-US": "https://www.transporteszusasa.com/en",
+      "x-default": "https://www.transporteszusasa.com",
+    },
+  },
+};
 
 export default function Home() {
   return (
