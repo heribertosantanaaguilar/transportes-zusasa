@@ -29,8 +29,28 @@ const relatedRoutes = [
     href: "/en/container-transport-manzanillo-queretaro",
   },
   {
+    title: "Manzanillo to Bajío",
+    href: "/en/container-transport-manzanillo-bajio",
+  },
+  {
+    title: "Manzanillo to Mexico City",
+    href: "/en/container-transport-manzanillo-mexico-city",
+  },
+  {
+    title: "Manzanillo to Toluca / Lerma",
+    href: "/en/container-transport-manzanillo-toluca",
+  },
+  {
+    title: "Manzanillo to Puebla",
+    href: "/en/container-transport-manzanillo-puebla",
+  },
+  {
     title: "ISO tank transport from Manzanillo",
     href: "/en/iso-tank-transport-manzanillo",
+  },
+  {
+    title: "Container storage yard in Manzanillo",
+    href: "/en/container-storage-yard-manzanillo",
   },
 ];
 
