@@ -55,8 +55,8 @@ const services = [
   },
   {
     title: "Container storage yard",
-    text: "Temporary container and ISO tank storage support in a maneuvering yard in Manzanillo.",
-    href: "/en/container-storage-yard-manzanillo",
+    text: "Temporary container storage in a maneuvering yard, subject to availability and operating conditions.",
+    href: "/en#contact",
   },
 ];
 
@@ -77,30 +77,17 @@ const routes = [
     href: "/en/container-transport-manzanillo-queretaro",
   },
   {
-    title: "Manzanillo → Bajío",
-    text: "Container and ISO tank transport from Manzanillo to León, Silao, Irapuato, Celaya, Salamanca and Bajío industrial corridors.",
-    href: "/en/container-transport-manzanillo-bajio",
-  },
-  {
-    title: "Manzanillo → Mexico City / State of Mexico",
-    text: "Container and ISO tank transport from Manzanillo to Mexico City, State of Mexico and nearby logistics areas.",
-    href: "/en/container-transport-manzanillo-mexico-city",
-  },
-  {
-    title: "Manzanillo → Toluca / Lerma",
-    text: "Container and ISO tank transport from Manzanillo to Toluca, Lerma and central Mexico industrial corridors.",
-    href: "/en/container-transport-manzanillo-toluca",
-  },
-  {
-    title: "Manzanillo → Puebla",
-    text: "Container and ISO tank transport from Manzanillo to Puebla, Huejotzingo, San Martín Texmelucan and nearby industrial areas.",
-    href: "/en/container-transport-manzanillo-puebla",
-  },
-  {
     title: "ISO tank transport from Manzanillo",
     text: "ISO tank transport coordination from Manzanillo to national industrial destinations in Mexico.",
     href: "/en/iso-tank-transport-manzanillo",
   },
+];
+
+const otherRoutes = [
+  "Manzanillo → Mexico City / State of Mexico",
+  "Manzanillo → Toluca / Lerma",
+  "Manzanillo → Puebla",
+  "Manzanillo → Bajío industrial corridor",
 ];
 
 const sectors = [
@@ -204,6 +191,18 @@ export default function EnglishHomePage() {
               </a>
             ))}
           </div>
+
+          <div className="englishOtherRoutes">
+            <h3>Other national destinations</h3>
+
+            <div>
+              {otherRoutes.map((route) => (
+                <p key={route}>{route}</p>
+              ))}
+            </div>
+
+            <a href={quoteEmailLink}>Request a route quote →</a>
+          </div>
         </section>
 
         <section className="englishVideoBlock">
@@ -267,32 +266,55 @@ export default function EnglishHomePage() {
             <h2>Talk to our logistics team.</h2>
             <p>
               For quote requests, route validation or operating details, contact
-              Transportes ZUSASA directly.
+              Transportes ZUSASA directly. Our team can assist you with national
+              container transport, ISO tank logistics, drayage and storage
+              support in Manzanillo.
             </p>
           </div>
 
           <div className="englishContactCard">
-            <h3>Transportes ZUSASA</h3>
+            <h3>Contact information</h3>
 
-            <p>
-              <strong>Quotes:</strong>
-              <br />
+            <div className="englishContactItem">
+              <strong>José Alberto Zúñiga Ramos</strong>
+              <span>General Manager</span>
+              <a href="tel:+522224556651">+52 222 455 6651</a>
+              <a href="mailto:jzuniga@transporteszusasa.com">
+                jzuniga@transporteszusasa.com
+              </a>
+            </div>
+
+            <div className="englishContactItem">
+              <strong>Sergio Sanmiguel Celis</strong>
+              <span>Administration and Finance Director</span>
+              <a href="tel:+523141069165">+52 314 106 9165</a>
+              <a href="mailto:sergio.sanmiguel@transporteszusasa.com">
+                sergio.sanmiguel@transporteszusasa.com
+              </a>
+            </div>
+
+            <div className="englishContactItem">
+              <strong>Heriberto Santana Aguilar</strong>
+              <span>Logistics Coordination</span>
+              <a href="tel:+523148721897">+52 314 872 1897</a>
+              <a href="mailto:heriberto.santana@transporteszusasa.com">
+                heriberto.santana@transporteszusasa.com
+              </a>
+            </div>
+
+            <div className="englishContactDivider" />
+
+            <div className="englishContactItem">
+              <strong>Quotes</strong>
               <a href="mailto:cotizaciones@transporteszusasa.com">
                 cotizaciones@transporteszusasa.com
               </a>
-            </p>
+            </div>
 
-            <p>
-              <strong>Phone:</strong>
-              <br />
-              <a href="tel:+522224556651">+52 222 455 6651</a>
-            </p>
-
-            <p>
-              <strong>Location:</strong>
-              <br />
-              Manzanillo, Colima, Mexico
-            </p>
+            <div className="englishContactItem">
+              <strong>Location</strong>
+              <span>Manzanillo, Colima, Mexico</span>
+            </div>
           </div>
         </section>
       </main>
@@ -550,6 +572,59 @@ export default function EnglishHomePage() {
           font-weight: 900;
         }
 
+        .englishOtherRoutes {
+          margin-top: 34px;
+          padding: 34px;
+          border-radius: 30px;
+          background: linear-gradient(135deg, #0a1d36, #0f2d52);
+          color: #ffffff;
+          display: grid;
+          grid-template-columns: 0.8fr 1.2fr auto;
+          gap: 24px;
+          align-items: center;
+          border-left: 7px solid #f26522;
+        }
+
+        .englishOtherRoutes h3 {
+          margin: 0;
+          color: #ffffff;
+          font-size: 26px;
+          line-height: 1.15;
+          font-weight: 900;
+        }
+
+        .englishOtherRoutes div {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+
+        .englishOtherRoutes p {
+          margin: 0;
+          padding: 10px 14px;
+          border-radius: 999px;
+          background: rgba(255, 255, 255, 0.09);
+          color: rgba(255, 255, 255, 0.88);
+          font-size: 14px;
+          line-height: 1.3;
+          font-weight: 800;
+        }
+
+        .englishOtherRoutes a {
+          min-height: 52px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0 22px;
+          border-radius: 999px;
+          background: #f26522;
+          color: #ffffff;
+          text-decoration: none;
+          font-size: 15px;
+          font-weight: 900;
+          white-space: nowrap;
+        }
+
         .englishVideoBlock {
           padding: 90px 7%;
           background: #f5f6f8;
@@ -629,7 +704,7 @@ export default function EnglishHomePage() {
           padding: 90px 7%;
           background: #ffffff;
           display: grid;
-          grid-template-columns: 1fr 0.85fr;
+          grid-template-columns: 1fr 0.95fr;
           gap: 48px;
           align-items: center;
         }
@@ -647,24 +722,46 @@ export default function EnglishHomePage() {
         }
 
         .englishContactCard h3 {
-          margin: 0 0 24px;
+          margin: 0 0 26px;
           color: #0a1d36;
           font-size: 30px;
           line-height: 1.1;
           font-weight: 900;
         }
 
-        .englishContactCard p {
-          margin: 0 0 18px;
-          font-size: 16px;
-          line-height: 1.6;
+        .englishContactItem {
+          display: grid;
+          gap: 6px;
+          margin-bottom: 22px;
         }
 
-        .englishContactCard a {
+        .englishContactItem strong {
+          color: #0a1d36;
+          font-size: 18px;
+          line-height: 1.25;
+          font-weight: 900;
+        }
+
+        .englishContactItem span {
+          color: #3b4a5a;
+          font-size: 15px;
+          line-height: 1.45;
+        }
+
+        .englishContactItem a {
           color: #f26522;
+          font-size: 16px;
+          line-height: 1.45;
           font-weight: 900;
           text-decoration: none;
           overflow-wrap: anywhere;
+        }
+
+        .englishContactDivider {
+          width: 100%;
+          height: 1px;
+          background: rgba(10, 29, 54, 0.12);
+          margin: 8px 0 22px;
         }
 
         .englishFooter {
@@ -704,6 +801,14 @@ export default function EnglishHomePage() {
           .englishRoutesGrid,
           .englishSectorsGrid {
             grid-template-columns: repeat(2, minmax(0, 1fr));
+          }
+
+          .englishOtherRoutes {
+            grid-template-columns: 1fr;
+          }
+
+          .englishOtherRoutes a {
+            justify-self: start;
           }
         }
 
@@ -778,10 +883,32 @@ export default function EnglishHomePage() {
             border-radius: 24px;
           }
 
+          .englishOtherRoutes {
+            padding: 28px 24px;
+            border-radius: 26px;
+          }
+
+          .englishOtherRoutes h3 {
+            font-size: 24px;
+          }
+
+          .englishOtherRoutes a {
+            width: 100%;
+          }
+
           .englishQuoteBlock {
             margin: 0 24px 80px;
             padding: 32px 24px;
             border-radius: 28px;
+          }
+
+          .englishContactCard {
+            padding: 30px 24px;
+            border-radius: 28px;
+          }
+
+          .englishContactCard h3 {
+            font-size: 28px;
           }
 
           .englishFooter {
