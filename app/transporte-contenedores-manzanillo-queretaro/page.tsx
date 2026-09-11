@@ -2,58 +2,54 @@ import type { Metadata } from "next";
 import RutaLanding from "../../components/RutaLanding";
 
 export const metadata: Metadata = {
-  title:
-    "Transporte de contenedores Manzanillo a Querétaro | Transportes ZUSASA",
+  title: "Transporte de contenedores Manzanillo Querétaro y Bajío",
   description:
-    "Cotiza transporte nacional de contenedores e ISO tanques desde Manzanillo hacia Querétaro, San Juan del Río, Celaya, Irapuato, León, Silao y Bajío.",
+    "Transporte de contenedores e ISO tanques desde Manzanillo hacia Querétaro, San Juan del Río y zonas industriales del Bajío.",
   alternates: {
     canonical:
       "https://www.transporteszusasa.com/transporte-contenedores-manzanillo-queretaro",
-  },
-  openGraph: {
-    title:
-      "Transporte de contenedores Manzanillo a Querétaro | Transportes ZUSASA",
-    description:
-      "Coordinación de transporte nacional de contenedores e ISO tanques desde Manzanillo hacia Querétaro, San Juan del Río y Bajío.",
-    url: "https://www.transporteszusasa.com/transporte-contenedores-manzanillo-queretaro",
-    siteName: "Transportes ZUSASA",
-    locale: "es_MX",
-    type: "website",
+    languages: {
+      "es-MX":
+        "https://www.transporteszusasa.com/transporte-contenedores-manzanillo-queretaro",
+      "en-US":
+        "https://www.transporteszusasa.com/en/container-transport-manzanillo-queretaro",
+      "x-default":
+        "https://www.transporteszusasa.com/transporte-contenedores-manzanillo-queretaro",
+    },
   },
 };
 
 export default function TransporteContenedoresManzanilloQueretaroPage() {
   return (
     <RutaLanding
-      eyebrow="Ruta Manzanillo a Querétaro y Bajío"
-      title="Transporte de contenedores de Manzanillo a Querétaro y Bajío."
-      description="Coordinamos transporte nacional de contenedores e ISO tanques desde Manzanillo hacia Querétaro, San Juan del Río, Celaya, Irapuato, León, Silao y otras zonas industriales del Bajío."
-      rutaPrincipal="Manzanillo, Colima → Querétaro / Bajío"
+      eyebrow="Manzanillo a Querétaro y Bajío"
+      title="Transporte de contenedores desde Manzanillo hacia Querétaro y Bajío."
+      description="Transportes ZUSASA apoya a empresas que requieren transporte de carga contenerizada desde Manzanillo hacia Querétaro, San Juan del Río y destinos industriales del Bajío."
+      rutaPrincipal="Manzanillo a Querétaro / Bajío"
       zonas={[
-        "Querétaro, Querétaro",
-        "San Juan del Río, Querétaro",
-        "Celaya, Guanajuato",
-        "Irapuato, Guanajuato",
-        "León, Guanajuato",
-        "Silao, Guanajuato",
-        "Zonas industriales del Bajío",
+        "Querétaro",
+        "San Juan del Río",
+        "El Marqués",
+        "Corregidora",
+        "Corredor industrial del Bajío",
+        "Parques industriales y zonas logísticas cercanas",
       ]}
       servicios={[
-        "Transporte nacional de contenedores desde Manzanillo",
-        "Transporte nacional de ISO tanques desde Manzanillo",
-        "Movimiento local previo en Manzanillo",
-        "Resguardo en patio de maniobras",
-        "Seguimiento operativo durante la coordinación del servicio",
+        "Transporte de contenedores de Manzanillo a Querétaro",
+        "Transporte de ISO tanques de Manzanillo a Querétaro",
+        "Transporte de contenedores de Manzanillo al Bajío",
+        "Movimiento local en Manzanillo",
+        "Resguardo en patio de maniobras y apoyo operativo",
       ]}
       sectores={[
-        "Autopartes",
+        "Proveedores automotrices",
+        "Proveedores aeroespaciales",
         "Manufactura",
-        "Aeroespacial",
-        "Plásticos y empaques",
-        "Alimentos e ingredientes",
+        "Distribución industrial",
+        "Importadores",
         "Operadores logísticos",
         "Comercializadoras",
-        "Importadores",
+        "Agentes aduanales",
       ]}
     />
   );
