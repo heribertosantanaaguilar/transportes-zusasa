@@ -2,57 +2,54 @@ import type { Metadata } from "next";
 import RutaLanding from "../../components/RutaLanding";
 
 export const metadata: Metadata = {
-  title:
-    "Transporte de contenedores Manzanillo a Monterrey | Transportes ZUSASA",
+  title: "Transporte de contenedores Manzanillo Monterrey y Apodaca",
   description:
-    "Cotiza transporte nacional de contenedores e ISO tanques desde Manzanillo hacia Monterrey, Apodaca, Santa Catarina, Escobedo y zonas industriales de Nuevo León.",
+    "Transporte de contenedores e ISO tanques desde Manzanillo hacia Monterrey, Apodaca, Santa Catarina y zonas industriales de Nuevo León.",
   alternates: {
     canonical:
       "https://www.transporteszusasa.com/transporte-contenedores-manzanillo-monterrey",
-  },
-  openGraph: {
-    title:
-      "Transporte de contenedores Manzanillo a Monterrey | Transportes ZUSASA",
-    description:
-      "Coordinación de transporte nacional de contenedores e ISO tanques desde Manzanillo hacia Monterrey, Apodaca y zonas industriales de Nuevo León.",
-    url: "https://www.transporteszusasa.com/transporte-contenedores-manzanillo-monterrey",
-    siteName: "Transportes ZUSASA",
-    locale: "es_MX",
-    type: "website",
+    languages: {
+      "es-MX":
+        "https://www.transporteszusasa.com/transporte-contenedores-manzanillo-monterrey",
+      "en-US":
+        "https://www.transporteszusasa.com/en/container-transport-manzanillo-monterrey",
+      "x-default":
+        "https://www.transporteszusasa.com/transporte-contenedores-manzanillo-monterrey",
+    },
   },
 };
 
 export default function TransporteContenedoresManzanilloMonterreyPage() {
   return (
     <RutaLanding
-      eyebrow="Ruta Manzanillo a Nuevo León"
-      title="Transporte de contenedores de Manzanillo a Monterrey y Apodaca."
-      description="Coordinamos transporte nacional de contenedores e ISO tanques desde Manzanillo hacia Monterrey, Apodaca, Santa Catarina, Escobedo, San Nicolás y zonas industriales de Nuevo León."
-      rutaPrincipal="Manzanillo, Colima → Monterrey / Apodaca, Nuevo León"
+      eyebrow="Manzanillo a Nuevo León"
+      title="Transporte de contenedores desde Manzanillo hacia Monterrey y Apodaca."
+      description="Transportes ZUSASA coordina transporte de contenedores e ISO tanques desde Manzanillo hacia Monterrey, Apodaca, Santa Catarina y zonas industriales estratégicas de Nuevo León."
+      rutaPrincipal="Manzanillo a Monterrey / Apodaca"
       zonas={[
         "Monterrey, Nuevo León",
         "Apodaca, Nuevo León",
         "Santa Catarina, Nuevo León",
-        "Escobedo, Nuevo León",
         "San Nicolás de los Garza, Nuevo León",
-        "Zonas industriales de Nuevo León",
+        "Guadalupe, Nuevo León",
+        "Corredores industriales de Nuevo León",
       ]}
       servicios={[
-        "Transporte nacional de contenedores desde Manzanillo",
-        "Transporte nacional de ISO tanques desde Manzanillo",
+        "Transporte de contenedores de Manzanillo a Monterrey",
+        "Transporte de contenedores de Manzanillo a Apodaca",
+        "Transporte de ISO tanques de Manzanillo a Nuevo León",
         "Movimiento local previo en Manzanillo",
-        "Resguardo en patio de maniobras",
-        "Seguimiento operativo durante la coordinación del servicio",
+        "Seguimiento operativo y coordinación logística",
       ]}
       sectores={[
-        "Autopartes",
-        "Manufactura avanzada",
-        "Químicos no peligrosos",
-        "Plásticos y resinas",
-        "CEDIS",
+        "Industria automotriz",
+        "Empresas manufactureras",
+        "Proveedores industriales",
+        "Centros de distribución",
         "Operadores logísticos",
-        "Comercio exterior",
-        "Agencias aduanales",
+        "Importadores",
+        "Comercializadoras",
+        "Agentes aduanales",
       ]}
     />
   );
