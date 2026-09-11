@@ -71,8 +71,56 @@ Shipment details:
     emailSubject
   )}&body=${encodeURIComponent(emailBody)}`;
 
+  const faqs = [
+    {
+      question: `Does Transportes ZUSASA provide ${mainRoute.toLowerCase()}?`,
+      answer:
+        "Yes. Transportes ZUSASA reviews and coordinates container and ISO tank transport operations from Manzanillo according to the route, availability, equipment type, documentation, cargo weight and operating conditions.",
+    },
+    {
+      question: "What information is needed to request a quote?",
+      answer:
+        "To request a quote, we recommend sharing your company name, contact person, phone number, container or ISO tank type, origin, destination, estimated date, approximate cargo weight, cargo type and any special operating requirements.",
+    },
+    {
+      question: "Can you support drayage services in Manzanillo?",
+      answer:
+        "Yes. We can support drayage services in Manzanillo, subject to availability and operating conditions. This may complement national transport operations that require local coordination before departure.",
+    },
+    {
+      question: "Do you offer container or ISO tank storage support?",
+      answer:
+        "Yes. Transportes ZUSASA can support temporary storage options in a maneuvering yard in Manzanillo, subject to availability, equipment type, cargo type and the specific requirements of the operation.",
+    },
+    {
+      question: "How can I request a quote?",
+      answer:
+        "You can request a quote by sending your shipment details to cotizaciones@transporteszusasa.com or by using the contact buttons available on this page.",
+    },
+  ];
+
+  const faqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqStructuredData),
+        }}
+      />
+
       <Navbar />
 
       <main className="englishRoutePage">
@@ -151,6 +199,29 @@ Shipment details:
             {sectors.map((sector) => (
               <article key={sector}>
                 <h3>{sector}</h3>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="englishRouteFaqSection">
+          <div className="englishRouteFaqHeader">
+            <span>Frequently asked questions</span>
+
+            <h2>Useful information before requesting a quote.</h2>
+
+            <p>
+              These questions clarify the general scope of the service and the
+              basic shipment details needed to review a logistics operation from
+              Manzanillo.
+            </p>
+          </div>
+
+          <div className="englishRouteFaqGrid">
+            {faqs.map((faq) => (
+              <article key={faq.question}>
+                <h3>{faq.question}</h3>
+                <p>{faq.answer}</p>
               </article>
             ))}
           </div>
@@ -246,6 +317,7 @@ Shipment details:
         .englishRouteHeroContent > span,
         .englishRouteIntro span,
         .englishRouteSectorsHeader span,
+        .englishRouteFaqHeader span,
         .englishRelatedRoutesHeader span,
         .englishRouteQuoteBlock span {
           display: inline-flex;
@@ -262,6 +334,7 @@ Shipment details:
         .englishRouteHeroContent > span::before,
         .englishRouteIntro span::before,
         .englishRouteSectorsHeader span::before,
+        .englishRouteFaqHeader span::before,
         .englishRelatedRoutesHeader span::before,
         .englishRouteQuoteBlock span::before {
           content: "";
@@ -338,6 +411,7 @@ Shipment details:
         .englishRouteIntro h2,
         .englishRouteInfoCard h2,
         .englishRouteSectorsHeader h2,
+        .englishRouteFaqHeader h2,
         .englishRelatedRoutesHeader h2,
         .englishRouteQuoteBlock h2 {
           margin: 0;
@@ -406,12 +480,15 @@ Shipment details:
           background: #ffffff;
         }
 
-        .englishRouteSectorsHeader {
+        .englishRouteSectorsHeader,
+        .englishRouteFaqHeader,
+        .englishRelatedRoutesHeader {
           max-width: 980px;
           margin-bottom: 46px;
         }
 
-        .englishRouteSectorsHeader p {
+        .englishRouteSectorsHeader p,
+        .englishRouteFaqHeader p {
           margin: 24px 0 0;
           color: #3b4a5a;
           font-size: 18px;
@@ -439,14 +516,43 @@ Shipment details:
           font-weight: 900;
         }
 
-        .englishRelatedRoutes {
+        .englishRouteFaqSection {
           padding: 90px 7%;
           background: #f5f6f8;
         }
 
-        .englishRelatedRoutesHeader {
-          max-width: 980px;
-          margin-bottom: 40px;
+        .englishRouteFaqGrid {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 22px;
+        }
+
+        .englishRouteFaqGrid article {
+          background: #ffffff;
+          border-radius: 26px;
+          padding: 30px;
+          border-left: 6px solid #f26522;
+          box-shadow: 0 24px 65px rgba(10, 29, 54, 0.08);
+        }
+
+        .englishRouteFaqGrid h3 {
+          margin: 0 0 14px;
+          color: #0a1d36;
+          font-size: 22px;
+          line-height: 1.25;
+          font-weight: 900;
+        }
+
+        .englishRouteFaqGrid p {
+          margin: 0;
+          color: #3b4a5a;
+          font-size: 16px;
+          line-height: 1.68;
+        }
+
+        .englishRelatedRoutes {
+          padding: 90px 7%;
+          background: #ffffff;
         }
 
         .englishRelatedRoutesGrid {
@@ -459,7 +565,7 @@ Shipment details:
           min-height: 180px;
           padding: 26px 24px;
           border-radius: 24px;
-          background: #ffffff;
+          background: #f5f6f8;
           color: #0a1d36;
           text-decoration: none;
           font-size: 18px;
@@ -584,7 +690,8 @@ Shipment details:
             grid-template-columns: 1fr;
           }
 
-          .englishRouteSectorsGrid {
+          .englishRouteSectorsGrid,
+          .englishRouteFaqGrid {
             grid-template-columns: repeat(2, minmax(0, 1fr));
           }
 
@@ -607,6 +714,7 @@ Shipment details:
           .englishRouteHero p,
           .englishRouteIntro p,
           .englishRouteSectorsHeader p,
+          .englishRouteFaqHeader p,
           .englishRouteQuoteBlock p {
             font-size: 17px;
             line-height: 1.7;
@@ -625,6 +733,7 @@ Shipment details:
           .englishRouteIntro,
           .englishRouteGridSection,
           .englishRouteSectors,
+          .englishRouteFaqSection,
           .englishRelatedRoutes {
             padding: 74px 24px;
           }
@@ -635,8 +744,18 @@ Shipment details:
           }
 
           .englishRouteSectorsGrid,
+          .englishRouteFaqGrid,
           .englishRelatedRoutesGrid {
             grid-template-columns: 1fr;
+          }
+
+          .englishRouteFaqGrid article {
+            padding: 26px 24px;
+            border-radius: 24px;
+          }
+
+          .englishRouteFaqGrid h3 {
+            font-size: 20px;
           }
 
           .englishRelatedRoutesGrid a {
