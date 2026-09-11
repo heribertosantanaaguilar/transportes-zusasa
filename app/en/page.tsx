@@ -55,8 +55,8 @@ const services = [
   },
   {
     title: "Container storage yard",
-    text: "Temporary container storage in a maneuvering yard, subject to availability and operating conditions.",
-    href: "/en#contact",
+    text: "Temporary container and ISO tank storage support in a maneuvering yard in Manzanillo.",
+    href: "/en/container-storage-yard-manzanillo",
   },
 ];
 
@@ -77,17 +77,72 @@ const routes = [
     href: "/en/container-transport-manzanillo-queretaro",
   },
   {
+    title: "Manzanillo → Bajío",
+    text: "Container and ISO tank transport from Manzanillo to León, Silao, Irapuato, Celaya, Salamanca and Bajío industrial corridors.",
+    href: "/en/container-transport-manzanillo-bajio",
+  },
+  {
+    title: "Manzanillo → Mexico City / State of Mexico",
+    text: "Container and ISO tank transport from Manzanillo to Mexico City, State of Mexico and nearby logistics areas.",
+    href: "/en/container-transport-manzanillo-mexico-city",
+  },
+  {
+    title: "Manzanillo → Toluca / Lerma",
+    text: "Container and ISO tank transport from Manzanillo to Toluca, Lerma and central Mexico industrial corridors.",
+    href: "/en/container-transport-manzanillo-toluca",
+  },
+  {
+    title: "Manzanillo → Puebla",
+    text: "Container and ISO tank transport from Manzanillo to Puebla, Huejotzingo, San Martín Texmelucan and nearby industrial areas.",
+    href: "/en/container-transport-manzanillo-puebla",
+  },
+  {
     title: "ISO tank transport from Manzanillo",
     text: "ISO tank transport coordination from Manzanillo to national industrial destinations in Mexico.",
     href: "/en/iso-tank-transport-manzanillo",
   },
 ];
 
-const otherRoutes = [
-  "Manzanillo → Mexico City / State of Mexico",
-  "Manzanillo → Toluca / Lerma",
-  "Manzanillo → Puebla",
-  "Manzanillo → Bajío industrial corridor",
+const whyChoose = [
+  {
+    title: "Direct communication",
+    text: "We keep communication clear from the initial request to the closing of the service.",
+  },
+  {
+    title: "Manzanillo-based operation",
+    text: "Our work is focused on the port and logistics area of Manzanillo, Colima.",
+  },
+  {
+    title: "Operational follow-up",
+    text: "We help clients stay informed during each stage of the container or ISO tank movement.",
+  },
+  {
+    title: "Flexible logistics support",
+    text: "We can support national transport, drayage, storage yard coordination and shipment review.",
+  },
+];
+
+const processSteps = [
+  {
+    step: "01",
+    title: "Shipment review",
+    text: "We review the service required, origin, destination, cargo type, equipment, weight and estimated date.",
+  },
+  {
+    step: "02",
+    title: "Route and conditions",
+    text: "We validate route requirements, availability, operating conditions and any special logistics considerations.",
+  },
+  {
+    step: "03",
+    title: "Quote and coordination",
+    text: "We prepare the quote and coordinate the necessary details for the requested service.",
+  },
+  {
+    step: "04",
+    title: "Operational follow-up",
+    text: "We provide follow-up during the operation to support clear communication with the client.",
+  },
 ];
 
 const sectors = [
@@ -101,10 +156,59 @@ const sectors = [
   "Customs brokers",
 ];
 
+const faqs = [
+  {
+    question: "Do you provide container transport from Manzanillo?",
+    answer:
+      "Yes. Transportes ZUSASA coordinates national container transport from Manzanillo to key industrial destinations in Mexico, subject to route, availability, equipment type, documentation, weight and operating conditions.",
+  },
+  {
+    question: "Do you handle ISO tank transport from Manzanillo?",
+    answer:
+      "Yes. We coordinate ISO tank transport from Manzanillo to national industrial destinations, reviewing the cargo characteristics, route, documentation and operating requirements of each shipment.",
+  },
+  {
+    question: "Can you provide drayage services in Manzanillo?",
+    answer:
+      "Yes. We can support local drayage in Manzanillo for containers and ISO tanks, subject to availability and operating conditions.",
+  },
+  {
+    question: "Do you offer container storage yard support?",
+    answer:
+      "Yes. We can support temporary container or ISO tank storage in a maneuvering yard in Manzanillo, subject to availability, cargo type and operating requirements.",
+  },
+  {
+    question: "How can I request a quote?",
+    answer:
+      "You can request a quote by sending your shipment details to cotizaciones@transporteszusasa.com or by using the contact buttons available on this page.",
+  },
+];
+
 export default function EnglishHomePage() {
+  const faqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
+
   return (
     <>
       <StructuredData />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqStructuredData),
+        }}
+      />
+
       <Navbar />
 
       <main className="englishHomePage">
@@ -191,18 +295,6 @@ export default function EnglishHomePage() {
               </a>
             ))}
           </div>
-
-          <div className="englishOtherRoutes">
-            <h3>Other national destinations</h3>
-
-            <div>
-              {otherRoutes.map((route) => (
-                <p key={route}>{route}</p>
-              ))}
-            </div>
-
-            <a href={quoteEmailLink}>Request a route quote →</a>
-          </div>
         </section>
 
         <section className="englishVideoBlock">
@@ -226,6 +318,48 @@ export default function EnglishHomePage() {
           </div>
         </section>
 
+        <section className="englishWhyChoose">
+          <div className="englishSectionHeader">
+            <span>Why choose us</span>
+            <h2>Clear logistics support for operations from Manzanillo.</h2>
+            <p>
+              Transportes ZUSASA focuses on practical coordination, direct
+              communication and reliable follow-up for companies moving
+              containerized cargo from Manzanillo.
+            </p>
+          </div>
+
+          <div className="englishWhyGrid">
+            {whyChoose.map((item) => (
+              <article key={item.title}>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="englishProcess">
+          <div className="englishSectionHeader">
+            <span>Our process</span>
+            <h2>From shipment review to operational follow-up.</h2>
+            <p>
+              We review each request step by step to understand the route,
+              equipment, cargo requirements and logistics conditions involved.
+            </p>
+          </div>
+
+          <div className="englishProcessGrid">
+            {processSteps.map((item) => (
+              <article key={item.step}>
+                <strong>{item.step}</strong>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
         <section className="englishSectors">
           <div className="englishSectionHeader">
             <span>Potential clients</span>
@@ -241,6 +375,27 @@ export default function EnglishHomePage() {
             {sectors.map((sector) => (
               <article key={sector}>
                 <h3>{sector}</h3>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="englishFaqSection">
+          <div className="englishSectionHeader">
+            <span>Frequently asked questions</span>
+            <h2>Useful information before requesting a quote.</h2>
+            <p>
+              These questions clarify the general scope of our services and the
+              basic details needed to review a logistics operation from
+              Manzanillo.
+            </p>
+          </div>
+
+          <div className="englishFaqGrid">
+            {faqs.map((faq) => (
+              <article key={faq.question}>
+                <h3>{faq.question}</h3>
+                <p>{faq.answer}</p>
               </article>
             ))}
           </div>
@@ -487,15 +642,22 @@ export default function EnglishHomePage() {
 
         .englishServices,
         .englishRoutes,
-        .englishSectors {
+        .englishWhyChoose,
+        .englishProcess,
+        .englishSectors,
+        .englishFaqSection {
           padding: 90px 7%;
         }
 
-        .englishServices {
+        .englishServices,
+        .englishVideoBlock,
+        .englishProcess,
+        .englishFaqSection {
           background: #f5f6f8;
         }
 
         .englishRoutes,
+        .englishWhyChoose,
         .englishSectors {
           background: #ffffff;
         }
@@ -514,14 +676,18 @@ export default function EnglishHomePage() {
         }
 
         .englishServicesGrid,
-        .englishRoutesGrid {
+        .englishRoutesGrid,
+        .englishWhyGrid,
+        .englishProcessGrid {
           display: grid;
           grid-template-columns: repeat(4, minmax(0, 1fr));
           gap: 24px;
         }
 
         .englishServicesGrid a,
-        .englishRoutesGrid a {
+        .englishRoutesGrid a,
+        .englishWhyGrid article,
+        .englishProcessGrid article {
           background: #ffffff;
           border-radius: 28px;
           padding: 30px 28px;
@@ -541,13 +707,17 @@ export default function EnglishHomePage() {
           box-shadow: 0 30px 80px rgba(10, 29, 54, 0.14);
         }
 
-        .englishRoutesGrid a {
+        .englishRoutesGrid a,
+        .englishWhyGrid article {
           background: #f5f6f8;
         }
 
         .englishServicesGrid h3,
         .englishRoutesGrid strong,
-        .englishSectorsGrid h3 {
+        .englishWhyGrid h3,
+        .englishProcessGrid h3,
+        .englishSectorsGrid h3,
+        .englishFaqGrid h3 {
           display: block;
           margin: 0 0 14px;
           color: #0a1d36;
@@ -557,7 +727,10 @@ export default function EnglishHomePage() {
         }
 
         .englishServicesGrid p,
-        .englishRoutesGrid p {
+        .englishRoutesGrid p,
+        .englishWhyGrid p,
+        .englishProcessGrid p,
+        .englishFaqGrid p {
           margin: 0 0 24px;
           color: #3b4a5a;
           font-size: 15.5px;
@@ -572,62 +745,8 @@ export default function EnglishHomePage() {
           font-weight: 900;
         }
 
-        .englishOtherRoutes {
-          margin-top: 34px;
-          padding: 34px;
-          border-radius: 30px;
-          background: linear-gradient(135deg, #0a1d36, #0f2d52);
-          color: #ffffff;
-          display: grid;
-          grid-template-columns: 0.8fr 1.2fr auto;
-          gap: 24px;
-          align-items: center;
-          border-left: 7px solid #f26522;
-        }
-
-        .englishOtherRoutes h3 {
-          margin: 0;
-          color: #ffffff;
-          font-size: 26px;
-          line-height: 1.15;
-          font-weight: 900;
-        }
-
-        .englishOtherRoutes div {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 10px;
-        }
-
-        .englishOtherRoutes p {
-          margin: 0;
-          padding: 10px 14px;
-          border-radius: 999px;
-          background: rgba(255, 255, 255, 0.09);
-          color: rgba(255, 255, 255, 0.88);
-          font-size: 14px;
-          line-height: 1.3;
-          font-weight: 800;
-        }
-
-        .englishOtherRoutes a {
-          min-height: 52px;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          padding: 0 22px;
-          border-radius: 999px;
-          background: #f26522;
-          color: #ffffff;
-          text-decoration: none;
-          font-size: 15px;
-          font-weight: 900;
-          white-space: nowrap;
-        }
-
         .englishVideoBlock {
           padding: 90px 7%;
-          background: #f5f6f8;
           display: grid;
           grid-template-columns: 0.9fr 1.1fr;
           gap: 54px;
@@ -654,6 +773,14 @@ export default function EnglishHomePage() {
           background: #000000;
         }
 
+        .englishProcessGrid article strong {
+          color: #f26522;
+          font-size: 42px;
+          line-height: 1;
+          font-weight: 900;
+          margin-bottom: 28px;
+        }
+
         .englishSectorsGrid {
           display: grid;
           grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -670,6 +797,29 @@ export default function EnglishHomePage() {
         .englishSectorsGrid h3 {
           margin: 0;
           font-size: 18px;
+        }
+
+        .englishFaqGrid {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 22px;
+        }
+
+        .englishFaqGrid article {
+          background: #ffffff;
+          border-radius: 26px;
+          padding: 30px;
+          border-left: 6px solid #f26522;
+          box-shadow: 0 24px 65px rgba(10, 29, 54, 0.08);
+        }
+
+        .englishFaqGrid h3 {
+          font-size: 21px;
+          line-height: 1.25;
+        }
+
+        .englishFaqGrid p {
+          margin: 0;
         }
 
         .englishQuoteBlock {
@@ -799,16 +949,10 @@ export default function EnglishHomePage() {
         @media (max-width: 1150px) {
           .englishServicesGrid,
           .englishRoutesGrid,
+          .englishWhyGrid,
+          .englishProcessGrid,
           .englishSectorsGrid {
             grid-template-columns: repeat(2, minmax(0, 1fr));
-          }
-
-          .englishOtherRoutes {
-            grid-template-columns: 1fr;
-          }
-
-          .englishOtherRoutes a {
-            justify-self: start;
           }
         }
 
@@ -865,35 +1009,31 @@ export default function EnglishHomePage() {
           .englishServices,
           .englishRoutes,
           .englishVideoBlock,
+          .englishWhyChoose,
+          .englishProcess,
           .englishSectors,
+          .englishFaqSection,
           .englishContact {
             padding: 74px 24px;
           }
 
           .englishServicesGrid,
           .englishRoutesGrid,
-          .englishSectorsGrid {
+          .englishWhyGrid,
+          .englishProcessGrid,
+          .englishSectorsGrid,
+          .englishFaqGrid {
             grid-template-columns: 1fr;
           }
 
           .englishServicesGrid a,
-          .englishRoutesGrid a {
+          .englishRoutesGrid a,
+          .englishWhyGrid article,
+          .englishProcessGrid article,
+          .englishFaqGrid article {
             min-height: auto;
             padding: 28px 24px;
             border-radius: 24px;
-          }
-
-          .englishOtherRoutes {
-            padding: 28px 24px;
-            border-radius: 26px;
-          }
-
-          .englishOtherRoutes h3 {
-            font-size: 24px;
-          }
-
-          .englishOtherRoutes a {
-            width: 100%;
           }
 
           .englishQuoteBlock {
