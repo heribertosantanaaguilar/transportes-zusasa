@@ -11,6 +11,29 @@ type EnglishRutaLandingProps = {
   sectors: string[];
 };
 
+const relatedRoutes = [
+  {
+    title: "National container transport from Manzanillo",
+    href: "/en/national-container-transport-from-manzanillo",
+  },
+  {
+    title: "Manzanillo to Guadalajara / El Salto",
+    href: "/en/container-transport-manzanillo-guadalajara",
+  },
+  {
+    title: "Manzanillo to Monterrey / Apodaca",
+    href: "/en/container-transport-manzanillo-monterrey",
+  },
+  {
+    title: "Manzanillo to Querétaro / Bajío",
+    href: "/en/container-transport-manzanillo-queretaro",
+  },
+  {
+    title: "ISO tank transport from Manzanillo",
+    href: "/en/iso-tank-transport-manzanillo",
+  },
+];
+
 export default function EnglishRutaLanding({
   eyebrow,
   title,
@@ -133,6 +156,23 @@ Shipment details:
           </div>
         </section>
 
+        <section className="englishRelatedRoutes">
+          <div className="englishRelatedRoutesHeader">
+            <span>Related routes</span>
+
+            <h2>Explore other logistics options from Manzanillo.</h2>
+          </div>
+
+          <div className="englishRelatedRoutesGrid">
+            {relatedRoutes.map((route) => (
+              <a href={route.href} key={route.href}>
+                {route.title}
+                <span>View page →</span>
+              </a>
+            ))}
+          </div>
+        </section>
+
         <section className="englishRouteQuoteBlock">
           <div>
             <span>Quote request</span>
@@ -206,6 +246,7 @@ Shipment details:
         .englishRouteHeroContent > span,
         .englishRouteIntro span,
         .englishRouteSectorsHeader span,
+        .englishRelatedRoutesHeader span,
         .englishRouteQuoteBlock span {
           display: inline-flex;
           align-items: center;
@@ -221,6 +262,7 @@ Shipment details:
         .englishRouteHeroContent > span::before,
         .englishRouteIntro span::before,
         .englishRouteSectorsHeader span::before,
+        .englishRelatedRoutesHeader span::before,
         .englishRouteQuoteBlock span::before {
           content: "";
           width: 48px;
@@ -296,6 +338,7 @@ Shipment details:
         .englishRouteIntro h2,
         .englishRouteInfoCard h2,
         .englishRouteSectorsHeader h2,
+        .englishRelatedRoutesHeader h2,
         .englishRouteQuoteBlock h2 {
           margin: 0;
           color: #0a1d36;
@@ -396,6 +439,51 @@ Shipment details:
           font-weight: 900;
         }
 
+        .englishRelatedRoutes {
+          padding: 90px 7%;
+          background: #f5f6f8;
+        }
+
+        .englishRelatedRoutesHeader {
+          max-width: 980px;
+          margin-bottom: 40px;
+        }
+
+        .englishRelatedRoutesGrid {
+          display: grid;
+          grid-template-columns: repeat(5, minmax(0, 1fr));
+          gap: 18px;
+        }
+
+        .englishRelatedRoutesGrid a {
+          min-height: 180px;
+          padding: 26px 24px;
+          border-radius: 24px;
+          background: #ffffff;
+          color: #0a1d36;
+          text-decoration: none;
+          font-size: 18px;
+          line-height: 1.3;
+          font-weight: 900;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          border-top: 6px solid #f26522;
+          box-shadow: 0 22px 60px rgba(10, 29, 54, 0.08);
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .englishRelatedRoutesGrid a:hover {
+          transform: translateY(-4px);
+          box-shadow: 0 28px 75px rgba(10, 29, 54, 0.14);
+        }
+
+        .englishRelatedRoutesGrid span {
+          color: #f26522;
+          font-size: 15px;
+          font-weight: 900;
+        }
+
         .englishRouteQuoteBlock {
           margin: 0 7% 100px;
           padding: 46px;
@@ -483,6 +571,12 @@ Shipment details:
           font-size: 14px;
         }
 
+        @media (max-width: 1200px) {
+          .englishRelatedRoutesGrid {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+          }
+        }
+
         @media (max-width: 950px) {
           .englishRouteIntro,
           .englishRouteGridSection,
@@ -530,7 +624,8 @@ Shipment details:
 
           .englishRouteIntro,
           .englishRouteGridSection,
-          .englishRouteSectors {
+          .englishRouteSectors,
+          .englishRelatedRoutes {
             padding: 74px 24px;
           }
 
@@ -539,8 +634,13 @@ Shipment details:
             border-radius: 28px;
           }
 
-          .englishRouteSectorsGrid {
+          .englishRouteSectorsGrid,
+          .englishRelatedRoutesGrid {
             grid-template-columns: 1fr;
+          }
+
+          .englishRelatedRoutesGrid a {
+            min-height: auto;
           }
 
           .englishRouteQuoteBlock {
