@@ -49,8 +49,56 @@ Datos del servicio:
     emailSubject
   )}&body=${encodeURIComponent(emailBody)}`;
 
+  const faqs = [
+    {
+      question: `¿Transportes ZUSASA realiza ${rutaPrincipal.toLowerCase()}?`,
+      answer:
+        "Sí. Transportes ZUSASA revisa y coordina operaciones de transporte de contenedores e ISO tanques desde Manzanillo, de acuerdo con la ruta, disponibilidad, tipo de unidad, documentación, peso y condiciones operativas del servicio.",
+    },
+    {
+      question: "¿Qué información necesito enviar para solicitar una cotización?",
+      answer:
+        "Para cotizar es recomendable compartir empresa, nombre de contacto, teléfono, tipo de contenedor o ISO tanque, origen, destino, fecha estimada, peso aproximado, tipo de carga y cualquier requerimiento operativo especial.",
+    },
+    {
+      question: "¿También pueden apoyar con movimiento local en Manzanillo?",
+      answer:
+        "Sí. Podemos apoyar con movimiento local previo en Manzanillo, sujeto a disponibilidad y condiciones operativas. Esto puede complementar una operación nacional cuando el cliente requiere coordinación desde la zona portuaria o logística.",
+    },
+    {
+      question: "¿Cuentan con apoyo de resguardo en patio de maniobras?",
+      answer:
+        "Sí. Transportes ZUSASA puede apoyar con opciones de resguardo temporal en patio de maniobras en Manzanillo, sujeto a disponibilidad, tipo de unidad, tipo de carga y condiciones específicas de la operación.",
+    },
+    {
+      question: "¿Cómo solicito una cotización?",
+      answer:
+        "Puedes solicitar una cotización enviando los datos de tu operación al correo cotizaciones@transporteszusasa.com o utilizando los botones de contacto disponibles en esta página.",
+    },
+  ];
+
+  const faqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqStructuredData),
+        }}
+      />
+
       <Navbar />
 
       <main className="rutaLandingPage">
@@ -114,10 +162,13 @@ Datos del servicio:
         <section className="rutaSectors">
           <div className="rutaSectorsHeader">
             <span>Clientes potenciales</span>
-            <h2>Una ruta pensada para empresas con operación logística recurrente.</h2>
+            <h2>
+              Una ruta pensada para empresas con operación logística recurrente.
+            </h2>
             <p>
-              Este servicio puede ser útil para empresas que importan, distribuyen,
-              fabrican o reciben carga contenerizada desde el puerto de Manzanillo.
+              Este servicio puede ser útil para empresas que importan,
+              distribuyen, fabrican o reciben carga contenerizada desde el
+              puerto de Manzanillo.
             </p>
           </div>
 
@@ -125,6 +176,29 @@ Datos del servicio:
             {sectores.map((sector) => (
               <article key={sector}>
                 <h3>{sector}</h3>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="rutaFaqSection">
+          <div className="rutaFaqHeader">
+            <span>Preguntas frecuentes</span>
+
+            <h2>Información útil antes de solicitar una cotización.</h2>
+
+            <p>
+              Estas preguntas ayudan a aclarar el alcance general del servicio y
+              los datos necesarios para revisar una operación logística desde
+              Manzanillo.
+            </p>
+          </div>
+
+          <div className="rutaFaqGrid">
+            {faqs.map((faq) => (
+              <article key={faq.question}>
+                <h3>{faq.question}</h3>
+                <p>{faq.answer}</p>
               </article>
             ))}
           </div>
@@ -181,6 +255,7 @@ Datos del servicio:
         .rutaHeroContent > span,
         .rutaIntro span,
         .rutaSectorsHeader span,
+        .rutaFaqHeader span,
         .rutaQuoteBlock span {
           display: inline-flex;
           align-items: center;
@@ -196,6 +271,7 @@ Datos del servicio:
         .rutaHeroContent > span::before,
         .rutaIntro span::before,
         .rutaSectorsHeader span::before,
+        .rutaFaqHeader span::before,
         .rutaQuoteBlock span::before {
           content: "";
           width: 48px;
@@ -203,6 +279,7 @@ Datos del servicio:
           background: #f26522;
           border-radius: 999px;
           display: inline-block;
+          flex: 0 0 auto;
         }
 
         .rutaHero h1 {
@@ -270,6 +347,7 @@ Datos del servicio:
         .rutaIntro h2,
         .rutaInfoCard h2,
         .rutaSectorsHeader h2,
+        .rutaFaqHeader h2,
         .rutaQuoteBlock h2 {
           margin: 0;
           color: #0a1d36;
@@ -337,12 +415,14 @@ Datos del servicio:
           background: #ffffff;
         }
 
-        .rutaSectorsHeader {
+        .rutaSectorsHeader,
+        .rutaFaqHeader {
           max-width: 980px;
           margin-bottom: 46px;
         }
 
-        .rutaSectorsHeader p {
+        .rutaSectorsHeader p,
+        .rutaFaqHeader p {
           margin: 24px 0 0;
           color: #3b4a5a;
           font-size: 18px;
@@ -368,6 +448,40 @@ Datos del servicio:
           font-size: 18px;
           line-height: 1.3;
           font-weight: 900;
+        }
+
+        .rutaFaqSection {
+          padding: 90px 7%;
+          background: #f5f6f8;
+        }
+
+        .rutaFaqGrid {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 22px;
+        }
+
+        .rutaFaqGrid article {
+          background: #ffffff;
+          border-radius: 26px;
+          padding: 30px;
+          border-left: 6px solid #f26522;
+          box-shadow: 0 24px 65px rgba(10, 29, 54, 0.08);
+        }
+
+        .rutaFaqGrid h3 {
+          margin: 0 0 14px;
+          color: #0a1d36;
+          font-size: 22px;
+          line-height: 1.25;
+          font-weight: 900;
+        }
+
+        .rutaFaqGrid p {
+          margin: 0;
+          color: #3b4a5a;
+          font-size: 16px;
+          line-height: 1.68;
         }
 
         .rutaQuoteBlock {
@@ -407,7 +521,8 @@ Datos del servicio:
             grid-template-columns: 1fr;
           }
 
-          .rutaSectorsGrid {
+          .rutaSectorsGrid,
+          .rutaFaqGrid {
             grid-template-columns: repeat(2, minmax(0, 1fr));
           }
 
@@ -430,6 +545,7 @@ Datos del servicio:
           .rutaHero p,
           .rutaIntro p,
           .rutaSectorsHeader p,
+          .rutaFaqHeader p,
           .rutaQuoteBlock p {
             font-size: 17px;
             line-height: 1.7;
@@ -447,7 +563,8 @@ Datos del servicio:
 
           .rutaIntro,
           .rutaGridSection,
-          .rutaSectors {
+          .rutaSectors,
+          .rutaFaqSection {
             padding: 74px 24px;
           }
 
@@ -456,8 +573,18 @@ Datos del servicio:
             border-radius: 28px;
           }
 
-          .rutaSectorsGrid {
+          .rutaSectorsGrid,
+          .rutaFaqGrid {
             grid-template-columns: 1fr;
+          }
+
+          .rutaFaqGrid article {
+            padding: 26px 24px;
+            border-radius: 24px;
+          }
+
+          .rutaFaqGrid h3 {
+            font-size: 20px;
           }
 
           .rutaQuoteBlock {
