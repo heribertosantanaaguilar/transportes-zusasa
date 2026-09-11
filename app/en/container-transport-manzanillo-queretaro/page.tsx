@@ -8,6 +8,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical:
       "https://www.transporteszusasa.com/en/container-transport-manzanillo-queretaro",
+    languages: {
+      "es-MX":
+        "https://www.transporteszusasa.com/transporte-contenedores-manzanillo-queretaro",
+      "en-US":
+        "https://www.transporteszusasa.com/en/container-transport-manzanillo-queretaro",
+      "x-default":
+        "https://www.transporteszusasa.com/transporte-contenedores-manzanillo-queretaro",
+    },
   },
 };
 
