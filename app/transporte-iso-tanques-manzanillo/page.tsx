@@ -2,58 +2,54 @@ import type { Metadata } from "next";
 import RutaLanding from "../../components/RutaLanding";
 
 export const metadata: Metadata = {
-  title:
-    "Transporte de ISO tanques desde Manzanillo | Transportes ZUSASA",
+  title: "Transporte de ISO tanques desde Manzanillo",
   description:
-    "Cotiza transporte nacional de ISO tanques desde Manzanillo hacia Guadalajara, Monterrey, Querétaro, Bajío, CDMX, Toluca y Puebla. Coordinación logística por Transportes ZUSASA.",
+    "Coordinación de transporte de ISO tanques desde Manzanillo hacia destinos industriales nacionales, incluyendo movimiento local, resguardo y seguimiento operativo.",
   alternates: {
     canonical:
       "https://www.transporteszusasa.com/transporte-iso-tanques-manzanillo",
-  },
-  openGraph: {
-    title:
-      "Transporte de ISO tanques desde Manzanillo | Transportes ZUSASA",
-    description:
-      "Coordinación de transporte nacional de ISO tanques desde Manzanillo hacia destinos industriales del país.",
-    url: "https://www.transporteszusasa.com/transporte-iso-tanques-manzanillo",
-    siteName: "Transportes ZUSASA",
-    locale: "es_MX",
-    type: "website",
+    languages: {
+      "es-MX":
+        "https://www.transporteszusasa.com/transporte-iso-tanques-manzanillo",
+      "en-US":
+        "https://www.transporteszusasa.com/en/iso-tank-transport-manzanillo",
+      "x-default":
+        "https://www.transporteszusasa.com/transporte-iso-tanques-manzanillo",
+    },
   },
 };
 
 export default function TransporteIsoTanquesManzanilloPage() {
   return (
     <RutaLanding
-      eyebrow="Servicio nacional de ISO tanques"
-      title="Transporte nacional de ISO tanques desde Manzanillo."
-      description="Coordinamos transporte nacional de ISO tanques desde Manzanillo hacia destinos industriales del país, integrando movimiento local previo, resguardo en patio de maniobras y seguimiento operativo durante la coordinación del servicio."
-      rutaPrincipal="Transporte nacional de ISO tanques desde Manzanillo"
+      eyebrow="Logística para ISO tanques"
+      title="Transporte de ISO tanques desde Manzanillo."
+      description="Transportes ZUSASA coordina transporte de ISO tanques desde Manzanillo hacia destinos industriales nacionales, integrando movimiento local, apoyo de resguardo y seguimiento operativo de acuerdo con los requerimientos de la carga."
+      rutaPrincipal="Transporte de ISO tanques desde Manzanillo"
       zonas={[
-        "Guadalajara y El Salto, Jalisco",
-        "Monterrey y Apodaca, Nuevo León",
-        "Querétaro y San Juan del Río",
-        "Bajío",
-        "CDMX y Estado de México",
+        "Guadalajara y El Salto",
+        "Monterrey y Apodaca",
+        "Querétaro y Bajío",
+        "Ciudad de México y Estado de México",
         "Toluca y Lerma",
         "Puebla y zonas industriales cercanas",
       ]}
       servicios={[
         "Transporte nacional de ISO tanques desde Manzanillo",
         "Movimiento local de ISO tanques en Manzanillo",
-        "Resguardo temporal en patio de maniobras",
-        "Coordinación con operación local y nacional",
-        "Seguimiento operativo durante la programación y traslado",
+        "Apoyo de resguardo de ISO tanques en patio de maniobras",
+        "Coordinación operativa y seguimiento del servicio",
+        "Validación de ruta de acuerdo con carga y condiciones operativas",
       ]}
       sectores={[
-        "Químicos no peligrosos",
-        "Resinas e insumos líquidos",
-        "Aditivos industriales",
-        "Ingredientes líquidos",
-        "Aceites y lubricantes",
-        "Industria de limpieza",
-        "Manufactura",
+        "Industria química",
+        "Manufactura industrial",
+        "Importadores",
         "Operadores logísticos",
+        "Comercializadoras",
+        "Agentes aduanales",
+        "Empaque y materiales",
+        "Distribución industrial",
       ]}
     />
   );
