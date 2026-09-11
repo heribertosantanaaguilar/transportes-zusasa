@@ -1,6 +1,14 @@
+"use client";
+
+import { usePathname } from "next/navigation";
+
 export default function WhatsAppButton() {
-  const whatsappMessage =
-    "Hola, quiero solicitar información sobre los servicios de Transportes ZUSASA.";
+  const pathname = usePathname();
+  const isEnglish = pathname?.startsWith("/en");
+
+  const whatsappMessage = isEnglish
+    ? "Hello, I would like to request information about Transportes ZUSASA services."
+    : "Hola, quiero solicitar información sobre los servicios de Transportes ZUSASA.";
 
   const whatsappLink = `https://wa.me/522224556651?text=${encodeURIComponent(
     whatsappMessage
@@ -12,7 +20,7 @@ export default function WhatsAppButton() {
       className="whatsappFloatButton"
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Contactar por WhatsApp"
+      aria-label={isEnglish ? "Contact via WhatsApp" : "Contactar por WhatsApp"}
     >
       WhatsApp
 
