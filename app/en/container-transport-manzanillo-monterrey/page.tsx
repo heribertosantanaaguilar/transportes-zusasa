@@ -8,6 +8,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical:
       "https://www.transporteszusasa.com/en/container-transport-manzanillo-monterrey",
+    languages: {
+      "es-MX":
+        "https://www.transporteszusasa.com/transporte-contenedores-manzanillo-monterrey",
+      "en-US":
+        "https://www.transporteszusasa.com/en/container-transport-manzanillo-monterrey",
+      "x-default":
+        "https://www.transporteszusasa.com/transporte-contenedores-manzanillo-monterrey",
+    },
   },
 };
 
