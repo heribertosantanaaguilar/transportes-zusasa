@@ -9,7 +9,7 @@ export default function FormularioCotizacion({language="es"}:{language?:"es"|"en
  const style={width:"100%",padding:12,borderRadius:8,border:"1px solid #c4cdd8",background:"#fff",color:"#0a1d36"};
  async function submit(e:React.FormEvent){e.preventDefault();B(true);M("");try{
  const res=await fetch("/api/cotizacion",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({...v,language,equipment:[{type:v.equipmentType,quantity:Number(v.quantity),weightTonnes:v.weight?Number(v.weight):null}]})});
- const data=await res.json();if(!res.ok)throw Error(data.error||"No se pudo enviar la solicitud");
+ const data=await res.json();if(!res.ok){const detail=typeof data?.error==="string"?data.error:typeof data?.error?.message==="string"?data.error.message:t("No se pudo enviar la solicitud. Inténtalo nuevamente.","Could not submit the request. Please try again.");throw Error(detail);}
  M(t("Solicitud recibida. Referencia: ","Request received. Reference: ")+(data.reference||t("en revisión","under review"))+t(". Nuestro equipo te contactará.",". Our team will contact you."));
  }catch(e){M(e instanceof Error?e.message:t("Error de conexión","Connection error"));}finally{B(false)}}
  return <section id="formulario-cotizacion" style={{scrollMarginTop:140,background:"#fff",color:"#0a1d36",padding:"40px 7%"}}><div style={{maxWidth:850,margin:"auto"}}>
