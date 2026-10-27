@@ -86,7 +86,7 @@ Datos del servicio:
               </a>
             </p>
 
-            <a className="footerWhatsApp" href={quoteEmailLink}>
+            <a className="footerWhatsApp" href="/cotizacion#formulario-cotizacion">
               Solicitar cotización →
             </a>
           </div>
