@@ -80,11 +80,11 @@ Datos del servicio:
             </p>
 
             <div className="quoteActions">
-              <a className="primaryQuoteButton" href={emailLink}>
+              <a className="primaryQuoteButton" href="/cotizacion#formulario-cotizacion">
                 Solicitar cotización por correo →
               </a>
 
-              <a className="secondaryQuoteButton" href={emailLink}>
+              <a className="secondaryQuoteButton" href="/cotizacion#formulario-cotizacion">
                 Enviar datos de mi operación
               </a>
             </div>
@@ -198,7 +198,7 @@ Datos del servicio:
             de coordinación local o nacional.
           </p>
 
-          <a href={emailLink}>
+          <a href="/cotizacion#formulario-cotizacion">
             Iniciar cotización por correo →
           </a>
         </section>
