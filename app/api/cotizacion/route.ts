@@ -10,7 +10,7 @@ export async function POST(req:NextRequest){
   if(url.protocol!=="https:"&&!(process.env.NODE_ENV==="development"&&url.hostname==="127.0.0.1"))throw Error("Destino inválido");
   const body=await req.text();
   if(body.length>8000)return NextResponse.json({error:"Solicitud demasiado grande."},{status:413});
-  const response=await fetch(url,{method:"POST",headers:{"Content-Type":"application/json","X-Zusasa-Web-Secret":secret},body,cache:"no-store",signal:AbortSignal.timeout(15000)});
+  const response=await fetch(url,{method:"POST",headers:{"Content-Type":"application/json","X-Zusasa-Web-Secret":secret,...(process.env.ZUSASA_CONTROL_VERCEL_BYPASS_SECRET?{"x-vercel-protection-bypass":process.env.ZUSASA_CONTROL_VERCEL_BYPASS_SECRET}:{})},body,cache:"no-store",signal:AbortSignal.timeout(15000)});
   const data=await response.json();
   return NextResponse.json(data,{status:response.status});
  }catch{ return NextResponse.json({error:"No se pudo enviar la solicitud. Inténtalo nuevamente."},{status:502});}
