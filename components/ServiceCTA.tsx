@@ -24,7 +24,7 @@ export default function ServiceCTA() {
             disponibilidad, condiciones operativas y opciones de coordinación.
           </p>
 
-          <a href={quoteEmailLink}>
+          <a href="/cotizacion#formulario-cotizacion">
             Solicitar cotización por correo →
           </a>
         </div>
