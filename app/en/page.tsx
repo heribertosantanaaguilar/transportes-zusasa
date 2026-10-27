@@ -228,7 +228,7 @@ export default function EnglishHomePage() {
             </p>
 
             <div className="englishActions">
-              <a href={quoteEmailLink} className="primaryEnglishButton">
+              <a href="/en/cotizacion#formulario-cotizacion" className="primaryEnglishButton">
                 Request a quote
               </a>
 
@@ -412,7 +412,7 @@ export default function EnglishHomePage() {
             </p>
           </div>
 
-          <a href={quoteEmailLink}>Request a quote →</a>
+          <a href="/en/cotizacion#formulario-cotizacion">Request a quote →</a>
         </section>
 
         <section className="englishContact" id="contact">
