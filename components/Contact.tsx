@@ -18,7 +18,7 @@ export default function Contact() {
           </p>
 
           <div className="contactActions">
-            <a href={quoteEmailLink} className="contactQuote">
+            <a href="/cotizacion#formulario-cotizacion" className="contactQuote">
               Solicitar cotización
             </a>
 
