@@ -1,4 +1,5 @@
 import Navbar from "../../components/Navbar";
+import FormularioCotizacion from "../../components/FormularioCotizacion";
 import Footer from "../../components/Footer";
 import WhatsAppButton from "../../components/WhatsAppButton";
 
@@ -90,6 +91,7 @@ Datos del servicio:
           </div>
         </section>
 
+        <FormularioCotizacion />
         <section className="quoteServices">
           <div className="sectionIntro">
             <span>Servicios que puedes cotizar</span>
