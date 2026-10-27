@@ -22,7 +22,7 @@ export default function Hero() {
         </p>
 
         <div className={styles.actions}>
-          <a className={styles.mainCta} href={quoteEmailLink}>
+          <a className={styles.mainCta} href="/cotizacion#formulario-cotizacion">
             Solicitar cotización
           </a>
 
