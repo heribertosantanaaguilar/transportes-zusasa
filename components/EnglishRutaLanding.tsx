@@ -153,7 +153,7 @@ Shipment details:
             <p>{description}</p>
 
             <div className="englishRouteActions">
-              <a href={quoteEmailLink} className="englishRoutePrimaryButton">
+              <a href="/cotizacion#formulario-cotizacion" className="englishRoutePrimaryButton">
                 Request a quote
               </a>
 
@@ -276,7 +276,7 @@ Shipment details:
             </p>
           </div>
 
-          <a href={quoteEmailLink}>Request a quote →</a>
+          <a href="/cotizacion#formulario-cotizacion">Request a quote →</a>
         </section>
       </main>
 
