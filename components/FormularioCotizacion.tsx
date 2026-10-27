@@ -10,7 +10,7 @@ export default function FormularioCotizacion(){
  const data=await res.json();if(!res.ok)throw Error(data.error||"No se pudo enviar la solicitud");
  M("Solicitud recibida. Referencia: "+(data.reference||"en revisión")+". Nuestro equipo te contactará.");
  }catch(e){M(e instanceof Error?e.message:"Error de conexión");}finally{B(false)}}
- return <section style={{background:"#fff",color:"#0a1d36",padding:"40px 7%"}}><div style={{maxWidth:850,margin:"auto"}}>
+ return <section id="formulario-cotizacion" style={{scrollMarginTop:140,background:"#fff",color:"#0a1d36",padding:"40px 7%"}}><div style={{maxWidth:850,margin:"auto"}}>
  <h2>Formulario de solicitud de cotización</h2><p>Sin registro. Un asesor revisará tu operación antes de emitir una tarifa.</p>
  <form onSubmit={submit} style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(250px,1fr))",gap:16}}>
  {([["contactName","Nombre de contacto"],["company","Empresa"],["email","Correo electrónico"],["phone","Teléfono"],["origin","Origen"],["destination","Destino"]] as const).map(([k,label])=><label key={k}>{label}<input required={k!=="phone"} type={k==="email"?"email":"text"} maxLength={k==="email"?254:180} value={v[k]} onChange={e=>set(k,e.target.value)} style={style}/></label>)}
