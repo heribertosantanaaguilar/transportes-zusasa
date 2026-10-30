@@ -57,7 +57,7 @@ export default function Navbar() {
             </div>
 
             <a
-              href={isEnglish ? quoteEmailLinkEn : quoteEmailLinkEs}
+              href={isEnglish ? "/en/cotizacion#formulario-cotizacion" : "/cotizacion#formulario-cotizacion"}
               className="zusasaQuoteButton"
             >
               {isEnglish ? "Request a quote" : "Cotizar ahora"}

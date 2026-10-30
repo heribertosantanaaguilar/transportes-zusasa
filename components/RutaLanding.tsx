@@ -111,7 +111,7 @@ Datos del servicio:
             <p>{description}</p>
 
             <div className="rutaHeroActions">
-              <a href={quoteEmailLink} className="rutaPrimaryButton">
+              <a href="/cotizacion#formulario-cotizacion" className="rutaPrimaryButton">
                 Solicitar cotización por correo
               </a>
 
@@ -214,7 +214,7 @@ Datos del servicio:
             </p>
           </div>
 
-          <a href={quoteEmailLink}>Solicitar cotización →</a>
+          <a href="/cotizacion#formulario-cotizacion">Solicitar cotización →</a>
         </section>
       </main>
 

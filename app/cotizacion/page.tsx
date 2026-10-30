@@ -1,4 +1,5 @@
 import Navbar from "../../components/Navbar";
+import FormularioCotizacion from "../../components/FormularioCotizacion";
 import Footer from "../../components/Footer";
 import WhatsAppButton from "../../components/WhatsAppButton";
 
@@ -79,17 +80,18 @@ Datos del servicio:
             </p>
 
             <div className="quoteActions">
-              <a className="primaryQuoteButton" href={emailLink}>
+              <a className="primaryQuoteButton" href="/cotizacion#formulario-cotizacion">
                 Solicitar cotización por correo →
               </a>
 
-              <a className="secondaryQuoteButton" href={emailLink}>
+              <a className="secondaryQuoteButton" href="/cotizacion#formulario-cotizacion">
                 Enviar datos de mi operación
               </a>
             </div>
           </div>
         </section>
 
+        <FormularioCotizacion />
         <section className="quoteServices">
           <div className="sectionIntro">
             <span>Servicios que puedes cotizar</span>
@@ -196,7 +198,7 @@ Datos del servicio:
             de coordinación local o nacional.
           </p>
 
-          <a href={emailLink}>
+          <a href="/cotizacion#formulario-cotizacion">
             Iniciar cotización por correo →
           </a>
         </section>

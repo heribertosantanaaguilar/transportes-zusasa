@@ -59,11 +59,11 @@ export default function Quote() {
           </div>
 
           <div className="quoteActions">
-            <a href={quoteEmailLink} className="quotePrimary">
+            <a href="/cotizacion#formulario-cotizacion" className="quotePrimary">
               Solicitar cotización por correo
             </a>
 
-            <a href={quoteEmailLink} className="quoteSecondary">
+            <a href="/cotizacion#formulario-cotizacion" className="quoteSecondary">
               Enviar datos de mi operación
             </a>
           </div>
