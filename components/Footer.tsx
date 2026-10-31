@@ -69,6 +69,7 @@ Datos del servicio:
 
           <div className="footerColumn">
             <h3>Contacto</h3>
+            <a href="https://control.transporteszusasa.com/portal/clientes">Portal del Cliente →</a>
 
             <p>
               <strong>José Alberto Zúñiga Ramos</strong>
