@@ -46,7 +46,7 @@ export default function Navbar() {
           </nav>
 
           <div className="zusasaRightActions">
-            <a className="zusasaPortalButton" href="https://control.transporteszusasa.com/portal/clientes">{isEnglish ? "Client Portal" : "Portal del Cliente"}</a>
+            <a className="zusasaPortalButton" href={isEnglish ? "https://control.transporteszusasa.com/portal/clientes?lang=en" : "https://control.transporteszusasa.com/portal/clientes?lang=es"}>{isEnglish ? "Client Portal" : "Portal del Cliente"}</a>
             <div className="languageSwitch" aria-label="Selector de idioma">
               <a className={!isEnglish ? "activeLanguage" : ""} href="/">
                 ES
