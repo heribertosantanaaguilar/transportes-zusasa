@@ -46,6 +46,7 @@ export default function Navbar() {
           </nav>
 
           <div className="zusasaRightActions">
+            <a className="zusasaPortalButton" href="https://control.transporteszusasa.com/portal/clientes">{isEnglish ? "Client Portal" : "Portal del Cliente"}</a>
             <div className="languageSwitch" aria-label="Selector de idioma">
               <a className={!isEnglish ? "activeLanguage" : ""} href="/">
                 ES
@@ -199,6 +200,9 @@ export default function Navbar() {
             flex: 0 0 auto;
           }
 
+          .zusasaPortalButton { display:inline-flex; align-items:center; justify-content:center; min-height:42px; padding:0 14px; border:1px solid rgba(255,255,255,.5); border-radius:10px; color:#fff; text-decoration:none; font-size:14px; font-weight:800; white-space:nowrap; }
+          .zusasaPortalButton:hover { background:rgba(255,255,255,.12); }
+          .zusasaPortalButton:focus-visible { outline:3px solid #f26522; outline-offset:2px; }
           .languageSwitch {
             min-height: 42px;
             padding: 0 12px;
@@ -254,7 +258,7 @@ export default function Navbar() {
             }
           }
 
-          @media (max-width: 1100px) {
+          @media (max-width: 1350px) {
             .zusasaNavbarSpacer {
               height: 202px;
             }
