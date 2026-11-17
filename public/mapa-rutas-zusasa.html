@@ -195,6 +195,46 @@
             </script>
 
         
+
+<style>
+  /* Keep branding and legend outside the interactive map at every width. */
+  body {
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr) auto;
+  }
+  .zusasa-map-header {
+    position: static;
+    grid-row: 1;
+    margin: 10px;
+    min-height: 0;
+  }
+  .folium-map { grid-row: 2; min-height: 0; }
+  .zusasa-legend {
+    position: static;
+    grid-row: 3;
+    margin: 8px 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px 18px;
+    padding: 10px 14px;
+    font-size: 12px;
+  }
+  @media (max-width: 800px) {
+    .zusasa-map-header {
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      margin: 6px;
+      padding: 10px;
+      border-radius: 14px;
+    }
+    .zusasa-brand { flex: 0 0 96px; }
+    .zusasa-brand img { width: 96px !important; max-width: 100%; height: auto; }
+    .zusasa-title div { font-size: 17px; letter-spacing: 0; }
+    .zusasa-title p { font-size: 11px; margin-top: 4px; }
+    .zusasa-legend { margin: 6px; padding: 8px; gap: 5px 12px; font-size: 10px; }
+  }
+</style>
 </head>
 <body>
     
