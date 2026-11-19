@@ -55,6 +55,15 @@ export default function Contact() {
           </div>
 
           <div className="contactItem">
+            <strong>Isabel Cortés</strong>
+            <span>Contabilidad</span>
+            <a href="tel:+523141492831">314 149 2831</a>
+            <a href="mailto:isabel.cortes@transporteszusasa.com">
+              isabel.cortes@transporteszusasa.com
+            </a>
+          </div>
+
+          <div className="contactItem">
             <strong>Heriberto Santana Aguilar</strong>
             <span>Coordinación de Logística</span>
             <a href="tel:+523148721897">314 872 1897</a>
@@ -69,6 +78,20 @@ export default function Contact() {
             <strong>Cotizaciones</strong>
             <a href="mailto:cotizaciones@transporteszusasa.com">
               cotizaciones@transporteszusasa.com
+            </a>
+          </div>
+
+          <div className="contactItem">
+            <strong>Administración</strong>
+            <a href="mailto:administraci%C3%B3n@transporteszusasa.com">
+              administración@transporteszusasa.com
+            </a>
+          </div>
+
+          <div className="contactItem">
+            <strong>Contacto</strong>
+            <a href="mailto:contacto@transporteszusasa.com">
+              contacto@transporteszusasa.com
             </a>
           </div>
 

@@ -449,6 +449,15 @@ export default function EnglishHomePage() {
             </div>
 
             <div className="englishContactItem">
+              <strong>Isabel Cortés</strong>
+              <span>Accounting</span>
+              <a href="tel:+523141492831">+52 314 149 2831</a>
+              <a href="mailto:isabel.cortes@transporteszusasa.com">
+                isabel.cortes@transporteszusasa.com
+              </a>
+            </div>
+
+            <div className="englishContactItem">
               <strong>Heriberto Santana Aguilar</strong>
               <span>Logistics Coordination</span>
               <a href="tel:+523148721897">+52 314 872 1897</a>
@@ -463,6 +472,20 @@ export default function EnglishHomePage() {
               <strong>Quotes</strong>
               <a href="mailto:cotizaciones@transporteszusasa.com">
                 cotizaciones@transporteszusasa.com
+              </a>
+            </div>
+
+            <div className="englishContactItem">
+              <strong>Administration</strong>
+              <a href="mailto:administraci%C3%B3n@transporteszusasa.com">
+                administración@transporteszusasa.com
+              </a>
+            </div>
+
+            <div className="englishContactItem">
+              <strong>Contact</strong>
+              <a href="mailto:contacto@transporteszusasa.com">
+                contacto@transporteszusasa.com
               </a>
             </div>
 
