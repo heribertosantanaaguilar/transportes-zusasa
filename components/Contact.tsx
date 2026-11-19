@@ -55,15 +55,6 @@ export default function Contact() {
           </div>
 
           <div className="contactItem">
-            <strong>Isabel Cortés</strong>
-            <span>Contabilidad</span>
-            <a href="tel:+523141492831">314 149 2831</a>
-            <a href="mailto:isabel.cortes@transporteszusasa.com">
-              isabel.cortes@transporteszusasa.com
-            </a>
-          </div>
-
-          <div className="contactItem">
             <strong>Heriberto Santana Aguilar</strong>
             <span>Coordinación de Logística</span>
             <a href="tel:+523148721897">314 872 1897</a>
