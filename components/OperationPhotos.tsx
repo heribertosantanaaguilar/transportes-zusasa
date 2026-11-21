@@ -18,7 +18,7 @@ export default function OperationPhotos() {
     {
       title: "Operación con ISO tanques",
       text: "Atención a servicios relacionados con ISO tanques, sujetos a revisión operativa y documental.",
-      image: "/images/operacion-iso-tanques-zusasa.jpeg.png",
+      image: "/images/operacion-isotanques-zusasa.webp",
     },
     {
       title: "Coordinación logística desde Manzanillo",
